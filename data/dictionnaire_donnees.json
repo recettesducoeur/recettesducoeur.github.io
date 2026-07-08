@@ -1,0 +1,371 @@
+[
+  {
+    "champ": "id",
+    "type": "string",
+    "description": "Identifiant unique recette",
+    "format_valeurs": "AAAAMMJJ-XXX",
+    "exemple_court": "20260708-011",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Format obligatoire : AAAAMMJJ-XXX. Recettes test : 20000101-XXX. Exemple réel : 20260708-011."
+  },
+  {
+    "champ": "titre",
+    "type": "string",
+    "description": "Nom public de la recette",
+    "format_valeurs": "Texte court",
+    "exemple_court": "Tian de courgettes",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte libre. Exemples : Tian de courgettes ; Chou-fleur et quinoa à la crème."
+  },
+  {
+    "champ": "slug",
+    "type": "string",
+    "description": "Nom simplifié pour usage technique",
+    "format_valeurs": "minuscules sans accents",
+    "exemple_court": "tian-de-courgettes",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte sans accents, minuscules, mots séparés par tirets. Exemple : tian-de-courgettes."
+  },
+  {
+    "champ": "url",
+    "type": "string",
+    "description": "Chemin vers la fiche HTML",
+    "format_valeurs": "recettes/{id}.html",
+    "exemple_court": "recettes/20260708-011.html",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Format : recettes/{id}.html."
+  },
+  {
+    "champ": "image",
+    "type": "string",
+    "description": "Chemin vers l’image recette",
+    "format_valeurs": "images/recettes/{id}.webp",
+    "exemple_court": "images/recettes/20260708-011.webp",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Format : images/recettes/{id}.webp."
+  },
+  {
+    "champ": "qrcode",
+    "type": "string",
+    "description": "Chemin vers le QR code recette",
+    "format_valeurs": "qrcodes/recettes/{id}.png",
+    "exemple_court": "qrcodes/recettes/20260708-011.png",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Format : qrcodes/recettes/{id}.png."
+  },
+  {
+    "champ": "resume",
+    "type": "string",
+    "description": "Résumé affiché dans les cartes",
+    "format_valeurs": "Phrase courte",
+    "exemple_court": "Un plat coloré au four...",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Phrase courte affichée dans les cartes recette."
+  },
+  {
+    "champ": "explication",
+    "type": "string",
+    "description": "Explication simple de l’intérêt de la recette",
+    "format_valeurs": "Texte court",
+    "exemple_court": "Le tian est un plat de légumes au four.",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte libre court expliquant l’intérêt et le principe de la recette."
+  },
+  {
+    "champ": "categorie",
+    "type": "string",
+    "description": "Type principal",
+    "format_valeurs": "plat, dessert, entree...",
+    "exemple_court": "plat",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "dessert, plat"
+  },
+  {
+    "champ": "sous_categorie",
+    "type": "string",
+    "description": "Famille plus précise",
+    "format_valeurs": "soupe, gratin, salade...",
+    "exemple_court": "tian",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "compote, dessert lacté, gateau, gratin, omelette, pates, plat cremeux, poelee, salade, soupe, tartine, tian"
+  },
+  {
+    "champ": "moment_repas",
+    "type": "array",
+    "description": "Moments possibles",
+    "format_valeurs": "dejeuner, diner, gouter...",
+    "exemple_court": "[dejeuner, diner]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "dejeuner, dessert, diner, gouter"
+  },
+  {
+    "champ": "temperature_service",
+    "type": "string",
+    "description": "Chaud/froid/tiède",
+    "format_valeurs": "chaud, froid, froid_ou_tiede",
+    "exemple_court": "chaud",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "chaud, froid, froid_ou_tiede"
+  },
+  {
+    "champ": "type_cuisson",
+    "type": "array",
+    "description": "Modes de cuisson",
+    "format_valeurs": "four, casserole, poele...",
+    "exemple_court": "[four]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "casserole, four, poele"
+  },
+  {
+    "champ": "equipement",
+    "type": "array",
+    "description": "Matériel nécessaire",
+    "format_valeurs": "four, poêle, casserole...",
+    "exemple_court": "[four, plat à gratin]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "casserole, four, poele"
+  },
+  {
+    "champ": "temps_preparation_min",
+    "type": "number",
+    "description": "Temps préparation",
+    "format_valeurs": "minutes",
+    "exemple_court": "15",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Nombre entier en minutes. Exemples actuels : 10, 15, 5"
+  },
+  {
+    "champ": "temps_cuisson_min",
+    "type": "number",
+    "description": "Temps cuisson",
+    "format_valeurs": "minutes",
+    "exemple_court": "35",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Nombre entier en minutes. Exemples actuels : 10, 12, 15, 20, 25, 30, 35, 8"
+  },
+  {
+    "champ": "temps_total_min",
+    "type": "number",
+    "description": "Temps total",
+    "format_valeurs": "préparation + cuisson",
+    "exemple_court": "50",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Nombre entier calculé : temps_preparation_min + temps_cuisson_min."
+  },
+  {
+    "champ": "personnes",
+    "type": "number",
+    "description": "Nombre de portions de base",
+    "format_valeurs": "entier",
+    "exemple_court": "4",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Nombre de portions de base. Exemples actuels : 2, 4, 6"
+  },
+  {
+    "champ": "difficulte",
+    "type": "string",
+    "description": "Niveau de difficulté",
+    "format_valeurs": "tres_facile, facile, moyen",
+    "exemple_court": "facile",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "facile"
+  },
+  {
+    "champ": "budget",
+    "type": "string",
+    "description": "Niveau budget",
+    "format_valeurs": "tres_economique, economique, standard",
+    "exemple_court": "economique",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "economique"
+  },
+  {
+    "champ": "ingredients.principaux",
+    "type": "array",
+    "description": "Ingrédients structurants",
+    "format_valeurs": "liste de noms",
+    "exemple_court": "[courgettes]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Liste de noms. Exemples : banane mûre, bananes mûres, chou-fleur, courgettes, farine, fromage, lait, légumes cuits ou crus, légumes variés, pain, pommes, pommes de terre, pâtes, quinoa, riz, riz rond ou riz classique, sucre, thon égoutté, tomates, tomates concassées ou sauce tomate"
+  },
+  {
+    "champ": "ingredients.secondaires",
+    "type": "array",
+    "description": "Ingrédients utiles",
+    "format_valeurs": "liste de noms",
+    "exemple_court": "[tomates, oignons]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Liste de noms. Exemples : crème, eau, fromage râpé, huile, lait, maïs égoutté, oignon, oignons, sucre, tomates"
+  },
+  {
+    "champ": "ingredients.optionnels",
+    "type": "array",
+    "description": "Ingrédients facultatifs",
+    "format_valeurs": "liste de noms",
+    "exemple_court": "[fromage râpé]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Liste de noms. Exemples : cannelle, chapelure, chocolat, cornichons, crème, fromage, fromage râpé, fruits, herbes, herbes de Provence, huile, sucre, thon, vanille, épices douces, œufs, œufs durs"
+  },
+  {
+    "champ": "ingredients.recherche",
+    "type": "array",
+    "description": "Termes de recherche",
+    "format_valeurs": "accents, synonymes, variantes",
+    "exemple_court": "[courgette, courgettes]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Variantes de recherche : accents, pluriels, synonymes. Exemples : pates, pâtes, courgette, courgettes, creme, crème."
+  },
+  {
+    "champ": "ingredients_detail.principaux",
+    "type": "array<object>",
+    "description": "Ingrédients principaux avec quantités",
+    "format_valeurs": "nom, quantite, unite",
+    "exemple_court": "{nom, quantite, unite}",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Objets {nom, quantite, unite}. Unités actuelles : c. à café, c. à soupe, g, ml, pincée, pièce, pièces, tranches"
+  },
+  {
+    "champ": "ingredients_detail.secondaires",
+    "type": "array<object>",
+    "description": "Ingrédients secondaires avec quantités",
+    "format_valeurs": "nom, quantite, unite",
+    "exemple_court": "{nom, quantite, unite}",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Objets {nom, quantite, unite}. Quantite = nombre ; unite = g, kg, ml, L, pièce, tranches, c. à soupe, c. à café..."
+  },
+  {
+    "champ": "ingredients_detail.optionnels",
+    "type": "array<object>",
+    "description": "Ingrédients optionnels avec quantités",
+    "format_valeurs": "nom, quantite, unite",
+    "exemple_court": "{nom, quantite, unite}",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Objets {nom, quantite, unite}. Les ingrédients optionnels peuvent être absents ou laissés en liste vide."
+  },
+  {
+    "champ": "tags",
+    "type": "array",
+    "description": "Tags de classement",
+    "format_valeurs": "simple, anti_gaspi...",
+    "exemple_court": "[simple, economique]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "anti_gaspi, chaud, conserve, cremeux, dessert, economique, enfants, familial, four, froid, fruits, gouter, legumes, pain, proteines, rapide, sans_four, simple, vegetarien_possible"
+  },
+  {
+    "champ": "regimes",
+    "type": "array",
+    "description": "Régimes possibles",
+    "format_valeurs": "vegetarien_possible...",
+    "exemple_court": "[vegetarien_possible]",
+    "obligatoire": "Non",
+    "valeurs_possibles_exemples": "vegetarien, vegetarien_possible, sans_lait, sans_gluten_possible..."
+  },
+  {
+    "champ": "allergenes",
+    "type": "array",
+    "description": "Allergènes à afficher",
+    "format_valeurs": "gluten, lait, poisson...",
+    "exemple_court": "[lait]",
+    "obligatoire": "Oui si connu",
+    "valeurs_possibles_exemples": "gluten, lait, poisson, œufs"
+  },
+  {
+    "champ": "conservation",
+    "type": "string",
+    "description": "Conseil de conservation",
+    "format_valeurs": "texte",
+    "exemple_court": "24 h au réfrigérateur",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte libre. Exemple : À conserver 24 h au réfrigérateur dans une boîte fermée."
+  },
+  {
+    "champ": "rechauffage",
+    "type": "string",
+    "description": "Conseil de réchauffage",
+    "format_valeurs": "texte",
+    "exemple_court": "Au four ou micro-ondes",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte libre. Exemple : À réchauffer doucement si nécessaire."
+  },
+  {
+    "champ": "niveau_urgence_produits",
+    "type": "array",
+    "description": "Produits à utiliser rapidement",
+    "format_valeurs": "produits_frais_a_utiliser...",
+    "exemple_court": "[produits_frais_a_utiliser]",
+    "obligatoire": "Non",
+    "valeurs_possibles_exemples": "produits_frais_a_utiliser"
+  },
+  {
+    "champ": "anti_gaspi",
+    "type": "boolean",
+    "description": "Recette anti-gaspi",
+    "format_valeurs": "true/false",
+    "exemple_court": "true",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Booléen : true ou false."
+  },
+  {
+    "champ": "recette_semaine_candidate",
+    "type": "boolean",
+    "description": "Peut être sélectionnée en recette semaine",
+    "format_valeurs": "true/false",
+    "exemple_court": "true",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Booléen : true ou false."
+  },
+  {
+    "champ": "visible",
+    "type": "boolean",
+    "description": "Affichée sur le site public",
+    "format_valeurs": "true/false",
+    "exemple_court": "true",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Booléen : true ou false. true = affichée sur le site public."
+  },
+  {
+    "champ": "date_creation",
+    "type": "date",
+    "description": "Date de création",
+    "format_valeurs": "YYYY-MM-DD",
+    "exemple_court": "2026-07-08",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Date au format YYYY-MM-DD. Recettes test : 2000-01-01."
+  },
+  {
+    "champ": "date_modification",
+    "type": "date",
+    "description": "Date de modification",
+    "format_valeurs": "YYYY-MM-DD",
+    "exemple_court": "2026-07-08",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Date au format YYYY-MM-DD."
+  },
+  {
+    "champ": "etapes",
+    "type": "array<string>",
+    "description": "Étapes détaillées",
+    "format_valeurs": "liste ordonnée",
+    "exemple_court": "[Laver..., Couper...]",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Liste de phrases courtes, dans l’ordre de préparation."
+  },
+  {
+    "champ": "astuce",
+    "type": "string",
+    "description": "Astuce anti-gaspi",
+    "format_valeurs": "texte",
+    "exemple_court": "Utiliser les légumes fatigués",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte libre. Exemple : utiliser des légumes à finir."
+  },
+  {
+    "champ": "variantes",
+    "type": "string",
+    "description": "Variantes possibles",
+    "format_valeurs": "texte",
+    "exemple_court": "Ajouter pommes de terre...",
+    "obligatoire": "Oui",
+    "valeurs_possibles_exemples": "Texte libre. Exemple : remplacer le thon par des sardines ou des légumes."
+  }
+]

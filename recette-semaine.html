@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recette de la semaine — Les Recettes du Cœur</title>
+  <meta name="description" content="Sélection hebdomadaire de recettes de cuisine simple, solidaire et anti-gaspi.">
+  <link rel="icon" href="assets/logos/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/recette-semaine.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header no-print"><div class="header-inner">
+    <a class="brand" href="index.html"><img class="site-logo" src="assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur"><span>Les Recettes<br>du Cœur</span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">☰ Menu</button>
+    <nav class="main-nav" data-main-nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation-projet.html">Projet</a>
+      <a href="recettes.html">Recettes</a>
+      <a href="recherche.html">Recherche</a>
+      <a href="recette-semaine.html" class="active">Semaine</a>
+      <a href="aide.html">Aide</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div></header>
+
+  <main id="contenu" class="container">
+    <section class="page-card">
+      <h1>⭐ Recette de la semaine</h1>
+      <p class="lead">Cette page calcule automatiquement la semaine en cours et affiche la sélection correspondante. Si aucune sélection n’est programmée, une rotation automatique prend le relais.</p>
+      <div id="semaine-info" class="notice">Calcul de la semaine en cours…</div>
+    </section>
+
+    <section class="search-panel no-print">
+      <h2>📅 Affichage par mois</h2>
+      <p class="small">Utilisez les listes déroulantes pour voir les sélections semaine par semaine sur un mois complet.</p>
+      <div class="form-row">
+        <div>
+          <label for="semaine-annee">Année</label>
+          <select id="semaine-annee"></select>
+        </div>
+        <div>
+          <label for="semaine-mois">Mois</label>
+          <select id="semaine-mois"></select>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="semaine-afficher" class="button" type="button">Afficher le mois</button>
+        <button id="semaine-courante" class="button secondary" type="button">Revenir à la semaine en cours</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="recettes-semaine" class="recipe-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer no-print"><div class="footer-inner"><div><strong>Les Recettes du Cœur</strong><br>Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire.</div><div class="footer-links"><a href="presentation-projet.html">Projet</a><a href="aide.html">Aide</a><a href="contact.html">Contact</a><a href="{{URL_FORMULAIRE_SUGGESTION_RECETTE}}">💡 Suggérer une recette</a></div></div></footer>
+</body>
+</html>

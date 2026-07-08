@@ -1,0 +1,18 @@
+{
+  "version": "V16",
+  "fonctionnalite": "Bandeau haut toujours visible sur écran PC",
+  "seuil_detection_pc_px": 1024,
+  "comportement": [
+    "Au-dessus de 1024 px, le header passe en position fixed.",
+    "Le corps de page reçoit un padding-top basé sur la hauteur réelle du header.",
+    "La hauteur est recalculée automatiquement au chargement, au redimensionnement et au changement d’orientation.",
+    "Sous 1024 px, le header reste en sticky pour conserver un comportement mobile plus souple.",
+    "En impression/PDF, le header est supprimé par les règles no-print et ne décale pas la page."
+  ],
+  "fichiers_modifies": [
+    "assets/css/style.css",
+    "assets/js/app.js",
+    "README.md",
+    "data/audit_v16_bandeau_pc_fixe.json"
+  ]
+}

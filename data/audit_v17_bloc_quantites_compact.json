@@ -1,0 +1,21 @@
+{
+  "version": "V17",
+  "fonctionnalite": "Bloc Adapter les quantités compact",
+  "comportement": [
+    "À partir de 900 px, le bloc passe en grille horizontale sur une seule ligne.",
+    "Le titre, le libellé, le champ nombre de portions, l'information de calcul et la note sont alignés.",
+    "Le padding est réduit pour libérer de la place verticale.",
+    "Sur mobile et tablette étroite, le bloc reste empilé pour préserver la lisibilité.",
+    "L'impression/PDF reste gérée par les règles V15."
+  ],
+  "breakpoints": {
+    "compact_horizontal": ">=900px",
+    "compact_desktop_large": ">=1400px",
+    "stack_mobile": "<900px"
+  },
+  "fichiers_modifies": [
+    "assets/css/style.css",
+    "README.md",
+    "data/audit_v17_bloc_quantites_compact.json"
+  ]
+}

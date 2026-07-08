@@ -1,0 +1,127 @@
+{
+  "required_fields": [
+    "id",
+    "titre",
+    "slug",
+    "url",
+    "image",
+    "qrcode",
+    "resume",
+    "categorie",
+    "sous_categorie",
+    "moment_repas",
+    "temperature_service",
+    "type_cuisson",
+    "equipement",
+    "temps_preparation_min",
+    "temps_cuisson_min",
+    "temps_total_min",
+    "personnes",
+    "difficulte",
+    "budget",
+    "ingredients",
+    "ingredients.principaux",
+    "ingredients.secondaires",
+    "ingredients.optionnels",
+    "ingredients.recherche",
+    "ingredients_detail",
+    "ingredients_detail.principaux",
+    "ingredients_detail.secondaires",
+    "ingredients_detail.optionnels",
+    "tags",
+    "regimes",
+    "allergenes",
+    "conservation",
+    "rechauffage",
+    "niveau_urgence_produits",
+    "anti_gaspi",
+    "recette_semaine_candidate",
+    "visible",
+    "date_creation",
+    "date_modification",
+    "explication",
+    "etapes",
+    "astuce",
+    "variantes"
+  ],
+  "audit": [
+    {
+      "id": "20000101-001",
+      "titre": "Gratin de pâtes au thon",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-002",
+      "titre": "Riz au lait à la banane",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-003",
+      "titre": "Soupe de légumes simple",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-004",
+      "titre": "Salade de riz au thon",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-005",
+      "titre": "Poêlée de pommes de terre",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-006",
+      "titre": "Compote pomme-banane",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-007",
+      "titre": "Tartines chaudes fromage-tomate",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-008",
+      "titre": "Omelette aux légumes",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-009",
+      "titre": "Pâtes sauce tomate enrichie",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20000101-010",
+      "titre": "Gâteau simple du placard",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20260708-011",
+      "titre": "Tian de courgettes",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "20260708-012",
+      "titre": "Chou-fleur et quinoa à la crème",
+      "visible": true,
+      "manquants": []
+    },
+    {
+      "id": "00000000-000",
+      "titre": "Template vierge de recette",
+      "visible": false,
+      "manquants": []
+    }
+  ]
+}

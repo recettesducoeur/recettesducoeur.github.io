@@ -1,0 +1,1484 @@
+[
+  {
+    "id": "20000101-001",
+    "titre": "Gratin de pâtes au thon",
+    "slug": "gratin-de-pates-au-thon",
+    "url": "recettes/20000101-001.html",
+    "image": "images/recettes/20000101-001.webp",
+    "qrcode": "qrcodes/recettes/20000101-001.png",
+    "resume": "Une recette simple et accessible : gratin de pâtes au thon.",
+    "categorie": "plat",
+    "sous_categorie": "gratin",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "four",
+      "casserole"
+    ],
+    "equipement": [
+      "four",
+      "casserole"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 20,
+    "temps_total_min": 30,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "pâtes",
+        "thon égoutté"
+      ],
+      "secondaires": [
+        "lait",
+        "fromage râpé"
+      ],
+      "optionnels": [
+        "chapelure",
+        "herbes"
+      ],
+      "recherche": [
+        "pâtes",
+        "pates",
+        "thon",
+        "lait",
+        "fromage râpé",
+        "fromage rape",
+        "chapelure",
+        "nouilles",
+        "spaghetti",
+        "thon en boite"
+      ]
+    },
+    "tags": [
+      "simple",
+      "economique",
+      "anti_gaspi",
+      "familial",
+      "conserve"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "gluten",
+      "lait",
+      "poisson"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Faire cuire les pâtes dans une grande casserole d’eau bouillante salée, selon le temps indiqué sur le paquet.",
+      "Égoutter les pâtes puis les remettre dans la casserole hors du feu.",
+      "Ajouter le thon égoutté et émietté, puis verser le lait pour apporter du moelleux.",
+      "Mélanger doucement pour répartir le thon sans écraser les pâtes.",
+      "Verser le tout dans un plat à gratin, ajouter le fromage râpé et, si disponible, un peu de chapelure.",
+      "Mettre au four à 180 °C pendant environ 20 minutes, jusqu’à ce que le dessus soit doré."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "pâtes",
+          "quantite": 320,
+          "unite": "g"
+        },
+        {
+          "nom": "thon égoutté",
+          "quantite": 280,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "lait",
+          "quantite": 250,
+          "unite": "ml"
+        },
+        {
+          "nom": "fromage râpé",
+          "quantite": 100,
+          "unite": "g"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "chapelure",
+          "quantite": 30,
+          "unite": "g"
+        },
+        {
+          "nom": "herbes",
+          "quantite": 1,
+          "unite": "c. à café"
+        }
+      ]
+    },
+    "explication": "Ce gratin permet de transformer des pâtes et une conserve de thon en plat complet. Il convient bien quand on veut préparer un repas chaud sans technique compliquée."
+  },
+  {
+    "id": "20000101-002",
+    "titre": "Riz au lait à la banane",
+    "slug": "riz-au-lait-a-la-banane",
+    "url": "recettes/20000101-002.html",
+    "image": "images/recettes/20000101-002.webp",
+    "qrcode": "qrcodes/recettes/20000101-002.png",
+    "resume": "Une recette simple et accessible : riz au lait à la banane.",
+    "categorie": "dessert",
+    "sous_categorie": "dessert lacté",
+    "moment_repas": [
+      "dessert",
+      "gouter"
+    ],
+    "temperature_service": "froid_ou_tiede",
+    "type_cuisson": [
+      "casserole"
+    ],
+    "equipement": [
+      "casserole"
+    ],
+    "temps_preparation_min": 5,
+    "temps_cuisson_min": 25,
+    "temps_total_min": 30,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "riz rond ou riz classique",
+        "lait",
+        "banane mûre"
+      ],
+      "secondaires": [
+        "sucre"
+      ],
+      "optionnels": [
+        "cannelle",
+        "vanille"
+      ],
+      "recherche": [
+        "riz",
+        "lait",
+        "banane",
+        "sucre",
+        "cannelle"
+      ]
+    },
+    "tags": [
+      "dessert",
+      "economique",
+      "anti_gaspi",
+      "enfants"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "lait"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Verser le lait dans une casserole et ajouter le riz.",
+      "Faire chauffer à feu doux. Remuer souvent pour éviter que le riz accroche au fond.",
+      "Laisser cuire environ 25 minutes, jusqu’à ce que le riz soit tendre et le mélange crémeux.",
+      "Ajouter le sucre progressivement, selon le goût.",
+      "Écraser les bananes à la fourchette et les ajouter en fin de cuisson.",
+      "Servir tiède ou froid après repos au réfrigérateur."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "riz rond ou riz classique",
+          "quantite": 120,
+          "unite": "g"
+        },
+        {
+          "nom": "lait",
+          "quantite": 800,
+          "unite": "ml"
+        },
+        {
+          "nom": "banane mûre",
+          "quantite": 2,
+          "unite": "pièces"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "sucre",
+          "quantite": 40,
+          "unite": "g"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "cannelle",
+          "quantite": 1,
+          "unite": "pincée"
+        },
+        {
+          "nom": "vanille",
+          "quantite": 1,
+          "unite": "c. à café"
+        }
+      ]
+    },
+    "explication": "Un dessert doux et nourrissant, pratique pour utiliser des bananes très mûres. Plus les bananes sont mûres, moins il faut ajouter de sucre."
+  },
+  {
+    "id": "20000101-003",
+    "titre": "Soupe de légumes simple",
+    "slug": "soupe-de-legumes-simple",
+    "url": "recettes/20000101-003.html",
+    "image": "images/recettes/20000101-003.webp",
+    "qrcode": "qrcodes/recettes/20000101-003.png",
+    "resume": "Une recette simple et accessible : soupe de légumes simple.",
+    "categorie": "plat",
+    "sous_categorie": "soupe",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "casserole"
+    ],
+    "equipement": [
+      "casserole"
+    ],
+    "temps_preparation_min": 15,
+    "temps_cuisson_min": 30,
+    "temps_total_min": 45,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "légumes variés",
+        "pommes de terre"
+      ],
+      "secondaires": [
+        "oignon",
+        "eau"
+      ],
+      "optionnels": [
+        "crème",
+        "fromage râpé"
+      ],
+      "recherche": [
+        "légumes",
+        "legumes",
+        "pommes de terre",
+        "oignon",
+        "crème",
+        "creme"
+      ]
+    },
+    "tags": [
+      "simple",
+      "economique",
+      "anti_gaspi",
+      "legumes"
+    ],
+    "regimes": [],
+    "allergenes": [],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Laver, éplucher si nécessaire, puis couper les légumes en morceaux moyens.",
+      "Mettre les légumes et les pommes de terre dans une grande casserole.",
+      "Ajouter l’eau jusqu’à couvrir les légumes.",
+      "Faire cuire environ 30 minutes, jusqu’à ce que les légumes soient tendres.",
+      "Mixer pour obtenir une soupe lisse, ou écraser grossièrement pour garder des morceaux.",
+      "Ajouter un peu de crème ou de fromage si disponible, puis rectifier l’assaisonnement."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "légumes variés",
+          "quantite": 800,
+          "unite": "g"
+        },
+        {
+          "nom": "pommes de terre",
+          "quantite": 300,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce"
+        },
+        {
+          "nom": "eau",
+          "quantite": 1000,
+          "unite": "ml"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "crème",
+          "quantite": 80,
+          "unite": "ml"
+        },
+        {
+          "nom": "fromage râpé",
+          "quantite": 40,
+          "unite": "g"
+        }
+      ]
+    },
+    "explication": "Cette soupe accepte presque tous les légumes : carottes, poireaux, courgettes, pommes de terre, chou-fleur, tomates. Elle est utile pour éviter de jeter des légumes encore consommables."
+  },
+  {
+    "id": "20000101-004",
+    "titre": "Salade de riz au thon",
+    "slug": "salade-de-riz-au-thon",
+    "url": "recettes/20000101-004.html",
+    "image": "images/recettes/20000101-004.webp",
+    "qrcode": "qrcodes/recettes/20000101-004.png",
+    "resume": "Une recette simple et accessible : salade de riz au thon.",
+    "categorie": "plat",
+    "sous_categorie": "salade",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "froid",
+    "type_cuisson": [
+      "casserole"
+    ],
+    "equipement": [
+      "casserole"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 12,
+    "temps_total_min": 22,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "riz",
+        "thon égoutté"
+      ],
+      "secondaires": [
+        "maïs égoutté",
+        "tomates"
+      ],
+      "optionnels": [
+        "œufs durs",
+        "cornichons"
+      ],
+      "recherche": [
+        "riz",
+        "thon",
+        "maïs",
+        "mais",
+        "tomates",
+        "œufs",
+        "ufs",
+        "thon en boite",
+        "oeuf",
+        "oeufs"
+      ]
+    },
+    "tags": [
+      "froid",
+      "sans_four",
+      "conserve",
+      "rapide"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "poisson",
+      "œufs"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [],
+    "anti_gaspi": false,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Faire cuire le riz, puis l’égoutter et le laisser refroidir.",
+      "Égoutter le thon et le maïs.",
+      "Couper les tomates en petits morceaux.",
+      "Mélanger le riz froid, le thon, le maïs et les tomates dans un saladier.",
+      "Ajouter les œufs durs ou les cornichons si disponibles.",
+      "Assaisonner légèrement et conserver au frais avant de servir."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "riz",
+          "quantite": 280,
+          "unite": "g"
+        },
+        {
+          "nom": "thon égoutté",
+          "quantite": 200,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "maïs égoutté",
+          "quantite": 150,
+          "unite": "g"
+        },
+        {
+          "nom": "tomates",
+          "quantite": 250,
+          "unite": "g"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "œufs durs",
+          "quantite": 2,
+          "unite": "pièces"
+        },
+        {
+          "nom": "cornichons",
+          "quantite": 50,
+          "unite": "g"
+        }
+      ]
+    },
+    "explication": "Une salade froide simple, pratique pour un repas sans four. Elle peut être préparée à l’avance et adaptée avec les conserves disponibles."
+  },
+  {
+    "id": "20000101-005",
+    "titre": "Poêlée de pommes de terre",
+    "slug": "poelee-de-pommes-de-terre",
+    "url": "recettes/20000101-005.html",
+    "image": "images/recettes/20000101-005.webp",
+    "qrcode": "qrcodes/recettes/20000101-005.png",
+    "resume": "Une recette simple et accessible : poêlée de pommes de terre.",
+    "categorie": "plat",
+    "sous_categorie": "poelee",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "poele"
+    ],
+    "equipement": [
+      "poele"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 25,
+    "temps_total_min": 35,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "pommes de terre"
+      ],
+      "secondaires": [
+        "oignon",
+        "huile"
+      ],
+      "optionnels": [
+        "herbes",
+        "fromage",
+        "œufs"
+      ],
+      "recherche": [
+        "pommes de terre",
+        "oignon",
+        "herbes"
+      ]
+    },
+    "tags": [
+      "economique",
+      "sans_four",
+      "chaud",
+      "simple"
+    ],
+    "regimes": [],
+    "allergenes": [],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [],
+    "anti_gaspi": false,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Laver et couper les pommes de terre en petits cubes ou en rondelles fines.",
+      "Faire chauffer l’huile dans une grande poêle.",
+      "Ajouter l’oignon émincé et le faire revenir doucement.",
+      "Ajouter les pommes de terre, couvrir et cuire à feu moyen.",
+      "Remuer régulièrement pour éviter que ça accroche.",
+      "Quand les pommes de terre sont tendres, ajouter les herbes, le fromage ou les œufs si souhaité."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "pommes de terre",
+          "quantite": 900,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce"
+        },
+        {
+          "nom": "huile",
+          "quantite": 2,
+          "unite": "c. à soupe"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "herbes",
+          "quantite": 1,
+          "unite": "c. à café"
+        },
+        {
+          "nom": "fromage",
+          "quantite": 60,
+          "unite": "g"
+        },
+        {
+          "nom": "œufs",
+          "quantite": 2,
+          "unite": "pièces"
+        }
+      ]
+    },
+    "explication": "Une base très économique. Les pommes de terre peuvent devenir un plat complet avec un œuf, un reste de légumes ou un peu de fromage."
+  },
+  {
+    "id": "20000101-006",
+    "titre": "Compote pomme-banane",
+    "slug": "compote-pomme-banane",
+    "url": "recettes/20000101-006.html",
+    "image": "images/recettes/20000101-006.webp",
+    "qrcode": "qrcodes/recettes/20000101-006.png",
+    "resume": "Une recette simple et accessible : compote pomme-banane.",
+    "categorie": "dessert",
+    "sous_categorie": "compote",
+    "moment_repas": [
+      "dessert",
+      "gouter"
+    ],
+    "temperature_service": "froid_ou_tiede",
+    "type_cuisson": [
+      "casserole"
+    ],
+    "equipement": [
+      "casserole"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 15,
+    "temps_total_min": 25,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "pommes",
+        "bananes mûres"
+      ],
+      "secondaires": [
+        "eau"
+      ],
+      "optionnels": [
+        "cannelle",
+        "sucre"
+      ],
+      "recherche": [
+        "pommes",
+        "banane",
+        "eau",
+        "cannelle"
+      ]
+    },
+    "tags": [
+      "dessert",
+      "anti_gaspi",
+      "fruits",
+      "simple"
+    ],
+    "regimes": [],
+    "allergenes": [],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Éplucher les pommes et les couper en morceaux.",
+      "Couper les bananes en rondelles.",
+      "Mettre les fruits dans une casserole avec un fond d’eau.",
+      "Cuire à feu doux environ 15 minutes, jusqu’à ce que les pommes soient tendres.",
+      "Écraser à la fourchette ou mixer selon la texture souhaitée.",
+      "Goûter avant d’ajouter du sucre, car les bananes mûres sucrent déjà la compote."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "pommes",
+          "quantite": 600,
+          "unite": "g"
+        },
+        {
+          "nom": "bananes mûres",
+          "quantite": 2,
+          "unite": "pièces"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "eau",
+          "quantite": 100,
+          "unite": "ml"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "cannelle",
+          "quantite": 1,
+          "unite": "pincée"
+        },
+        {
+          "nom": "sucre",
+          "quantite": 20,
+          "unite": "g"
+        }
+      ]
+    },
+    "explication": "Une compote simple pour utiliser des fruits mûrs. Les bananes apportent naturellement du sucre et une texture douce."
+  },
+  {
+    "id": "20000101-007",
+    "titre": "Tartines chaudes fromage-tomate",
+    "slug": "tartines-chaudes-fromage-tomate",
+    "url": "recettes/20000101-007.html",
+    "image": "images/recettes/20000101-007.webp",
+    "qrcode": "qrcodes/recettes/20000101-007.png",
+    "resume": "Une recette simple et accessible : tartines chaudes fromage-tomate.",
+    "categorie": "plat",
+    "sous_categorie": "tartine",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "four"
+    ],
+    "equipement": [
+      "four"
+    ],
+    "temps_preparation_min": 5,
+    "temps_cuisson_min": 10,
+    "temps_total_min": 15,
+    "personnes": 2,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "pain",
+        "fromage",
+        "tomates"
+      ],
+      "secondaires": [],
+      "optionnels": [
+        "herbes",
+        "huile"
+      ],
+      "recherche": [
+        "pain",
+        "fromage",
+        "tomates",
+        "herbes",
+        "gruyere",
+        "emmental"
+      ]
+    },
+    "tags": [
+      "rapide",
+      "economique",
+      "anti_gaspi",
+      "pain"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "gluten",
+      "lait"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Poser les tranches de pain sur une plaque allant au four.",
+      "Couper les tomates en rondelles ou en petits morceaux.",
+      "Répartir les tomates sur le pain.",
+      "Ajouter le fromage par-dessus.",
+      "Saupoudrer d’herbes si disponible.",
+      "Passer au four à 180 °C environ 10 minutes, jusqu’à ce que le fromage soit fondu."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "pain",
+          "quantite": 4,
+          "unite": "tranches"
+        },
+        {
+          "nom": "fromage",
+          "quantite": 120,
+          "unite": "g"
+        },
+        {
+          "nom": "tomates",
+          "quantite": 250,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [],
+      "optionnels": [
+        {
+          "nom": "herbes",
+          "quantite": 1,
+          "unite": "c. à café"
+        },
+        {
+          "nom": "huile",
+          "quantite": 1,
+          "unite": "c. à soupe"
+        }
+      ]
+    },
+    "explication": "Une recette rapide pour utiliser du pain un peu sec. Le passage au four rend les tartines croustillantes."
+  },
+  {
+    "id": "20000101-008",
+    "titre": "Omelette aux légumes",
+    "slug": "omelette-aux-legumes",
+    "url": "recettes/20000101-008.html",
+    "image": "images/recettes/20000101-008.webp",
+    "qrcode": "qrcodes/recettes/20000101-008.png",
+    "resume": "Une recette simple et accessible : omelette aux légumes.",
+    "categorie": "plat",
+    "sous_categorie": "omelette",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "poele"
+    ],
+    "equipement": [
+      "poele"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 8,
+    "temps_total_min": 18,
+    "personnes": 2,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "œufs",
+        "légumes cuits ou crus"
+      ],
+      "secondaires": [],
+      "optionnels": [
+        "fromage",
+        "herbes"
+      ],
+      "recherche": [
+        "œufs",
+        "ufs",
+        "légumes",
+        "legumes",
+        "fromage",
+        "oeuf",
+        "oeufs",
+        "gruyere",
+        "emmental"
+      ]
+    },
+    "tags": [
+      "rapide",
+      "proteines",
+      "anti_gaspi",
+      "sans_four"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "œufs",
+      "lait"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Couper les légumes en petits morceaux.",
+      "Faire revenir les légumes quelques minutes à la poêle s’ils sont crus.",
+      "Battre les œufs dans un bol avec une pincée de sel.",
+      "Verser les œufs sur les légumes.",
+      "Cuire à feu doux jusqu’à ce que l’omelette soit prise.",
+      "Ajouter du fromage ou des herbes avant de servir si disponible."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "œufs",
+          "quantite": 4,
+          "unite": "pièces"
+        },
+        {
+          "nom": "légumes cuits ou crus",
+          "quantite": 250,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [],
+      "optionnels": [
+        {
+          "nom": "fromage",
+          "quantite": 50,
+          "unite": "g"
+        },
+        {
+          "nom": "herbes",
+          "quantite": 1,
+          "unite": "c. à café"
+        }
+      ]
+    },
+    "explication": "Une omelette permet de transformer rapidement des restes de légumes en repas. Elle est utile quand on dispose de peu d’ingrédients."
+  },
+  {
+    "id": "20000101-009",
+    "titre": "Pâtes sauce tomate enrichie",
+    "slug": "pates-sauce-tomate-enrichie",
+    "url": "recettes/20000101-009.html",
+    "image": "images/recettes/20000101-009.webp",
+    "qrcode": "qrcodes/recettes/20000101-009.png",
+    "resume": "Une recette simple et accessible : pâtes sauce tomate enrichie.",
+    "categorie": "plat",
+    "sous_categorie": "pates",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "casserole"
+    ],
+    "equipement": [
+      "casserole"
+    ],
+    "temps_preparation_min": 5,
+    "temps_cuisson_min": 15,
+    "temps_total_min": 20,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "pâtes",
+        "tomates concassées ou sauce tomate"
+      ],
+      "secondaires": [
+        "oignon"
+      ],
+      "optionnels": [
+        "thon",
+        "fromage",
+        "herbes"
+      ],
+      "recherche": [
+        "pâtes",
+        "pates",
+        "tomates",
+        "oignon",
+        "thon",
+        "fromage",
+        "nouilles",
+        "spaghetti",
+        "thon en boite",
+        "gruyere",
+        "emmental"
+      ]
+    },
+    "tags": [
+      "simple",
+      "economique",
+      "conserve",
+      "chaud"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "gluten",
+      "lait",
+      "poisson"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [],
+    "anti_gaspi": false,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Faire cuire les pâtes dans une casserole d’eau bouillante.",
+      "Pendant ce temps, faire revenir l’oignon émincé dans une autre casserole.",
+      "Ajouter la sauce tomate ou les tomates concassées.",
+      "Laisser chauffer quelques minutes.",
+      "Égoutter les pâtes et les mélanger avec la sauce.",
+      "Ajouter du thon, du fromage ou des herbes selon les produits disponibles."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "pâtes",
+          "quantite": 320,
+          "unite": "g"
+        },
+        {
+          "nom": "tomates concassées ou sauce tomate",
+          "quantite": 400,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "thon",
+          "quantite": 140,
+          "unite": "g"
+        },
+        {
+          "nom": "fromage",
+          "quantite": 60,
+          "unite": "g"
+        },
+        {
+          "nom": "herbes",
+          "quantite": 1,
+          "unite": "c. à café"
+        }
+      ]
+    },
+    "explication": "Une base très simple et économique. Elle peut devenir plus complète avec du thon, des légumes ou du fromage."
+  },
+  {
+    "id": "20000101-010",
+    "titre": "Gâteau simple du placard",
+    "slug": "gateau-simple-du-placard",
+    "url": "recettes/20000101-010.html",
+    "image": "images/recettes/20000101-010.webp",
+    "qrcode": "qrcodes/recettes/20000101-010.png",
+    "resume": "Une recette simple et accessible : gâteau simple du placard.",
+    "categorie": "dessert",
+    "sous_categorie": "gateau",
+    "moment_repas": [
+      "dessert",
+      "gouter"
+    ],
+    "temperature_service": "froid_ou_tiede",
+    "type_cuisson": [
+      "four"
+    ],
+    "equipement": [
+      "four"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 30,
+    "temps_total_min": 40,
+    "personnes": 6,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "farine",
+        "sucre",
+        "œufs"
+      ],
+      "secondaires": [
+        "lait"
+      ],
+      "optionnels": [
+        "chocolat",
+        "fruits"
+      ],
+      "recherche": [
+        "farine",
+        "sucre",
+        "œufs",
+        "ufs",
+        "lait",
+        "chocolat",
+        "oeuf",
+        "oeufs"
+      ]
+    },
+    "tags": [
+      "dessert",
+      "gouter",
+      "economique",
+      "four"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "gluten",
+      "œufs",
+      "lait"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [],
+    "anti_gaspi": false,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2000-01-01",
+    "date_modification": "2000-01-01",
+    "etapes": [
+      "Préchauffer le four à 180 °C.",
+      "Mélanger la farine et le sucre dans un saladier.",
+      "Ajouter les œufs puis le lait petit à petit.",
+      "Mélanger jusqu’à obtenir une pâte homogène.",
+      "Ajouter le chocolat ou les fruits si disponibles.",
+      "Verser dans un moule et cuire environ 30 minutes."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "farine",
+          "quantite": 200,
+          "unite": "g"
+        },
+        {
+          "nom": "sucre",
+          "quantite": 100,
+          "unite": "g"
+        },
+        {
+          "nom": "œufs",
+          "quantite": 3,
+          "unite": "pièces"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "lait",
+          "quantite": 120,
+          "unite": "ml"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "chocolat",
+          "quantite": 80,
+          "unite": "g"
+        },
+        {
+          "nom": "fruits",
+          "quantite": 150,
+          "unite": "g"
+        }
+      ]
+    },
+    "explication": "Un gâteau de base avec des ingrédients du placard. Il peut être enrichi avec du chocolat, des fruits mûrs ou un peu de miel."
+  },
+  {
+    "id": "20260708-011",
+    "titre": "Tian de courgettes",
+    "slug": "tian-de-courgettes",
+    "url": "recettes/20260708-011.html",
+    "image": "images/recettes/20260708-011.webp",
+    "qrcode": "qrcodes/recettes/20260708-011.png",
+    "resume": "Une recette simple et accessible : tian de courgettes.",
+    "categorie": "plat",
+    "sous_categorie": "tian",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "four"
+    ],
+    "equipement": [
+      "four"
+    ],
+    "temps_preparation_min": 15,
+    "temps_cuisson_min": 35,
+    "temps_total_min": 50,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "courgettes"
+      ],
+      "secondaires": [
+        "tomates",
+        "oignons"
+      ],
+      "optionnels": [
+        "herbes de Provence",
+        "fromage râpé"
+      ],
+      "recherche": [
+        "courgettes",
+        "tomates",
+        "oignons",
+        "herbes de Provence",
+        "herbes de provence",
+        "fromage râpé",
+        "fromage rape",
+        "courgette"
+      ]
+    },
+    "tags": [
+      "simple",
+      "economique",
+      "legumes",
+      "four",
+      "anti_gaspi"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "lait"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2026-07-08",
+    "date_modification": "2026-07-08",
+    "etapes": [
+      "Laver les courgettes et les tomates.",
+      "Couper les courgettes, les tomates et les oignons en rondelles fines.",
+      "Disposer les rondelles dans un plat en alternant courgette, tomate et oignon.",
+      "Ajouter les herbes, un peu de sel et, si disponible, un filet d’huile.",
+      "Cuire au four à 180 °C pendant environ 35 minutes.",
+      "Ajouter le fromage râpé en fin de cuisson si souhaité."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "courgettes",
+          "quantite": 800,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "tomates",
+          "quantite": 500,
+          "unite": "g"
+        },
+        {
+          "nom": "oignons",
+          "quantite": 2,
+          "unite": "pièces"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "herbes de Provence",
+          "quantite": 1,
+          "unite": "c. à soupe"
+        },
+        {
+          "nom": "fromage râpé",
+          "quantite": 80,
+          "unite": "g"
+        }
+      ]
+    },
+    "explication": "Le tian est un plat de légumes au four. Il demande surtout de couper les légumes et de les disposer dans un plat. La cuisson fait le reste."
+  },
+  {
+    "id": "20260708-012",
+    "titre": "Chou-fleur et quinoa à la crème",
+    "slug": "chou-fleur-et-quinoa-a-la-creme",
+    "url": "recettes/20260708-012.html",
+    "image": "images/recettes/20260708-012.webp",
+    "qrcode": "qrcodes/recettes/20260708-012.png",
+    "resume": "Une recette simple et accessible : chou-fleur et quinoa à la crème.",
+    "categorie": "plat",
+    "sous_categorie": "plat cremeux",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "casserole"
+    ],
+    "equipement": [
+      "casserole"
+    ],
+    "temps_preparation_min": 10,
+    "temps_cuisson_min": 25,
+    "temps_total_min": 35,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "chou-fleur",
+        "quinoa"
+      ],
+      "secondaires": [
+        "crème"
+      ],
+      "optionnels": [
+        "fromage",
+        "épices douces"
+      ],
+      "recherche": [
+        "chou-fleur",
+        "quinoa",
+        "crème",
+        "creme",
+        "fromage",
+        "épices douces",
+        "epices douces",
+        "chou fleur",
+        "choufleur",
+        "gruyere",
+        "emmental"
+      ]
+    },
+    "tags": [
+      "simple",
+      "economique",
+      "chaud",
+      "vegetarien_possible",
+      "cremeux"
+    ],
+    "regimes": [],
+    "allergenes": [
+      "lait"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "niveau_urgence_produits": [],
+    "anti_gaspi": false,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2026-07-08",
+    "date_modification": "2026-07-08",
+    "etapes": [
+      "Rincer le quinoa à l’eau claire.",
+      "Faire cuire le quinoa dans une casserole d’eau selon le temps indiqué sur le paquet.",
+      "Séparer le chou-fleur en petits bouquets.",
+      "Cuire le chou-fleur dans l’eau bouillante jusqu’à ce qu’il soit tendre.",
+      "Mélanger le quinoa, le chou-fleur et la crème dans une casserole.",
+      "Réchauffer doucement, ajouter le fromage ou les épices si disponibles, puis servir."
+    ],
+    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
+    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "chou-fleur",
+          "quantite": 700,
+          "unite": "g"
+        },
+        {
+          "nom": "quinoa",
+          "quantite": 220,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "crème",
+          "quantite": 200,
+          "unite": "ml"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "fromage",
+          "quantite": 80,
+          "unite": "g"
+        },
+        {
+          "nom": "épices douces",
+          "quantite": 1,
+          "unite": "c. à café"
+        }
+      ]
+    },
+    "explication": "Un plat doux et nourrissant. Le quinoa apporte une base complète, le chou-fleur apporte les légumes, et la crème rend l’ensemble plus facile à manger."
+  },
+  {
+    "id": "00000000-000",
+    "titre": "Template vierge de recette",
+    "slug": "template-vierge-recette",
+    "url": "recettes/00000000-000.html",
+    "image": "images/recettes/00000000-000.webp",
+    "qrcode": "qrcodes/recettes/00000000-000.png",
+    "resume": "Modèle vierge à copier pour créer une nouvelle fiche recette.",
+    "explication": "Cette fiche est un modèle technique. Elle sert de base pour créer une nouvelle recette complète.",
+    "categorie": "template",
+    "sous_categorie": "modele",
+    "moment_repas": [],
+    "temperature_service": "indifferent",
+    "type_cuisson": [],
+    "equipement": [],
+    "temps_preparation_min": 0,
+    "temps_cuisson_min": 0,
+    "temps_total_min": 0,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [],
+      "secondaires": [],
+      "optionnels": [],
+      "recherche": [
+        "template",
+        "modele",
+        "modèle",
+        "recette vierge"
+      ]
+    },
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "Ingrédient principal à compléter",
+          "quantite": 0,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "Ingrédient secondaire à compléter",
+          "quantite": 0,
+          "unite": "g"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "Ingrédient optionnel à compléter",
+          "quantite": 0,
+          "unite": "g"
+        }
+      ]
+    },
+    "tags": [
+      "template",
+      "dev"
+    ],
+    "regimes": [],
+    "allergenes": [],
+    "conservation": "À compléter.",
+    "rechauffage": "À compléter.",
+    "niveau_urgence_produits": [],
+    "anti_gaspi": false,
+    "recette_semaine_candidate": false,
+    "visible": false,
+    "date_creation": "0000-00-00",
+    "date_modification": "0000-00-00",
+    "etapes": [
+      "Étape 1 à compléter.",
+      "Étape 2 à compléter.",
+      "Étape 3 à compléter."
+    ],
+    "astuce": "Astuce anti-gaspi à compléter.",
+    "variantes": "Variantes possibles à compléter."
+  }
+]

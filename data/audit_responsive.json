@@ -1,0 +1,26 @@
+{
+  "version": "V8 responsive",
+  "html_files_count": 24,
+  "viewport_missing": [],
+  "absolute_paths": [],
+  "public_pages_count": 21,
+  "dev_pages_count": 3,
+  "breakpoints": {
+    "desktop": ">1100px",
+    "tablette": "<=900px",
+    "mobile_large": "<=700px",
+    "smartphone": "<=520px",
+    "tres_petit_smartphone": "<=360px"
+  },
+  "responsive_rules_added": [
+    "alias variables CSS --blue-soft et --green-soft",
+    "suppression des débordements horizontaux du body",
+    "grilles adaptatives recettes",
+    "menu mobile sous 900px",
+    "boutons pleine largeur sur smartphone",
+    "tableaux avec scroll interne horizontal et vertical",
+    "pré/code avec retour ligne",
+    "image 404 responsive",
+    "fiches recettes en une colonne sur mobile"
+  ]
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recherche — Les Recettes du Cœur</title>
+  <meta name="description" content="Recherche de recettes de cuisine simple, solidaire et anti-gaspi, par nom, ingrédient, catégorie, cuisson, tags ou filtres rapides.">
+  <link rel="icon" href="assets/logos/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/search.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header no-print"><div class="header-inner">
+    <a class="brand" href="index.html"><img class="site-logo" src="assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur"><span>Les Recettes<br>du Cœur</span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">☰ Menu</button>
+    <nav class="main-nav" data-main-nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation-projet.html">Projet</a>
+      <a href="recettes.html">Recettes</a>
+      <a href="recherche.html" class="active">Recherche</a>
+      <a href="recette-semaine.html">Semaine</a>
+      <a href="aide.html">Aide</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div></header>
+
+  <main id="contenu" class="container">
+    <section class="page-card">
+      <h1>🔎 Recherche</h1>
+      <p class="lead">Cherchez par nom de recette, ingrédient, catégorie, cuisson, tags ou filtres rapides. La recherche ignore la casse, les accents et les pluriels simples.</p>
+      <p class="small">Les boutons de catégorie, cuisson, budget, difficulté, régimes, allergènes, équipement et tags peuvent aussi être cliqués depuis une fiche recette.</p>
+    </section>
+
+    <section class="search-panel">
+      <div class="tabs">
+        <button class="tab-button" data-tab="nom">🔎 Nom recette</button>
+        <button class="tab-button" data-tab="ingredient">🧺 Ingrédient</button>
+        <button class="tab-button" data-tab="mes-ingredients">✅ J’ai ces ingrédients</button>
+        <button class="tab-button" data-tab="categorie">🍽️ Catégorie</button>
+        <button class="tab-button" data-tab="cuisson">🔥 Cuisson</button>
+        <button class="tab-button" data-tab="tags">🏷️ Tags</button>
+        <button class="tab-button" data-tab="filtres">⚙️ Filtres rapides</button>
+      </div>
+
+      <div id="url-filter-notice"></div>
+
+      <div data-panel="nom">
+        <label for="search-nom">Nom de recette ou mot-clé</label>
+        <input id="search-nom" type="search" placeholder="Exemple : gratin, soupe, gâteau...">
+      </div>
+
+      <div data-panel="ingredient" class="hidden">
+        <label for="search-ingredient">Ingrédient recherché</label>
+        <input id="search-ingredient" type="search" placeholder="Exemple : thon, riz, courgettes...">
+        <p class="small">Le moteur simplifie les libellés : “thon égoutté” est recherché comme “thon”, “banane mûre” comme “banane”.</p>
+      </div>
+
+      <div data-panel="mes-ingredients" class="hidden">
+        <label for="search-mes-ingredients">Mes ingrédients disponibles</label>
+        <textarea id="search-mes-ingredients" placeholder="Exemple : pâtes, thon, lait"></textarea>
+        <p class="small">Séparez les ingrédients par une virgule, un point-virgule ou une ligne.</p>
+      </div>
+
+      <div data-panel="categorie" class="hidden">
+        <label for="search-categorie">Catégorie</label>
+        <select id="search-categorie"></select>
+      </div>
+
+      <div data-panel="cuisson" class="hidden">
+        <div class="form-row">
+          <div>
+            <label for="search-temperature">Chaud / froid</label>
+            <select id="search-temperature"></select>
+          </div>
+          <div>
+            <label for="search-cuisson">Type de cuisson</label>
+            <select id="search-cuisson"></select>
+          </div>
+        </div>
+      </div>
+
+      <div data-panel="tags" class="hidden">
+        <label>Tags</label>
+        <div id="search-tags" class="checkbox-list"></div>
+        <p class="small">Cochez un ou plusieurs tags. Les résultats doivent contenir tous les tags sélectionnés. Vous pouvez aussi cliquer sur un tag depuis une fiche recette pour arriver ici avec le filtre déjà actif.</p>
+      </div>
+
+      <div data-panel="filtres" class="hidden">
+        <h2>⚙️ Filtres rapides</h2>
+        <p class="small">Ces filtres correspondent aux champs cliquables dans les fiches recettes.</p>
+        <div class="form-row">
+          <div>
+            <label for="filter-categorie">Catégorie</label>
+            <select id="filter-categorie"></select>
+          </div>
+          <div>
+            <label for="filter-sous-categorie">Sous-catégorie</label>
+            <select id="filter-sous-categorie"></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="filter-temperature">Température de service</label>
+            <select id="filter-temperature"></select>
+          </div>
+          <div>
+            <label for="filter-cuisson">Type de cuisson</label>
+            <select id="filter-cuisson"></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="filter-budget">Budget</label>
+            <select id="filter-budget"></select>
+          </div>
+          <div>
+            <label for="filter-difficulte">Difficulté</label>
+            <select id="filter-difficulte"></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="filter-moment">Moment du repas</label>
+            <select id="filter-moment"></select>
+          </div>
+          <div>
+            <label for="filter-equipement">Équipement</label>
+            <select id="filter-equipement"></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="filter-regime">Régime</label>
+            <select id="filter-regime"></select>
+          </div>
+          <div>
+            <label for="filter-allergene">Allergène</label>
+            <select id="filter-allergene"></select>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="filter-reset" class="button secondary" type="button">Réinitialiser les filtres</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Résultats</h2>
+      <div id="resultats-recherche" class="recipe-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer no-print"><div class="footer-inner"><div><strong>Les Recettes du Cœur</strong><br>Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire.</div><div class="footer-links"><a href="presentation-projet.html">Projet</a><a href="aide.html">Aide</a><a href="contact.html">Contact</a><a href="{{URL_FORMULAIRE_SUGGESTION_RECETTE}}">💡 Suggérer une recette</a></div></div></footer>
+</body>
+</html>

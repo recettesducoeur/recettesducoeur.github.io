@@ -1,0 +1,16 @@
+{
+  "mode": "automatique_par_date",
+  "fallback": "rotation_automatique",
+  "semaines": [
+    {
+      "semaine_iso": "2026-W28",
+      "date_debut": "2026-07-06",
+      "date_fin": "2026-07-12",
+      "recettes": [
+        "20260708-011",
+        "20260708-012",
+        "20000101-001"
+      ]
+    }
+  ]
+}
