@@ -60,10 +60,13 @@ function semainesDuMois(year, monthIndex) {
   const last = new Date(year, monthIndex + 1, 0);
   let cursor = mondayOf(first);
   const weeks = [];
+  const guardLimit = 8;
+  let guard = 0;
 
-  while (cursor <= last || sundayOf(cursor) >= first) {
+  while ((cursor <= last || sundayOf(cursor) >= first) && guard < guardLimit) {
     weeks.push(weekObjectFromDate(cursor));
     cursor.setDate(cursor.getDate() + 7);
+    guard += 1;
   }
 
   const seen = new Set();
@@ -86,7 +89,7 @@ async function chargerSelectionSemaine() {
 }
 
 function findBlocPourSemaine(cfg, week) {
-  const semaines = cfg?.semaines || [];
+  const semaines = Array.isArray(cfg?.semaines) ? cfg.semaines : [];
   return semaines.find(s =>
     s.semaine_iso === week.key ||
     (s.date_debut && s.date_fin && week.startISO <= s.date_fin && week.endISO >= s.date_debut)
@@ -102,30 +105,32 @@ function stableIndex(key, length) {
 
 function fallbackPourSemaine(recettes, week) {
   const visibles = recettes.filter(r => r.visible !== false);
+  if (!visibles.length) return [];
   const start = stableIndex(week.key, visibles.length);
-  return [...visibles.slice(start), ...visibles.slice(0, start)].slice(0, 3);
+  return [...visibles.slice(start), ...visibles.slice(0, start)].slice(0, Math.min(3, visibles.length));
 }
 
 function recettesPourSemaine(recettes, cfg, week) {
   const bloc = findBlocPourSemaine(cfg, week);
   if (bloc?.recettes?.length) {
     const wanted = new Set(bloc.recettes);
-    return {
-      source: "selection",
-      list: recettes.filter(r => r.visible !== false && wanted.has(r.id))
-    };
+    const selected = recettes.filter(r => r.visible !== false && wanted.has(r.id));
+    if (selected.length) {
+      return { source: "selection", list: selected };
+    }
   }
 
-  return {
-    source: "fallback",
-    list: fallbackPourSemaine(recettes, week)
-  };
+  return { source: "fallback", list: fallbackPourSemaine(recettes, week) };
 }
 
 function renderWeekBlock(week, list, source) {
   const badge = source === "selection"
     ? `<span class="badge">sélection programmée</span>`
     : `<span class="badge">rotation automatique</span>`;
+
+  const cards = list.length
+    ? list.map(r => carte(r)).join("")
+    : `<div class="notice">Aucune recette disponible pour cette semaine.</div>`;
 
   return `
     <section class="week-block">
@@ -136,7 +141,7 @@ function renderWeekBlock(week, list, source) {
         </div>
         ${badge}
       </div>
-      <div class="recipe-grid">${list.map(r => carte(r)).join("")}</div>
+      <div class="recipe-grid">${cards}</div>
     </section>
   `;
 }
@@ -147,10 +152,11 @@ function remplirSelecteursSemaine(cfg) {
   if (!yearSelect || !monthSelect) return;
 
   const now = new Date();
-  const cfgYears = (cfg?.semaines || [])
+  const cfgYears = (Array.isArray(cfg?.semaines) ? cfg.semaines : [])
     .flatMap(s => [s.date_debut, s.date_fin])
     .filter(Boolean)
-    .map(d => Number(String(d).slice(0, 4)));
+    .map(d => Number(String(d).slice(0, 4)))
+    .filter(Number.isFinite);
 
   const years = [...new Set([now.getFullYear() - 1, now.getFullYear(), now.getFullYear() + 1, ...cfgYears])]
     .sort((a, b) => a - b);
@@ -179,7 +185,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const btnAfficher = document.getElementById("semaine-afficher");
 
   if (!recettes.length) {
-    if (info) info.textContent = "Les recettes dynamiques n’ont pas pu être chargées. Les recettes statiques de secours restent affichées.";
+    if (info) {
+      info.innerHTML = `<strong>Les recettes dynamiques n’ont pas pu être chargées.</strong><br>Les recettes statiques de secours restent affichées.`;
+    }
     return;
   }
 
@@ -197,24 +205,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     c.innerHTML = result.list.length
       ? result.list.map(x => carte(x)).join("")
-      : `<div class="notice">Aucune recette disponible pour cette semaine.</div>`;
+      : `<div class="notice">Aucune recette disponible pour cette semaine.</div><p><a class="button" href="recettes.html">Voir toutes les recettes</a></p>`;
   }
 
   function afficherMois() {
     const year = Number(document.getElementById("semaine-annee")?.value || new Date().getFullYear());
     const month = Number(document.getElementById("semaine-mois")?.value || new Date().getMonth());
     const weeks = semainesDuMois(year, month);
-
     const label = new Intl.DateTimeFormat("fr-FR", { month: "long", year: "numeric" }).format(new Date(year, month, 1));
 
     if (!weeks.length) {
-      const week = weekObjectFromDate(new Date());
-      const result = recettesPourSemaine(recettes, cfg, week);
+      const fallback = fallbackPourSemaine(recettes, weekObjectFromDate(new Date()));
       if (info) {
         info.innerHTML = `<strong>Aucune semaine trouvée pour ${label}.</strong><br>Voici une sélection de secours.`;
       }
-      c.innerHTML = result.list.length
-        ? result.list.map(x => carte(x)).join("")
+      c.innerHTML = fallback.length
+        ? fallback.map(x => carte(x)).join("")
         : `<div class="notice">Aucune recette disponible. Essayez le catalogue complet.</div><p><a class="button" href="recettes.html">Voir toutes les recettes</a></p>`;
       return;
     }
@@ -226,16 +232,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       `;
     }
 
-    const html = weeks.map(w => {
+    c.innerHTML = weeks.map(w => {
       const result = recettesPourSemaine(recettes, cfg, w);
-      if (!result.list.length) {
-        const fallback = fallbackPourSemaine(recettes, w);
-        return renderWeekBlock(w, fallback, "fallback");
-      }
       return renderWeekBlock(w, result.list, result.source);
     }).join("");
-
-    c.innerHTML = html || `<div class="notice">Aucun résultat pour ce mois. Essayez un autre mois ou consultez toutes les recettes.</div><p><a class="button" href="recettes.html">Voir toutes les recettes</a></p>`;
   }
 
   remplirSelecteursSemaine(cfg);

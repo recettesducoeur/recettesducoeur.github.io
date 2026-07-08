@@ -1,0 +1,60 @@
+{
+  "version": "V24",
+  "date": "2026-07-08T22:40:35",
+  "ameliorations": [
+    "Accueil : logo limité à maximum 1/3 de la largeur écran sur PC.",
+    "Accueil : ajout du QR code vers la page d’accueil du site.",
+    "Contact : suppression du texte parasite demandé.",
+    "Contact : ajout du QR code du site.",
+    "Suggérer une recette : ajout du QR code du site.",
+    "Recherche : résultats limités à 3 colonnes max sur PC, 2 tablette, 1 smartphone.",
+    "Recette de la semaine : script réécrit et sécurisé pour semaine en cours, année et mois.",
+    "Recette de la semaine : garde anti-boucle dans le calcul des semaines du mois.",
+    "Contrôles JS, JSON, liens et fichiers."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "old_url_hits": [],
+    "dead_suggestion_placeholder_hits": [],
+    "contact_text_to_remove_hits": []
+  },
+  "specific_checks": {
+    "home_logo_card": true,
+    "home_qr": true,
+    "contact_qr": true,
+    "suggest_qr": true,
+    "search_page_class": true,
+    "search_grid_css": true,
+    "week_guard": true,
+    "footer_text": true
+  }
+}
