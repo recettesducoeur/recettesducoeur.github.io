@@ -412,3 +412,20 @@ Améliorations :
 Fichier d’audit :
 
 `data/audit_v23_pagination_tableaux_footer.json`
+
+## V24 — Accueil, QR code, recherche et recette de la semaine
+
+Améliorations :
+- accueil : logo limité à maximum 1/3 de la largeur d’écran sur PC ;
+- accueil : ajout du QR code vers `https://recettesducoeur.github.io/` ;
+- contact : suppression du texte parasite `` ;
+- contact : ajout du QR code du site ;
+- page `suggerer-recette.html` : ajout du QR code du site ;
+- recherche : résultats en 3 colonnes maximum sur PC, 2 sur tablette, 1 sur smartphone ;
+- `recette-semaine.html` : script de filtrage par semaine / année / mois réécrit et sécurisé ;
+- ajout d’une garde anti-boucle dans le calcul des semaines d’un mois ;
+- contrôles JS/JSON/fichiers effectués.
+
+Fichier d’audit :
+
+`data/audit_v24_logo_qr_recherche_semaine.json`
