@@ -315,3 +315,65 @@ Point critique :
 Fichier d’audit :
 
 `data/audit_v18_reparation_deploiement_root.json`
+
+## V19 — Réparation recettes, PDF statiques et variantes Google
+
+Correctifs et ajouts :
+- affichage statique de secours des recettes dans `index.html`, `recettes.html` et `recette-semaine.html` ;
+- meilleure gestion d’erreur si `data/recettes.json` ne charge pas ;
+- génération d’un PDF statique par recette dans `pdf/recettes/` ;
+- les PDF utilisent les quantités de base de la recette ;
+- sur PC : bouton PDF statique + bouton impression/PDF dynamique avec quantités sélectionnées ;
+- sur mobile/tablette : bouton PDF statique uniquement ;
+- ajout d’un lien Google sous `Variantes possibles` dans chaque fiche recette ;
+- ajout des allergènes `fruits_a_coque` et `crustaces` ;
+- ajout de la valeur de cuisson `sans_cuisson`, affichée `Sans cuisson` ;
+- ajout de `data/valeurs_reference.json` ;
+- ajout d’un lien vers le template vierge dans `/dev/index.html`.
+
+Fichier d’audit :
+
+`data/audit_v19_fiches_pdf_recherche.json`
+
+## V20 — Base JSON vérifiée et mise à jour
+
+Contrôle effectué sur `data/recettes.json`.
+
+Résultat :
+- 13 entrées dans la base ;
+- 12 recettes visibles ;
+- 1 template invisible : `00000000-000` ;
+- aucun doublon d’ID ;
+- aucun champ obligatoire manquant ;
+- aucun fichier HTML/image/QR/PDF manquant ;
+- l’ancienne URL `/lesrecettesducoeur/` est absente ;
+- le champ `pdf` est maintenant présent dans chaque recette.
+
+Champ ajouté :
+
+`pdf`
+
+Format :
+
+`pdf/recettes/AAAAMMJJ-XXX.pdf`
+
+Fichier d’audit :
+
+`data/audit_v20_base_json_a_jour.json`
+
+## V21 — Correctif JS, layout centralisé et PDF enrichis
+
+Correctifs :
+- réparation du JavaScript cassé dans `assets/js/app.js` ;
+- réécriture propre de `layout.js`, `app.js`, `search.js` et `recette-semaine.js` ;
+- centralisation de l’en-tête et du pied de page via `assets/js/layout.js` ;
+- pied de page unique : `Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié à une association.` ;
+- correction des liens Google : recherche uniquement sur le nom de la recette ;
+- PDF régénérés avec logo et image de la recette ;
+- contrôle `node --check` sur les scripts principaux ;
+- vérification JSON : ID, fichiers HTML, images, QR codes, PDF ;
+- QR codes régénérés pour `https://recettesducoeur.github.io/`.
+
+Fichier d’audit :
+
+`data/audit_v21_correctif_js_layout_pdf.json`

@@ -125,7 +125,8 @@
         }
       ]
     },
-    "explication": "Ce gratin permet de transformer des pâtes et une conserve de thon en plat complet. Il convient bien quand on veut préparer un repas chaud sans technique compliquée."
+    "explication": "Ce gratin permet de transformer des pâtes et une conserve de thon en plat complet. Il convient bien quand on veut préparer un repas chaud sans technique compliquée.",
+    "pdf": "pdf/recettes/20000101-001.pdf"
   },
   {
     "id": "20000101-002",
@@ -243,7 +244,8 @@
         }
       ]
     },
-    "explication": "Un dessert doux et nourrissant, pratique pour utiliser des bananes très mûres. Plus les bananes sont mûres, moins il faut ajouter de sucre."
+    "explication": "Un dessert doux et nourrissant, pratique pour utiliser des bananes très mûres. Plus les bananes sont mûres, moins il faut ajouter de sucre.",
+    "pdf": "pdf/recettes/20000101-002.pdf"
   },
   {
     "id": "20000101-003",
@@ -360,7 +362,8 @@
         }
       ]
     },
-    "explication": "Cette soupe accepte presque tous les légumes : carottes, poireaux, courgettes, pommes de terre, chou-fleur, tomates. Elle est utile pour éviter de jeter des légumes encore consommables."
+    "explication": "Cette soupe accepte presque tous les légumes : carottes, poireaux, courgettes, pommes de terre, chou-fleur, tomates. Elle est utile pour éviter de jeter des légumes encore consommables.",
+    "pdf": "pdf/recettes/20000101-003.pdf"
   },
   {
     "id": "20000101-004",
@@ -482,7 +485,8 @@
         }
       ]
     },
-    "explication": "Une salade froide simple, pratique pour un repas sans four. Elle peut être préparée à l’avance et adaptée avec les conserves disponibles."
+    "explication": "Une salade froide simple, pratique pour un repas sans four. Elle peut être préparée à l’avance et adaptée avec les conserves disponibles.",
+    "pdf": "pdf/recettes/20000101-004.pdf"
   },
   {
     "id": "20000101-005",
@@ -594,7 +598,8 @@
         }
       ]
     },
-    "explication": "Une base très économique. Les pommes de terre peuvent devenir un plat complet avec un œuf, un reste de légumes ou un peu de fromage."
+    "explication": "Une base très économique. Les pommes de terre peuvent devenir un plat complet avec un œuf, un reste de légumes ou un peu de fromage.",
+    "pdf": "pdf/recettes/20000101-005.pdf"
   },
   {
     "id": "20000101-006",
@@ -703,7 +708,8 @@
         }
       ]
     },
-    "explication": "Une compote simple pour utiliser des fruits mûrs. Les bananes apportent naturellement du sucre et une texture douce."
+    "explication": "Une compote simple pour utiliser des fruits mûrs. Les bananes apportent naturellement du sucre et une texture douce.",
+    "pdf": "pdf/recettes/20000101-006.pdf"
   },
   {
     "id": "20000101-007",
@@ -815,7 +821,8 @@
         }
       ]
     },
-    "explication": "Une recette rapide pour utiliser du pain un peu sec. Le passage au four rend les tartines croustillantes."
+    "explication": "Une recette rapide pour utiliser du pain un peu sec. Le passage au four rend les tartines croustillantes.",
+    "pdf": "pdf/recettes/20000101-007.pdf"
   },
   {
     "id": "20000101-008",
@@ -924,7 +931,8 @@
         }
       ]
     },
-    "explication": "Une omelette permet de transformer rapidement des restes de légumes en repas. Elle est utile quand on dispose de peu d’ingrédients."
+    "explication": "Une omelette permet de transformer rapidement des restes de légumes en repas. Elle est utile quand on dispose de peu d’ingrédients.",
+    "pdf": "pdf/recettes/20000101-008.pdf"
   },
   {
     "id": "20000101-009",
@@ -1048,7 +1056,8 @@
         }
       ]
     },
-    "explication": "Une base très simple et économique. Elle peut devenir plus complète avec du thon, des légumes ou du fromage."
+    "explication": "Une base très simple et économique. Elle peut devenir plus complète avec du thon, des légumes ou du fromage.",
+    "pdf": "pdf/recettes/20000101-009.pdf"
   },
   {
     "id": "20000101-010",
@@ -1169,7 +1178,8 @@
         }
       ]
     },
-    "explication": "Un gâteau de base avec des ingrédients du placard. Il peut être enrichi avec du chocolat, des fruits mûrs ou un peu de miel."
+    "explication": "Un gâteau de base avec des ingrédients du placard. Il peut être enrichi avec du chocolat, des fruits mûrs ou un peu de miel.",
+    "pdf": "pdf/recettes/20000101-010.pdf"
   },
   {
     "id": "20260708-011",
@@ -1285,7 +1295,8 @@
         }
       ]
     },
-    "explication": "Le tian est un plat de légumes au four. Il demande surtout de couper les légumes et de les disposer dans un plat. La cuisson fait le reste."
+    "explication": "Le tian est un plat de légumes au four. Il demande surtout de couper les légumes et de les disposer dans un plat. La cuisson fait le reste.",
+    "pdf": "pdf/recettes/20260708-011.pdf"
   },
   {
     "id": "20260708-012",
@@ -1402,7 +1413,8 @@
         }
       ]
     },
-    "explication": "Un plat doux et nourrissant. Le quinoa apporte une base complète, le chou-fleur apporte les légumes, et la crème rend l’ensemble plus facile à manger."
+    "explication": "Un plat doux et nourrissant. Le quinoa apporte une base complète, le chou-fleur apporte les légumes, et la crème rend l’ensemble plus facile à manger.",
+    "pdf": "pdf/recettes/20260708-012.pdf"
   },
   {
     "id": "00000000-000",
@@ -1479,6 +1491,34 @@
       "Étape 3 à compléter."
     ],
     "astuce": "Astuce anti-gaspi à compléter.",
-    "variantes": "Variantes possibles à compléter."
+    "variantes": "Variantes possibles à compléter.",
+    "valeurs_reference": {
+      "type_cuisson": [
+        "four",
+        "casserole",
+        "poele",
+        "vapeur",
+        "micro_ondes",
+        "sans_cuisson"
+      ],
+      "allergenes": [
+        "gluten",
+        "lait",
+        "oeuf",
+        "œuf",
+        "arachides",
+        "soja",
+        "fruits_a_coque",
+        "crustaces",
+        "poisson",
+        "mollusques",
+        "celeri",
+        "moutarde",
+        "sesame",
+        "sulfites",
+        "lupin"
+      ]
+    },
+    "pdf": "pdf/recettes/00000000-000.pdf"
   }
 ]

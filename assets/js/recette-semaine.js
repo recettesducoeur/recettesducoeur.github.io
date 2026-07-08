@@ -74,6 +74,17 @@ function semainesDuMois(year, monthIndex) {
   });
 }
 
+async function chargerSelectionSemaine() {
+  try {
+    const response = await fetch(`${rootPrefix()}data/selection_semaine.json`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } catch (error) {
+    console.error("Erreur sélection semaine :", error);
+    return { semaines: [] };
+  }
+}
+
 function findBlocPourSemaine(cfg, week) {
   const semaines = cfg?.semaines || [];
   return semaines.find(s =>
@@ -159,13 +170,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!c) return;
 
   const [recettes, cfg] = await Promise.all([
-    fetch("data/recettes.json").then(x => x.json()),
-    fetch("data/selection_semaine.json").then(x => x.json()).catch(() => ({ semaines: [] }))
+    chargerRecettes(),
+    chargerSelectionSemaine()
   ]);
 
   const info = document.getElementById("semaine-info");
   const btnCourante = document.getElementById("semaine-courante");
   const btnAfficher = document.getElementById("semaine-afficher");
+
+  if (!recettes.length) {
+    if (info) info.textContent = "Les recettes dynamiques n’ont pas pu être chargées. Les recettes statiques de secours restent affichées.";
+    return;
+  }
 
   function afficherSemaineCourante() {
     const week = weekObjectFromDate(new Date());
@@ -205,9 +221,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   remplirSelecteursSemaine(cfg);
-
   btnCourante?.addEventListener("click", afficherSemaineCourante);
   btnAfficher?.addEventListener("click", afficherMois);
-
   afficherSemaineCourante();
 });

@@ -1,11 +1,213 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Recettes — Les Recettes du Cœur</title><meta name="description" content="Cuisine simple, solidaire et anti-gaspi : fiches recettes visuelles et imprimables à partir de produits courants."><link rel="icon" href="assets/logos/favicon.ico"><link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/app.js"></script></head><body><a class="skip-link" href="#contenu">Aller au contenu</a>
-<header class="site-header no-print"><div class="header-inner">
-<a class="brand" href="index.html"><img class="site-logo" src="assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur"><span>Les Recettes<br>du Cœur</span></a>
-<button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">☰ Menu</button><nav class="main-nav" data-main-nav><a href="index.html">Accueil</a>
-<a href="presentation-projet.html">Projet</a>
-<a href="recettes.html" class="active">Recettes</a>
-<a href="recherche.html">Recherche</a>
-<a href="recette-semaine.html">Semaine</a>
-<a href="aide.html">Aide</a>
-<a href="contact.html">Contact</a></nav>
-</div></header><main id="contenu" class="container"><section class="page-card"><h1>🍽️ Toutes les recettes</h1><p class="lead">Parcourez les fiches disponibles. Chaque recette peut être ouverte, imprimée ou retrouvée par QR code.</p><div class="search-box"><label for="filtre-catalogue">🔎 Filtrer rapidement</label><input id="filtre-catalogue" type="search" placeholder="Exemple : thon, courgettes, dessert, four..."></div></section><section><div id="liste-recettes" class="recipe-grid"></div></section></main><footer class="site-footer no-print"><div class="footer-inner"><div><strong>Les Recettes du Cœur</strong><br>Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire.</div><div class="footer-links"><a href="presentation-projet.html">Projet</a><a href="aide.html">Aide</a><a href="contact.html">Contact</a><a href="{{URL_FORMULAIRE_SUGGESTION_RECETTE}}">💡 Suggérer une recette</a></div></div></footer></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toutes les recettes — Les Recettes du Cœur</title>
+  <meta name="description" content="Catalogue de recettes simples, solidaires et anti-gaspi.">
+  <link rel="icon" href="assets/logos/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="contenu" class="container">
+    <section class="page-card">
+      <h1>📚 Toutes les recettes</h1>
+      <p class="lead">Catalogue des fiches recettes disponibles.</p>
+      <div class="search-box">
+        <label for="filtre-catalogue">Filtrer rapidement</label>
+        <input id="filtre-catalogue" type="search" placeholder="Exemple : pâtes, thon, dessert...">
+      </div>
+    </section>
+
+    <section>
+      <div data-json-error></div>
+      <div id="liste-recettes" class="recipe-grid">
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-001.webp" alt="Illustration : Gratin de pâtes au thon" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Gratin de pâtes au thon</h3>
+        <p>Une recette simple et accessible : gratin de pâtes au thon.</p>
+        <div class="meta">
+          <span>⏱️ 30 min</span>
+          <span>👥 4</span>
+          <span>🔥 Four, Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=familial">Familial</a></div>
+        <a class="button" href="recettes/20000101-001.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-002.webp" alt="Illustration : Riz au lait à la banane" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Riz au lait à la banane</h3>
+        <p>Une recette simple et accessible : riz au lait à la banane.</p>
+        <div class="meta">
+          <span>⏱️ 30 min</span>
+          <span>👥 4</span>
+          <span>🔥 Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=dessert">Dessert</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=enfants">Enfants</a></div>
+        <a class="button" href="recettes/20000101-002.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-003.webp" alt="Illustration : Soupe de légumes simple" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Soupe de légumes simple</h3>
+        <p>Une recette simple et accessible : soupe de légumes simple.</p>
+        <div class="meta">
+          <span>⏱️ 45 min</span>
+          <span>👥 4</span>
+          <span>🔥 Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=legumes">Legumes</a></div>
+        <a class="button" href="recettes/20000101-003.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-004.webp" alt="Illustration : Salade de riz au thon" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Salade de riz au thon</h3>
+        <p>Une recette simple et accessible : salade de riz au thon.</p>
+        <div class="meta">
+          <span>⏱️ 22 min</span>
+          <span>👥 4</span>
+          <span>🔥 Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=froid">Froid</a><a class="badge filter-link" href="recherche.html?tag=sans_four">Sans four</a><a class="badge filter-link" href="recherche.html?tag=conserve">Conserve</a><a class="badge filter-link" href="recherche.html?tag=rapide">Rapide</a></div>
+        <a class="button" href="recettes/20000101-004.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-005.webp" alt="Illustration : Poêlée de pommes de terre" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Poêlée de pommes de terre</h3>
+        <p>Une recette simple et accessible : poêlée de pommes de terre.</p>
+        <div class="meta">
+          <span>⏱️ 35 min</span>
+          <span>👥 4</span>
+          <span>🔥 Poele</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=sans_four">Sans four</a><a class="badge filter-link" href="recherche.html?tag=chaud">Chaud</a><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a></div>
+        <a class="button" href="recettes/20000101-005.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-006.webp" alt="Illustration : Compote pomme-banane" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Compote pomme-banane</h3>
+        <p>Une recette simple et accessible : compote pomme-banane.</p>
+        <div class="meta">
+          <span>⏱️ 25 min</span>
+          <span>👥 4</span>
+          <span>🔥 Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=dessert">Dessert</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=fruits">Fruits</a><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a></div>
+        <a class="button" href="recettes/20000101-006.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-007.webp" alt="Illustration : Tartines chaudes fromage-tomate" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Tartines chaudes fromage-tomate</h3>
+        <p>Une recette simple et accessible : tartines chaudes fromage-tomate.</p>
+        <div class="meta">
+          <span>⏱️ 15 min</span>
+          <span>👥 2</span>
+          <span>🔥 Four</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=rapide">Rapide</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=pain">Pain</a></div>
+        <a class="button" href="recettes/20000101-007.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-008.webp" alt="Illustration : Omelette aux légumes" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Omelette aux légumes</h3>
+        <p>Une recette simple et accessible : omelette aux légumes.</p>
+        <div class="meta">
+          <span>⏱️ 18 min</span>
+          <span>👥 2</span>
+          <span>🔥 Poele</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=rapide">Rapide</a><a class="badge filter-link" href="recherche.html?tag=proteines">Proteines</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=sans_four">Sans four</a></div>
+        <a class="button" href="recettes/20000101-008.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-009.webp" alt="Illustration : Pâtes sauce tomate enrichie" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Pâtes sauce tomate enrichie</h3>
+        <p>Une recette simple et accessible : pâtes sauce tomate enrichie.</p>
+        <div class="meta">
+          <span>⏱️ 20 min</span>
+          <span>👥 4</span>
+          <span>🔥 Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=conserve">Conserve</a><a class="badge filter-link" href="recherche.html?tag=chaud">Chaud</a></div>
+        <a class="button" href="recettes/20000101-009.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20000101-010.webp" alt="Illustration : Gâteau simple du placard" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Gâteau simple du placard</h3>
+        <p>Une recette simple et accessible : gâteau simple du placard.</p>
+        <div class="meta">
+          <span>⏱️ 40 min</span>
+          <span>👥 6</span>
+          <span>🔥 Four</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=dessert">Dessert</a><a class="badge filter-link" href="recherche.html?tag=gouter">Gouter</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=four">Four</a></div>
+        <a class="button" href="recettes/20000101-010.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20260708-011.webp" alt="Illustration : Tian de courgettes" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Tian de courgettes</h3>
+        <p>Une recette simple et accessible : tian de courgettes.</p>
+        <div class="meta">
+          <span>⏱️ 50 min</span>
+          <span>👥 4</span>
+          <span>🔥 Four</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=legumes">Legumes</a><a class="badge filter-link" href="recherche.html?tag=four">Four</a></div>
+        <a class="button" href="recettes/20260708-011.html">Voir la recette</a>
+      </div>
+    </article>
+
+    <article class="recipe-card">
+      <img src="images/recettes/20260708-012.webp" alt="Illustration : Chou-fleur et quinoa à la crème" loading="lazy">
+      <div class="recipe-card-content">
+        <h3>Chou-fleur et quinoa à la crème</h3>
+        <p>Une recette simple et accessible : chou-fleur et quinoa à la crème.</p>
+        <div class="meta">
+          <span>⏱️ 35 min</span>
+          <span>👥 4</span>
+          <span>🔥 Casserole</span>
+        </div>
+        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=chaud">Chaud</a><a class="badge filter-link" href="recherche.html?tag=vegetarien_possible">Vegetarien possible</a></div>
+        <a class="button" href="recettes/20260708-012.html">Voir la recette</a>
+      </div>
+    </article>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

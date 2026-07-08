@@ -111,10 +111,18 @@
     "champ": "type_cuisson",
     "type": "array",
     "description": "Modes de cuisson",
-    "format_valeurs": "four, casserole, poele...",
+    "format_valeurs": "four, casserole, poele..., sans_cuisson (Sans cuisson)",
     "exemple_court": "[four]",
     "obligatoire": "Oui",
-    "valeurs_possibles_exemples": "casserole, four, poele"
+    "valeurs_possibles_exemples": "casserole, four, poele, sans_cuisson (Sans cuisson)",
+    "valeurs_reference": [
+      "four",
+      "casserole",
+      "poele",
+      "vapeur",
+      "micro_ondes",
+      "sans_cuisson"
+    ]
   },
   {
     "champ": "equipement",
@@ -264,10 +272,27 @@
     "champ": "allergenes",
     "type": "array",
     "description": "Allergènes à afficher",
-    "format_valeurs": "gluten, lait, poisson...",
+    "format_valeurs": "gluten, lait, poisson..., fruits_a_coque, crustaces",
     "exemple_court": "[lait]",
     "obligatoire": "Oui si connu",
-    "valeurs_possibles_exemples": "gluten, lait, poisson, œufs"
+    "valeurs_possibles_exemples": "gluten, lait, poisson, œufs, fruits_a_coque, crustaces",
+    "valeurs_reference": [
+      "gluten",
+      "lait",
+      "oeuf",
+      "œuf",
+      "arachides",
+      "soja",
+      "fruits_a_coque",
+      "crustaces",
+      "poisson",
+      "mollusques",
+      "celeri",
+      "moutarde",
+      "sesame",
+      "sulfites",
+      "lupin"
+    ]
   },
   {
     "champ": "conservation",
@@ -367,5 +392,14 @@
     "exemple_court": "Ajouter pommes de terre...",
     "obligatoire": "Oui",
     "valeurs_possibles_exemples": "Texte libre. Exemple : remplacer le thon par des sardines ou des légumes."
+  },
+  {
+    "champ": "pdf",
+    "type": "string",
+    "description": "Chemin relatif vers le PDF statique de la fiche recette.",
+    "format_valeurs": "pdf/recettes/AAAAMMJJ-XXX.pdf",
+    "exemple_court": "pdf/recettes/20260708-011.pdf",
+    "obligatoire": "oui",
+    "valeurs_possibles_exemples": "Un fichier PDF doit exister pour chaque recette, avec les quantités de base."
   }
 ]

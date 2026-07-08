@@ -1,0 +1,34 @@
+{
+  "type_cuisson": [
+    "four",
+    "casserole",
+    "poele",
+    "vapeur",
+    "micro_ondes",
+    "sans_cuisson"
+  ],
+  "allergenes": [
+    "gluten",
+    "lait",
+    "oeuf",
+    "œuf",
+    "arachides",
+    "soja",
+    "fruits_a_coque",
+    "crustaces",
+    "poisson",
+    "mollusques",
+    "celeri",
+    "moutarde",
+    "sesame",
+    "sulfites",
+    "lupin"
+  ],
+  "type_cuisson_labels": {
+    "sans_cuisson": "Sans cuisson"
+  },
+  "allergenes_labels": {
+    "fruits_a_coque": "Fruits à coque",
+    "crustaces": "Crustacés"
+  }
+}

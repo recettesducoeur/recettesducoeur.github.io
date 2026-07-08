@@ -1,0 +1,60 @@
+{
+  "version": "V19",
+  "objectifs": [
+    "Réparer l'affichage des recettes avec fallback statique si JSON/JS échoue",
+    "Ajouter PDF statique par recette avec quantités de base",
+    "Sur PC : proposer PDF statique + impression/PDF dynamique avec quantités sélectionnées",
+    "Sur mobile/tablette : masquer l'impression et proposer uniquement le PDF statique",
+    "Ajouter un lien Google variantes dans chaque fiche recette",
+    "Ajouter valeurs allergènes fruits_a_coque et crustaces",
+    "Ajouter valeur cuisson sans_cuisson",
+    "Mettre à jour dictionnaire et index dev"
+  ],
+  "url_cible": "https://recettesducoeur.github.io/",
+  "pdf_generes": [
+    "pdf/recettes/20000101-001.pdf",
+    "pdf/recettes/20000101-002.pdf",
+    "pdf/recettes/20000101-003.pdf",
+    "pdf/recettes/20000101-004.pdf",
+    "pdf/recettes/20000101-005.pdf",
+    "pdf/recettes/20000101-006.pdf",
+    "pdf/recettes/20000101-007.pdf",
+    "pdf/recettes/20000101-008.pdf",
+    "pdf/recettes/20000101-009.pdf",
+    "pdf/recettes/20000101-010.pdf",
+    "pdf/recettes/20260708-011.pdf",
+    "pdf/recettes/20260708-012.pdf",
+    "pdf/recettes/00000000-000.pdf"
+  ],
+  "pdf_render_check": {
+    "sample": "pdf/recettes/20000101-001.pdf",
+    "ok": true,
+    "message": "1 page(s) rendue(s)"
+  },
+  "recettes_visibles": 12,
+  "pages_recettes_modifiees": [
+    "recettes/20000101-001.html",
+    "recettes/20000101-002.html",
+    "recettes/20000101-003.html",
+    "recettes/20000101-004.html",
+    "recettes/20000101-005.html",
+    "recettes/20000101-006.html",
+    "recettes/20000101-007.html",
+    "recettes/20000101-008.html",
+    "recettes/20000101-009.html",
+    "recettes/20000101-010.html",
+    "recettes/20260708-011.html",
+    "recettes/20260708-012.html",
+    "recettes/00000000-000.html"
+  ],
+  "fichiers_critiques": [
+    "assets/css/style.css",
+    "assets/js/app.js",
+    "assets/js/proportions.js",
+    "data/recettes.json",
+    "data/valeurs_reference.json",
+    "pdf/recettes/*.pdf",
+    "recettes/*.html",
+    "dev/index.html"
+  ]
+}

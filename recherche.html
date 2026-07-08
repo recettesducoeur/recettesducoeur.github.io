@@ -4,28 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Recherche — Les Recettes du Cœur</title>
-  <meta name="description" content="Recherche de recettes de cuisine simple, solidaire et anti-gaspi, par nom, ingrédient, catégorie, cuisson, tags ou filtres rapides.">
+  <meta name="description" content="Recherche de recettes simples, solidaires et anti-gaspi.">
   <link rel="icon" href="assets/logos/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/layout.js"></script>
   <script defer src="assets/js/app.js"></script>
-  <script defer src="assets/js/search.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <header class="site-header no-print"><div class="header-inner">
-    <a class="brand" href="index.html"><img class="site-logo" src="assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur"><span>Les Recettes<br>du Cœur</span></a>
-    <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">☰ Menu</button>
-    <nav class="main-nav" data-main-nav>
-      <a href="index.html">Accueil</a>
-      <a href="presentation-projet.html">Projet</a>
-      <a href="recettes.html">Recettes</a>
-      <a href="recherche.html" class="active">Recherche</a>
-      <a href="recette-semaine.html">Semaine</a>
-      <a href="aide.html">Aide</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div></header>
-
+  <div data-site-header></div>
   <main id="contenu" class="container">
     <section class="page-card">
       <h1>🔎 Recherche</h1>
@@ -45,6 +31,7 @@
       </div>
 
       <div id="url-filter-notice"></div>
+      <div data-json-error></div>
 
       <div data-panel="nom">
         <label for="search-nom">Nom de recette ou mot-clé</label>
@@ -84,61 +71,31 @@
       <div data-panel="tags" class="hidden">
         <label>Tags</label>
         <div id="search-tags" class="checkbox-list"></div>
-        <p class="small">Cochez un ou plusieurs tags. Les résultats doivent contenir tous les tags sélectionnés. Vous pouvez aussi cliquer sur un tag depuis une fiche recette pour arriver ici avec le filtre déjà actif.</p>
+        <p class="small">Cochez un ou plusieurs tags. Les résultats doivent contenir tous les tags sélectionnés.</p>
       </div>
 
       <div data-panel="filtres" class="hidden">
         <h2>⚙️ Filtres rapides</h2>
         <p class="small">Ces filtres correspondent aux champs cliquables dans les fiches recettes.</p>
         <div class="form-row">
-          <div>
-            <label for="filter-categorie">Catégorie</label>
-            <select id="filter-categorie"></select>
-          </div>
-          <div>
-            <label for="filter-sous-categorie">Sous-catégorie</label>
-            <select id="filter-sous-categorie"></select>
-          </div>
+          <div><label for="filter-categorie">Catégorie</label><select id="filter-categorie"></select></div>
+          <div><label for="filter-sous-categorie">Sous-catégorie</label><select id="filter-sous-categorie"></select></div>
         </div>
         <div class="form-row">
-          <div>
-            <label for="filter-temperature">Température de service</label>
-            <select id="filter-temperature"></select>
-          </div>
-          <div>
-            <label for="filter-cuisson">Type de cuisson</label>
-            <select id="filter-cuisson"></select>
-          </div>
+          <div><label for="filter-temperature">Température de service</label><select id="filter-temperature"></select></div>
+          <div><label for="filter-cuisson">Type de cuisson</label><select id="filter-cuisson"></select></div>
         </div>
         <div class="form-row">
-          <div>
-            <label for="filter-budget">Budget</label>
-            <select id="filter-budget"></select>
-          </div>
-          <div>
-            <label for="filter-difficulte">Difficulté</label>
-            <select id="filter-difficulte"></select>
-          </div>
+          <div><label for="filter-budget">Budget</label><select id="filter-budget"></select></div>
+          <div><label for="filter-difficulte">Difficulté</label><select id="filter-difficulte"></select></div>
         </div>
         <div class="form-row">
-          <div>
-            <label for="filter-moment">Moment du repas</label>
-            <select id="filter-moment"></select>
-          </div>
-          <div>
-            <label for="filter-equipement">Équipement</label>
-            <select id="filter-equipement"></select>
-          </div>
+          <div><label for="filter-moment">Moment du repas</label><select id="filter-moment"></select></div>
+          <div><label for="filter-equipement">Équipement</label><select id="filter-equipement"></select></div>
         </div>
         <div class="form-row">
-          <div>
-            <label for="filter-regime">Régime</label>
-            <select id="filter-regime"></select>
-          </div>
-          <div>
-            <label for="filter-allergene">Allergène</label>
-            <select id="filter-allergene"></select>
-          </div>
+          <div><label for="filter-regime">Régime</label><select id="filter-regime"></select></div>
+          <div><label for="filter-allergene">Allergène</label><select id="filter-allergene"></select></div>
         </div>
         <div class="actions">
           <button id="filter-reset" class="button secondary" type="button">Réinitialiser les filtres</button>
@@ -151,7 +108,7 @@
       <div id="resultats-recherche" class="recipe-grid"></div>
     </section>
   </main>
-
-  <footer class="site-footer no-print"><div class="footer-inner"><div><strong>Les Recettes du Cœur</strong><br>Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire.</div><div class="footer-links"><a href="presentation-projet.html">Projet</a><a href="aide.html">Aide</a><a href="contact.html">Contact</a><a href="{{URL_FORMULAIRE_SUGGESTION_RECETTE}}">💡 Suggérer une recette</a></div></div></footer>
+  <div data-site-footer></div>
+  <script defer src="assets/js/search.js"></script>
 </body>
 </html>

@@ -17,7 +17,48 @@ function ajusterBandeauFixePC() {
   }
 }
 
-// Normalisation de recherche : casse, accents, apostrophes, pluriel/singulier.
+const LABELS = {
+  anti_gaspi: "Anti-gaspi",
+  sans_cuisson: "Sans cuisson",
+  fruits_a_coque: "Fruits à coque",
+  crustaces: "Crustacés",
+  micro_ondes: "Micro-ondes",
+  froid_ou_tiede: "Froid ou tiède",
+  economique: "Économique",
+  facile: "Facile"
+};
+
+function formatLabel(value) {
+  const raw = String(value || "");
+  if (LABELS[raw]) return LABELS[raw];
+  return raw
+    .replaceAll("_", " ")
+    .replaceAll("-", " ")
+    .replace(/\b\p{L}/gu, c => c.toUpperCase());
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function pageDepthPrefix() {
+  const path = window.location.pathname;
+  const parts = path.split("/").filter(Boolean);
+  const fileLike = parts.length && /\.[a-z0-9]+$/i.test(parts[parts.length - 1]);
+  const dirs = fileLike ? parts.slice(0, -1) : parts;
+  if (!dirs.length) return "";
+  return "../".repeat(dirs.length);
+}
+
+function rootPrefix() {
+  return pageDepthPrefix();
+}
+
 function normaliserTexte(value) {
   return String(value || "")
     .toLowerCase()
@@ -36,32 +77,25 @@ function singulariserMot(mot) {
   if (m.length <= 3) return m;
 
   const exceptions = {
-    "oeufs": "oeuf",
-    "legumes": "legume",
-    "pates": "pate",
-    "tomates": "tomate",
-    "courgettes": "courgette",
-    "pommes": "pomme",
-    "bananes": "banane",
-    "oignons": "oignon",
-    "herbes": "herbe",
-    "tranches": "tranche",
-    "pieces": "piece",
-    "morceaux": "morceau",
-    "noix": "noix",
-    "riz": "riz"
+    oeufs: "oeuf",
+    legumes: "legume",
+    pates: "pate",
+    tomates: "tomate",
+    courgettes: "courgette",
+    pommes: "pomme",
+    bananes: "banane",
+    oignons: "oignon",
+    herbes: "herbe",
+    tranches: "tranche",
+    pieces: "piece",
+    morceaux: "morceau",
+    noix: "noix",
+    riz: "riz"
   };
 
   if (exceptions[m]) return exceptions[m];
-
-  if (m.endsWith("s") && !m.endsWith("is") && !m.endsWith("us")) {
-    return m.slice(0, -1);
-  }
-
-  if (m.endsWith("x") && m.length > 4) {
-    return m.slice(0, -1);
-  }
-
+  if (m.endsWith("s") && !m.endsWith("is") && !m.endsWith("us")) return m.slice(0, -1);
+  if (m.endsWith("x") && m.length > 4) return m.slice(0, -1);
   return m;
 }
 
@@ -108,9 +142,7 @@ function ingredientPrincipal(value) {
 
   for (const compose of INGREDIENTS_COMPOSES) {
     const c = normaliserTexte(compose);
-    if (norm.includes(c)) {
-      return tokensRecherche(c).join(" ");
-    }
+    if (norm.includes(c)) return tokensRecherche(c).join(" ");
   }
 
   const tokens = norm
@@ -119,10 +151,6 @@ function ingredientPrincipal(value) {
     .filter(t => t.length > 1 && !MOTS_DESCRIPTIFS_INGREDIENTS.has(t));
 
   if (!tokens.length) return norm.split(" ")[0] || "";
-
-  // On garde les deux premiers mots utiles au maximum :
-  // "thon égoutté" -> "thon" ; "banane mûre" -> "banane" ;
-  // "chou fleur" reste géré plus haut comme ingrédient composé.
   return [...new Set(tokens)].slice(0, 2).join(" ");
 }
 
@@ -227,87 +255,69 @@ function ingredientDisponible(ingredientName, userTokens, userText) {
   return tokens.some(t => userTokens.has(t));
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  ajusterBandeauFixePC();
-  const toggle = document.querySelector("[data-nav-toggle]");
-  const nav = document.querySelector("[data-main-nav]");
+async function chargerRecettes() {
+  const prefix = rootPrefix();
 
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  try {
+    const response = await fetch(`${prefix}data/recettes.json`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    return data.filter(r => r.visible !== false);
+  } catch (error) {
+    console.error("Erreur de chargement recettes :", error);
+    document.querySelectorAll("[data-json-error]").forEach(node => {
+      node.innerHTML = `<div class="notice">⚠️ Les données dynamiques n’ont pas pu être chargées. Les recettes statiques restent disponibles. Vérifiez que <code>data/recettes.json</code> est bien à la racine du dépôt.</div>`;
+    });
+    return [];
   }
-
-  const current = location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".main-nav a").forEach(a => {
-    if (a.getAttribute("href") === current) a.classList.add("active");
-  });
-
-  afficherAccueil();
-  afficherCatalogue();
-});
-
-function formatLabel(v) {
-  return String(v || "")
-    .replaceAll("_", " ")
-    .replaceAll("-", " ")
-    .replace(/\b\w/g, c => c.toUpperCase());
-}
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function tagBadge(tag) {
-  return filterBadge(formatLabel(tag), "tag", tag);
-}" title="Voir les recettes avec le tag ${escapeHtml(formatLabel(tag))}">${formatLabel(tag)}</a>`;
 }
 
 function filterSearchHref(field, value) {
-  return `recherche.html?${encodeURIComponent(field)}=${encodeURIComponent(value)}`;
+  const prefix = rootPrefix();
+  return `${prefix}recherche.html?${encodeURIComponent(field)}=${encodeURIComponent(value)}`;
 }
 
 function filterBadge(label, field, value) {
   return `<a class="badge filter-link" href="${filterSearchHref(field, value)}" title="Filtrer : ${escapeHtml(label)}">${escapeHtml(label)}</a>`;
 }
 
-async function chargerRecettes() {
-  return fetch("data/recettes.json")
-    .then(r => r.json())
-    .then(a => a.filter(r => r.visible !== false));
+function tagBadge(tag) {
+  return filterBadge(formatLabel(tag), "tag", tag);
+}
+
+function normalizeAssetPath(path) {
+  const prefix = rootPrefix();
+  const raw = String(path || "");
+  if (!raw || raw.startsWith("http") || raw.startsWith("../") || raw.startsWith("/")) return raw;
+  return prefix + raw;
 }
 
 function carte(r, d = null) {
-  const tags = (r.tags || []).slice(0, 4)
-    .map(t => tagBadge(t))
-    .join("");
+  const tags = (r.tags || []).slice(0, 4).map(t => tagBadge(t)).join("");
 
   const details = d ? `
     <div class="match-details">
       <div>⭐ Score : ${Math.round(d.score * 100)} %</div>
-      <div class="present">✅ Présents : ${d.disponibles.length ? d.disponibles.join(", ") : "aucun"}</div>
-      <div class="missing">❌ Manquants : ${d.manquants.length ? d.manquants.join(", ") : "aucun"}</div>
+      <div class="present">✅ Présents : ${d.disponibles.length ? d.disponibles.map(escapeHtml).join(", ") : "aucun"}</div>
+      <div class="missing">❌ Manquants : ${d.manquants.length ? d.manquants.map(escapeHtml).join(", ") : "aucun"}</div>
     </div>
   ` : "";
 
   return `
     <article class="recipe-card">
-      <img src="${r.image}" alt="Illustration : ${escapeHtml(r.titre)}" loading="lazy">
+      <img src="${normalizeAssetPath(r.image)}" alt="Illustration : ${escapeHtml(r.titre)}" loading="lazy">
       <div class="recipe-card-content">
         <h3>${escapeHtml(r.titre)}</h3>
         <p>${escapeHtml(r.resume)}</p>
         <div class="meta">
-          <span>⏱️ ${r.temps_total_min} min</span>
-          <span>👥 ${r.personnes}</span>
+          <span>⏱️ ${escapeHtml(r.temps_total_min)} min</span>
+          <span>👥 ${escapeHtml(r.personnes)}</span>
           <span>🍽️ ${filterBadge(formatLabel(r.categorie), "categorie", r.categorie)}</span>
           <span>🔥 ${(r.type_cuisson || []).map(c => filterBadge(formatLabel(c), "cuisson", c)).join(" ")}</span>
         </div>
         <div class="badges">${tags}</div>
         ${details}
-        <a class="button" href="${r.url}">Voir la recette</a>
+        <a class="button" href="${normalizeAssetPath(r.url)}">Voir la recette</a>
       </div>
     </article>
   `;
@@ -316,7 +326,6 @@ function carte(r, d = null) {
 function render(list, id) {
   const c = document.getElementById(id);
   if (!c) return;
-
   c.innerHTML = list.length
     ? list.map(r => carte(r, r._matchDetails)).join("")
     : `<div class="notice">Aucune recette trouvée.</div>`;
@@ -325,9 +334,8 @@ function render(list, id) {
 async function afficherAccueil() {
   const c = document.getElementById("recettes-accueil");
   if (!c) return;
-
   const r = await chargerRecettes();
-  c.innerHTML = r.slice(0, 3).map(x => carte(x)).join("");
+  if (r.length) c.innerHTML = r.slice(0, 3).map(x => carte(x)).join("");
 }
 
 async function afficherCatalogue() {
@@ -335,12 +343,26 @@ async function afficherCatalogue() {
   if (!c) return;
 
   const recettes = await chargerRecettes();
-  render(recettes, "liste-recettes");
+  if (recettes.length) render(recettes, "liste-recettes");
 
   const inp = document.getElementById("filtre-catalogue");
-  if (inp) {
+  if (inp && recettes.length) {
     inp.addEventListener("input", () => {
       render(recettes.filter(r => correspondRechercheRecette(r, inp.value)), "liste-recettes");
     });
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof renderSiteLayout === "function") renderSiteLayout();
+
+  const toggle = document.querySelector("[data-nav-toggle]");
+  const nav = document.querySelector("[data-main-nav]");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  }
+
+  ajusterBandeauFixePC();
+  afficherAccueil();
+  afficherCatalogue();
+});

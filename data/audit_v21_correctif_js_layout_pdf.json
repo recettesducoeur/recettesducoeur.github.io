@@ -1,0 +1,56 @@
+{
+  "version": "V21",
+  "diagnostic_initial": "app.js contenait un fragment HTML résiduel qui cassait tout le JavaScript.",
+  "corrections": [
+    "Réécriture propre de layout.js, app.js, search.js et recette-semaine.js.",
+    "Centralisation header/footer via assets/js/layout.js.",
+    "Footer unique : Site participatif indépendant, non affilié à une association.",
+    "Liens Google variantes corrigés : recherche uniquement sur le nom de la recette.",
+    "PDF régénérés avec logo et image de recette.",
+    "Base JSON vérifiée.",
+    "QR codes régénérés pour l’URL racine.",
+    "ZIP sans dossier parent."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "json_audit": {
+    "total": 13,
+    "visibles": 12,
+    "duplicates": [],
+    "missing_fields": {},
+    "missing_files": {},
+    "old_url_hits": [],
+    "bad_google_links": []
+  },
+  "pdf_render_check": {
+    "ok": true,
+    "message": "1 page(s) rendue(s)"
+  },
+  "pdf_count": 13,
+  "url_cible": "https://recettesducoeur.github.io/"
+}

@@ -1022,3 +1022,86 @@ code{
     max-width:150px;
   }
 }
+
+/* V19 — PDF statique mobile/tablette + impression dynamique PC */
+.recipe-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.75rem;
+}
+
+.pdf-note{
+  flex-basis:100%;
+  margin:.2rem 0 0;
+}
+
+@media(max-width:899px){
+  .desktop-print-only{
+    display:none!important;
+  }
+
+  .recipe-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .recipe-actions .button,
+  .recipe-actions .print-button{
+    width:100%;
+  }
+}
+
+@media(min-width:900px){
+  .pdf-download-button{
+    background:var(--green);
+  }
+}
+
+.google-variants{
+  margin-top:1rem;
+}
+
+/* Recettes visibles même avant l'exécution JS */
+.static-fallback-note{
+  margin:.7rem 0;
+}
+
+/* V21 — layout centralisé et correctifs */
+.recipe-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.75rem;
+}
+
+.pdf-note{
+  flex-basis:100%;
+  margin:.2rem 0 0;
+}
+
+.google-variants{
+  margin-top:1rem;
+}
+
+@media(max-width:899px){
+  .desktop-print-only{
+    display:none!important;
+  }
+
+  .recipe-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .recipe-actions .button,
+  .recipe-actions .print-button{
+    width:100%;
+  }
+}
+
+@media(min-width:900px){
+  .pdf-download-button{
+    background:var(--green);
+  }
+}

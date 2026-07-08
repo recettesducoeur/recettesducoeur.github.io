@@ -6,21 +6,12 @@
   <title>Import texte — dev — Les Recettes du Cœur</title>
   <link rel="icon" href="assets/logos/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/layout.js"></script>
   <script defer src="assets/js/app.js"></script>
   <script defer src="assets/js/import-texte-dev.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-<header class="site-header no-print"><div class="header-inner">
-<a class="brand" href="index.html"><img class="site-logo" src="assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur"><span>Les Recettes<br>du Cœur</span></a>
-<button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">☰ Menu</button><nav class="main-nav" data-main-nav><a href="index.html">Accueil</a>
-<a href="presentation-projet.html">Projet</a>
-<a href="recettes.html">Recettes</a>
-<a href="recherche.html">Recherche</a>
-<a href="recette-semaine.html">Semaine</a>
-<a href="aide.html">Aide</a>
-<a href="contact.html">Contact</a></nav>
-</div></header>
+  <div data-site-header></div>
   <main id="contenu" class="container">
     <section class="page-card">
       <span class="kicker">🛠️ Page dev</span>
@@ -38,7 +29,7 @@ titre: Exemple de recette
 categorie: plat
 sous categorie: gratin
 temperature: chaud
-cuisson: four,casserole
+cuisson: four,casserole,sans_cuisson
 preparation: 10
 temps cuisson: 20
 personnes: 4
@@ -46,7 +37,7 @@ ingredients principaux: courgettes|800|g; tomates|500|g
 ingredients secondaires: crème|200|ml
 ingredients optionnels: fromage|80|g
 tags: simple,economique,anti_gaspi
-allergenes: lait
+allergenes: lait,fruits_a_coque,crustaces
 resume: Une recette simple.
 explication: Explication courte.
 etapes: laver les légumes, couper les légumes, cuire au four
@@ -72,7 +63,14 @@ visible: true</pre>
       <h2>Résultat JSON</h2>
       <pre id="import-output" class="code-output"></pre>
     </section>
+  
+    <section class="page-card">
+      <h2>PDF</h2>
+      <p>Le champ <code>pdf</code> est généré automatiquement à partir de l’ID de recette.</p>
+      <p>Format : <code>pdf/recettes/AAAAMMJJ-XXX.pdf</code></p>
+    </section>
+
   </main>
-  <footer class="site-footer no-print"><div class="footer-inner"><div><strong>Les Recettes du Cœur</strong><br>Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire.</div><div class="footer-links"><a href="presentation-projet.html">Projet</a><a href="aide.html">Aide</a><a href="contact.html">Contact</a></div></div></footer>
+  <div data-site-footer></div>
 </body>
 </html>

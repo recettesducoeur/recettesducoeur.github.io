@@ -42,8 +42,21 @@ function score(r, ingredientsUtilisateur) {
 }
 
 function opts(vals, label) {
-  const u = [...new Set(vals.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), "fr"));
-  return `<option value="">${label}</option>` + u.map(v => `<option value="${escapeHtml(v)}">${formatLabel(v)}</option>`).join("");
+  const u = [...new Set(vals.filter(Boolean))]
+    .sort((a, b) => String(a).localeCompare(String(b), "fr"));
+
+  return `<option value="">${label}</option>` +
+    u.map(v => `<option value="${escapeHtml(v)}">${formatLabel(v)}</option>`).join("");
+}
+
+function valuesFor(recettes, field) {
+  const def = FILTER_FIELDS[field];
+  if (!def) return [];
+
+  return recettes.flatMap(r => {
+    const raw = def.getter(r);
+    return Array.isArray(raw) ? raw : [raw];
+  }).filter(Boolean);
 }
 
 function selectedTagValues(container) {
@@ -93,15 +106,6 @@ function filterRecipesByMap(recettes, filters) {
   }));
 }
 
-function valuesFor(recettes, field) {
-  const def = FILTER_FIELDS[field];
-  if (!def) return [];
-  return recettes.flatMap(r => {
-    const raw = def.getter(r);
-    return Array.isArray(raw) ? raw : [raw];
-  }).filter(Boolean);
-}
-
 function paramsFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const filters = {};
@@ -115,7 +119,7 @@ function paramsFromUrl() {
     if (field === "cuisson") aliases.push("type_cuisson");
     if (field === "temperature") aliases.push("temperature_service");
     if (field === "difficulte") aliases.push("difficulty");
-    if (field === "allergene") aliases.push("allergene", "allergenes");
+    if (field === "allergene") aliases.push("allergenes");
     if (field === "regime") aliases.push("regimes");
 
     const values = aliases.flatMap(a =>
@@ -128,16 +132,16 @@ function paramsFromUrl() {
   return filters;
 }
 
-function activateSearchTab(name, recettes, rr) {
+function activateSearchTab(name) {
   const target = document.querySelector(`[data-tab="${name}"]`);
   document.querySelectorAll("[data-tab]").forEach(x => x.classList.toggle("active", x === target));
   document.querySelectorAll("[data-panel]").forEach(p => p.classList.toggle("hidden", p.dataset.panel !== name));
-  if (rr && recettes) rr(recettes);
 }
 
 function setSelect(id, value) {
   const el = document.getElementById(id);
   if (!el || !value) return;
+
   const wanted = normaliserTexte(value);
   const opt = [...el.options].find(o => normaliserTexte(o.value) === wanted);
   if (opt) el.value = opt.value;
@@ -174,7 +178,7 @@ function renderUrlFilterNotice(filters) {
   });
 
   box.innerHTML = parts.length
-    ? `<div class="notice">Filtre actif depuis un bouton cliqué : <strong>${parts.map(escapeHtml).join(" · ")}</strong></div>`
+    ? `<div class="notice">Filtre actif : <strong>${parts.map(escapeHtml).join(" · ")}</strong></div>`
     : "";
 }
 
@@ -210,8 +214,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   document.querySelectorAll("[data-tab]").forEach(b => {
-    b.addEventListener("click", () => activateSearchTab(b.dataset.tab, recettes, rr));
+    b.addEventListener("click", () => {
+      activateSearchTab(b.dataset.tab);
+      rr(recettes);
+    });
   });
+
+  if (!recettes.length) {
+    activateSearchTab("nom");
+    return;
+  }
 
   fillQuickFilters(recettes);
 
@@ -220,8 +232,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   document.getElementById("search-ingredient")?.addEventListener("input", e => {
-    const q = e.target.value;
-    rr(recettes.filter(r => correspondRechercheIngredient(ingredientsRechercheRecette(r), q)));
+    const query = e.target.value;
+    rr(recettes.filter(r => correspondRechercheIngredient(ingredientsRechercheRecette(r), query)));
   });
 
   document.getElementById("search-mes-ingredients")?.addEventListener("input", e => {
@@ -289,14 +301,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderUrlFilterNotice(urlFilters);
 
     if (urlFilters.tag && Object.keys(urlFilters).length === 1) {
-      activateSearchTab("tags", null, null);
+      activateSearchTab("tags");
     } else {
-      activateSearchTab("filtres", null, null);
+      activateSearchTab("filtres");
     }
 
     rr(filterRecipesByMap(recettes, urlFilters));
     return;
   }
 
-  activateSearchTab("nom", recettes, rr);
+  activateSearchTab("nom");
+  rr(recettes);
 });

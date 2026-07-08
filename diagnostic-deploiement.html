@@ -4,32 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Diagnostic déploiement — Les Recettes du Cœur</title>
+  <meta name="description" content="Diagnostic technique du déploiement GitHub Pages.">
   <link rel="icon" href="assets/logos/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/layout.js"></script>
   <script defer src="assets/js/app.js"></script>
 </head>
 <body>
-  <main class="container">
+  <div data-site-header></div>
+  <main id="contenu" class="container">
     <section class="page-card">
       <span class="kicker">🧪 Diagnostic</span>
       <h1>Diagnostic du déploiement</h1>
-      <p class="lead">Cette page vérifie que les chemins essentiels du site fonctionnent depuis la racine GitHub Pages.</p>
+      <p class="lead">Cette page vérifie que les chemins essentiels fonctionnent depuis la racine GitHub Pages.</p>
       <div id="diagnostic-resultats" class="notice">Tests en cours…</div>
-      <div class="actions">
-        <a class="button" href="index.html">Accueil</a>
-        <a class="button secondary" href="recette-semaine.html">Recette de la semaine</a>
-      </div>
     </section>
   </main>
-
+  <div data-site-footer></div>
   <script>
     const fichiers = [
       "assets/css/style.css",
+      "assets/js/layout.js",
       "assets/js/app.js",
+      "assets/js/search.js",
       "assets/logos/logo-principal.png",
       "data/recettes.json",
       "images/recettes/20000101-001.webp",
-      "qrcodes/site.png"
+      "qrcodes/site.png",
+      "pdf/recettes/20000101-001.pdf"
     ];
 
     Promise.all(fichiers.map(async f => {
@@ -43,8 +45,7 @@
       const ok = results.every(x => x.ok);
       document.getElementById("diagnostic-resultats").innerHTML =
         `<strong>${ok ? "✅ Tous les chemins essentiels répondent." : "❌ Certains fichiers ne répondent pas."}</strong>` +
-        "<ul>" + results.map(x => `<li>${x.ok ? "✅" : "❌"} <code>${x.fichier}</code> — ${x.status}</li>`).join("") + "</ul>" +
-        "<p>Si le CSS ne s'affiche pas, vérifiez que les dossiers <code>assets/</code>, <code>data/</code>, <code>images/</code> et <code>qrcodes/</code> sont bien à la racine du dépôt.</p>";
+        "<ul>" + results.map(x => `<li>${x.ok ? "✅" : "❌"} <code>${x.fichier}</code> — ${x.status}</li>`).join("") + "</ul>";
     });
   </script>
 </body>
