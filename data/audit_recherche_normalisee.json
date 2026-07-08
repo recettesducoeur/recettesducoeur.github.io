@@ -1,7 +1,7 @@
 {
   "version": "V9 recherche normalisée + URL racine",
   "url_base": "https://recettesducoeur.github.io/",
-  "ancien_url_remplace": "https://recettesducoeur.github.io/lesrecettesducoeur/",
+  "ancien_url_remplace": "https://recettesducoeur.github.io/",
   "normalisation_recherche": {
     "casse": "ignorée",
     "accents": "ignorés",

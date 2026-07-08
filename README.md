@@ -293,3 +293,25 @@ Comportement :
 Fichier d’audit :
 
 `data/audit_v17_bloc_quantites_compact.json`
+
+## V18 — Réparation déploiement URL racine
+
+Version préparée pour l’URL :
+
+`https://recettesducoeur.github.io/`
+
+Corrections :
+- QR codes régénérés avec l’URL racine ;
+- anciennes URL `/lesrecettesducoeur/` remplacées ;
+- ajout d’une page de diagnostic :
+  `diagnostic-deploiement.html`
+- ajout d’un guide :
+  `REPARATION_DEPLOIEMENT_ROOT.md`
+- archive ZIP générée sans dossier parent pour faciliter l’upload GitHub.
+
+Point critique :
+`index.html`, `assets/`, `data/`, `images/`, `qrcodes/` et `recettes/` doivent être directement à la racine du dépôt `recettesducoeur.github.io`.
+
+Fichier d’audit :
+
+`data/audit_v18_reparation_deploiement_root.json`
