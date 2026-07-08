@@ -207,6 +207,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const label = new Intl.DateTimeFormat("fr-FR", { month: "long", year: "numeric" }).format(new Date(year, month, 1));
 
+    if (!weeks.length) {
+      const week = weekObjectFromDate(new Date());
+      const result = recettesPourSemaine(recettes, cfg, week);
+      if (info) {
+        info.innerHTML = `<strong>Aucune semaine trouvée pour ${label}.</strong><br>Voici une sélection de secours.`;
+      }
+      c.innerHTML = result.list.length
+        ? result.list.map(x => carte(x)).join("")
+        : `<div class="notice">Aucune recette disponible. Essayez le catalogue complet.</div><p><a class="button" href="recettes.html">Voir toutes les recettes</a></p>`;
+      return;
+    }
+
     if (info) {
       info.innerHTML = `
         <strong>Affichage mensuel : ${label}</strong><br>
@@ -214,10 +226,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       `;
     }
 
-    c.innerHTML = weeks.map(w => {
+    const html = weeks.map(w => {
       const result = recettesPourSemaine(recettes, cfg, w);
+      if (!result.list.length) {
+        const fallback = fallbackPourSemaine(recettes, w);
+        return renderWeekBlock(w, fallback, "fallback");
+      }
       return renderWeekBlock(w, result.list, result.source);
     }).join("");
+
+    c.innerHTML = html || `<div class="notice">Aucun résultat pour ce mois. Essayez un autre mois ou consultez toutes les recettes.</div><p><a class="button" href="recettes.html">Voir toutes les recettes</a></p>`;
   }
 
   remplirSelecteursSemaine(cfg);

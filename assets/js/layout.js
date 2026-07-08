@@ -6,9 +6,6 @@
     const parts = path.split("/").filter(Boolean);
     const fileLike = parts.length && /\.[a-z0-9]+$/i.test(parts[parts.length - 1]);
     const dirs = fileLike ? parts.slice(0, -1) : parts;
-
-    // Sur le site racine recettesducoeur.github.io, une page à /recettes/x.html
-    // doit remonter d'un niveau. Une page à /dev/ aussi.
     if (!dirs.length) return "";
     return "../".repeat(dirs.length);
   }
@@ -64,7 +61,7 @@
               <a href="${prefix}presentation-projet.html">Projet</a>
               <a href="${prefix}aide.html">Aide</a>
               <a href="${prefix}contact.html">Contact</a>
-              <a href="{{URL_FORMULAIRE_SUGGESTION_RECETTE}}" target="_blank" rel="noopener">💡 Suggérer une recette</a>
+              <a href="${prefix}suggerer-recette.html">💡 Suggérer une recette</a>
             </div>
           </div>
         </footer>

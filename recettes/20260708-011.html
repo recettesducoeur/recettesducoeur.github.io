@@ -6,21 +6,12 @@
   <title>Tian de courgettes — Les Recettes du Cœur</title>
   <link rel="icon" href="../assets/logos/favicon.ico">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script defer src="../assets/js/layout.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/proportions.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-<header class="site-header no-print"><div class="header-inner">
-<a class="brand" href="../index.html"><img class="site-logo" src="../assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur"><span>Les Recettes<br>du Cœur</span></a>
-<button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu">☰ Menu</button><nav class="main-nav" data-main-nav><a href="../index.html">Accueil</a>
-<a href="../presentation-projet.html">Projet</a>
-<a href="../recettes.html">Recettes</a>
-<a href="../recherche.html">Recherche</a>
-<a href="../recette-semaine.html">Semaine</a>
-<a href="../aide.html">Aide</a>
-<a href="../contact.html">Contact</a></nav>
-</div></header>
+  <div data-site-header></div>
   <main id="contenu" class="recipe-sheet">
     <p class="small">ID recette : <strong>20260708-011</strong></p>
 
@@ -30,7 +21,7 @@
         <h1>Tian de courgettes</h1>
         <p class="lead">Une recette simple et accessible : tian de courgettes.</p>
         <p>Le tian est un plat de légumes au four. Il demande surtout de couper les légumes et de les disposer dans un plat. La cuisson fait le reste.</p>
-        <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=simple" title="Filtrer les recettes : tag = Simple">Simple</a><a class="badge filter-link" href="../recherche.html?tag=economique" title="Filtrer les recettes : tag = Economique">Economique</a><a class="badge filter-link" href="../recherche.html?tag=legumes" title="Filtrer les recettes : tag = Legumes">Legumes</a><a class="badge filter-link" href="../recherche.html?tag=four" title="Filtrer les recettes : tag = Four">Four</a><a class="badge filter-link" href="../recherche.html?tag=anti_gaspi" title="Filtrer les recettes : tag = Anti Gaspi">Anti Gaspi</a></div>
+        <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=simple" title="Filtrer les recettes : Simple">Simple</a><a class="badge filter-link" href="../recherche.html?tag=economique" title="Filtrer les recettes : Économique">Économique</a><a class="badge filter-link" href="../recherche.html?tag=legumes" title="Filtrer les recettes : Legumes">Legumes</a><a class="badge filter-link" href="../recherche.html?tag=four" title="Filtrer les recettes : Four">Four</a><a class="badge filter-link" href="../recherche.html?tag=anti_gaspi" title="Filtrer les recettes : Anti-gaspi">Anti-gaspi</a></div>
       </div>
       <img class="recipe-image" src="../images/recettes/20260708-011.webp" alt="Illustration : Tian de courgettes">
     </div>
@@ -40,7 +31,7 @@
       <div class="meta-box">⏱️<br>50 min</div>
       <div class="meta-box">🌡️<br><a class="filter-value" href="../recherche.html?temperature=chaud" title="Voir les recettes associées : Chaud">Chaud</a></div>
       <div class="meta-box">🔥<br><a class="filter-value" href="../recherche.html?cuisson=four" title="Voir les recettes associées : Four">Four</a></div>
-      <div class="meta-box">💶<br><a class="filter-value" href="../recherche.html?budget=economique" title="Voir les recettes associées : Economique">Economique</a></div>
+      <div class="meta-box">💶<br><a class="filter-value" href="../recherche.html?budget=economique" title="Voir les recettes associées : Économique">Économique</a></div>
       <div class="meta-box">⭐<br><a class="filter-value" href="../recherche.html?difficulte=facile" title="Voir les recettes associées : Facile">Facile</a></div>
     </section>
 
@@ -49,7 +40,7 @@
       <label for="portions-input">Nombre de portions souhaitées</label>
       <input id="portions-input" type="number" min="1" max="20" step="1" value="4">
       <p id="ratio-info" class="small"></p>
-      <p class="small">Le calcul adapte les quantités proportionnellement. Ajustez ensuite selon votre goût et la taille des produits.</p>
+      <p class="small">Le calcul adapte les quantités proportionnellement.</p>
     </section>
 
     <section class="recipe-section">
@@ -65,12 +56,7 @@
 
     <section class="recipe-section">
       <h2>👩‍🍳 Préparation détaillée</h2>
-      <ol><li>Laver les courgettes et les tomates.</li>
-<li>Couper les courgettes, les tomates et les oignons en rondelles fines.</li>
-<li>Disposer les rondelles dans un plat en alternant courgette, tomate et oignon.</li>
-<li>Ajouter les herbes, un peu de sel et, si disponible, un filet d’huile.</li>
-<li>Cuire au four à 180 °C pendant environ 35 minutes.</li>
-<li>Ajouter le fromage râpé en fin de cuisson si souhaité.</li></ol>
+      <ol><li>Laver les courgettes et les tomates.</li><li>Couper les courgettes, les tomates et les oignons en rondelles fines.</li><li>Disposer les rondelles dans un plat en alternant courgette, tomate et oignon.</li><li>Ajouter les herbes, un peu de sel et, si disponible, un filet d’huile.</li><li>Cuire au four à 180 °C pendant environ 35 minutes.</li><li>Ajouter le fromage râpé en fin de cuisson si souhaité.</li></ol>
     </section>
 
     <section class="recipe-section">
@@ -81,42 +67,47 @@
     <section class="recipe-section">
       <h2>🔁 Variantes possibles</h2>
       <p>Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.</p>
+      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Tian+de+courgettes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
     </section>
 
     <section class="recipe-section">
       <h2>⚠️ Allergènes et conservation</h2>
-      <p><strong>Allergènes :</strong> lait</p>
+      <p><strong>Allergènes :</strong> Lait</p>
       <p><strong>Conservation :</strong> À conserver 24 h au réfrigérateur dans une boîte fermée.</p>
       <p><strong>Réchauffage :</strong> À réchauffer doucement si nécessaire.</p>
       <p class="small">Vérifiez toujours les étiquettes des produits utilisés.</p>
     </section>
 
-
+    
     <section class="recipe-section recipe-linked-filters no-print">
       <h2>🔎 Filtres associés</h2>
       <p class="small">Cliquez sur un bouton pour trouver les recettes associées au même champ.</p>
-      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=tian" title="Filtrer les recettes : sous_categorie = Tian">Tian</a></span></p>
-<p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : moment = Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : moment = Diner">Diner</a></span></p>
-<p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=four" title="Filtrer les recettes : equipement = Four">Four</a></span></p>
-<p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=lait" title="Filtrer les recettes : allergene = Lait">Lait</a></span></p>
+      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=tian" title="Filtrer les recettes : Tian">Tian</a></span></p>
+      <p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
+      <p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=four" title="Filtrer les recettes : Four">Four</a></span></p>
+      <p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=lait" title="Filtrer les recettes : Lait">Lait</a></span></p>
     </section>
+
 
     <section class="recipe-section">
       <h2>📱 QR code</h2>
       <div class="qr-row">
-        <img src="../qrcodes/recettes/20260708-011.png" alt="QR code de la recette 20260708-011">
+        <img src="../qrcodes/recettes/20260708-011.png" alt="QR code de la recette Tian de courgettes">
         <div>
-          <p>Scannez ce QR code pour retrouver cette fiche recette.</p>
+          <p>QR code vers la fiche en ligne.</p>
           <p class="small">https://recettesducoeur.github.io/recettes/20260708-011.html</p>
         </div>
       </div>
     </section>
 
-    <section class="recipe-section no-print">
-      <button class="print-button">🖨️ Imprimer / enregistrer en PDF</button>
+    <section class="recipe-section no-print recipe-actions">
+      <button class="print-button desktop-print-only" type="button">🖨️ Imprimer</button>
+      <a class="button pdf-download-button" href="../pdf/recettes/20260708-011.pdf" download>📄 Télécharger le PDF</a>
+      <a class="button secondary" href="../suggerer-recette.html">💡 Suggérer une recette</a>
       <a class="button ghost" href="../recettes.html">Retour aux recettes</a>
+      <p class="small pdf-note">Sur mobile/tablette, seul le téléchargement PDF est proposé. Sur PC, l’impression conserve les quantités sélectionnées.</p>
     </section>
   </main>
-  <footer class="site-footer no-print"><div class="footer-inner"><div><strong>Les Recettes du Cœur</strong><br>Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire.</div><div class="footer-links"><a href="../presentation-projet.html">Projet</a><a href="../aide.html">Aide</a><a href="../contact.html">Contact</a><a href="{{URL_FORMULAIRE_SUGGESTION_RECETTE}}">💡 Suggérer une recette</a></div></div></footer>
+  <div data-site-footer></div>
 </body>
 </html>

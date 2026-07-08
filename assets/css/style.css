@@ -1105,3 +1105,66 @@ code{
     background:var(--green);
   }
 }
+
+/* V22 — page suggérer une recette + boutons distincts */
+.suggest-hero{
+  display:grid;
+  grid-template-columns:1fr minmax(280px,520px);
+  gap:1.5rem;
+  align-items:center;
+}
+
+.suggest-main-image,
+.suggest-two-cols img{
+  width:100%;
+  border-radius:24px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+
+.suggest-two-cols{
+  display:grid;
+  grid-template-columns:minmax(260px,520px) 1fr;
+  gap:1.5rem;
+  align-items:center;
+}
+
+.contact-email{
+  font-size:1.25rem;
+  font-weight:900;
+}
+
+.recipe-actions .print-button{
+  background:var(--blue);
+}
+
+.recipe-actions .pdf-download-button{
+  background:var(--green);
+}
+
+@media(max-width:899px){
+  .suggest-hero,
+  .suggest-two-cols{
+    grid-template-columns:1fr;
+  }
+
+  .desktop-print-only{
+    display:none!important;
+  }
+
+  .recipe-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .recipe-actions .button,
+  .recipe-actions .print-button{
+    width:100%;
+  }
+}
+
+@media(min-width:900px){
+  .desktop-print-only{
+    display:inline-flex;
+  }
+}

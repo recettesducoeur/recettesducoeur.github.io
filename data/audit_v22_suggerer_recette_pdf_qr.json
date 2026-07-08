@@ -1,0 +1,58 @@
+{
+  "version": "V22",
+  "date_controle": "2026-07-08T21:56:21",
+  "ameliorations": [
+    "Création de la page suggérer-recette.html avec deux visuels validés.",
+    "Correction du lien mort de suggestion : footer et fiches pointent vers suggérer-recette.html.",
+    "Fiches recettes : deux boutons distincts, Imprimer et Télécharger le PDF.",
+    "Mobile/tablette : le bouton Imprimer est masqué, le PDF reste proposé.",
+    "Lien Google placé sous le texte des variantes, avec recherche uniquement sur le nom de la recette.",
+    "PDF régénérés avec logo, image recette et QR code de la recette.",
+    "Page semaine renforcée contre les résultats vides.",
+    "Contrôles JS, JSON, fichiers et liens morts."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json_audit": {
+    "total": 13,
+    "visibles": 12,
+    "duplicates": [],
+    "missing_fields": {},
+    "missing_files": {},
+    "old_url_hits": [],
+    "dead_placeholder_hits": [],
+    "bad_google_links": []
+  },
+  "required_missing": [],
+  "specific_checks": {
+    "two_buttons_print_pdf": true,
+    "google_link_clean": true,
+    "suggestion_page_link": true,
+    "suggestion_page_has_two_images": true
+  },
+  "pdf_count": 13,
+  "pdf_render": {
+    "ok": true,
+    "message": "1 page(s) rendue(s)"
+  }
+}
