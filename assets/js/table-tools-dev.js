@@ -1,92 +1,123 @@
-
-// Outils génériques pour tableaux HTML.
-// Fonctionne sur les tableaux .data-table : tri par colonne + affichage/masquage de colonnes.
-
-function tableTextValue(cell) {
-  return (cell?.innerText || "")
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+function getCellValue(cell) {
+  return (cell?.textContent || "").trim();
 }
 
-function inferSortValue(text) {
-  const normalized = text.replace(",", ".").replace(/[^\d.-]/g, "");
-  const num = Number(normalized);
-  if (normalized && Number.isFinite(num)) return num;
-  return text;
-}
-
-function sortDataTable(table, colIndex, direction) {
-  const tbody = table.tBodies[0];
-  if (!tbody) return;
-
-  const rows = Array.from(tbody.rows);
-  rows.sort((a, b) => {
-    const av = inferSortValue(tableTextValue(a.cells[colIndex]));
-    const bv = inferSortValue(tableTextValue(b.cells[colIndex]));
-
-    if (typeof av === "number" && typeof bv === "number") {
-      return direction === "asc" ? av - bv : bv - av;
-    }
-
-    return direction === "asc"
-      ? String(av).localeCompare(String(bv), "fr")
-      : String(bv).localeCompare(String(av), "fr");
-  });
-
-  rows.forEach(row => tbody.appendChild(row));
-}
-
-function setColumnVisibility(table, colIndex, visible) {
-  Array.from(table.rows).forEach(row => {
-    const cell = row.cells[colIndex];
-    if (cell) cell.style.display = visible ? "" : "none";
-  });
+function compareValues(a, b, direction) {
+  const na = Number(String(a).replace(",", "."));
+  const nb = Number(String(b).replace(",", "."));
+  const bothNumbers = !Number.isNaN(na) && !Number.isNaN(nb) && a !== "" && b !== "";
+  const result = bothNumbers ? na - nb : String(a).localeCompare(String(b), "fr", { numeric: true, sensitivity: "base" });
+  return direction === "asc" ? result : -result;
 }
 
 function initDataTable(table) {
-  if (table.dataset.tableToolsReady === "1") return;
-  table.dataset.tableToolsReady = "1";
+  if (!table) return;
 
-  const headers = Array.from(table.tHead?.rows?.[0]?.cells || []);
+  const headers = [...table.querySelectorAll("thead th")];
   headers.forEach((th, index) => {
-    th.classList.add("sortable");
     th.dataset.sortDirection = "";
-    th.addEventListener("click", () => {
-      const next = th.dataset.sortDirection === "asc" ? "desc" : "asc";
-      headers.forEach(h => {
-        h.dataset.sortDirection = "";
-        h.classList.remove("sort-asc", "sort-desc");
+    th.addEventListener("click", event => {
+      if (event.target.classList.contains("col-resizer")) return;
+
+      const direction = th.dataset.sortDirection === "asc" ? "desc" : "asc";
+      headers.forEach(h => h.dataset.sortDirection = "");
+      th.dataset.sortDirection = direction;
+
+      const tbody = table.querySelector("tbody");
+      if (!tbody) return;
+
+      const rows = [...tbody.querySelectorAll("tr")];
+      rows.sort((ra, rb) => {
+        const a = getCellValue(ra.children[index]);
+        const b = getCellValue(rb.children[index]);
+        return compareValues(a, b, direction);
       });
-      th.dataset.sortDirection = next;
-      th.classList.add(next === "asc" ? "sort-asc" : "sort-desc");
-      sortDataTable(table, index, next);
+
+      rows.forEach(row => tbody.appendChild(row));
     });
   });
+
+  enableResizableColumns(table);
+  enableStickyFirstColumn(table);
 }
 
 function buildColumnToggles(table, container) {
   if (!table || !container) return;
-  container.innerHTML = "";
 
-  const headers = Array.from(table.tHead?.rows?.[0]?.cells || []);
-  headers.forEach((th, index) => {
-    const label = document.createElement("label");
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = th.style.display !== "none";
+  const headers = [...table.querySelectorAll("thead th")];
+  container.innerHTML = headers.map((th, index) => `
+    <label class="check-pill">
+      <input type="checkbox" data-col="${index}" checked>
+      <span>${th.textContent.trim() || `Colonne ${index + 1}`}</span>
+    </label>
+  `).join("");
 
-    checkbox.addEventListener("change", () => {
-      setColumnVisibility(table, index, checkbox.checked);
+  container.querySelectorAll("input[data-col]").forEach(input => {
+    input.addEventListener("change", () => {
+      const col = Number(input.dataset.col);
+      const visible = input.checked;
+      table.querySelectorAll("tr").forEach(row => {
+        if (row.children[col]) row.children[col].style.display = visible ? "" : "none";
+      });
     });
-
-    label.appendChild(checkbox);
-    label.appendChild(document.createTextNode(th.innerText.trim() || `Colonne ${index + 1}`));
-    container.appendChild(label);
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("table.data-table").forEach(initDataTable);
-});
+function enableResizableColumns(table) {
+  if (!table || table.dataset.resizableReady === "1") return;
+  table.dataset.resizableReady = "1";
+
+  const ths = [...table.querySelectorAll("thead th")];
+  ths.forEach((th, index) => {
+    th.style.position = th.style.position || "sticky";
+    th.style.minWidth = th.offsetWidth ? `${th.offsetWidth}px` : "120px";
+
+    const resizer = document.createElement("span");
+    resizer.className = "col-resizer";
+    resizer.setAttribute("aria-hidden", "true");
+    th.appendChild(resizer);
+
+    let startX = 0;
+    let startWidth = 0;
+
+    resizer.addEventListener("mousedown", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      startX = event.pageX;
+      startWidth = th.offsetWidth;
+
+      document.body.classList.add("resizing-column");
+
+      const onMove = moveEvent => {
+        const width = Math.max(70, startWidth + moveEvent.pageX - startX);
+        setColumnWidth(table, index, width);
+      };
+
+      const onUp = () => {
+        document.body.classList.remove("resizing-column");
+        document.removeEventListener("mousemove", onMove);
+        document.removeEventListener("mouseup", onUp);
+      };
+
+      document.addEventListener("mousemove", onMove);
+      document.addEventListener("mouseup", onUp);
+    });
+  });
+}
+
+function setColumnWidth(table, index, width) {
+  table.querySelectorAll("tr").forEach(row => {
+    const cell = row.children[index];
+    if (cell) {
+      cell.style.width = `${width}px`;
+      cell.style.minWidth = `${width}px`;
+      cell.style.maxWidth = `${width}px`;
+    }
+  });
+}
+
+function enableStickyFirstColumn(table) {
+  if (!table || table.dataset.stickyFirstColReady === "1") return;
+  table.dataset.stickyFirstColReady = "1";
+  table.classList.add("sticky-first-column");
+}

@@ -1,5 +1,5 @@
 (function () {
-  const FOOTER_TEXT = "Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié à une association.";
+  const FOOTER_TEXT = "Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant.";
 
   function pageDepthPrefix() {
     const path = window.location.pathname;

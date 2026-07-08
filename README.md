@@ -10,7 +10,7 @@ https://recettesducoeur.github.io/
 
 ## À remplacer
 Dans les fichiers HTML, remplacer le placeholder du formulaire :
-`{{URL_FORMULAIRE_SUGGESTION_RECETTE}}`
+`suggerer-recette.html`
 
 ## Déploiement
 Copier tout le contenu de ce dossier à la racine du dépôt GitHub, puis activer GitHub Pages sur la branche `main`, dossier `/root`.
@@ -99,7 +99,7 @@ Toutes les fiches recettes contiennent maintenant, en fin de page, un bouton :
 
 Ce bouton pointe vers le placeholder :
 
-`{{URL_FORMULAIRE_SUGGESTION_RECETTE}}`
+`suggerer-recette.html`
 
 ## Responsive V8
 
@@ -367,7 +367,7 @@ Correctifs :
 - réparation du JavaScript cassé dans `assets/js/app.js` ;
 - réécriture propre de `layout.js`, `app.js`, `search.js` et `recette-semaine.js` ;
 - centralisation de l’en-tête et du pied de page via `assets/js/layout.js` ;
-- pied de page unique : `Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant, non affilié à une association.` ;
+- pied de page unique : `Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant.` ;
 - correction des liens Google : recherche uniquement sur le nom de la recette ;
 - PDF régénérés avec logo et image de la recette ;
 - contrôle `node --check` sur les scripts principaux ;
@@ -377,3 +377,38 @@ Correctifs :
 Fichier d’audit :
 
 `data/audit_v21_correctif_js_layout_pdf.json`
+
+## V22 — Page suggérer une recette, boutons PDF/Imprimer et QR dans PDF
+
+Ajouts et correctifs :
+- création de `suggerer-recette.html` ;
+- intégration de deux visuels :
+  - `assets/images/site/suggerer-recette-boite-a-idees.webp`
+  - `assets/images/site/suggerer-recette-ensemble.webp`
+- correction du lien mort de suggestion ;
+- fiches recettes : deux boutons distincts `🖨️ Imprimer` et `📄 Télécharger le PDF` ;
+- mobile/tablette : le bouton impression est masqué, le PDF reste disponible ;
+- lien Google sous `Variantes possibles`, basé uniquement sur le nom de la recette ;
+- PDF régénérés avec logo, image de recette et QR code de la recette ;
+- page recette de la semaine renforcée contre les résultats vides ;
+- contrôles JS/JSON/fichiers effectués.
+
+Fichier d’audit :
+
+`data/audit_v22_suggerer_recette_pdf_qr.json`
+
+## V23 — Catalogue paginé, boutons uniformes, tableaux améliorés
+
+Améliorations :
+- `recettes.html` : images limitées à environ 1/4 de l’écran sur PC ;
+- `recettes.html` : pagination dynamique à 20 recettes maximum par page ;
+- correction des liens `Suggérer une recette` vers `suggerer-recette.html` ;
+- pied de page centralisé mis à jour :
+  `Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant.`
+- fiches recettes : les quatre boutons d’action ont la même taille et la même police ;
+- tableaux dev : colonnes redimensionnables à la souris ;
+- tableaux dev : première ligne et première colonne sticky.
+
+Fichier d’audit :
+
+`data/audit_v23_pagination_tableaux_footer.json`

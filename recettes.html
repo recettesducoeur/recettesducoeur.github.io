@@ -12,7 +12,7 @@
 </head>
 <body>
   <div data-site-header></div>
-  <main id="contenu" class="container">
+  <main id="contenu" class="container catalog-page">
     <section class="page-card">
       <h1>📚 Toutes les recettes</h1>
       <p class="lead">Catalogue des fiches recettes disponibles.</p>
@@ -20,11 +20,12 @@
         <label for="filtre-catalogue">Filtrer rapidement</label>
         <input id="filtre-catalogue" type="search" placeholder="Exemple : pâtes, thon, dessert...">
       </div>
+      <p id="catalogue-count" class="small"></p>
     </section>
 
     <section>
       <div data-json-error></div>
-      <div id="liste-recettes" class="recipe-grid">
+      <div id="liste-recettes" class="recipe-grid catalog-grid" data-page-size="20">
 
     <article class="recipe-card">
       <img src="images/recettes/20000101-001.webp" alt="Illustration : Gratin de pâtes au thon" loading="lazy">
@@ -206,6 +207,7 @@
       </div>
     </article>
       </div>
+      <nav id="pagination-recettes" class="pagination no-print" aria-label="Pagination des recettes"></nav>
     </section>
   </main>
   <div data-site-footer></div>

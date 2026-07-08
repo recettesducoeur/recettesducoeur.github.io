@@ -338,17 +338,80 @@ async function afficherAccueil() {
   if (r.length) c.innerHTML = r.slice(0, 3).map(x => carte(x)).join("");
 }
 
+function paginateList(list, page, pageSize) {
+  const totalPages = Math.max(1, Math.ceil(list.length / pageSize));
+  const safePage = Math.min(Math.max(1, page), totalPages);
+  const start = (safePage - 1) * pageSize;
+  return {
+    items: list.slice(start, start + pageSize),
+    page: safePage,
+    totalPages
+  };
+}
+
+function renderPagination(list, currentPage, pageSize, onPageChange) {
+  const nav = document.getElementById("pagination-recettes");
+  const count = document.getElementById("catalogue-count");
+  if (!nav) return;
+
+  const totalPages = Math.max(1, Math.ceil(list.length / pageSize));
+  if (count) {
+    count.textContent = `${list.length} recette${list.length > 1 ? "s" : ""} — ${pageSize} maximum par page.`;
+  }
+
+  if (totalPages <= 1) {
+    nav.innerHTML = "";
+    return;
+  }
+
+  const buttons = [];
+  buttons.push(`<button type="button" class="page-button" data-page="${Math.max(1, currentPage - 1)}" ${currentPage === 1 ? "disabled" : ""}>← Précédent</button>`);
+
+  for (let i = 1; i <= totalPages; i++) {
+    buttons.push(`<button type="button" class="page-button ${i === currentPage ? "active" : ""}" data-page="${i}">${i}</button>`);
+  }
+
+  buttons.push(`<button type="button" class="page-button" data-page="${Math.min(totalPages, currentPage + 1)}" ${currentPage === totalPages ? "disabled" : ""}>Suivant →</button>`);
+
+  nav.innerHTML = buttons.join("");
+  nav.querySelectorAll("[data-page]").forEach(button => {
+    button.addEventListener("click", () => onPageChange(Number(button.dataset.page)));
+  });
+}
+
 async function afficherCatalogue() {
   const c = document.getElementById("liste-recettes");
   if (!c) return;
 
   const recettes = await chargerRecettes();
-  if (recettes.length) render(recettes, "liste-recettes");
+  const pageSize = Number(c.dataset.pageSize || 20);
+  let currentPage = 1;
+  let filtered = recettes.length ? recettes : [];
+
+  function renderPage(page = 1) {
+    currentPage = page;
+    if (!filtered.length) {
+      render([], "liste-recettes");
+      renderPagination([], 1, pageSize, renderPage);
+      return;
+    }
+
+    const result = paginateList(filtered, currentPage, pageSize);
+    render(result.items, "liste-recettes");
+    renderPagination(filtered, result.page, pageSize, renderPage);
+  }
+
+  if (recettes.length) {
+    renderPage(1);
+  } else {
+    renderPagination([...document.querySelectorAll("#liste-recettes .recipe-card")], 1, pageSize, () => {});
+  }
 
   const inp = document.getElementById("filtre-catalogue");
   if (inp && recettes.length) {
     inp.addEventListener("input", () => {
-      render(recettes.filter(r => correspondRechercheRecette(r, inp.value)), "liste-recettes");
+      filtered = recettes.filter(r => correspondRechercheRecette(r, inp.value));
+      renderPage(1);
     });
   }
 }
