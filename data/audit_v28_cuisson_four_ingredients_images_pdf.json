@@ -1,0 +1,84 @@
+{
+  "version": "V28",
+  "date": "2026-07-09T06:51:48",
+  "ameliorations": [
+    "Ajout d’une section Cuisson indicative dans chaque fiche recette visible.",
+    "Pour les recettes au four : ajout d’une température et d’un temps de cuisson indicatifs.",
+    "Pour le plat chou-fleur/quinoa : ajout d’une option gratin à 200 °C pendant 10 min.",
+    "Vérification et complétion des ingrédients principaux, secondaires et optionnels.",
+    "Regénération d’images web en style photo maison pour les 12 recettes visibles.",
+    "Mise à jour de data/recettes.json avec cuisson_indicative, cuisson_four_temperature_c et cuisson_four_temps_min.",
+    "Régénération des fiches HTML recettes.",
+    "Régénération de tous les PDF recettes avec cuisson indicative, images, QR code et sources.",
+    "Contrôles JS, JSON, fichiers, liens et rendu PDF."
+  ],
+  "oven_recipes": [
+    {
+      "id": "20000101-001",
+      "titre": "Gratin de pâtes au thon",
+      "temperature": 200,
+      "temps": "15 à 20"
+    },
+    {
+      "id": "20000101-007",
+      "titre": "Tartines chaudes fromage-tomate",
+      "temperature": 200,
+      "temps": "8 à 12"
+    },
+    {
+      "id": "20000101-010",
+      "titre": "Gâteau simple du placard",
+      "temperature": 180,
+      "temps": "30 à 40"
+    },
+    {
+      "id": "20260708-011",
+      "titre": "Tian de courgettes",
+      "temperature": "180 à 200",
+      "temps": "40 à 60"
+    }
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "ingredient_incomplete": [],
+    "oven_missing": [],
+    "html_cooking_missing": [],
+    "images_missing": [],
+    "pdf_missing": [],
+    "old_url_hits": [],
+    "dead_placeholder_hits": []
+  },
+  "pdf_render": {
+    "ok": true,
+    "message": "1 page(s) rendue(s)"
+  }
+}

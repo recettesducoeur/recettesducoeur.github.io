@@ -1,6 +1,128 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aide — Les Recettes du Cœur</title><meta name="description" content="Aide pour utiliser le moteur de recherche de recettes simples, solidaires et anti-gaspi."><link rel="icon" href="assets/logos/favicon.ico"><link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/layout.js"></script>
-  <script defer src="assets/js/app.js"></script></head><body>
-  <div data-site-header></div><main id="contenu" class="container"><section class="page-card"><h1>❓ Aide et fonctionnement</h1><h2>🔎 Recherche par nom recette</h2><p>Entrez un mot comme <strong>gratin</strong>, <strong>soupe</strong> ou <strong>dessert</strong>. La recherche ignore les majuscules, les accents et les pluriels simples.</p><h2>🧺 Recherche par ingrédient</h2><p>Entrez un ingrédient comme <strong>thon</strong>, <strong>courgettes</strong> ou <strong>riz</strong>. Les libellés sont simplifiés : <strong>thon égoutté</strong> est rapproché de <strong>thon</strong>, <strong>banane mûre</strong> de <strong>banane</strong>.</p><h2>✅ Mode “J’ai ces ingrédients”</h2><p>Indiquez vos produits disponibles. Le site classe les recettes et affiche les ingrédients présents, manquants et un score de compatibilité.</p><h2>🖨️ Imprimer une recette</h2><p>Chaque fiche contient un bouton <strong>Imprimer / enregistrer en PDF</strong>.</p><h2>🏷️ Recherche par tags</h2><p>Vous pouvez cocher un ou plusieurs tags pour filtrer les recettes plus finement. Depuis une fiche recette, un clic sur un tag ouvre directement la recherche filtrée sur ce tag.</p><h2>🔘 Filtres cliquables</h2>
-      <p>Dans les fiches recettes, plusieurs champs peuvent être cliqués pour rechercher des recettes proches : catégorie, sous-catégorie, cuisson, température, budget, difficulté, moment du repas, équipement, régimes, allergènes et tags.</p>
-      <h2>📱 QR codes</h2><p>Chaque recette a un QR code pour retrouver directement la fiche.</p><h2>💡 Suggérer une recette</h2><a class="button secondary" href="suggerer-recette.html">💡 Suggérer une recette</a></section></main>
-  <div data-site-footer></div></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aide — Les Recettes du Cœur</title>
+  <meta name="description" content="Aide pour utiliser Les Recettes du Cœur : recherche, impression, cuisine, partage, suggestion, nutrition estimée et repères alimentaires.">
+  <link rel="icon" href="assets/logos/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/table-tools-dev.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="contenu" class="container help-page">
+
+    <section class="page-card">
+      <span class="kicker">❓ Mode d’emploi</span>
+      <h1>Aide et fonctionnement</h1>
+      <p class="lead">Le site est pensé comme une cuisine bien rangée : on cherche, on adapte, on imprime, on cuisine, puis on partage les bonnes idées. Sans panique, sans jargon, et avec un peu moins de vaisselle si possible.</p>
+    </section>
+
+    <section class="page-card" id="recherche">
+      <h2>🔎 Rechercher une recette</h2>
+      <p>La recherche ignore les majuscules, les accents et les pluriels simples. Vous pouvez donc écrire <strong>pates</strong>, <strong>pâtes</strong>, <strong>courgette</strong> ou <strong>courgettes</strong> : le site fait le rapprochement.</p>
+
+      <div class="help-grid">
+        <article class="help-step">
+          <strong>1. Par nom</strong>
+          <p>Entrez un mot comme <em>gratin</em>, <em>soupe</em> ou <em>dessert</em>. Le site sort les fiches correspondantes.</p>
+        </article>
+        <article class="help-step">
+          <strong>2. Par ingrédient</strong>
+          <p>Entrez <em>thon</em>, <em>riz</em>, <em>courgettes</em> ou un autre produit. Les libellés sont simplifiés : <em>thon égoutté</em> est rapproché de <em>thon</em>.</p>
+        </article>
+        <article class="help-step">
+          <strong>3. “J’ai ces ingrédients”</strong>
+          <p>Listez ce que vous avez. Le site calcule une compatibilité : ingrédients présents, manquants, et recettes probablement réalisables.</p>
+        </article>
+        <article class="help-step">
+          <strong>4. Tags et filtres</strong>
+          <p>Utilisez les tags, la cuisson, le budget, la difficulté, les allergènes ou les repères alimentaires. C’est un peu comme trier son placard, mais sans tout sortir sur la table.</p>
+        </article>
+      </div>
+
+      <h3>Filtres cliquables</h3>
+      <p>Dans les fiches recettes, plusieurs champs sont cliquables : catégorie, sous-catégorie, cuisson, température, budget, difficulté, moment du repas, équipement, régimes, allergènes, tags et repères alimentaires.</p>
+    </section>
+
+    <section class="page-card" id="cuisiner">
+      <h2>👩‍🍳 Cuisiner avec une fiche</h2>
+      <p>Chaque fiche contient les ingrédients, les étapes, une astuce anti-gaspi, des variantes, une cuisson indicative et des repères alimentaires.</p>
+      <div class="notice warm-note">
+        <strong>Règle de cuisine n°1 :</strong> si votre four est capricieux, c’est lui le chef. Les températures et durées sont indicatives : surveillez la coloration, la texture et l’odeur.
+      </div>
+      <h3>Adapter les quantités</h3>
+      <p>Le calculateur de portions adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base de la fiche.</p>
+    </section>
+
+    <section class="page-card" id="imprimer">
+      <h2>🖨️ Imprimer ou télécharger</h2>
+      <p>Sur ordinateur, vous pouvez imprimer la fiche. Sur mobile et tablette, le téléchargement PDF reste disponible. C’est pratique pour cuisiner sans poser le téléphone dans la farine.</p>
+      <h3>QR codes</h3>
+      <p>Chaque recette dispose d’un QR code pour ouvrir directement la fiche en ligne. Le site possède aussi un QR code général sur l’accueil, la page contact et la page de suggestion.</p>
+    </section>
+
+    <section class="page-card" id="partager-suggerer">
+      <h2>🤝 Partager et suggérer</h2>
+      <p>Une bonne recette simple mérite de circuler. Vous pouvez partager une fiche, utiliser son QR code ou proposer une idée depuis la page dédiée.</p>
+      <div class="help-grid">
+        <article class="help-step">
+          <strong>Partager</strong>
+          <p>Envoyez le lien de la recette ou montrez le QR code. Simple, rapide, efficace.</p>
+        </article>
+        <article class="help-step">
+          <strong>Suggérer</strong>
+          <p>Une recette du placard, une astuce anti-gaspi, une variante familiale ? Direction la page “Suggérer une recette”.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-card" id="reperes-alimentaires">
+      <h2>🧭 Repères alimentaires et allergènes</h2>
+      <p>Les repères alimentaires indiquent des informations pratiques comme : <strong>Sans porc</strong>, <strong>Végétarien</strong>, <strong>Vegan possible</strong>, <strong>Contient lait</strong>, <strong>Sans gluten possible</strong>, etc.</p>
+      <div class="notice allergen-markers-note">
+        <strong>Attention :</strong> “Sans [allergène] possible” signifie que la recette peut probablement être réalisée sans cet allergène avec des produits adaptés. Cela ne garantit pas l’absence de traces ni la conformité médicale pour une personne allergique.
+      </div>
+      <h3>À vérifier systématiquement</h3>
+      <p>Vérifiez toujours les étiquettes, les marques utilisées, les contaminations croisées possibles et les remplacements d’ingrédients.</p>
+    </section>
+
+    <section class="page-card" id="valeurs-nutritionnelles">
+      <h2>📊 Valeurs nutritionnelles estimées et Nutri-Score estimé</h2>
+      <p>Les fiches peuvent afficher une rubrique <strong>Valeurs nutritionnelles estimées</strong>. Ces valeurs sont calculées automatiquement à partir des quantités de base et d’ingrédients génériques. Elles sont données à titre indicatif.</p>
+
+      <div class="notice info-note">
+        <strong>Important :</strong> ces valeurs ne sont pas des valeurs officielles. Elles peuvent varier selon la marque des produits, la taille réelle des portions, les remplacements d’ingrédients, la quantité de sel ajoutée, l’égouttage des conserves et la cuisson.
+      </div>
+
+      <h3>Valeurs affichées</h3>
+      <p>Le site affiche notamment : énergie, calories, protéines, glucides, sucres, lipides, acides gras saturés, fibres et sel. Ces champs correspondent aux grandes familles d’informations que l’on retrouve dans les tableaux nutritionnels.</p>
+
+      <h3>Nutri-Score estimé</h3>
+      <p>Le score affiché sur les recettes est un <strong>indicateur estimé non officiel</strong>. Il s’inspire de la logique générale du Nutri-Score, mais il ne doit pas être présenté comme un Nutri-Score réglementaire.</p>
+
+      <details class="help-details">
+        <summary>Sources et références utiles</summary>
+        <ul>
+          <li><a href="https://ciqual.anses.fr/" target="_blank" rel="noopener">Anses / Ciqual — table française de composition nutritionnelle des aliments</a></li>
+          <li><a href="https://www.anses.fr/fr/content/la-table-de-composition-nutritionnelle-du-ciqual" target="_blank" rel="noopener">Anses — présentation officielle de la table Ciqual</a></li>
+          <li><a href="https://www.santepubliquefrance.fr/nutrition-et-activite-physique/nutri-score" target="_blank" rel="noopener">Santé publique France — Nutri-Score</a></li>
+          <li><a href="https://www.mangerbouger.fr/manger-mieux/s-informer-sur-les-produits-qu-on-achete/nouveau-nutri-score/comment-calcule-t-on-le-nutri-score" target="_blank" rel="noopener">Manger Bouger — comment calcule-t-on le Nutri-Score ?</a></li>
+          <li><a href="https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/nutrition-labelling_en" target="_blank" rel="noopener">Commission européenne — étiquetage nutritionnel</a></li>
+          <li><a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj/fra" target="_blank" rel="noopener">Règlement UE n°1169/2011 — information des consommateurs sur les denrées alimentaires</a></li>
+          <li><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener">OMS — alimentation saine</a></li>
+          <li><a href="https://www.who.int/news-room/fact-sheets/detail/sodium-reduction" target="_blank" rel="noopener">OMS — réduction du sodium / sel</a></li>
+          <li><a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener">Open Food Facts — base ouverte collaborative de produits alimentaires</a></li>
+        </ul>
+      </details>
+
+      <p class="small">Pour ce site, les calculs sont volontairement prudents et simplifiés. Ils servent à donner un ordre de grandeur pour des recettes maison, pas à produire une déclaration nutritionnelle officielle.</p>
+    </section>
+
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

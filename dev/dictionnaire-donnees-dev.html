@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dictionnaire des données — dev — Les Recettes du Cœur</title>
+  <link rel="icon" href="../assets/logos/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script defer src="../assets/js/layout.js"></script>
+  <script defer src="../assets/js/app.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="contenu" class="container dev-page dev-page dev-page">
+    <section class="page-card">
+      <span class="kicker">🛠️ Page dev</span>
+      <h1>Dictionnaire des données</h1>
+      <p class="lead">Référence des champs utilisés dans <code>data/recettes.json</code>.</p>
+      <p>La dernière colonne indique des exemples détaillés ou les valeurs possibles lorsque la liste est définie.</p>
+      <p class="dev-hidden-link-note">Page volontairement non mise en avant dans le menu principal.</p>
+      <div id="dict-column-toggles" class="col-toggle-list"></div>
+    </section>
+
+    <section class="table-scroll">
+      <table id="dict-table" class="data-table">
+        <thead>
+          <tr>
+            <th>Champ</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Format / valeurs</th>
+            <th>Exemple court</th>
+            <th>Obligatoire</th>
+            <th>Valeurs possibles / exemples détaillés</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>id</td><td>string</td><td>Identifiant unique recette</td><td>AAAAMMJJ-XXX</td><td>20260708-011</td><td>Oui</td><td>Format obligatoire : AAAAMMJJ-XXX. Recettes test : 20000101-XXX. Exemple réel : 20260708-011.</td></tr>
+<tr><td>titre</td><td>string</td><td>Nom public de la recette</td><td>Texte court</td><td>Tian de courgettes</td><td>Oui</td><td>Texte libre. Exemples : Tian de courgettes ; Chou-fleur et quinoa à la crème.</td></tr>
+<tr><td>slug</td><td>string</td><td>Nom simplifié pour usage technique</td><td>minuscules sans accents</td><td>tian-de-courgettes</td><td>Oui</td><td>Texte sans accents, minuscules, mots séparés par tirets. Exemple : tian-de-courgettes.</td></tr>
+<tr><td>url</td><td>string</td><td>Chemin vers la fiche HTML</td><td>recettes/{id}.html</td><td>recettes/20260708-011.html</td><td>Oui</td><td>Format : recettes/{id}.html.</td></tr>
+<tr><td>image</td><td>string</td><td>Chemin vers l’image recette</td><td>images/recettes/{id}.webp</td><td>images/recettes/20260708-011.webp</td><td>Oui</td><td>Format : images/recettes/{id}.webp.</td></tr>
+<tr><td>qrcode</td><td>string</td><td>Chemin vers le QR code recette</td><td>qrcodes/recettes/{id}.png</td><td>qrcodes/recettes/20260708-011.png</td><td>Oui</td><td>Format : qrcodes/recettes/{id}.png.</td></tr>
+<tr><td>resume</td><td>string</td><td>Résumé affiché dans les cartes</td><td>Phrase courte</td><td>Un plat coloré au four...</td><td>Oui</td><td>Phrase courte affichée dans les cartes recette.</td></tr>
+<tr><td>explication</td><td>string</td><td>Explication simple de l’intérêt de la recette</td><td>Texte court</td><td>Le tian est un plat de légumes au four.</td><td>Oui</td><td>Texte libre court expliquant l’intérêt et le principe de la recette.</td></tr>
+<tr><td>categorie</td><td>string</td><td>Type principal</td><td>plat, dessert, entree...</td><td>plat</td><td>Oui</td><td>dessert, plat</td></tr>
+<tr><td>sous_categorie</td><td>string</td><td>Famille plus précise</td><td>soupe, gratin, salade...</td><td>tian</td><td>Oui</td><td>compote, dessert lacté, gateau, gratin, omelette, pates, plat cremeux, poelee, salade, soupe, tartine, tian</td></tr>
+<tr><td>moment_repas</td><td>array</td><td>Moments possibles</td><td>dejeuner, diner, gouter...</td><td>[dejeuner, diner]</td><td>Oui</td><td>dejeuner, dessert, diner, gouter</td></tr>
+<tr><td>temperature_service</td><td>string</td><td>Chaud/froid/tiède</td><td>chaud, froid, froid_ou_tiede</td><td>chaud</td><td>Oui</td><td>chaud, froid, froid_ou_tiede</td></tr>
+<tr><td>type_cuisson</td><td>array</td><td>Modes de cuisson</td><td>four, casserole, poele...</td><td>[four]</td><td>Oui</td><td>casserole, four, poele</td></tr>
+<tr><td>equipement</td><td>array</td><td>Matériel nécessaire</td><td>four, poêle, casserole...</td><td>[four, plat à gratin]</td><td>Oui</td><td>casserole, four, poele</td></tr>
+<tr><td>temps_preparation_min</td><td>number</td><td>Temps préparation</td><td>minutes</td><td>15</td><td>Oui</td><td>Nombre entier en minutes. Exemples actuels : 10, 15, 5</td></tr>
+<tr><td>temps_cuisson_min</td><td>number</td><td>Temps cuisson</td><td>minutes</td><td>35</td><td>Oui</td><td>Nombre entier en minutes. Exemples actuels : 10, 12, 15, 20, 25, 30, 35, 8</td></tr>
+<tr><td>temps_total_min</td><td>number</td><td>Temps total</td><td>préparation + cuisson</td><td>50</td><td>Oui</td><td>Nombre entier calculé : temps_preparation_min + temps_cuisson_min.</td></tr>
+<tr><td>personnes</td><td>number</td><td>Nombre de portions de base</td><td>entier</td><td>4</td><td>Oui</td><td>Nombre de portions de base. Exemples actuels : 2, 4, 6</td></tr>
+<tr><td>difficulte</td><td>string</td><td>Niveau de difficulté</td><td>tres_facile, facile, moyen</td><td>facile</td><td>Oui</td><td>facile</td></tr>
+<tr><td>budget</td><td>string</td><td>Niveau budget</td><td>tres_economique, economique, standard</td><td>economique</td><td>Oui</td><td>economique</td></tr>
+<tr><td>ingredients.principaux</td><td>array</td><td>Ingrédients structurants</td><td>liste de noms</td><td>[courgettes]</td><td>Oui</td><td>Liste de noms. Exemples : banane mûre, bananes mûres, chou-fleur, courgettes, farine, fromage, lait, légumes cuits ou crus, légumes variés, pain, pommes, pommes de terre, pâtes, quinoa, riz, riz rond ou riz classique, sucre, thon égoutté, tomates, tomates concassées ou sauce tomate</td></tr>
+<tr><td>ingredients.secondaires</td><td>array</td><td>Ingrédients utiles</td><td>liste de noms</td><td>[tomates, oignons]</td><td>Oui</td><td>Liste de noms. Exemples : crème, eau, fromage râpé, huile, lait, maïs égoutté, oignon, oignons, sucre, tomates</td></tr>
+<tr><td>ingredients.optionnels</td><td>array</td><td>Ingrédients facultatifs</td><td>liste de noms</td><td>[fromage râpé]</td><td>Oui</td><td>Liste de noms. Exemples : cannelle, chapelure, chocolat, cornichons, crème, fromage, fromage râpé, fruits, herbes, herbes de Provence, huile, sucre, thon, vanille, épices douces, œufs, œufs durs</td></tr>
+<tr><td>ingredients.recherche</td><td>array</td><td>Termes de recherche</td><td>accents, synonymes, variantes</td><td>[courgette, courgettes]</td><td>Oui</td><td>Variantes de recherche : accents, pluriels, synonymes. Exemples : pates, pâtes, courgette, courgettes, creme, crème.</td></tr>
+<tr><td>ingredients_detail.principaux</td><td>array&lt;object&gt;</td><td>Ingrédients principaux avec quantités</td><td>nom, quantite, unite</td><td>{nom, quantite, unite}</td><td>Oui</td><td>Objets {nom, quantite, unite}. Unités actuelles : c. à café, c. à soupe, g, ml, pincée, pièce, pièces, tranches</td></tr>
+<tr><td>ingredients_detail.secondaires</td><td>array&lt;object&gt;</td><td>Ingrédients secondaires avec quantités</td><td>nom, quantite, unite</td><td>{nom, quantite, unite}</td><td>Oui</td><td>Objets {nom, quantite, unite}. Quantite = nombre ; unite = g, kg, ml, L, pièce, tranches, c. à soupe, c. à café...</td></tr>
+<tr><td>ingredients_detail.optionnels</td><td>array&lt;object&gt;</td><td>Ingrédients optionnels avec quantités</td><td>nom, quantite, unite</td><td>{nom, quantite, unite}</td><td>Oui</td><td>Objets {nom, quantite, unite}. Les ingrédients optionnels peuvent être absents ou laissés en liste vide.</td></tr>
+<tr><td>tags</td><td>array</td><td>Tags de classement</td><td>simple, anti_gaspi...</td><td>[simple, economique]</td><td>Oui</td><td>anti_gaspi, chaud, conserve, cremeux, dessert, economique, enfants, familial, four, froid, fruits, gouter, legumes, pain, proteines, rapide, sans_four, simple, vegetarien_possible</td></tr>
+<tr><td>regimes</td><td>array</td><td>Régimes possibles</td><td>vegetarien_possible...</td><td>[vegetarien_possible]</td><td>Non</td><td>vegetarien, vegetarien_possible, sans_lait, sans_gluten_possible...</td></tr>
+<tr><td>allergenes</td><td>array</td><td>Allergènes à afficher</td><td>gluten, lait, poisson...</td><td>[lait]</td><td>Oui si connu</td><td>gluten, lait, poisson, œufs</td></tr>
+<tr><td>conservation</td><td>string</td><td>Conseil de conservation</td><td>texte</td><td>24 h au réfrigérateur</td><td>Oui</td><td>Texte libre. Exemple : À conserver 24 h au réfrigérateur dans une boîte fermée.</td></tr>
+<tr><td>rechauffage</td><td>string</td><td>Conseil de réchauffage</td><td>texte</td><td>Au four ou micro-ondes</td><td>Oui</td><td>Texte libre. Exemple : À réchauffer doucement si nécessaire.</td></tr>
+<tr><td>niveau_urgence_produits</td><td>array</td><td>Produits à utiliser rapidement</td><td>produits_frais_a_utiliser...</td><td>[produits_frais_a_utiliser]</td><td>Non</td><td>produits_frais_a_utiliser</td></tr>
+<tr><td>anti_gaspi</td><td>boolean</td><td>Recette anti-gaspi</td><td>true/false</td><td>true</td><td>Oui</td><td>Booléen : true ou false.</td></tr>
+<tr><td>recette_semaine_candidate</td><td>boolean</td><td>Peut être sélectionnée en recette semaine</td><td>true/false</td><td>true</td><td>Oui</td><td>Booléen : true ou false.</td></tr>
+<tr><td>visible</td><td>boolean</td><td>Affichée sur le site public</td><td>true/false</td><td>true</td><td>Oui</td><td>Booléen : true ou false. true = affichée sur le site public.</td></tr>
+<tr><td>date_creation</td><td>date</td><td>Date de création</td><td>YYYY-MM-DD</td><td>2026-07-08</td><td>Oui</td><td>Date au format YYYY-MM-DD. Recettes test : 2000-01-01.</td></tr>
+<tr><td>date_modification</td><td>date</td><td>Date de modification</td><td>YYYY-MM-DD</td><td>2026-07-08</td><td>Oui</td><td>Date au format YYYY-MM-DD.</td></tr>
+<tr><td>etapes</td><td>array&lt;string&gt;</td><td>Étapes détaillées</td><td>liste ordonnée</td><td>[Laver..., Couper...]</td><td>Oui</td><td>Liste de phrases courtes, dans l’ordre de préparation.</td></tr>
+<tr><td>astuce</td><td>string</td><td>Astuce anti-gaspi</td><td>texte</td><td>Utiliser les légumes fatigués</td><td>Oui</td><td>Texte libre. Exemple : utiliser des légumes à finir.</td></tr>
+<tr><td>variantes</td><td>string</td><td>Variantes possibles</td><td>texte</td><td>Ajouter pommes de terre...</td><td>Oui</td><td>Texte libre. Exemple : remplacer le thon par des sardines ou des légumes.</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="page-card">
+      <h2>Notes de maintenance</h2>
+      <ul>
+        <li>Les champs de type liste peuvent évoluer avec les besoins du site.</li>
+        <li>Pour éviter les erreurs de recherche, garder une orthographe stable pour les tags, catégories et types de cuisson.</li>
+        <li>Les recettes test utilisent la date fictive <code>20000101</code>.</li>
+      </ul>
+    </section>
+  
+    <section class="page-card">
+      <h2>Valeurs de référence ajoutées</h2>
+      <p><strong>Type de cuisson :</strong> ajout de <code>sans_cuisson</code>, affiché comme <strong>Sans cuisson</strong>.</p>
+      <p><strong>Allergènes :</strong> ajout de <code>fruits_a_coque</code> et <code>crustaces</code>, affichés comme <strong>Fruits à coque</strong> et <strong>Crustacés</strong>.</p>
+      <p class="small">Ces valeurs sont aussi documentées dans <code>data/valeurs_reference.json</code>.</p>
+    </section>
+
+  
+    <section class="page-card">
+      <h2>Champ PDF ajouté</h2>
+      <p><code>pdf</code> : chemin relatif vers le PDF statique de la recette.</p>
+      <p>Format attendu : <code>pdf/recettes/AAAAMMJJ-XXX.pdf</code></p>
+      <p>Exemple : <code>pdf/recettes/20260708-011.pdf</code></p>
+      <p class="small">Le PDF utilise les quantités de base de la recette. L’impression dynamique PC conserve, elle, les quantités sélectionnées dans le calculateur.</p>
+    </section>
+
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const table = document.getElementById("dict-table");
+      initDataTable(table);
+      buildColumnToggles(table, document.getElementById("dict-column-toggles"));
+    });
+  </script>
+  <div data-site-footer></div>
+</body>
+</html>

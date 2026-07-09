@@ -18,14 +18,51 @@ function ajusterBandeauFixePC() {
 }
 
 const LABELS = {
-  anti_gaspi: "Anti-gaspi",
-  sans_cuisson: "Sans cuisson",
-  fruits_a_coque: "Fruits à coque",
-  crustaces: "Crustacés",
-  micro_ondes: "Micro-ondes",
-  froid_ou_tiede: "Froid ou tiède",
-  economique: "Économique",
-  facile: "Facile"
+  "sans_porc": "Sans porc",
+  "vegetarien": "Végétarien",
+  "vegetarien_possible": "Végétarien possible",
+  "vegetalien": "Végétalien",
+  "vegan_possible": "Vegan possible",
+  "sans_viande": "Sans viande",
+  "contient_poisson": "Contient poisson",
+  "contient_lait": "Contient lait",
+  "contient_oeuf": "Contient œuf",
+  "contient_gluten": "Contient gluten",
+  "contient_arachides": "Contient arachides",
+  "contient_soja": "Contient soja",
+  "contient_fruits_a_coque": "Contient fruits à coque",
+  "contient_crustaces": "Contient crustacés",
+  "contient_mollusques": "Contient mollusques",
+  "contient_celeri": "Contient céleri",
+  "contient_moutarde": "Contient moutarde",
+  "contient_sesame": "Contient sésame",
+  "contient_sulfites": "Contient sulfites",
+  "contient_lupin": "Contient lupin",
+  "sans_gluten_possible": "Sans gluten possible",
+  "sans_lait_possible": "Sans lait possible",
+  "sans_oeuf_possible": "Sans œuf possible",
+  "sans_poisson_possible": "Sans poisson possible",
+  "sans_arachides_possible": "Sans arachides possible",
+  "sans_soja_possible": "Sans soja possible",
+  "sans_fruits_a_coque_possible": "Sans fruits à coque possible",
+  "sans_crustaces_possible": "Sans crustacés possible",
+  "sans_mollusques_possible": "Sans mollusques possible",
+  "sans_celeri_possible": "Sans céleri possible",
+  "sans_moutarde_possible": "Sans moutarde possible",
+  "sans_sesame_possible": "Sans sésame possible",
+  "sans_sulfites_possible": "Sans sulfites possible",
+  "sans_lupin_possible": "Sans lupin possible",
+  "anti_gaspi": "Anti-gaspi",
+  "sans_cuisson": "Sans cuisson",
+  "fruits_a_coque": "Fruits à coque",
+  "crustaces": "Crustacés",
+  "micro_ondes": "Micro-ondes",
+  "froid_ou_tiede": "Froid ou tiède",
+  "economique": "Économique",
+  "facile": "Facile",
+  "plat": "Plat",
+  "dessert": "Dessert",
+  "entree": "Entrée"
 };
 
 function formatLabel(value) {
@@ -416,7 +453,42 @@ async function afficherCatalogue() {
   }
 }
 
+
+function slugifyHeading(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replaceAll("œ", "oe")
+    .replaceAll("æ", "ae")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80) || "section";
+}
+
+function ajouterAncresTitres() {
+  const used = new Map();
+  document.querySelectorAll("main h1, main h2, main h3").forEach(heading => {
+    if (heading.dataset.anchorReady === "1") return;
+
+    const base = heading.id || slugifyHeading(heading.textContent);
+    const count = used.get(base) || 0;
+    used.set(base, count + 1);
+    const id = count ? `${base}-${count + 1}` : base;
+    heading.id = id;
+    heading.dataset.anchorReady = "1";
+
+    const link = document.createElement("a");
+    link.className = "heading-anchor no-print";
+    link.href = `#${id}`;
+    link.setAttribute("aria-label", `Lien direct vers ${heading.textContent.trim()}`);
+    link.textContent = "#";
+    heading.appendChild(link);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  ajouterAncresTitres();
   if (typeof renderSiteLayout === "function") renderSiteLayout();
 
   const toggle = document.querySelector("[data-nav-toggle]");

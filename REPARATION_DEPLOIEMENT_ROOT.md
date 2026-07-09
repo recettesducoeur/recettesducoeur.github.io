@@ -53,7 +53,7 @@ images/
 qrcodes/
 recettes/
 robots.txt
-diagnostic-deploiement.html
+dev/diagnostic-deploiement.html
 ```
 
 Il ne faut pas avoir :
@@ -87,7 +87,7 @@ car dans ce cas les chemins du site seront cassés.
    - Folder : `/ root`
 10. Attends que `Actions` passe au vert.
 11. Teste :
-    `https://recettesducoeur.github.io/diagnostic-deploiement.html`
+    `https://recettesducoeur.github.io/dev/diagnostic-deploiement.html`
 
 ## Test final
 

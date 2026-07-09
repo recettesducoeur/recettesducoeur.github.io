@@ -1,0 +1,75 @@
+{
+  "version": "V26",
+  "date": "2026-07-09T06:15:05",
+  "ameliorations": [
+    "Centralisation de la largeur des fiches recettes via variables CSS globales.",
+    "Cartes recettes limitées à environ 1/5 de la largeur écran sur PC, avec plafond visuel à 8 colonnes.",
+    "Centralisation des grilles .recipe-grid, .catalog-grid et résultats de recherche.",
+    "Centralisation des boutons d’action et comportements mobiles.",
+    "Centralisation des cartes QR.",
+    "Généralisation des tableaux .data-table et .dev-table : scroll horizontal et vertical.",
+    "Généralisation des tableaux : première ligne sticky.",
+    "Généralisation des tableaux : première colonne sticky.",
+    "Généralisation des tableaux : tri croissant/décroissant sur chaque colonne.",
+    "Généralisation des tableaux : largeur des colonnes redimensionnable à la souris.",
+    "Déplacement des pages HTML de développement/test vers /dev/.",
+    "Mise à jour de dev/index.html avec liens corrigés.",
+    "Mise à jour des liens internes pointant vers les pages dev déplacées.",
+    "Maintien du noindex / nofollow pour les pages dev."
+  ],
+  "moved_dev_files": [
+    "base-recettes-dev.html",
+    "dictionnaire-donnees-dev.html",
+    "import-texte-dev.html",
+    "responsive-audit-dev.html",
+    "diagnostic-deploiement.html"
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "old_root_dev_files_remaining": [],
+    "dev_files_missing": [],
+    "old_url_hits": [],
+    "dead_placeholder_hits": []
+  },
+  "specific_checks": {
+    "recipe_card_max_width_var": true,
+    "recipe_card_max_20vw": true,
+    "recipe_max_8_columns": true,
+    "table_scroll_css": true,
+    "sticky_first_column_css": true,
+    "table_sort_js": true,
+    "table_resize_js": true,
+    "table_auto_wrap_js": true,
+    "dev_index_exists": true,
+    "dev_pages_moved": true
+  }
+}

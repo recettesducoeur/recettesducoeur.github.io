@@ -20,7 +20,7 @@ Copier tout le contenu de ce dossier à la racine du dépôt GitHub, puis active
 
 Une page non mise en avant dans la navigation permet de visualiser et filtrer la base JSON :
 
-`base-recettes-dev.html`
+`dev/base-recettes-dev.html`
 
 ## Calculateur de portions
 
@@ -47,9 +47,9 @@ Exemples :
 
 Ces pages ne sont pas référencées dans la navigation principale :
 
-- `base-recettes-dev.html` : visualiser, filtrer, trier et contrôler `data/recettes.json`.
-- `dictionnaire-donnees-dev.html` : dictionnaire complet des champs de la base.
-- `import-texte-dev.html` : convertir un fichier texte structuré en bloc JSON à intégrer dans la base.
+- `dev/base-recettes-dev.html` : visualiser, filtrer, trier et contrôler `data/recettes.json`.
+- `dev/dictionnaire-donnees-dev.html` : dictionnaire complet des champs de la base.
+- `dev/import-texte-dev.html` : convertir un fichier texte structuré en bloc JSON à intégrer dans la base.
 
 ## Tables
 
@@ -61,7 +61,7 @@ Le CSS global ajoute des tableaux avec :
 
 ## Dictionnaire des données
 
-La page `dictionnaire-donnees-dev.html` contient maintenant une colonne supplémentaire :
+La page `dev/dictionnaire-donnees-dev.html` contient maintenant une colonne supplémentaire :
 
 `Valeurs possibles / exemples détaillés`
 
@@ -107,7 +107,7 @@ Le CSS a été renforcé pour PC, tablette et smartphone.
 
 Page dev ajoutée :
 
-`responsive-audit-dev.html`
+`dev/responsive-audit-dev.html`
 
 Fichier d’audit :
 
@@ -221,10 +221,10 @@ Ajout d’un sous-répertoire :
 Cette page sert d’index pratique vers les pages techniques `*-dev.html`.
 
 Pages référencées :
-- `base-recettes-dev.html`
-- `dictionnaire-donnees-dev.html`
-- `import-texte-dev.html`
-- `responsive-audit-dev.html`
+- `dev/base-recettes-dev.html`
+- `dev/dictionnaire-donnees-dev.html`
+- `dev/import-texte-dev.html`
+- `dev/responsive-audit-dev.html`
 
 Mesures ajoutées :
 - aucun lien public dans la navigation principale ;
@@ -304,7 +304,7 @@ Corrections :
 - QR codes régénérés avec l’URL racine ;
 - anciennes URL `/lesrecettesducoeur/` remplacées ;
 - ajout d’une page de diagnostic :
-  `diagnostic-deploiement.html`
+  `dev/diagnostic-deploiement.html`
 - ajout d’un guide :
   `REPARATION_DEPLOIEMENT_ROOT.md`
 - archive ZIP générée sans dossier parent pour faciliter l’upload GitHub.
@@ -429,3 +429,114 @@ Améliorations :
 Fichier d’audit :
 
 `data/audit_v24_logo_qr_recherche_semaine.json`
+
+## V25 — Grilles recettes limitées à 8 colonnes maximum
+
+Amélioration de l’affichage des recettes sur toutes les pages contenant des grilles de recettes.
+
+Règles responsive :
+- smartphone : 1 colonne ;
+- tablette : 2 colonnes ;
+- PC courant : 3 à 4 colonnes ;
+- très grand écran : 6 colonnes ;
+- écran très large : 8 colonnes maximum.
+
+Le catalogue `recettes.html` suit désormais cette logique globale.
+La page recherche conserve son plafond spécifique de 3 colonnes, qui reste inférieur à la limite globale de 8.
+
+Fichier d’audit :
+
+`data/audit_v25_grilles_recettes_max_8_colonnes.json`
+
+## V26 — Centralisation design, tableaux et dossier dev
+
+Améliorations :
+- centralisation des grilles de recettes dans `assets/css/style.css` ;
+- largeur des cartes recettes limitée à environ `1/5` de l’écran sur PC ;
+- plafond visuel de `8 colonnes` maximum sur très grands écrans ;
+- harmonisation de `.recipe-grid`, `.catalog-grid` et des résultats de recherche ;
+- centralisation des boutons, QR cards et comportements responsive ;
+- généralisation des tableaux `.data-table` et `.dev-table` :
+  - scroll horizontal ;
+  - scroll vertical ;
+  - première ligne sticky ;
+  - première colonne sticky ;
+  - tri croissant/décroissant sur chaque colonne ;
+  - colonnes redimensionnables à la souris ;
+- déplacement des pages HTML de développement/test vers `/dev/` ;
+- mise à jour de `/dev/index.html` avec des liens corrigés ;
+- mise à jour des liens internes vers les pages dev déplacées.
+
+Fichier d’audit :
+
+`data/audit_v26_centralisation_dev_tables.json`
+
+## V27 — Recettes améliorées, sources web, images et PDF
+
+Améliorations :
+- les 12 recettes visibles ont été retravaillées après recherche web ;
+- ajout de sources d’inspiration dans `data/recettes.json` ;
+- ajout du lien `recherche_web_url` dans chaque recette visible ;
+- ajout d’une section `Sources d’inspiration` dans chaque fiche recette ;
+- enrichissement des textes : résumé, explication, étapes, astuce anti-gaspi et variantes ;
+- génération d’une nouvelle illustration web pour chaque recette visible ;
+- régénération des PDF avec image, QR code, textes améliorés et sources ;
+- contrôle JS, JSON, fichiers, liens et rendu PDF.
+
+Fichier d’audit :
+
+`data/audit_v27_recettes_ameliorees_sources_images_pdf.json`
+
+## V28 — Cuisson au four, ingrédients vérifiés, images et PDF
+
+Améliorations :
+- ajout d’une section `Cuisson indicative` dans chaque fiche recette visible ;
+- ajout d’une température et d’un temps indicatifs pour les recettes au four ;
+- ajout d’une option gratin pour la recette chou-fleur/quinoa ;
+- vérification et complétion des listes `principaux`, `secondaires`, `optionnels` ;
+- régénération des images web dans un style plus proche d’une photo maison ;
+- mise à jour de `data/recettes.json` ;
+- régénération des fiches HTML recettes ;
+- régénération des PDF avec cuisson indicative, image, QR code et sources ;
+- contrôles JS, JSON, fichiers, liens et rendu PDF.
+
+Fichier d’audit :
+
+`data/audit_v28_cuisson_four_ingredients_images_pdf.json`
+
+## V29 — Nutrition estimée, repères alimentaires et aide documentée
+
+Améliorations :
+- déplacement des sources d’inspiration dans la rubrique `Variantes possibles`, sous la recherche Google ;
+- ajout d’une rubrique `Valeurs nutritionnelles estimées` dans chaque fiche recette visible ;
+- ajout d’un `Nutri-Score estimé non officiel` avec disclaimer ;
+- ajout d’un lien vers `aide.html#valeurs-nutritionnelles` depuis chaque fiche ;
+- ajout des `Repères alimentaires` : sans porc, végétarien, vegan possible, contient poisson/lait/œuf/gluten, etc. ;
+- ajout du filtre `repere` dans la recherche ;
+- mise à jour de `data/valeurs_reference.json` ;
+- enrichissement de `aide.html` avec une rubrique sur la fiabilité, les limites, le Nutri-Score estimé et les sources officielles ;
+- liens d’aide ajoutés vers Anses/Ciqual, Santé publique France, Manger Bouger, Commission européenne, règlement UE, OMS et Open Food Facts ;
+- régénération des PDF avec nutrition estimée et repères alimentaires.
+
+Fichier d’audit :
+
+`data/audit_v29_nutrition_reperes_sources_aide.json`
+
+## V30 — Aide structurée, ancres, allergènes et PDF
+
+Améliorations :
+- déplacement de `🔥 Cuisson indicative` dans la rubrique `👩‍🍳 Préparation détaillée`, sous forme de commentaire ;
+- suppression de la section autonome `Cuisson indicative` dans les fiches recettes ;
+- enrichissement des repères alimentaires avec les allergènes : `Contient [allergène]` ou `Sans [allergène] possible` ;
+- mise à jour de `data/valeurs_reference.json` ;
+- PDF : ajout de la fiche en ligne en pied de page ;
+- PDF : suppression du texte `Aide nutrition` et du lien d’aide nutrition en pied de page ;
+- page aide : regroupement des recherches dans une seule rubrique `Recherche` ;
+- page aide : ajout de rubriques tutoriel `Cuisiner`, `Imprimer`, `Partager et suggérer` ;
+- page aide : sources et références utiles en section repliable/dépliable fermée par défaut ;
+- généralisation automatique des ancres sur tous les titres `H1`, `H2` et `H3` du site ;
+- régénération des fiches HTML et des PDF.
+
+Fichier d’audit :
+
+`data/audit_v30_aide_ancres_allergenes_pdf.json`

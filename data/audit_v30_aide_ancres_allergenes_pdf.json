@@ -1,0 +1,78 @@
+{
+  "version": "V30",
+  "date": "2026-07-09T07:42:00",
+  "ameliorations": [
+    "Déplacement de la cuisson indicative dans la rubrique Préparation détaillée, sous forme de commentaire.",
+    "Suppression de la section autonome Cuisson indicative dans les fiches recette.",
+    "Ajout de repères allergènes complets : Contient [allergène] ou Sans [allergène] possible.",
+    "Mise à jour des valeurs de référence des repères alimentaires/allergènes.",
+    "PDF : ajout de la fiche en ligne en pied de page.",
+    "PDF : suppression du texte Aide nutrition et du lien aide nutrition en pied de page.",
+    "Page aide : regroupement des modes de recherche dans une rubrique Recherche.",
+    "Page aide : réécriture en style tutoriel plus dynamique pour rechercher, cuisiner, imprimer, partager, suggérer.",
+    "Page aide : maintien d’un ton sérieux pour la partie Valeurs nutritionnelles estimées et Nutri-Score estimé.",
+    "Page aide : Sources et références utiles transformées en bloc repliable/dépliable fermé par défaut.",
+    "Généralisation automatique des ancres sur tous les titres H1, H2 et H3 du site.",
+    "Régénération des fiches HTML et des PDF."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "repere_missing": [],
+    "allergen_repere_missing": [],
+    "html_cooking_bad": [],
+    "html_sources_bad": [],
+    "pdf_footer_bad": [],
+    "old_url_hits": [],
+    "dead_placeholder_hits": []
+  },
+  "specific_checks": {
+    "anchor_js": true,
+    "anchor_css": true,
+    "aide_recherche_group": true,
+    "aide_cuisiner": true,
+    "aide_imprimer": true,
+    "aide_partager": true,
+    "aide_nutrition": true,
+    "details_sources_closed": true,
+    "repere_values_allergenes": true
+  },
+  "pdf_render": {
+    "20000101-001": {
+      "ok": true,
+      "message": "2 page(s) rendue(s)"
+    },
+    "20260708-012": {
+      "ok": true,
+      "message": "2 page(s) rendue(s)"
+    }
+  }
+}

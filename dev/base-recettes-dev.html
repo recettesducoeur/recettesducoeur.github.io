@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Base recettes — dev — Les Recettes du Cœur</title>
+  <link rel="icon" href="../assets/logos/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script defer src="../assets/js/layout.js"></script>
+  <script defer src="../assets/js/app.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
+  <script defer src="../assets/js/dev-base.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="contenu" class="container dev-page dev-page dev-page">
+    <section class="page-card">
+      <span class="kicker">🛠️ Page dev</span>
+      <h1>Base recettes — visualisation et maintenance</h1>
+      <p class="lead">Cette page permet de contrôler le fichier <code>data/recettes.json</code> : filtres, tri, colonnes affichées/masquées et JSON filtré.</p>
+      <p><a class="button ghost" href="../recettes/00000000-000.html">Voir le template vierge 00000000-000</a></p>
+      <p class="dev-hidden-link-note">Page volontairement non mise en avant dans le menu principal.</p>
+    </section>
+
+    <section class="dev-toolbar">
+      <div>
+        <label for="dev-search">Recherche</label>
+        <input id="dev-search" type="search" placeholder="ID, titre, ingrédient, tag...">
+      </div>
+      <div>
+        <label for="dev-cat">Catégorie</label>
+        <select id="dev-cat"></select>
+      </div>
+      <div>
+        <label for="dev-tag">Tag</label>
+        <select id="dev-tag"></select>
+      </div>
+      <div>
+        <label for="dev-visible">Visibilité</label>
+        <select id="dev-visible">
+          <option value="">Toutes</option>
+          <option value="true">Visibles</option>
+          <option value="false">Masquées</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="page-card">
+      <h2>Colonnes affichées</h2>
+      <p class="small">Cochez ou décochez les colonnes. Cliquez sur l’en-tête d’une colonne pour trier en ordre alphabétique / numérique, puis inverse.</p>
+      <div id="dev-column-toggles" class="col-toggle-list"></div>
+      <p><strong id="dev-count"></strong></p>
+    </section>
+
+    <section class="table-scroll">
+      <table id="dev-recipes-table" class="data-table dev-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Slug</th>
+            <th>Catégorie</th>
+            <th>Sous-catégorie</th>
+            <th>Service</th>
+            <th>Cuisson</th>
+            <th>Prépa</th>
+            <th>Cuisson min</th>
+            <th>Total</th>
+            <th>Pers.</th>
+            <th>Difficulté</th>
+            <th>Budget</th>
+            <th>Ingrédients principaux</th>
+            <th>Ingrédients secondaires</th>
+            <th>Ingrédients optionnels</th>
+            <th>Tags</th>
+            <th>Allergènes</th>
+            <th>Anti-gaspi</th>
+            <th>Semaine</th>
+            <th>Visible</th>
+            <th>Création</th>
+            <th>Modification</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="dev-table-body"></tbody>
+      </table>
+    </section>
+
+    <section class="page-card">
+      <h2>JSON filtré</h2>
+      <pre id="dev-json" class="dev-json"></pre>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

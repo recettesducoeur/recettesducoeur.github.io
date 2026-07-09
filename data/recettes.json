@@ -6,7 +6,7 @@
     "url": "recettes/20000101-001.html",
     "image": "images/recettes/20000101-001.webp",
     "qrcode": "qrcodes/recettes/20000101-001.png",
-    "resume": "Une recette simple et accessible : gratin de pâtes au thon.",
+    "resume": "Un gratin familial de pâtes au thon, crémeux et légèrement gratiné, pensé pour utiliser une boîte de thon, un reste de pâtes ou un fond de sauce tomate.",
     "categorie": "plat",
     "sous_categorie": "gratin",
     "moment_repas": [
@@ -76,21 +76,20 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Faire cuire les pâtes dans une grande casserole d’eau bouillante salée, selon le temps indiqué sur le paquet.",
-      "Égoutter les pâtes puis les remettre dans la casserole hors du feu.",
-      "Ajouter le thon égoutté et émietté, puis verser le lait pour apporter du moelleux.",
-      "Mélanger doucement pour répartir le thon sans écraser les pâtes.",
-      "Verser le tout dans un plat à gratin, ajouter le fromage râpé et, si disponible, un peu de chapelure.",
-      "Mettre au four à 180 °C pendant environ 20 minutes, jusqu’à ce que le dessus soit doré."
+      "Préchauffer le four à 200 °C. Cuire les pâtes dans une grande casserole d’eau salée en les gardant al dente, puis les égoutter.",
+      "Pendant la cuisson des pâtes, faire revenir l’oignon émincé dans un peu d’huile. Ajouter la sauce tomate ou la crème, le thon égoutté et émietté, puis poivrer et ajouter des herbes si disponibles.",
+      "Mélanger les pâtes avec la sauce au thon. Ajouter un peu d’eau de cuisson, de lait ou de crème si le mélange paraît trop sec.",
+      "Verser dans un plat à gratin. Répartir le fromage râpé sur le dessus.",
+      "Enfourner 15 à 20 minutes, jusqu’à ce que le dessus soit doré. Laisser reposer 5 minutes avant de servir."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Très bon avec un reste de pâtes déjà cuites : raccourcir le passage au four et ajouter un peu de lait ou de sauce pour éviter que le gratin soit sec.",
+    "variantes": "Ajouter tomates en dés, maïs, petits pois, olives, restes de courgettes ou champignons. Remplacer la tomate par de la crème pour une version plus douce. Ajouter chapelure ou pain rassis mixé sur le dessus pour un gratin plus croustillant.",
     "ingredients_detail": {
       "principaux": [
         {
-          "nom": "pâtes",
+          "nom": "pâtes sèches",
           "quantite": 320,
           "unite": "g"
         },
@@ -98,11 +97,16 @@
           "nom": "thon égoutté",
           "quantite": 280,
           "unite": "g"
+        },
+        {
+          "nom": "sauce tomate ou tomates concassées",
+          "quantite": 300,
+          "unite": "g"
         }
       ],
       "secondaires": [
         {
-          "nom": "lait",
+          "nom": "lait ou crème",
           "quantite": 250,
           "unite": "ml"
         },
@@ -110,23 +114,102 @@
           "nom": "fromage râpé",
           "quantite": 100,
           "unite": "g"
+        },
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce"
         }
       ],
       "optionnels": [
         {
-          "nom": "chapelure",
+          "nom": "chapelure ou pain rassis mixé",
           "quantite": 30,
           "unite": "g"
         },
         {
-          "nom": "herbes",
+          "nom": "herbes de Provence",
           "quantite": 1,
           "unite": "c. à café"
+        },
+        {
+          "nom": "poivre",
+          "quantite": 1,
+          "unite": "pincée"
         }
       ]
     },
-    "explication": "Ce gratin permet de transformer des pâtes et une conserve de thon en plat complet. Il convient bien quand on veut préparer un repas chaud sans technique compliquée.",
-    "pdf": "pdf/recettes/20000101-001.pdf"
+    "explication": "Cette version mise sur des pâtes cuites al dente, une base tomate ou crème bien assaisonnée et un passage au four juste assez long pour gratiner sans dessécher. C’est une recette économique, pratique et très adaptable.",
+    "pdf": "pdf/recettes/20000101-001.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Gratin de pâtes au thon, sauce tomates",
+        "url": "https://www.marmiton.org/recettes/recette_gratin-de-pates-au-thon-sauce-tomates_35898.aspx"
+      },
+      {
+        "titre": "Marmiton - Gratin de pâtes au thon, mozzarella",
+        "url": "https://www.marmiton.org/recettes/recette_gratin-de-pates-au-thon-mozzarella_63025.aspx"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Gratin+de+p%C3%A2tes+au+thon+recette+variantes",
+    "cuisson_four_temperature_c": 200,
+    "cuisson_four_temps_min": "15 à 20",
+    "cuisson_indicative": "Four : 200 °C pendant 15 à 20 min, après précuisson des pâtes à la casserole.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1386,
+      "poids_portion_estime_g": 346,
+      "par_portion": {
+        "kcal": 699.3,
+        "proteines": 39.5,
+        "glucides": 69.6,
+        "sucres": 8.7,
+        "lipides": 28.8,
+        "satures": 17.4,
+        "fibres": 4.2,
+        "sel": 1.5
+      },
+      "pour_100g": {
+        "kcal": 201.8,
+        "proteines": 11.4,
+        "glucides": 20.1,
+        "sucres": 2.5,
+        "lipides": 8.3,
+        "satures": 5.0,
+        "fibres": 1.2,
+        "sel": 0.4
+      },
+      "energie_kj_par_portion": 2926,
+      "energie_kj_pour_100g": 844,
+      "fruits_legumes_legumineuses_estime_pct": 29,
+      "nutri_score_estime": {
+        "grade": "B",
+        "score_simplifie": 2,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": [
+        "poivre"
+      ]
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "contient_gluten",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "contient_poisson",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-002",
@@ -135,7 +218,7 @@
     "url": "recettes/20000101-002.html",
     "image": "images/recettes/20000101-002.webp",
     "qrcode": "qrcodes/recettes/20000101-002.png",
-    "resume": "Une recette simple et accessible : riz au lait à la banane.",
+    "resume": "Un riz au lait doux et anti-gaspi, enrichi avec de la banane bien mûre pour sucrer naturellement et obtenir une texture plus onctueuse.",
     "categorie": "dessert",
     "sous_categorie": "dessert lacté",
     "moment_repas": [
@@ -195,17 +278,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Verser le lait dans une casserole et ajouter le riz.",
-      "Faire chauffer à feu doux. Remuer souvent pour éviter que le riz accroche au fond.",
-      "Laisser cuire environ 25 minutes, jusqu’à ce que le riz soit tendre et le mélange crémeux.",
-      "Ajouter le sucre progressivement, selon le goût.",
-      "Écraser les bananes à la fourchette et les ajouter en fin de cuisson.",
-      "Servir tiède ou froid après repos au réfrigérateur."
+      "Rincer rapidement le riz rond. Porter le lait à frémissement dans une casserole avec le sucre, la vanille et une pincée de sel si disponible.",
+      "Ajouter le riz et cuire à feu doux 25 à 30 minutes en remuant régulièrement pour éviter que le fond accroche.",
+      "Écraser une banane bien mûre à la fourchette. L’ajouter en fin de cuisson, puis mélanger encore 2 à 3 minutes.",
+      "Couper la seconde banane en rondelles ou l’écraser selon la texture souhaitée.",
+      "Servir tiède ou froid. Ajouter cannelle, cacao ou miel si disponible."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Utiliser des bananes très mûres, même tachées : elles remplacent une partie du sucre et donnent plus de goût.",
+    "variantes": "Ajouter chocolat râpé, cannelle, vanille, raisins secs, zeste de citron ou un filet de miel. Pour une texture très crémeuse, utiliser du lait entier ou ajouter une petite cuillère de crème en fin de cuisson.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -219,7 +301,7 @@
           "unite": "ml"
         },
         {
-          "nom": "banane mûre",
+          "nom": "bananes très mûres",
           "quantite": 2,
           "unite": "pièces"
         }
@@ -229,6 +311,11 @@
           "nom": "sucre",
           "quantite": 40,
           "unite": "g"
+        },
+        {
+          "nom": "sel",
+          "quantite": 1,
+          "unite": "pincée"
         }
       ],
       "optionnels": [
@@ -241,11 +328,86 @@
           "nom": "vanille",
           "quantite": 1,
           "unite": "c. à café"
+        },
+        {
+          "nom": "chocolat râpé",
+          "quantite": 30,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Un dessert doux et nourrissant, pratique pour utiliser des bananes très mûres. Plus les bananes sont mûres, moins il faut ajouter de sucre.",
-    "pdf": "pdf/recettes/20000101-002.pdf"
+    "explication": "La banane mûre apporte du parfum, de la douceur et permet de réduire le sucre ajouté. La cuisson lente du riz dans le lait donne un dessert simple, nourrissant et facile à préparer à l’avance.",
+    "pdf": "pdf/recettes/20000101-002.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "CuisineAZ - Riz au lait crémeux : la recette inratable",
+        "url": "https://www.cuisineaz.com/articles/riz-au-lait-cremeux-la-recette-inratable-16101.aspx"
+      },
+      {
+        "titre": "CuisineAZ - Compote pomme banane, base fruits mûrs",
+        "url": "https://www.cuisineaz.com/recettes/compote-pomme-banane-121739.aspx"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Riz+au+lait+%C3%A0+la+banane+recette+variantes",
+    "cuisson_indicative": "Casserole : feu doux pendant 25 à 30 min, en remuant régulièrement.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1237,
+      "poids_portion_estime_g": 309,
+      "par_portion": {
+        "kcal": 334.7,
+        "proteines": 9.8,
+        "glucides": 58.9,
+        "sucres": 30.4,
+        "lipides": 6.2,
+        "satures": 3.7,
+        "fibres": 2.6,
+        "sel": 0.5
+      },
+      "pour_100g": {
+        "kcal": 108.2,
+        "proteines": 3.2,
+        "glucides": 19.0,
+        "sucres": 9.8,
+        "lipides": 2.0,
+        "satures": 1.2,
+        "fibres": 0.8,
+        "sel": 0.1
+      },
+      "energie_kj_par_portion": 1400,
+      "energie_kj_pour_100g": 453,
+      "fruits_legumes_legumineuses_estime_pct": 19,
+      "nutri_score_estime": {
+        "grade": "C",
+        "score_simplifie": 3,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": [
+        "cannelle",
+        "vanille"
+      ]
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "sans_viande",
+      "sans_gluten_possible",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-003",
@@ -254,7 +416,7 @@
     "url": "recettes/20000101-003.html",
     "image": "images/recettes/20000101-003.webp",
     "qrcode": "qrcodes/recettes/20000101-003.png",
-    "resume": "Une recette simple et accessible : soupe de légumes simple.",
+    "resume": "Une soupe de légumes simple, économique et modulable, idéale pour utiliser des légumes fatigués ou des restes de bac à légumes.",
     "categorie": "plat",
     "sous_categorie": "soupe",
     "moment_repas": [
@@ -313,17 +475,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Laver, éplucher si nécessaire, puis couper les légumes en morceaux moyens.",
-      "Mettre les légumes et les pommes de terre dans une grande casserole.",
-      "Ajouter l’eau jusqu’à couvrir les légumes.",
-      "Faire cuire environ 30 minutes, jusqu’à ce que les légumes soient tendres.",
-      "Mixer pour obtenir une soupe lisse, ou écraser grossièrement pour garder des morceaux.",
-      "Ajouter un peu de crème ou de fromage si disponible, puis rectifier l’assaisonnement."
+      "Éplucher uniquement les légumes qui le nécessitent, laver le reste et couper tout en morceaux de taille proche.",
+      "Faire revenir l’oignon ou le poireau dans un filet d’huile si disponible, pour renforcer le goût.",
+      "Ajouter les légumes, couvrir d’eau à hauteur, saler légèrement et ajouter des herbes ou un cube de bouillon si disponible.",
+      "Laisser cuire 25 à 35 minutes, jusqu’à ce que les légumes soient tendres.",
+      "Mixer plus ou moins finement. Ajuster l’épaisseur avec un peu d’eau, puis rectifier l’assaisonnement."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Les fanes propres, verts de poireaux, tiges de persil ou petits restes de légumes peuvent parfumer la soupe. Mixer avec un morceau de pain rassis donne plus de corps.",
+    "variantes": "Ajouter lentilles corail, pois chiches, haricots blancs, riz, petites pâtes ou pomme de terre. Pour une soupe rustique, ne mixer qu’une partie. Pour une soupe repas, servir avec pain grillé, fromage ou œuf dur.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -335,6 +496,11 @@
           "nom": "pommes de terre",
           "quantite": 300,
           "unite": "g"
+        },
+        {
+          "nom": "carottes ou poireaux",
+          "quantite": 200,
+          "unite": "g"
         }
       ],
       "secondaires": [
@@ -344,9 +510,14 @@
           "unite": "pièce"
         },
         {
-          "nom": "eau",
+          "nom": "eau ou bouillon",
           "quantite": 1000,
           "unite": "ml"
+        },
+        {
+          "nom": "huile",
+          "quantite": 1,
+          "unite": "c. à soupe"
         }
       ],
       "optionnels": [
@@ -359,11 +530,83 @@
           "nom": "fromage râpé",
           "quantite": 40,
           "unite": "g"
+        },
+        {
+          "nom": "pain rassis pour croûtons",
+          "quantite": 80,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Cette soupe accepte presque tous les légumes : carottes, poireaux, courgettes, pommes de terre, chou-fleur, tomates. Elle est utile pour éviter de jeter des légumes encore consommables.",
-    "pdf": "pdf/recettes/20000101-003.pdf"
+    "explication": "La recette repose sur une cuisson douce des légumes coupés régulièrement, puis un mixage plus ou moins fin selon la texture voulue. Elle peut être enrichie avec des légumineuses, du riz ou du pain pour devenir un repas complet.",
+    "pdf": "pdf/recettes/20000101-003.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Soupe de légumes",
+        "url": "https://www.marmiton.org/recettes/recette_soupe-de-legumes_222646.aspx"
+      },
+      {
+        "titre": "Le Monde - Soupe de légumes et légumineuses",
+        "url": "https://www.lemonde.fr/les-recettes-du-monde/article/2024/05/17/la-soupe-de-legumes-et-legumineuses-la-recette-de-jacques-caplat_6233808_5324493.html"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Soupe+de+l%C3%A9gumes+simple+recette+variantes",
+    "cuisson_indicative": "Casserole : 25 à 35 min à frémissement, jusqu’à ce que les légumes soient tendres.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 2615,
+      "poids_portion_estime_g": 654,
+      "par_portion": {
+        "kcal": 343.1,
+        "proteines": 10.0,
+        "glucides": 41.7,
+        "sucres": 12.0,
+        "lipides": 14.2,
+        "satures": 6.6,
+        "fibres": 10.2,
+        "sel": 0.6
+      },
+      "pour_100g": {
+        "kcal": 52.5,
+        "proteines": 1.5,
+        "glucides": 6.4,
+        "sucres": 1.8,
+        "lipides": 2.2,
+        "satures": 1.0,
+        "fibres": 1.6,
+        "sel": 0.1
+      },
+      "energie_kj_par_portion": 1436,
+      "energie_kj_pour_100g": 220,
+      "fruits_legumes_legumineuses_estime_pct": 54,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -1,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "vegan_possible",
+      "sans_gluten_possible",
+      "sans_lait_possible",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-004",
@@ -372,7 +615,7 @@
     "url": "recettes/20000101-004.html",
     "image": "images/recettes/20000101-004.webp",
     "qrcode": "qrcodes/recettes/20000101-004.png",
-    "resume": "Une recette simple et accessible : salade de riz au thon.",
+    "resume": "Une salade de riz au thon complète, fraîche et pratique, parfaite pour un repas froid, un pique-nique ou pour utiliser un reste de riz.",
     "categorie": "plat",
     "sous_categorie": "salade",
     "moment_repas": [
@@ -436,17 +679,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Faire cuire le riz, puis l’égoutter et le laisser refroidir.",
-      "Égoutter le thon et le maïs.",
-      "Couper les tomates en petits morceaux.",
-      "Mélanger le riz froid, le thon, le maïs et les tomates dans un saladier.",
-      "Ajouter les œufs durs ou les cornichons si disponibles.",
-      "Assaisonner légèrement et conserver au frais avant de servir."
+      "Cuire le riz dans de l’eau salée, puis l’égoutter. Le rincer rapidement à l’eau froide ou l’étaler pour le refroidir.",
+      "Égoutter et émietter le thon. Couper les tomates, le concombre ou les légumes disponibles en petits morceaux.",
+      "Mélanger le riz refroidi, le thon et les légumes dans un grand saladier.",
+      "Préparer une sauce simple avec huile, vinaigre, sel et poivre, ou une petite quantité de mayonnaise.",
+      "Ajouter la sauce au dernier moment, mélanger délicatement et servir frais."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Un reste de riz de la veille fonctionne très bien. Ajouter la sauce juste avant de servir évite que la salade ne devienne pâteuse.",
+    "variantes": "Ajouter œufs durs, maïs, cornichons, olives, haricots rouges, pois chiches, restes de poulet, dés de fromage ou herbes fraîches. Remplacer la mayonnaise par une vinaigrette moutardée.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -458,6 +700,11 @@
           "nom": "thon égoutté",
           "quantite": 200,
           "unite": "g"
+        },
+        {
+          "nom": "tomates",
+          "quantite": 250,
+          "unite": "g"
         }
       ],
       "secondaires": [
@@ -467,8 +714,13 @@
           "unite": "g"
         },
         {
-          "nom": "tomates",
-          "quantite": 250,
+          "nom": "vinaigrette ou mayonnaise",
+          "quantite": 4,
+          "unite": "c. à soupe"
+        },
+        {
+          "nom": "concombre ou légume croquant",
+          "quantite": 150,
           "unite": "g"
         }
       ],
@@ -482,11 +734,81 @@
           "nom": "cornichons",
           "quantite": 50,
           "unite": "g"
+        },
+        {
+          "nom": "herbes fraîches",
+          "quantite": 1,
+          "unite": "c. à soupe"
         }
       ]
     },
-    "explication": "Une salade froide simple, pratique pour un repas sans four. Elle peut être préparée à l’avance et adaptée avec les conserves disponibles.",
-    "pdf": "pdf/recettes/20000101-004.pdf"
+    "explication": "Le riz doit être refroidi avant l’assemblage pour garder une salade nette. Le thon apporte les protéines, les légumes ajoutent du croquant et l’assaisonnement se dose au dernier moment.",
+    "pdf": "pdf/recettes/20000101-004.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Salade de riz au thon",
+        "url": "https://www.marmiton.org/recettes/recette_salade-de-riz-au-thon_87373.aspx"
+      },
+      {
+        "titre": "Marmiton - Salades de riz, idées de variantes",
+        "url": "https://www.marmiton.org/recettes/index/categorie/salade-de-riz/"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Salade+de+riz+au+thon+recette+variantes",
+    "cuisson_indicative": "Casserole : 10 à 12 min pour le riz, puis refroidissement avant assemblage.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1255,
+      "poids_portion_estime_g": 314,
+      "par_portion": {
+        "kcal": 471.4,
+        "proteines": 25.0,
+        "glucides": 65.9,
+        "sucres": 5.2,
+        "lipides": 11.1,
+        "satures": 2.0,
+        "fibres": 3.2,
+        "sel": 1.1
+      },
+      "pour_100g": {
+        "kcal": 150.2,
+        "proteines": 8.0,
+        "glucides": 21.0,
+        "sucres": 1.6,
+        "lipides": 3.5,
+        "satures": 0.6,
+        "fibres": 1.0,
+        "sel": 0.4
+      },
+      "energie_kj_par_portion": 1972,
+      "energie_kj_pour_100g": 629,
+      "fruits_legumes_legumineuses_estime_pct": 44,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -4,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "sans_gluten_possible",
+      "sans_lait_possible",
+      "sans_oeuf_possible",
+      "contient_poisson",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-005",
@@ -495,7 +817,7 @@
     "url": "recettes/20000101-005.html",
     "image": "images/recettes/20000101-005.webp",
     "qrcode": "qrcodes/recettes/20000101-005.png",
-    "resume": "Une recette simple et accessible : poêlée de pommes de terre.",
+    "resume": "Une poêlée de pommes de terre dorées, simple et rassasiante, à servir seule avec une salade ou en accompagnement.",
     "categorie": "plat",
     "sous_categorie": "poelee",
     "moment_repas": [
@@ -549,23 +871,27 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Laver et couper les pommes de terre en petits cubes ou en rondelles fines.",
-      "Faire chauffer l’huile dans une grande poêle.",
-      "Ajouter l’oignon émincé et le faire revenir doucement.",
-      "Ajouter les pommes de terre, couvrir et cuire à feu moyen.",
-      "Remuer régulièrement pour éviter que ça accroche.",
-      "Quand les pommes de terre sont tendres, ajouter les herbes, le fromage ou les œufs si souhaité."
+      "Éplucher les pommes de terre si nécessaire, les laver puis les sécher soigneusement. Les couper en dés réguliers.",
+      "Faire chauffer l’huile dans une grande poêle. Ajouter les pommes de terre et les enrober de matière grasse.",
+      "Laisser dorer quelques minutes sans trop remuer, puis mélanger et poursuivre la cuisson.",
+      "Baisser légèrement le feu, couvrir partiellement et cuire 20 à 25 minutes en remuant de temps en temps.",
+      "Ajouter ail, persil, oignon ou herbes en fin de cuisson. Saler et servir chaud."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Bien sécher les pommes de terre avant cuisson aide à obtenir une surface dorée. Les restes se réchauffent très bien à la poêle.",
+    "variantes": "Ajouter oignon, lardons, légumes en dés, paprika, curry, œufs battus en fin de cuisson ou fromage râpé. Pour une version complète, ajouter une boîte de haricots ou un reste de viande.",
     "ingredients_detail": {
       "principaux": [
         {
           "nom": "pommes de terre",
           "quantite": 900,
           "unite": "g"
+        },
+        {
+          "nom": "huile",
+          "quantite": 2,
+          "unite": "c. à soupe"
         }
       ],
       "secondaires": [
@@ -575,9 +901,14 @@
           "unite": "pièce"
         },
         {
-          "nom": "huile",
-          "quantite": 2,
-          "unite": "c. à soupe"
+          "nom": "ail",
+          "quantite": 1,
+          "unite": "gousse"
+        },
+        {
+          "nom": "sel et poivre",
+          "quantite": 1,
+          "unite": "pincée"
         }
       ],
       "optionnels": [
@@ -592,14 +923,83 @@
           "unite": "g"
         },
         {
-          "nom": "œufs",
-          "quantite": 2,
-          "unite": "pièces"
+          "nom": "lardons ou restes de viande",
+          "quantite": 100,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Une base très économique. Les pommes de terre peuvent devenir un plat complet avec un œuf, un reste de légumes ou un peu de fromage.",
-    "pdf": "pdf/recettes/20000101-005.pdf"
+    "explication": "Pour une bonne texture, les pommes de terre doivent être bien séchées et saisies dans une poêle chaude avant de cuire plus doucement. L’ail, le persil ou l’oignon peuvent être ajoutés selon les réserves.",
+    "pdf": "pdf/recettes/20000101-005.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Pommes de terre sautées à l’ail et au persil",
+        "url": "https://www.marmiton.org/recettes/recette_pommes-de-terre-sautees-a-l-ail-et-au-persil_27838.aspx"
+      },
+      {
+        "titre": "Dussurgey - Sauté de pommes de terre ail persil",
+        "url": "https://www.dussurgey.com/recettes/saute-de-pommes-de-terre-ail-persil/"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Po%C3%AAl%C3%A9e+de+pommes+de+terre+recette+variantes",
+    "cuisson_indicative": "Poêle : 20 à 25 min à feu moyen, en remuant régulièrement.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1201,
+      "poids_portion_estime_g": 300,
+      "par_portion": {
+        "kcal": 335.0,
+        "proteines": 9.1,
+        "glucides": 43.6,
+        "sucres": 3.9,
+        "lipides": 12.8,
+        "satures": 4.2,
+        "fibres": 5.2,
+        "sel": 0.6
+      },
+      "pour_100g": {
+        "kcal": 111.6,
+        "proteines": 3.0,
+        "glucides": 14.5,
+        "sucres": 1.3,
+        "lipides": 4.3,
+        "satures": 1.4,
+        "fibres": 1.7,
+        "sel": 0.2
+      },
+      "energie_kj_par_portion": 1402,
+      "energie_kj_pour_100g": 467,
+      "fruits_legumes_legumineuses_estime_pct": 83,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -5,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": [
+        "lardons ou restes de viande"
+      ]
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "vegan_possible",
+      "sans_gluten_possible",
+      "sans_lait_possible",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-006",
@@ -608,7 +1008,7 @@
     "url": "recettes/20000101-006.html",
     "image": "images/recettes/20000101-006.webp",
     "qrcode": "qrcodes/recettes/20000101-006.png",
-    "resume": "Une recette simple et accessible : compote pomme-banane.",
+    "resume": "Une compote pomme-banane douce, rapide et anti-gaspi, idéale pour utiliser des fruits mûrs ou un peu abîmés.",
     "categorie": "dessert",
     "sous_categorie": "compote",
     "moment_repas": [
@@ -664,17 +1064,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Éplucher les pommes et les couper en morceaux.",
-      "Couper les bananes en rondelles.",
-      "Mettre les fruits dans une casserole avec un fond d’eau.",
-      "Cuire à feu doux environ 15 minutes, jusqu’à ce que les pommes soient tendres.",
-      "Écraser à la fourchette ou mixer selon la texture souhaitée.",
-      "Goûter avant d’ajouter du sucre, car les bananes mûres sucrent déjà la compote."
+      "Éplucher les pommes si nécessaire, retirer le cœur et couper en petits morceaux.",
+      "Éplucher les bananes mûres et les couper en rondelles.",
+      "Mettre les fruits dans une casserole avec un petit fond d’eau, puis couvrir.",
+      "Cuire 15 à 25 minutes à feu doux, jusqu’à ce que les pommes soient tendres.",
+      "Écraser à la fourchette pour une compote rustique ou mixer pour une texture lisse. Laisser tiédir."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Plus les bananes sont mûres, moins il est nécessaire d’ajouter du sucre. Les pommes légèrement fripées conviennent très bien après avoir retiré les parties abîmées.",
+    "variantes": "Ajouter cannelle, vanille, miel, jus de citron, poire ou quelques raisins secs. Pour un dessert plus gourmand, servir avec riz au lait, fromage blanc ou copeaux de chocolat.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -693,6 +1092,11 @@
           "nom": "eau",
           "quantite": 100,
           "unite": "ml"
+        },
+        {
+          "nom": "jus de citron",
+          "quantite": 1,
+          "unite": "c. à soupe"
         }
       ],
       "optionnels": [
@@ -702,14 +1106,89 @@
           "unite": "pincée"
         },
         {
-          "nom": "sucre",
+          "nom": "sucre ou miel",
           "quantite": 20,
           "unite": "g"
+        },
+        {
+          "nom": "vanille",
+          "quantite": 1,
+          "unite": "pincée"
         }
       ]
     },
-    "explication": "Une compote simple pour utiliser des fruits mûrs. Les bananes apportent naturellement du sucre et une texture douce.",
-    "pdf": "pdf/recettes/20000101-006.pdf"
+    "explication": "La banane apporte une texture fondante et sucre naturellement la compote. Les pommes assurent l’équilibre et la tenue. Le mixage est facultatif selon l’âge des convives et la texture souhaitée.",
+    "pdf": "pdf/recettes/20000101-006.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "CuisineAZ - Compote pomme banane",
+        "url": "https://www.cuisineaz.com/recettes/compote-pomme-banane-121739.aspx"
+      },
+      {
+        "titre": "CuisineAZ - Compote pomme & banane facile",
+        "url": "https://www.cuisineaz.com/recettes/compote-pomme-banane-79692.aspx"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Compote+pomme-banane+recette+variantes",
+    "cuisson_indicative": "Casserole : 15 à 20 min à feu doux, avec un petit fond d’eau.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 977,
+      "poids_portion_estime_g": 244,
+      "par_portion": {
+        "kcal": 157.8,
+        "proteines": 1.1,
+        "glucides": 35.2,
+        "sucres": 27.3,
+        "lipides": 0.5,
+        "satures": 0.1,
+        "fibres": 5.2,
+        "sel": 0.0
+      },
+      "pour_100g": {
+        "kcal": 64.6,
+        "proteines": 0.5,
+        "glucides": 14.4,
+        "sucres": 11.2,
+        "lipides": 0.2,
+        "satures": 0.0,
+        "fibres": 2.1,
+        "sel": 0.0
+      },
+      "energie_kj_par_portion": 660,
+      "energie_kj_pour_100g": 270,
+      "fruits_legumes_legumineuses_estime_pct": 86,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -5,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": [
+        "cannelle",
+        "vanille"
+      ]
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetalien",
+      "vegetarien",
+      "sans_gluten_possible",
+      "sans_lait_possible",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-007",
@@ -718,7 +1197,7 @@
     "url": "recettes/20000101-007.html",
     "image": "images/recettes/20000101-007.webp",
     "qrcode": "qrcodes/recettes/20000101-007.png",
-    "resume": "Une recette simple et accessible : tartines chaudes fromage-tomate.",
+    "resume": "Des tartines chaudes fromage-tomate, rapides et économiques, parfaites pour utiliser du pain rassis ou des restes de fromage.",
     "categorie": "plat",
     "sous_categorie": "tartine",
     "moment_repas": [
@@ -778,17 +1257,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Poser les tranches de pain sur une plaque allant au four.",
-      "Couper les tomates en rondelles ou en petits morceaux.",
-      "Répartir les tomates sur le pain.",
-      "Ajouter le fromage par-dessus.",
-      "Saupoudrer d’herbes si disponible.",
-      "Passer au four à 180 °C environ 10 minutes, jusqu’à ce que le fromage soit fondu."
+      "Préchauffer le four à 200 °C. Disposer les tranches de pain sur une plaque.",
+      "Frotter légèrement le pain avec de l’ail si disponible, puis ajouter un filet d’huile ou une fine couche de fromage frais.",
+      "Couper les tomates en tranches ou en petits morceaux. Les déposer sur le pain sans trop charger.",
+      "Ajouter le fromage, les herbes, le sel et le poivre.",
+      "Enfourner 8 à 12 minutes, jusqu’à ce que le fromage soit fondu et les bords du pain croustillants."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Le pain rassis devient très bon une fois grillé. Pour éviter qu’il ramollisse, mettre le fromage sous les tomates ou précuire légèrement les tomates.",
+    "variantes": "Ajouter oignon, jambon, thon, champignons, épinards, légumes grillés, olives, basilic ou piment. Remplacer le fromage râpé par camembert, chèvre, mozzarella ou fromage frais.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -807,7 +1285,23 @@
           "unite": "g"
         }
       ],
-      "secondaires": [],
+      "secondaires": [
+        {
+          "nom": "huile d’olive ou huile neutre",
+          "quantite": 1,
+          "unite": "c. à soupe"
+        },
+        {
+          "nom": "ail",
+          "quantite": 1,
+          "unite": "gousse"
+        },
+        {
+          "nom": "sel et poivre",
+          "quantite": 1,
+          "unite": "pincée"
+        }
+      ],
       "optionnels": [
         {
           "nom": "herbes",
@@ -815,14 +1309,93 @@
           "unite": "c. à café"
         },
         {
-          "nom": "huile",
-          "quantite": 1,
-          "unite": "c. à soupe"
+          "nom": "thon ou jambon",
+          "quantite": 80,
+          "unite": "g"
+        },
+        {
+          "nom": "olives",
+          "quantite": 30,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Une recette rapide pour utiliser du pain un peu sec. Le passage au four rend les tartines croustillantes.",
-    "pdf": "pdf/recettes/20000101-007.pdf"
+    "explication": "Le passage au four rend le pain croustillant et fait fondre le fromage. Les tomates apportent du jus : il faut donc éviter d’en mettre trop ou choisir une base de pain assez épaisse.",
+    "pdf": "pdf/recettes/20000101-007.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Migusto - Tartines chaudes aux tomates",
+        "url": "https://migusto.migros.ch/fr/recettes/tartines-chaudes-aux-tomates"
+      },
+      {
+        "titre": "Journal des Femmes - Tartines de tomates rôties",
+        "url": "https://cuisine.journaldesfemmes.fr/recette/3133280-tartines-de-tomates-roties"
+      },
+      {
+        "titre": "750g - Tartine tomate et fromage",
+        "url": "https://www.750g.com/tartine-tomate-et-fromage-r90119.htm"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Tartines+chaudes+fromage-tomate+recette+variantes",
+    "cuisson_four_temperature_c": 200,
+    "cuisson_four_temps_min": "8 à 12",
+    "cuisson_indicative": "Four : 200 °C pendant 8 à 12 min, jusqu’à ce que le fromage soit fondu et le pain croustillant.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 646,
+      "poids_portion_estime_g": 323,
+      "par_portion": {
+        "kcal": 571.5,
+        "proteines": 34.6,
+        "glucides": 42.3,
+        "sucres": 7.3,
+        "lipides": 28.7,
+        "satures": 13.7,
+        "fibres": 4.6,
+        "sel": 2.7
+      },
+      "pour_100g": {
+        "kcal": 176.9,
+        "proteines": 10.7,
+        "glucides": 13.1,
+        "sucres": 2.2,
+        "lipides": 8.9,
+        "satures": 4.2,
+        "fibres": 1.4,
+        "sel": 0.8
+      },
+      "energie_kj_par_portion": 2391,
+      "energie_kj_pour_100g": 740,
+      "fruits_legumes_legumineuses_estime_pct": 39,
+      "nutri_score_estime": {
+        "grade": "C",
+        "score_simplifie": 3,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": [
+        "olives"
+      ]
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "contient_gluten",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-008",
@@ -831,7 +1404,7 @@
     "url": "recettes/20000101-008.html",
     "image": "images/recettes/20000101-008.webp",
     "qrcode": "qrcodes/recettes/20000101-008.png",
-    "resume": "Une recette simple et accessible : omelette aux légumes.",
+    "resume": "Une omelette aux légumes souple et colorée, idéale pour transformer quelques légumes restants en repas complet.",
     "categorie": "plat",
     "sous_categorie": "omelette",
     "moment_repas": [
@@ -893,17 +1466,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Couper les légumes en petits morceaux.",
-      "Faire revenir les légumes quelques minutes à la poêle s’ils sont crus.",
-      "Battre les œufs dans un bol avec une pincée de sel.",
-      "Verser les œufs sur les légumes.",
-      "Cuire à feu doux jusqu’à ce que l’omelette soit prise.",
-      "Ajouter du fromage ou des herbes avant de servir si disponible."
+      "Laver et couper les légumes en petits dés ou fines lamelles.",
+      "Faire revenir l’oignon ou l’échalote dans une poêle avec un peu d’huile, puis ajouter les légumes les plus longs à cuire.",
+      "Cuire les légumes 5 à 10 minutes, jusqu’à ce qu’ils soient tendres et que l’eau de végétation soit évaporée.",
+      "Battre les œufs avec sel, poivre, herbes et éventuellement un peu de lait ou de crème.",
+      "Verser les œufs sur les légumes. Cuire à feu doux jusqu’à ce que l’omelette soit prise mais encore moelleuse."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Les petits restes de légumes cuits sont parfaits : les réchauffer rapidement avant d’ajouter les œufs.",
+    "variantes": "Ajouter fromage râpé, dés de pommes de terre cuites, champignons, poivrons, courgettes, tomates, herbes fraîches ou une pointe de curry. Servir dans du pain pour un sandwich chaud.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -917,7 +1489,23 @@
           "unite": "g"
         }
       ],
-      "secondaires": [],
+      "secondaires": [
+        {
+          "nom": "huile ou beurre",
+          "quantite": 1,
+          "unite": "c. à soupe"
+        },
+        {
+          "nom": "lait ou crème",
+          "quantite": 2,
+          "unite": "c. à soupe"
+        },
+        {
+          "nom": "sel et poivre",
+          "quantite": 1,
+          "unite": "pincée"
+        }
+      ],
       "optionnels": [
         {
           "nom": "fromage",
@@ -928,11 +1516,82 @@
           "nom": "herbes",
           "quantite": 1,
           "unite": "c. à café"
+        },
+        {
+          "nom": "pommes de terre cuites",
+          "quantite": 150,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Une omelette permet de transformer rapidement des restes de légumes en repas. Elle est utile quand on dispose de peu d’ingrédients.",
-    "pdf": "pdf/recettes/20000101-008.pdf"
+    "explication": "Les légumes doivent être précuits avant d’ajouter les œufs, afin d’éviter une omelette aqueuse. La cuisson douce permet de garder une texture moelleuse.",
+    "pdf": "pdf/recettes/20000101-008.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Les fruits et légumes frais - Omelette aux légumes",
+        "url": "https://www.lesfruitsetlegumesfrais.com/recettes/omelette-aux-legumes"
+      },
+      {
+        "titre": "Marmiton - Omelette aux légumes légère et parfumée",
+        "url": "https://www.marmiton.org/recettes/recette_omelette-aux-legumes-legere-et-parfumee_31216.aspx"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Omelette+aux+l%C3%A9gumes+recette+variantes",
+    "cuisson_indicative": "Poêle : 6 à 8 min à feu doux/moyen pour garder l’omelette moelleuse.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 701,
+      "poids_portion_estime_g": 350,
+      "par_portion": {
+        "kcal": 437.1,
+        "proteines": 23.1,
+        "glucides": 22.1,
+        "sucres": 6.2,
+        "lipides": 28.6,
+        "satures": 15.1,
+        "fibres": 5.3,
+        "sel": 1.4
+      },
+      "pour_100g": {
+        "kcal": 124.7,
+        "proteines": 6.6,
+        "glucides": 6.3,
+        "sucres": 1.8,
+        "lipides": 8.2,
+        "satures": 4.3,
+        "fibres": 1.5,
+        "sel": 0.4
+      },
+      "energie_kj_par_portion": 1829,
+      "energie_kj_pour_100g": 522,
+      "fruits_legumes_legumineuses_estime_pct": 57,
+      "nutri_score_estime": {
+        "grade": "B",
+        "score_simplifie": 0,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "sans_gluten_possible",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-009",
@@ -941,7 +1600,7 @@
     "url": "recettes/20000101-009.html",
     "image": "images/recettes/20000101-009.webp",
     "qrcode": "qrcodes/recettes/20000101-009.png",
-    "resume": "Une recette simple et accessible : pâtes sauce tomate enrichie.",
+    "resume": "Des pâtes à la sauce tomate enrichie, simples et nourrissantes, avec une sauce plus savoureuse grâce à l’oignon, l’ail et aux légumes disponibles.",
     "categorie": "plat",
     "sous_categorie": "pates",
     "moment_repas": [
@@ -1007,17 +1666,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Faire cuire les pâtes dans une casserole d’eau bouillante.",
-      "Pendant ce temps, faire revenir l’oignon émincé dans une autre casserole.",
-      "Ajouter la sauce tomate ou les tomates concassées.",
-      "Laisser chauffer quelques minutes.",
-      "Égoutter les pâtes et les mélanger avec la sauce.",
-      "Ajouter du thon, du fromage ou des herbes selon les produits disponibles."
+      "Faire cuire les pâtes dans une grande casserole d’eau salée en les gardant al dente.",
+      "Pendant ce temps, faire revenir l’oignon dans un filet d’huile. Ajouter l’ail, puis les légumes finement coupés si disponibles.",
+      "Ajouter la tomate, les herbes, le sel et le poivre. Laisser mijoter 10 à 15 minutes pour concentrer les saveurs.",
+      "Égoutter les pâtes en gardant un peu d’eau de cuisson.",
+      "Mélanger les pâtes avec la sauce. Ajouter un peu d’eau de cuisson si nécessaire pour bien enrober."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Un reste de légumes cuits peut être mixé dans la sauce tomate pour l’épaissir et enrichir le plat discrètement.",
+    "variantes": "Ajouter thon, lentilles, haricots rouges, pois chiches, fromage râpé, crème, carotte râpée ou restes de viande. Pour une version plus parfumée, ajouter olives, câpres ou basilic.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -1036,6 +1694,16 @@
           "nom": "oignon",
           "quantite": 1,
           "unite": "pièce"
+        },
+        {
+          "nom": "ail",
+          "quantite": 1,
+          "unite": "gousse"
+        },
+        {
+          "nom": "huile",
+          "quantite": 1,
+          "unite": "c. à soupe"
         }
       ],
       "optionnels": [
@@ -1050,14 +1718,81 @@
           "unite": "g"
         },
         {
-          "nom": "herbes",
-          "quantite": 1,
-          "unite": "c. à café"
+          "nom": "légumes râpés ou restes de légumes",
+          "quantite": 200,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Une base très simple et économique. Elle peut devenir plus complète avec du thon, des légumes ou du fromage.",
-    "pdf": "pdf/recettes/20000101-009.pdf"
+    "explication": "La sauce gagne en goût si l’on fait revenir les aromates avant d’ajouter la tomate. Un peu d’eau de cuisson des pâtes aide à lier la sauce sans ajouter de crème.",
+    "pdf": "pdf/recettes/20000101-009.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Spaghetti sauce tomate à l’ancienne",
+        "url": "https://www.marmiton.org/recettes/recette_spaghetti-sauce-tomate-a-l-ancienne_337787.aspx"
+      },
+      {
+        "titre": "Marmiton - Pâtes à la sauce tomate crémeuse d’Italie",
+        "url": "https://www.marmiton.org/recettes/recette_pates-a-la-sauce-tomate-cremeuse-d-italie_37105.aspx"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=P%C3%A2tes+sauce+tomate+enrichie+recette+variantes",
+    "cuisson_indicative": "Casserole : 10 à 15 min pour la sauce, plus cuisson des pâtes selon le paquet.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1240,
+      "poids_portion_estime_g": 310,
+      "par_portion": {
+        "kcal": 473.9,
+        "proteines": 25.9,
+        "glucides": 68.3,
+        "sucres": 8.8,
+        "lipides": 10.4,
+        "satures": 4.0,
+        "fibres": 5.7,
+        "sel": 1.0
+      },
+      "pour_100g": {
+        "kcal": 152.9,
+        "proteines": 8.4,
+        "glucides": 22.0,
+        "sucres": 2.9,
+        "lipides": 3.3,
+        "satures": 1.3,
+        "fibres": 1.8,
+        "sel": 0.3
+      },
+      "energie_kj_par_portion": 1983,
+      "energie_kj_pour_100g": 640,
+      "fruits_legumes_legumineuses_estime_pct": 56,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -4,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien_possible",
+      "vegan_possible",
+      "contient_gluten",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "contient_poisson",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20000101-010",
@@ -1066,7 +1801,7 @@
     "url": "recettes/20000101-010.html",
     "image": "images/recettes/20000101-010.webp",
     "qrcode": "qrcodes/recettes/20000101-010.png",
-    "resume": "Une recette simple et accessible : gâteau simple du placard.",
+    "resume": "Un gâteau simple du placard, moelleux et personnalisable, préparé avec les ingrédients de base : farine, sucre, œufs, matière grasse et lait ou eau.",
     "categorie": "dessert",
     "sous_categorie": "gateau",
     "moment_repas": [
@@ -1129,17 +1864,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2000-01-01",
-    "date_modification": "2000-01-01",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Préchauffer le four à 180 °C.",
-      "Mélanger la farine et le sucre dans un saladier.",
-      "Ajouter les œufs puis le lait petit à petit.",
-      "Mélanger jusqu’à obtenir une pâte homogène.",
-      "Ajouter le chocolat ou les fruits si disponibles.",
-      "Verser dans un moule et cuire environ 30 minutes."
+      "Préchauffer le four à 180 °C. Beurrer ou huiler un moule.",
+      "Mélanger la farine, le sucre, la levure et une pincée de sel dans un saladier.",
+      "Ajouter les œufs, le lait ou l’eau, puis le beurre fondu ou l’huile. Mélanger juste assez pour obtenir une pâte homogène.",
+      "Ajouter les ingrédients disponibles : chocolat, fruits en morceaux, cacao, cannelle ou confiture.",
+      "Verser dans le moule et cuire 30 à 40 minutes. Vérifier la cuisson avec la pointe d’un couteau."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Les bananes très mûres, les pommes fatiguées ou les fins de tablette de chocolat peuvent être incorporées à la pâte.",
+    "variantes": "Version cacao, pomme-cannelle, banane-chocolat, confiture marbrée, noix/noisettes, citron, yaourt ou pépites de chocolat. Pour une version sans lait, utiliser de l’eau ou une boisson végétale.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -1154,7 +1888,7 @@
         },
         {
           "nom": "œufs",
-          "quantite": 3,
+          "quantite": 2,
           "unite": "pièces"
         }
       ],
@@ -1163,6 +1897,16 @@
           "nom": "lait",
           "quantite": 120,
           "unite": "ml"
+        },
+        {
+          "nom": "beurre fondu ou huile",
+          "quantite": 80,
+          "unite": "g"
+        },
+        {
+          "nom": "levure chimique",
+          "quantite": 1,
+          "unite": "sachet"
         }
       ],
       "optionnels": [
@@ -1175,11 +1919,86 @@
           "nom": "fruits",
           "quantite": 150,
           "unite": "g"
+        },
+        {
+          "nom": "cannelle ou vanille",
+          "quantite": 1,
+          "unite": "c. à café"
         }
       ]
     },
-    "explication": "Un gâteau de base avec des ingrédients du placard. Il peut être enrichi avec du chocolat, des fruits mûrs ou un peu de miel.",
-    "pdf": "pdf/recettes/20000101-010.pdf"
+    "explication": "Cette base volontairement simple sert de support aux restes du placard : chocolat, fruits mûrs, confiture, épices ou cacao. Le but est d’obtenir un gâteau fiable sans ingrédients rares.",
+    "pdf": "pdf/recettes/20000101-010.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "750g - Gâteau au chocolat super facile du fond du placard",
+        "url": "https://www.750g.com/gateau-au-chocolat-super-facile-du-fond-du-placard-r96504.htm"
+      },
+      {
+        "titre": "Régilait - Idées recettes du fond de placard",
+        "url": "https://regilait.com/idees-recettes/cuisine-du-placard"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=G%C3%A2teau+simple+du+placard+recette+variantes",
+    "cuisson_four_temperature_c": 180,
+    "cuisson_four_temps_min": "30 à 40",
+    "cuisson_indicative": "Four : 180 °C pendant 30 à 40 min selon le moule. Vérifier avec la pointe d’un couteau.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 846,
+      "poids_portion_estime_g": 141,
+      "par_portion": {
+        "kcal": 404.7,
+        "proteines": 7.2,
+        "glucides": 52.3,
+        "sucres": 27.1,
+        "lipides": 18.0,
+        "satures": 10.9,
+        "fibres": 2.7,
+        "sel": 0.5
+      },
+      "pour_100g": {
+        "kcal": 287.0,
+        "proteines": 5.1,
+        "glucides": 37.1,
+        "sucres": 19.2,
+        "lipides": 12.8,
+        "satures": 7.7,
+        "fibres": 1.9,
+        "sel": 0.3
+      },
+      "energie_kj_par_portion": 1693,
+      "energie_kj_pour_100g": 1201,
+      "fruits_legumes_legumineuses_estime_pct": 18,
+      "nutri_score_estime": {
+        "grade": "C",
+        "score_simplifie": 10,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": [
+        "cannelle ou vanille"
+      ]
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "contient_gluten",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20260708-011",
@@ -1188,7 +2007,7 @@
     "url": "recettes/20260708-011.html",
     "image": "images/recettes/20260708-011.webp",
     "qrcode": "qrcodes/recettes/20260708-011.png",
-    "resume": "Une recette simple et accessible : tian de courgettes.",
+    "resume": "Un tian de courgettes fondant et parfumé, à préparer avec des courgettes de saison, un peu de tomate et des herbes.",
     "categorie": "plat",
     "sous_categorie": "tian",
     "moment_repas": [
@@ -1251,35 +2070,44 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2026-07-08",
-    "date_modification": "2026-07-08",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Laver les courgettes et les tomates.",
-      "Couper les courgettes, les tomates et les oignons en rondelles fines.",
-      "Disposer les rondelles dans un plat en alternant courgette, tomate et oignon.",
-      "Ajouter les herbes, un peu de sel et, si disponible, un filet d’huile.",
-      "Cuire au four à 180 °C pendant environ 35 minutes.",
-      "Ajouter le fromage râpé en fin de cuisson si souhaité."
+      "Préchauffer le four à 180-200 °C. Laver les courgettes et les tomates, puis les couper en fines rondelles.",
+      "Huiler légèrement un plat à gratin. Répartir l’oignon émincé ou l’ail au fond si disponible.",
+      "Ranger les rondelles de courgette et de tomate en les alternant.",
+      "Saler, poivrer, ajouter herbes de Provence ou basilic, puis arroser d’un filet d’huile.",
+      "Cuire 40 à 60 minutes, jusqu’à ce que les légumes soient fondants et légèrement confits."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Si les courgettes rendent beaucoup d’eau, prolonger la cuisson quelques minutes à découvert. Les restes sont très bons froids ou dans une omelette.",
+    "variantes": "Ajouter riz au fond du plat, fromage râpé, chapelure, aubergine, pomme de terre ou un reste de sauce tomate. Pour un plat complet, ajouter pois chiches ou thon émietté.",
     "ingredients_detail": {
       "principaux": [
         {
           "nom": "courgettes",
           "quantite": 800,
           "unite": "g"
-        }
-      ],
-      "secondaires": [
+        },
         {
           "nom": "tomates",
           "quantite": 500,
           "unite": "g"
-        },
+        }
+      ],
+      "secondaires": [
         {
           "nom": "oignons",
           "quantite": 2,
           "unite": "pièces"
+        },
+        {
+          "nom": "ail",
+          "quantite": 1,
+          "unite": "gousse"
+        },
+        {
+          "nom": "huile d’olive ou huile neutre",
+          "quantite": 2,
+          "unite": "c. à soupe"
         }
       ],
       "optionnels": [
@@ -1292,11 +2120,85 @@
           "nom": "fromage râpé",
           "quantite": 80,
           "unite": "g"
+        },
+        {
+          "nom": "riz cru au fond du plat",
+          "quantite": 80,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Le tian est un plat de légumes au four. Il demande surtout de couper les légumes et de les disposer dans un plat. La cuisson fait le reste.",
-    "pdf": "pdf/recettes/20260708-011.pdf"
+    "explication": "La réussite tient à une cuisson suffisamment longue pour concentrer les légumes sans les brûler. Des tranches fines et régulières donnent un plat plus fondant et plus joli.",
+    "pdf": "pdf/recettes/20260708-011.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Tian de courgettes et de tomates",
+        "url": "https://www.marmiton.org/recettes/recette_tian-de-courgettes-et-de-tomates_17041.aspx"
+      },
+      {
+        "titre": "Marmiton - Tian provençal",
+        "url": "https://www.marmiton.org/recettes/recette_tian-provencal_36194.aspx"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Tian+de+courgettes+recette+variantes",
+    "cuisson_four_temperature_c": "180 à 200",
+    "cuisson_four_temps_min": "40 à 60",
+    "cuisson_indicative": "Four : 180 à 200 °C pendant 40 à 60 min, jusqu’à obtenir des légumes fondants et légèrement confits.",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1710,
+      "poids_portion_estime_g": 428,
+      "par_portion": {
+        "kcal": 295.2,
+        "proteines": 10.8,
+        "glucides": 31.2,
+        "sucres": 10.5,
+        "lipides": 14.5,
+        "satures": 5.1,
+        "fibres": 5.2,
+        "sel": 0.4
+      },
+      "pour_100g": {
+        "kcal": 69.1,
+        "proteines": 2.5,
+        "glucides": 7.3,
+        "sucres": 2.4,
+        "lipides": 3.4,
+        "satures": 1.2,
+        "fibres": 1.2,
+        "sel": 0.1
+      },
+      "energie_kj_par_portion": 1235,
+      "energie_kj_pour_100g": 289,
+      "fruits_legumes_legumineuses_estime_pct": 88,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -6,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "vegan_possible",
+      "sans_gluten_possible",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "20260708-012",
@@ -1305,7 +2207,7 @@
     "url": "recettes/20260708-012.html",
     "image": "images/recettes/20260708-012.webp",
     "qrcode": "qrcodes/recettes/20260708-012.png",
-    "resume": "Une recette simple et accessible : chou-fleur et quinoa à la crème.",
+    "resume": "Un plat complet chou-fleur, quinoa et crème, doux et nourrissant, qui associe légumes, céréale et sauce crémeuse.",
     "categorie": "plat",
     "sous_categorie": "plat cremeux",
     "moment_repas": [
@@ -1369,17 +2271,16 @@
     "recette_semaine_candidate": true,
     "visible": true,
     "date_creation": "2026-07-08",
-    "date_modification": "2026-07-08",
+    "date_modification": "2026-07-09",
     "etapes": [
-      "Rincer le quinoa à l’eau claire.",
-      "Faire cuire le quinoa dans une casserole d’eau selon le temps indiqué sur le paquet.",
-      "Séparer le chou-fleur en petits bouquets.",
-      "Cuire le chou-fleur dans l’eau bouillante jusqu’à ce qu’il soit tendre.",
-      "Mélanger le quinoa, le chou-fleur et la crème dans une casserole.",
-      "Réchauffer doucement, ajouter le fromage ou les épices si disponibles, puis servir."
+      "Rincer le quinoa. Le cuire dans deux fois son volume d’eau salée jusqu’à absorption, puis l’égoutter si besoin.",
+      "Détailler le chou-fleur en petits bouquets et les cuire à l’eau ou à la vapeur 8 à 10 minutes, jusqu’à ce qu’ils soient tendres mais encore fermes.",
+      "Faire revenir l’ail ou l’oignon dans une poêle avec un peu d’huile. Ajouter le chou-fleur et le quinoa.",
+      "Verser la crème, poivrer et ajouter un peu de fromage ou d’herbes si disponible.",
+      "Laisser chauffer 3 à 5 minutes à feu doux. Servir tel quel ou gratiner quelques minutes au four."
     ],
-    "astuce": "Utiliser les restes compatibles pour éviter le gaspillage.",
-    "variantes": "Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.",
+    "astuce": "Les restes de chou-fleur cuit sont parfaits. Si le plat semble trop épais, détendre avec un peu d’eau de cuisson ou de lait.",
+    "variantes": "Ajouter comté, chapelure, persil, curry, œuf dur, pois chiches, poulet, restes de légumes ou crème végétale. Pour une version gratinée, passer 10 minutes au four avec fromage et chapelure.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -1398,6 +2299,16 @@
           "nom": "crème",
           "quantite": 200,
           "unite": "ml"
+        },
+        {
+          "nom": "ail ou oignon",
+          "quantite": 1,
+          "unite": "pièce"
+        },
+        {
+          "nom": "eau ou bouillon",
+          "quantite": 450,
+          "unite": "ml"
         }
       ],
       "optionnels": [
@@ -1410,11 +2321,88 @@
           "nom": "épices douces",
           "quantite": 1,
           "unite": "c. à café"
+        },
+        {
+          "nom": "chapelure",
+          "quantite": 30,
+          "unite": "g"
         }
       ]
     },
-    "explication": "Un plat doux et nourrissant. Le quinoa apporte une base complète, le chou-fleur apporte les légumes, et la crème rend l’ensemble plus facile à manger.",
-    "pdf": "pdf/recettes/20260708-012.pdf"
+    "explication": "Le chou-fleur doit être précuit pour rester fondant, tandis que le quinoa apporte de la tenue. La crème lie l’ensemble et peut être remplacée par une crème végétale.",
+    "pdf": "pdf/recettes/20260708-012.pdf",
+    "sources_inspiration": [
+      {
+        "titre": "Julie Andrieu - Croustillants de quinoa au chou-fleur et au comté",
+        "url": "https://www.julieandrieu.com/recettes/croustillants-de-quinoa-au-chou-fleur-et-au-comte"
+      },
+      {
+        "titre": "Les Commis - Chou-fleur et quinoa dans une assiette complète",
+        "url": "https://lescommis.com/recettes/poulet-a-la-creme-acidulee/"
+      },
+      {
+        "titre": "Le Monde - Recette végétarienne au chou-fleur",
+        "url": "https://www.lemonde.fr/les-recettes-du-monde/article/2024/12/17/vert-hiver-trois-recettes-iraniennes-vegetariennes_6452828_5324493.html"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Chou-fleur+et+quinoa+%C3%A0+la+cr%C3%A8me+recette+variantes",
+    "cuisson_indicative": "Casserole/vapeur : 8 à 10 min pour le chou-fleur ; quinoa 12 à 15 min. Option gratin : 200 °C pendant 10 min.",
+    "cuisson_four_temperature_c_option": 200,
+    "cuisson_four_temps_min_option": "10",
+    "image_style": "illustration générée style photo maison",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1785,
+      "poids_portion_estime_g": 446,
+      "par_portion": {
+        "kcal": 506.6,
+        "proteines": 19.3,
+        "glucides": 48.7,
+        "sucres": 7.7,
+        "lipides": 25.1,
+        "satures": 13.9,
+        "fibres": 9.2,
+        "sel": 0.6
+      },
+      "pour_100g": {
+        "kcal": 113.5,
+        "proteines": 4.3,
+        "glucides": 10.9,
+        "sucres": 1.7,
+        "lipides": 5.6,
+        "satures": 3.1,
+        "fibres": 2.1,
+        "sel": 0.1
+      },
+      "energie_kj_par_portion": 2120,
+      "energie_kj_pour_100g": 475,
+      "fruits_legumes_legumineuses_estime_pct": 45,
+      "nutri_score_estime": {
+        "grade": "A",
+        "score_simplifie": -1,
+        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "sans_gluten_possible",
+      "contient_lait",
+      "sans_oeuf_possible",
+      "sans_poisson_possible",
+      "sans_arachides_possible",
+      "sans_soja_possible",
+      "sans_fruits_a_coque_possible",
+      "sans_crustaces_possible",
+      "sans_mollusques_possible",
+      "sans_celeri_possible",
+      "sans_moutarde_possible",
+      "sans_sesame_possible",
+      "sans_sulfites_possible",
+      "sans_lupin_possible"
+    ]
   },
   {
     "id": "00000000-000",

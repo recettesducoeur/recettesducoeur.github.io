@@ -1,0 +1,60 @@
+{
+  "version": "V27",
+  "date": "2026-07-09T06:24:44",
+  "source_zip": "lesrecettesducoeur_github_pages_ROOT_v26_centralisation_dev_tables.zip",
+  "ameliorations": [
+    "Amélioration rédactionnelle des 12 recettes visibles à partir d’une recherche web.",
+    "Ajout d’un champ sources_inspiration dans data/recettes.json.",
+    "Ajout d’un champ recherche_web_url dans data/recettes.json pour chaque recette visible.",
+    "Ajout d’une section Sources d’inspiration dans chaque fiche recette.",
+    "Enrichissement des variantes pour chaque recette.",
+    "Régénération d’une illustration web WebP et PNG pour chaque recette visible.",
+    "Régénération de tous les PDF recettes avec textes améliorés, image, QR code et sources.",
+    "Mise à jour des fiches HTML recettes.",
+    "Contrôles JS, JSON, fichiers, liens et rendu PDF."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "improved_visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "source_missing": [],
+    "image_missing": [],
+    "pdf_missing": [],
+    "html_source_missing": [],
+    "old_url_hits": [],
+    "dead_placeholder_hits": [],
+    "visible_files_ok": true
+  },
+  "pdf_render": {
+    "ok": true,
+    "message": "1 page(s) rendue(s)"
+  }
+}

@@ -9,6 +9,7 @@ const FILTER_FIELDS = {
   equipement: { label: "Équipement", type: "array", getter: r => r.equipement || [] },
   regime: { label: "Régime", type: "array", getter: r => r.regimes || [] },
   allergene: { label: "Allergène", type: "array", getter: r => r.allergenes || [] },
+  repere: { label: "Repère alimentaire", type: "array", getter: r => r.reperes_alimentaires || [] },
   tag: { label: "Tag", type: "array", getter: r => r.tags || [] }
 };
 

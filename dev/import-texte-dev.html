@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Import texte — dev — Les Recettes du Cœur</title>
+  <link rel="icon" href="../assets/logos/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script defer src="../assets/js/layout.js"></script>
+  <script defer src="../assets/js/app.js"></script>
+  <script defer src="../assets/js/import-texte-dev.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="contenu" class="container dev-page dev-page dev-page">
+    <section class="page-card">
+      <span class="kicker">🛠️ Page dev</span>
+      <h1>Importer une recette depuis un fichier texte</h1>
+      <p class="lead">Cet outil aide à transformer un texte structuré en bloc JSON compatible avec <code>data/recettes.json</code>.</p>
+      <div class="dev-warning">
+        Site statique : cette page ne peut pas écrire directement dans GitHub. Elle génère un JSON à copier ou télécharger, puis à intégrer manuellement dans <code>data/recettes.json</code>.
+      </div>
+    </section>
+
+    <section class="page-card">
+      <h2>Format texte attendu</h2>
+      <pre class="code-output">id: 20260708-013
+titre: Exemple de recette
+categorie: plat
+sous categorie: gratin
+temperature: chaud
+cuisson: four,casserole,sans_cuisson
+preparation: 10
+temps cuisson: 20
+personnes: 4
+ingredients principaux: courgettes|800|g; tomates|500|g
+ingredients secondaires: crème|200|ml
+ingredients optionnels: fromage|80|g
+tags: simple,economique,anti_gaspi
+allergenes: lait,fruits_a_coque,crustaces
+resume: Une recette simple.
+explication: Explication courte.
+etapes: laver les légumes, couper les légumes, cuire au four
+astuce: Utiliser les légumes à finir.
+variantes: Ajouter du riz ou des pâtes.
+visible: true</pre>
+      <p>Pour importer plusieurs recettes dans un même fichier texte, séparez les blocs avec une ligne contenant uniquement <code>---</code>.</p>
+    </section>
+
+    <section class="page-card">
+      <h2>Texte à convertir</h2>
+      <label for="import-file">Charger un fichier texte</label>
+      <input id="import-file" type="file" accept=".txt,.md,.csv">
+      <label for="import-text">Ou coller le texte ici</label>
+      <textarea id="import-text" placeholder="Collez ici le texte structuré de la recette"></textarea>
+      <div class="actions">
+        <button id="parse-btn" class="button" type="button">Convertir en JSON</button>
+        <button id="download-btn" class="button secondary" type="button">Télécharger le JSON</button>
+      </div>
+    </section>
+
+    <section class="page-card">
+      <h2>Résultat JSON</h2>
+      <pre id="import-output" class="code-output"></pre>
+    </section>
+  
+    <section class="page-card">
+      <h2>PDF</h2>
+      <p>Le champ <code>pdf</code> est généré automatiquement à partir de l’ID de recette.</p>
+      <p>Format : <code>pdf/recettes/AAAAMMJJ-XXX.pdf</code></p>
+    </section>
+
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "version": "V29",
+  "date": "2026-07-09T07:13:43",
+  "ameliorations": [
+    "Déplacement des sources d’inspiration dans la rubrique Variantes possibles, sous le bouton de recherche Google.",
+    "Ajout d’une rubrique Valeurs nutritionnelles estimées dans chaque fiche recette visible.",
+    "Ajout d’un Nutri-Score estimé non officiel avec disclaimer.",
+    "Ajout d’un lien vers aide.html#valeurs-nutritionnelles depuis chaque fiche recette.",
+    "Ajout des repères alimentaires : sans porc, végétarien, vegan possible, contient poisson/lait/œuf/gluten, etc.",
+    "Ajout du filtre repere dans search.js.",
+    "Mise à jour de data/valeurs_reference.json avec les repères alimentaires.",
+    "Ajout dans aide.html d’une rubrique détaillée sur valeurs nutritionnelles, Nutri-Score estimé, repères alimentaires et limites de fiabilité.",
+    "Ajout dans aide.html de liens vers Anses/Ciqual, Santé publique France, Manger Bouger, Commission européenne, règlement UE, OMS et Open Food Facts.",
+    "Régénération de tous les PDF avec nutrition estimée et repères alimentaires."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "nutrition_missing": [],
+    "reperes_missing": [],
+    "html_nutrition_missing": [],
+    "html_sources_bad": [],
+    "pdf_missing": [],
+    "old_url_hits": [],
+    "dead_placeholder_hits": []
+  },
+  "specific_checks": {
+    "nutrition_css": true,
+    "repere_filter": true,
+    "valeurs_reference_reperes": true,
+    "section_nutrition": true,
+    "ciqual": true,
+    "anses": true,
+    "spf": true,
+    "mangerbouger": true,
+    "eu_commission": true,
+    "eurlex": true,
+    "who": true,
+    "openfoodfacts": true
+  },
+  "pdf_render": {
+    "ok": true,
+    "message": "2 page(s) rendue(s)"
+  }
+}
