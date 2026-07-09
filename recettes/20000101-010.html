@@ -9,21 +9,21 @@
   <script defer src="../assets/js/layout.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/proportions.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
 </head>
 <body>
   <div data-site-header></div>
   <main id="contenu" class="recipe-sheet">
     <p class="small">ID recette : <strong>20000101-010</strong></p>
-
     <div class="recipe-hero">
       <div>
         <span class="kicker">🥘 <a class="filter-value" href="../recherche.html?categorie=dessert" title="Voir les recettes associées : Dessert">Dessert</a></span>
         <h1>Gâteau simple du placard</h1>
-        <p class="lead">Une recette simple et accessible : gâteau simple du placard.</p>
-        <p>Un gâteau de base avec des ingrédients du placard. Il peut être enrichi avec du chocolat, des fruits mûrs ou un peu de miel.</p>
+        <p class="lead">Un gâteau simple du placard, moelleux et personnalisable, préparé avec les ingrédients de base : farine, sucre, œufs, matière grasse et lait ou eau.</p>
+        <p>Cette base volontairement simple sert de support aux restes du placard : chocolat, fruits mûrs, confiture, épices ou cacao. Le but est d’obtenir un gâteau fiable sans ingrédients rares.</p>
         <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=dessert" title="Filtrer les recettes : Dessert">Dessert</a><a class="badge filter-link" href="../recherche.html?tag=gouter" title="Filtrer les recettes : Gouter">Gouter</a><a class="badge filter-link" href="../recherche.html?tag=economique" title="Filtrer les recettes : Économique">Économique</a><a class="badge filter-link" href="../recherche.html?tag=four" title="Filtrer les recettes : Four">Four</a></div>
       </div>
-      <img class="recipe-image" src="../images/recettes/20000101-010.webp" alt="Illustration : Gâteau simple du placard">
+      <img class="recipe-image" src="../images/recettes/20000101-010.webp" alt="Illustration type photo maison : Gâteau simple du placard">
     </div>
 
     <section class="recipe-meta">
@@ -35,12 +35,26 @@
       <div class="meta-box">⭐<br><a class="filter-value" href="../recherche.html?difficulte=facile" title="Voir les recettes associées : Facile">Facile</a></div>
     </section>
 
+    
+    <section class="recipe-section food-markers-section">
+      <h2>🧭 Repères alimentaires</h2>
+      <div class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a><a class="badge filter-link" href="../recherche.html?repere=vegetarien" title="Filtrer les recettes : Végétarien">Végétarien</a><a class="badge filter-link" href="../recherche.html?repere=contient_oeuf" title="Filtrer les recettes : Contient œuf">Contient œuf</a><a class="badge filter-link" href="../recherche.html?repere=contient_lait" title="Filtrer les recettes : Contient lait">Contient lait</a><a class="badge filter-link" href="../recherche.html?repere=contient_gluten" title="Filtrer les recettes : Contient gluten">Contient gluten</a></div>
+      <p class="small">Repères indicatifs à vérifier selon les marques, les remplacements d’ingrédients et les produits réellement utilisés.</p>
+    </section>
+    
+    <section class="recipe-section cooking-details">
+      <h2>🔥 Cuisson indicative</h2>
+      <p>Four : 180 °C pendant 30 à 40 min selon le moule. Vérifier avec la pointe d’un couteau.</p>
+      <p><strong>Repère four :</strong> 180 °C — 30 à 40 min.</p>
+      <p class="small">Ces valeurs sont indicatives : ajuster selon le four, l’épaisseur du plat et la coloration souhaitée.</p>
+    </section>
+
     <section class="portion-tool no-print">
       <h2>⚖️ Adapter les quantités</h2>
       <label for="portions-input">Nombre de portions souhaitées</label>
       <input id="portions-input" type="number" min="1" max="20" step="1" value="6">
       <p id="ratio-info" class="small"></p>
-      <p class="small">Le calcul adapte les quantités proportionnellement.</p>
+      <p class="small">Le calcul adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base.</p>
     </section>
 
     <section class="recipe-section">
@@ -48,27 +62,64 @@
       <div class="ingredients-grid">
         <div class="soft-box"><h3>Principaux</h3><ul><li><span class="qty" data-base-qty="200" data-unit="g">200 g</span> — farine</li>
 <li><span class="qty" data-base-qty="100" data-unit="g">100 g</span> — sucre</li>
-<li><span class="qty" data-base-qty="3" data-unit="pièces">3 pièces</span> — œufs</li></ul></div>
-        <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="120" data-unit="ml">120 ml</span> — lait</li></ul></div>
+<li><span class="qty" data-base-qty="2" data-unit="pièces">2 pièces</span> — œufs</li></ul></div>
+        <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="120" data-unit="ml">120 ml</span> — lait</li>
+<li><span class="qty" data-base-qty="80" data-unit="g">80 g</span> — beurre fondu ou huile</li>
+<li><span class="qty" data-base-qty="1" data-unit="sachet">1 sachet</span> — levure chimique</li></ul></div>
         <div class="soft-box"><h3>Optionnels</h3><ul><li><span class="qty" data-base-qty="80" data-unit="g">80 g</span> — chocolat</li>
-<li><span class="qty" data-base-qty="150" data-unit="g">150 g</span> — fruits</li></ul></div>
+<li><span class="qty" data-base-qty="150" data-unit="g">150 g</span> — fruits</li>
+<li><span class="qty" data-base-qty="1" data-unit="c. à café">1 c. à café</span> — cannelle ou vanille</li></ul></div>
       </div>
     </section>
 
     <section class="recipe-section">
       <h2>👩‍🍳 Préparation détaillée</h2>
-      <ol><li>Préchauffer le four à 180 °C.</li><li>Mélanger la farine et le sucre dans un saladier.</li><li>Ajouter les œufs puis le lait petit à petit.</li><li>Mélanger jusqu’à obtenir une pâte homogène.</li><li>Ajouter le chocolat ou les fruits si disponibles.</li><li>Verser dans un moule et cuire environ 30 minutes.</li></ol>
+      <ol><li>Préchauffer le four à 180 °C. Beurrer ou huiler un moule.</li><li>Mélanger la farine, le sucre, la levure et une pincée de sel dans un saladier.</li><li>Ajouter les œufs, le lait ou l’eau, puis le beurre fondu ou l’huile. Mélanger juste assez pour obtenir une pâte homogène.</li><li>Ajouter les ingrédients disponibles : chocolat, fruits en morceaux, cacao, cannelle ou confiture.</li><li>Verser dans le moule et cuire 30 à 40 minutes. Vérifier la cuisson avec la pointe d’un couteau.</li></ol>
     </section>
 
-    <section class="recipe-section">
-      <h2>💡 Astuce anti-gaspi</h2>
-      <p>Utiliser les restes compatibles pour éviter le gaspillage.</p>
-    </section>
+    <section class="recipe-section"><h2>💡 Astuce anti-gaspi</h2><p>Les bananes très mûres, les pommes fatiguées ou les fins de tablette de chocolat peuvent être incorporées à la pâte.</p></section>
 
     <section class="recipe-section">
       <h2>🔁 Variantes possibles</h2>
-      <p>Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.</p>
-      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=G%C3%A2teau+simple+du+placard" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      <p>Version cacao, pomme-cannelle, banane-chocolat, confiture marbrée, noix/noisettes, citron, yaourt ou pépites de chocolat. Pour une version sans lait, utiliser de l’eau ou une boisson végétale.</p>
+      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=G%C3%A2teau+simple+du+placard+recette+variantes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      
+      <div class="source-list-inline no-print">
+        <h3>🔗 Sources d’inspiration</h3>
+        <p class="small">Liens utilisés pour comparer les techniques, les variantes et les temps de préparation. La fiche reste reformulée et adaptée au projet.</p>
+        <ul class="source-list"><li><a href="https://www.750g.com/gateau-au-chocolat-super-facile-du-fond-du-placard-r96504.htm" target="_blank" rel="noopener">750g - Gâteau au chocolat super facile du fond du placard</a></li><li><a href="https://regilait.com/idees-recettes/cuisine-du-placard" target="_blank" rel="noopener">Régilait - Idées recettes du fond de placard</a></li><li><a href="https://www.google.com/search?q=G%C3%A2teau+simple+du+placard+recette+variantes" target="_blank" rel="noopener">Recherche web utilisée : Gâteau simple du placard recette variantes</a></li></ul>
+      </div>
+    </section>
+
+    
+    <section class="recipe-section nutrition-section">
+      <h2>📊 Valeurs nutritionnelles estimées</h2>
+      <p class="notice info-note"><strong>Estimation indicative.</strong> Les valeurs ci-dessous sont calculées à partir d’ingrédients génériques et des quantités de base. Elles ne remplacent pas les étiquettes des produits, ni un avis médical ou diététique. <a href="../aide.html#valeurs-nutritionnelles">Voir l’explication complète</a>.</p>
+      <div class="nutrition-layout">
+        <div class="nutri-score-card nutri-grade-C">
+          <span class="small">Nutri-Score estimé</span>
+          <strong>C</strong>
+          <p class="small">Non officiel</p>
+        </div>
+        <div class="table-scroll nutrition-table-wrap">
+          <table class="data-table nutrition-table">
+            <thead>
+              <tr><th>Valeur</th><th>Par portion</th><th>Pour 100 g</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Énergie</td><td>1693 kJ / 404.7 kcal</td><td>1201 kJ / 287.0 kcal</td></tr>
+              <tr><td>Protéines</td><td>7.2 g</td><td>5.1 g</td></tr>
+              <tr><td>Glucides</td><td>52.3 g</td><td>37.1 g</td></tr>
+              <tr><td>dont sucres</td><td>27.1 g</td><td>19.2 g</td></tr>
+              <tr><td>Lipides</td><td>18.0 g</td><td>12.8 g</td></tr>
+              <tr><td>dont acides gras saturés</td><td>10.9 g</td><td>7.7 g</td></tr>
+              <tr><td>Fibres</td><td>2.7 g</td><td>1.9 g</td></tr>
+              <tr><td>Sel</td><td>0.5 g</td><td>0.3 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="small">Portion estimée : 141 g. Score simplifié : 10. Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel.</p>
     </section>
 
     <section class="recipe-section">
@@ -79,26 +130,18 @@
       <p class="small">Vérifiez toujours les étiquettes des produits utilisés.</p>
     </section>
 
-    
     <section class="recipe-section recipe-linked-filters no-print">
       <h2>🔎 Filtres associés</h2>
       <p class="small">Cliquez sur un bouton pour trouver les recettes associées au même champ.</p>
-      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=gateau" title="Filtrer les recettes : Gateau">Gateau</a></span></p>
-      <p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dessert" title="Filtrer les recettes : Dessert">Dessert</a> <a class="badge filter-link" href="../recherche.html?moment=gouter" title="Filtrer les recettes : Gouter">Gouter</a></span></p>
-      <p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=four" title="Filtrer les recettes : Four">Four</a></span></p>
-      <p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=gluten" title="Filtrer les recettes : Gluten">Gluten</a> <a class="badge filter-link" href="../recherche.html?allergene=%C5%93ufs" title="Filtrer les recettes : Œufs">Œufs</a> <a class="badge filter-link" href="../recherche.html?allergene=lait" title="Filtrer les recettes : Lait">Lait</a></span></p>
-    </section>
-
+<p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=gateau" title="Filtrer les recettes : Gateau">Gateau</a></span></p>
+<p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dessert" title="Filtrer les recettes : Dessert">Dessert</a> <a class="badge filter-link" href="../recherche.html?moment=gouter" title="Filtrer les recettes : Gouter">Gouter</a></span></p>
+<p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=four" title="Filtrer les recettes : Four">Four</a></span></p>
+<p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=gluten" title="Filtrer les recettes : Gluten">Gluten</a> <a class="badge filter-link" href="../recherche.html?allergene=%C5%93ufs" title="Filtrer les recettes : Œufs">Œufs</a> <a class="badge filter-link" href="../recherche.html?allergene=lait" title="Filtrer les recettes : Lait">Lait</a></span></p>
+<p><strong>Repères alimentaires :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a> <a class="badge filter-link" href="../recherche.html?repere=vegetarien" title="Filtrer les recettes : Végétarien">Végétarien</a> <a class="badge filter-link" href="../recherche.html?repere=contient_oeuf" title="Filtrer les recettes : Contient œuf">Contient œuf</a> <a class="badge filter-link" href="../recherche.html?repere=contient_lait" title="Filtrer les recettes : Contient lait">Contient lait</a> <a class="badge filter-link" href="../recherche.html?repere=contient_gluten" title="Filtrer les recettes : Contient gluten">Contient gluten</a></span></p></section>
 
     <section class="recipe-section">
       <h2>📱 QR code</h2>
-      <div class="qr-row">
-        <img src="../qrcodes/recettes/20000101-010.png" alt="QR code de la recette Gâteau simple du placard">
-        <div>
-          <p>QR code vers la fiche en ligne.</p>
-          <p class="small">https://recettesducoeur.github.io/recettes/20000101-010.html</p>
-        </div>
-      </div>
+      <div class="qr-row"><img src="../qrcodes/recettes/20000101-010.png" alt="QR code de la recette Gâteau simple du placard"><div><p>QR code vers la fiche en ligne.</p><p class="small">https://recettesducoeur.github.io/recettes/20000101-010.html</p></div></div>
     </section>
 
     <section class="recipe-section no-print recipe-actions">

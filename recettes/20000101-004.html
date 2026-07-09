@@ -9,21 +9,21 @@
   <script defer src="../assets/js/layout.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/proportions.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
 </head>
 <body>
   <div data-site-header></div>
   <main id="contenu" class="recipe-sheet">
     <p class="small">ID recette : <strong>20000101-004</strong></p>
-
     <div class="recipe-hero">
       <div>
         <span class="kicker">🥘 <a class="filter-value" href="../recherche.html?categorie=plat" title="Voir les recettes associées : Plat">Plat</a></span>
         <h1>Salade de riz au thon</h1>
-        <p class="lead">Une recette simple et accessible : salade de riz au thon.</p>
-        <p>Une salade froide simple, pratique pour un repas sans four. Elle peut être préparée à l’avance et adaptée avec les conserves disponibles.</p>
+        <p class="lead">Une salade de riz au thon complète, fraîche et pratique, parfaite pour un repas froid, un pique-nique ou pour utiliser un reste de riz.</p>
+        <p>Le riz doit être refroidi avant l’assemblage pour garder une salade nette. Le thon apporte les protéines, les légumes ajoutent du croquant et l’assaisonnement se dose au dernier moment.</p>
         <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=froid" title="Filtrer les recettes : Froid">Froid</a><a class="badge filter-link" href="../recherche.html?tag=sans_four" title="Filtrer les recettes : Sans four">Sans four</a><a class="badge filter-link" href="../recherche.html?tag=conserve" title="Filtrer les recettes : Conserve">Conserve</a><a class="badge filter-link" href="../recherche.html?tag=rapide" title="Filtrer les recettes : Rapide">Rapide</a></div>
       </div>
-      <img class="recipe-image" src="../images/recettes/20000101-004.webp" alt="Illustration : Salade de riz au thon">
+      <img class="recipe-image" src="../images/recettes/20000101-004.webp" alt="Illustration type photo maison : Salade de riz au thon">
     </div>
 
     <section class="recipe-meta">
@@ -35,40 +35,91 @@
       <div class="meta-box">⭐<br><a class="filter-value" href="../recherche.html?difficulte=facile" title="Voir les recettes associées : Facile">Facile</a></div>
     </section>
 
+    
+    <section class="recipe-section food-markers-section">
+      <h2>🧭 Repères alimentaires</h2>
+      <div class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a><a class="badge filter-link" href="../recherche.html?repere=contient_poisson" title="Filtrer les recettes : Contient poisson">Contient poisson</a><a class="badge filter-link" href="../recherche.html?repere=sans_lactose_possible" title="Filtrer les recettes : Sans lactose possible">Sans lactose possible</a></div>
+      <p class="small">Repères indicatifs à vérifier selon les marques, les remplacements d’ingrédients et les produits réellement utilisés.</p>
+    </section>
+    
+    <section class="recipe-section cooking-details">
+      <h2>🔥 Cuisson indicative</h2>
+      <p>Casserole : 10 à 12 min pour le riz, puis refroidissement avant assemblage.</p>
+      
+      <p class="small">Ces valeurs sont indicatives : ajuster selon le four, l’épaisseur du plat et la coloration souhaitée.</p>
+    </section>
+
     <section class="portion-tool no-print">
       <h2>⚖️ Adapter les quantités</h2>
       <label for="portions-input">Nombre de portions souhaitées</label>
       <input id="portions-input" type="number" min="1" max="20" step="1" value="4">
       <p id="ratio-info" class="small"></p>
-      <p class="small">Le calcul adapte les quantités proportionnellement.</p>
+      <p class="small">Le calcul adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base.</p>
     </section>
 
     <section class="recipe-section">
       <h2>🧺 Ingrédients avec quantités</h2>
       <div class="ingredients-grid">
         <div class="soft-box"><h3>Principaux</h3><ul><li><span class="qty" data-base-qty="280" data-unit="g">280 g</span> — riz</li>
-<li><span class="qty" data-base-qty="200" data-unit="g">200 g</span> — thon égoutté</li></ul></div>
-        <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="150" data-unit="g">150 g</span> — maïs égoutté</li>
+<li><span class="qty" data-base-qty="200" data-unit="g">200 g</span> — thon égoutté</li>
 <li><span class="qty" data-base-qty="250" data-unit="g">250 g</span> — tomates</li></ul></div>
+        <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="150" data-unit="g">150 g</span> — maïs égoutté</li>
+<li><span class="qty" data-base-qty="4" data-unit="c. à soupe">4 c. à soupe</span> — vinaigrette ou mayonnaise</li>
+<li><span class="qty" data-base-qty="150" data-unit="g">150 g</span> — concombre ou légume croquant</li></ul></div>
         <div class="soft-box"><h3>Optionnels</h3><ul><li><span class="qty" data-base-qty="2" data-unit="pièces">2 pièces</span> — œufs durs</li>
-<li><span class="qty" data-base-qty="50" data-unit="g">50 g</span> — cornichons</li></ul></div>
+<li><span class="qty" data-base-qty="50" data-unit="g">50 g</span> — cornichons</li>
+<li><span class="qty" data-base-qty="1" data-unit="c. à soupe">1 c. à soupe</span> — herbes fraîches</li></ul></div>
       </div>
     </section>
 
     <section class="recipe-section">
       <h2>👩‍🍳 Préparation détaillée</h2>
-      <ol><li>Faire cuire le riz, puis l’égoutter et le laisser refroidir.</li><li>Égoutter le thon et le maïs.</li><li>Couper les tomates en petits morceaux.</li><li>Mélanger le riz froid, le thon, le maïs et les tomates dans un saladier.</li><li>Ajouter les œufs durs ou les cornichons si disponibles.</li><li>Assaisonner légèrement et conserver au frais avant de servir.</li></ol>
+      <ol><li>Cuire le riz dans de l’eau salée, puis l’égoutter. Le rincer rapidement à l’eau froide ou l’étaler pour le refroidir.</li><li>Égoutter et émietter le thon. Couper les tomates, le concombre ou les légumes disponibles en petits morceaux.</li><li>Mélanger le riz refroidi, le thon et les légumes dans un grand saladier.</li><li>Préparer une sauce simple avec huile, vinaigre, sel et poivre, ou une petite quantité de mayonnaise.</li><li>Ajouter la sauce au dernier moment, mélanger délicatement et servir frais.</li></ol>
     </section>
 
-    <section class="recipe-section">
-      <h2>💡 Astuce anti-gaspi</h2>
-      <p>Utiliser les restes compatibles pour éviter le gaspillage.</p>
-    </section>
+    <section class="recipe-section"><h2>💡 Astuce anti-gaspi</h2><p>Un reste de riz de la veille fonctionne très bien. Ajouter la sauce juste avant de servir évite que la salade ne devienne pâteuse.</p></section>
 
     <section class="recipe-section">
       <h2>🔁 Variantes possibles</h2>
-      <p>Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.</p>
-      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Salade+de+riz+au+thon" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      <p>Ajouter œufs durs, maïs, cornichons, olives, haricots rouges, pois chiches, restes de poulet, dés de fromage ou herbes fraîches. Remplacer la mayonnaise par une vinaigrette moutardée.</p>
+      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Salade+de+riz+au+thon+recette+variantes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      
+      <div class="source-list-inline no-print">
+        <h3>🔗 Sources d’inspiration</h3>
+        <p class="small">Liens utilisés pour comparer les techniques, les variantes et les temps de préparation. La fiche reste reformulée et adaptée au projet.</p>
+        <ul class="source-list"><li><a href="https://www.marmiton.org/recettes/recette_salade-de-riz-au-thon_87373.aspx" target="_blank" rel="noopener">Marmiton - Salade de riz au thon</a></li><li><a href="https://www.marmiton.org/recettes/index/categorie/salade-de-riz/" target="_blank" rel="noopener">Marmiton - Salades de riz, idées de variantes</a></li><li><a href="https://www.google.com/search?q=Salade+de+riz+au+thon+recette+variantes" target="_blank" rel="noopener">Recherche web utilisée : Salade de riz au thon recette variantes</a></li></ul>
+      </div>
+    </section>
+
+    
+    <section class="recipe-section nutrition-section">
+      <h2>📊 Valeurs nutritionnelles estimées</h2>
+      <p class="notice info-note"><strong>Estimation indicative.</strong> Les valeurs ci-dessous sont calculées à partir d’ingrédients génériques et des quantités de base. Elles ne remplacent pas les étiquettes des produits, ni un avis médical ou diététique. <a href="../aide.html#valeurs-nutritionnelles">Voir l’explication complète</a>.</p>
+      <div class="nutrition-layout">
+        <div class="nutri-score-card nutri-grade-A">
+          <span class="small">Nutri-Score estimé</span>
+          <strong>A</strong>
+          <p class="small">Non officiel</p>
+        </div>
+        <div class="table-scroll nutrition-table-wrap">
+          <table class="data-table nutrition-table">
+            <thead>
+              <tr><th>Valeur</th><th>Par portion</th><th>Pour 100 g</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Énergie</td><td>1972 kJ / 471.4 kcal</td><td>629 kJ / 150.2 kcal</td></tr>
+              <tr><td>Protéines</td><td>25.0 g</td><td>8.0 g</td></tr>
+              <tr><td>Glucides</td><td>65.9 g</td><td>21.0 g</td></tr>
+              <tr><td>dont sucres</td><td>5.2 g</td><td>1.6 g</td></tr>
+              <tr><td>Lipides</td><td>11.1 g</td><td>3.5 g</td></tr>
+              <tr><td>dont acides gras saturés</td><td>2.0 g</td><td>0.6 g</td></tr>
+              <tr><td>Fibres</td><td>3.2 g</td><td>1.0 g</td></tr>
+              <tr><td>Sel</td><td>1.1 g</td><td>0.4 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="small">Portion estimée : 314 g. Score simplifié : -4. Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel.</p>
     </section>
 
     <section class="recipe-section">
@@ -79,26 +130,18 @@
       <p class="small">Vérifiez toujours les étiquettes des produits utilisés.</p>
     </section>
 
-    
     <section class="recipe-section recipe-linked-filters no-print">
       <h2>🔎 Filtres associés</h2>
       <p class="small">Cliquez sur un bouton pour trouver les recettes associées au même champ.</p>
-      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=salade" title="Filtrer les recettes : Salade">Salade</a></span></p>
-      <p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
-      <p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=casserole" title="Filtrer les recettes : Casserole">Casserole</a></span></p>
-      <p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=poisson" title="Filtrer les recettes : Poisson">Poisson</a> <a class="badge filter-link" href="../recherche.html?allergene=%C5%93ufs" title="Filtrer les recettes : Œufs">Œufs</a></span></p>
-    </section>
-
+<p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=salade" title="Filtrer les recettes : Salade">Salade</a></span></p>
+<p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
+<p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=casserole" title="Filtrer les recettes : Casserole">Casserole</a></span></p>
+<p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=poisson" title="Filtrer les recettes : Poisson">Poisson</a> <a class="badge filter-link" href="../recherche.html?allergene=%C5%93ufs" title="Filtrer les recettes : Œufs">Œufs</a></span></p>
+<p><strong>Repères alimentaires :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a> <a class="badge filter-link" href="../recherche.html?repere=contient_poisson" title="Filtrer les recettes : Contient poisson">Contient poisson</a> <a class="badge filter-link" href="../recherche.html?repere=sans_lactose_possible" title="Filtrer les recettes : Sans lactose possible">Sans lactose possible</a></span></p></section>
 
     <section class="recipe-section">
       <h2>📱 QR code</h2>
-      <div class="qr-row">
-        <img src="../qrcodes/recettes/20000101-004.png" alt="QR code de la recette Salade de riz au thon">
-        <div>
-          <p>QR code vers la fiche en ligne.</p>
-          <p class="small">https://recettesducoeur.github.io/recettes/20000101-004.html</p>
-        </div>
-      </div>
+      <div class="qr-row"><img src="../qrcodes/recettes/20000101-004.png" alt="QR code de la recette Salade de riz au thon"><div><p>QR code vers la fiche en ligne.</p><p class="small">https://recettesducoeur.github.io/recettes/20000101-004.html</p></div></div>
     </section>
 
     <section class="recipe-section no-print recipe-actions">

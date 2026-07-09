@@ -9,21 +9,21 @@
   <script defer src="../assets/js/layout.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/proportions.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
 </head>
 <body>
   <div data-site-header></div>
   <main id="contenu" class="recipe-sheet">
     <p class="small">ID recette : <strong>20000101-003</strong></p>
-
     <div class="recipe-hero">
       <div>
         <span class="kicker">🥘 <a class="filter-value" href="../recherche.html?categorie=plat" title="Voir les recettes associées : Plat">Plat</a></span>
         <h1>Soupe de légumes simple</h1>
-        <p class="lead">Une recette simple et accessible : soupe de légumes simple.</p>
-        <p>Cette soupe accepte presque tous les légumes : carottes, poireaux, courgettes, pommes de terre, chou-fleur, tomates. Elle est utile pour éviter de jeter des légumes encore consommables.</p>
+        <p class="lead">Une soupe de légumes simple, économique et modulable, idéale pour utiliser des légumes fatigués ou des restes de bac à légumes.</p>
+        <p>La recette repose sur une cuisson douce des légumes coupés régulièrement, puis un mixage plus ou moins fin selon la texture voulue. Elle peut être enrichie avec des légumineuses, du riz ou du pain pour devenir un repas complet.</p>
         <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=simple" title="Filtrer les recettes : Simple">Simple</a><a class="badge filter-link" href="../recherche.html?tag=economique" title="Filtrer les recettes : Économique">Économique</a><a class="badge filter-link" href="../recherche.html?tag=anti_gaspi" title="Filtrer les recettes : Anti-gaspi">Anti-gaspi</a><a class="badge filter-link" href="../recherche.html?tag=legumes" title="Filtrer les recettes : Legumes">Legumes</a></div>
       </div>
-      <img class="recipe-image" src="../images/recettes/20000101-003.webp" alt="Illustration : Soupe de légumes simple">
+      <img class="recipe-image" src="../images/recettes/20000101-003.webp" alt="Illustration type photo maison : Soupe de légumes simple">
     </div>
 
     <section class="recipe-meta">
@@ -35,40 +35,91 @@
       <div class="meta-box">⭐<br><a class="filter-value" href="../recherche.html?difficulte=facile" title="Voir les recettes associées : Facile">Facile</a></div>
     </section>
 
+    
+    <section class="recipe-section food-markers-section">
+      <h2>🧭 Repères alimentaires</h2>
+      <div class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a><a class="badge filter-link" href="../recherche.html?repere=vegetarien" title="Filtrer les recettes : Végétarien">Végétarien</a><a class="badge filter-link" href="../recherche.html?repere=vegan_possible" title="Filtrer les recettes : Vegan possible">Vegan possible</a><a class="badge filter-link" href="../recherche.html?repere=sans_gluten_possible" title="Filtrer les recettes : Sans gluten possible">Sans gluten possible</a><a class="badge filter-link" href="../recherche.html?repere=sans_lactose_possible" title="Filtrer les recettes : Sans lactose possible">Sans lactose possible</a></div>
+      <p class="small">Repères indicatifs à vérifier selon les marques, les remplacements d’ingrédients et les produits réellement utilisés.</p>
+    </section>
+    
+    <section class="recipe-section cooking-details">
+      <h2>🔥 Cuisson indicative</h2>
+      <p>Casserole : 25 à 35 min à frémissement, jusqu’à ce que les légumes soient tendres.</p>
+      
+      <p class="small">Ces valeurs sont indicatives : ajuster selon le four, l’épaisseur du plat et la coloration souhaitée.</p>
+    </section>
+
     <section class="portion-tool no-print">
       <h2>⚖️ Adapter les quantités</h2>
       <label for="portions-input">Nombre de portions souhaitées</label>
       <input id="portions-input" type="number" min="1" max="20" step="1" value="4">
       <p id="ratio-info" class="small"></p>
-      <p class="small">Le calcul adapte les quantités proportionnellement.</p>
+      <p class="small">Le calcul adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base.</p>
     </section>
 
     <section class="recipe-section">
       <h2>🧺 Ingrédients avec quantités</h2>
       <div class="ingredients-grid">
         <div class="soft-box"><h3>Principaux</h3><ul><li><span class="qty" data-base-qty="800" data-unit="g">800 g</span> — légumes variés</li>
-<li><span class="qty" data-base-qty="300" data-unit="g">300 g</span> — pommes de terre</li></ul></div>
+<li><span class="qty" data-base-qty="300" data-unit="g">300 g</span> — pommes de terre</li>
+<li><span class="qty" data-base-qty="200" data-unit="g">200 g</span> — carottes ou poireaux</li></ul></div>
         <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="1" data-unit="pièce">1 pièce</span> — oignon</li>
-<li><span class="qty" data-base-qty="1000" data-unit="ml">1000 ml</span> — eau</li></ul></div>
+<li><span class="qty" data-base-qty="1000" data-unit="ml">1000 ml</span> — eau ou bouillon</li>
+<li><span class="qty" data-base-qty="1" data-unit="c. à soupe">1 c. à soupe</span> — huile</li></ul></div>
         <div class="soft-box"><h3>Optionnels</h3><ul><li><span class="qty" data-base-qty="80" data-unit="ml">80 ml</span> — crème</li>
-<li><span class="qty" data-base-qty="40" data-unit="g">40 g</span> — fromage râpé</li></ul></div>
+<li><span class="qty" data-base-qty="40" data-unit="g">40 g</span> — fromage râpé</li>
+<li><span class="qty" data-base-qty="80" data-unit="g">80 g</span> — pain rassis pour croûtons</li></ul></div>
       </div>
     </section>
 
     <section class="recipe-section">
       <h2>👩‍🍳 Préparation détaillée</h2>
-      <ol><li>Laver, éplucher si nécessaire, puis couper les légumes en morceaux moyens.</li><li>Mettre les légumes et les pommes de terre dans une grande casserole.</li><li>Ajouter l’eau jusqu’à couvrir les légumes.</li><li>Faire cuire environ 30 minutes, jusqu’à ce que les légumes soient tendres.</li><li>Mixer pour obtenir une soupe lisse, ou écraser grossièrement pour garder des morceaux.</li><li>Ajouter un peu de crème ou de fromage si disponible, puis rectifier l’assaisonnement.</li></ol>
+      <ol><li>Éplucher uniquement les légumes qui le nécessitent, laver le reste et couper tout en morceaux de taille proche.</li><li>Faire revenir l’oignon ou le poireau dans un filet d’huile si disponible, pour renforcer le goût.</li><li>Ajouter les légumes, couvrir d’eau à hauteur, saler légèrement et ajouter des herbes ou un cube de bouillon si disponible.</li><li>Laisser cuire 25 à 35 minutes, jusqu’à ce que les légumes soient tendres.</li><li>Mixer plus ou moins finement. Ajuster l’épaisseur avec un peu d’eau, puis rectifier l’assaisonnement.</li></ol>
     </section>
 
-    <section class="recipe-section">
-      <h2>💡 Astuce anti-gaspi</h2>
-      <p>Utiliser les restes compatibles pour éviter le gaspillage.</p>
-    </section>
+    <section class="recipe-section"><h2>💡 Astuce anti-gaspi</h2><p>Les fanes propres, verts de poireaux, tiges de persil ou petits restes de légumes peuvent parfumer la soupe. Mixer avec un morceau de pain rassis donne plus de corps.</p></section>
 
     <section class="recipe-section">
       <h2>🔁 Variantes possibles</h2>
-      <p>Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.</p>
-      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Soupe+de+l%C3%A9gumes+simple" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      <p>Ajouter lentilles corail, pois chiches, haricots blancs, riz, petites pâtes ou pomme de terre. Pour une soupe rustique, ne mixer qu’une partie. Pour une soupe repas, servir avec pain grillé, fromage ou œuf dur.</p>
+      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Soupe+de+l%C3%A9gumes+simple+recette+variantes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      
+      <div class="source-list-inline no-print">
+        <h3>🔗 Sources d’inspiration</h3>
+        <p class="small">Liens utilisés pour comparer les techniques, les variantes et les temps de préparation. La fiche reste reformulée et adaptée au projet.</p>
+        <ul class="source-list"><li><a href="https://www.marmiton.org/recettes/recette_soupe-de-legumes_222646.aspx" target="_blank" rel="noopener">Marmiton - Soupe de légumes</a></li><li><a href="https://www.lemonde.fr/les-recettes-du-monde/article/2024/05/17/la-soupe-de-legumes-et-legumineuses-la-recette-de-jacques-caplat_6233808_5324493.html" target="_blank" rel="noopener">Le Monde - Soupe de légumes et légumineuses</a></li><li><a href="https://www.google.com/search?q=Soupe+de+l%C3%A9gumes+simple+recette+variantes" target="_blank" rel="noopener">Recherche web utilisée : Soupe de légumes simple recette variantes</a></li></ul>
+      </div>
+    </section>
+
+    
+    <section class="recipe-section nutrition-section">
+      <h2>📊 Valeurs nutritionnelles estimées</h2>
+      <p class="notice info-note"><strong>Estimation indicative.</strong> Les valeurs ci-dessous sont calculées à partir d’ingrédients génériques et des quantités de base. Elles ne remplacent pas les étiquettes des produits, ni un avis médical ou diététique. <a href="../aide.html#valeurs-nutritionnelles">Voir l’explication complète</a>.</p>
+      <div class="nutrition-layout">
+        <div class="nutri-score-card nutri-grade-A">
+          <span class="small">Nutri-Score estimé</span>
+          <strong>A</strong>
+          <p class="small">Non officiel</p>
+        </div>
+        <div class="table-scroll nutrition-table-wrap">
+          <table class="data-table nutrition-table">
+            <thead>
+              <tr><th>Valeur</th><th>Par portion</th><th>Pour 100 g</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Énergie</td><td>1436 kJ / 343.1 kcal</td><td>220 kJ / 52.5 kcal</td></tr>
+              <tr><td>Protéines</td><td>10.0 g</td><td>1.5 g</td></tr>
+              <tr><td>Glucides</td><td>41.7 g</td><td>6.4 g</td></tr>
+              <tr><td>dont sucres</td><td>12.0 g</td><td>1.8 g</td></tr>
+              <tr><td>Lipides</td><td>14.2 g</td><td>2.2 g</td></tr>
+              <tr><td>dont acides gras saturés</td><td>6.6 g</td><td>1.0 g</td></tr>
+              <tr><td>Fibres</td><td>10.2 g</td><td>1.6 g</td></tr>
+              <tr><td>Sel</td><td>0.6 g</td><td>0.1 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="small">Portion estimée : 654 g. Score simplifié : -1. Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel.</p>
     </section>
 
     <section class="recipe-section">
@@ -79,25 +130,17 @@
       <p class="small">Vérifiez toujours les étiquettes des produits utilisés.</p>
     </section>
 
-    
     <section class="recipe-section recipe-linked-filters no-print">
       <h2>🔎 Filtres associés</h2>
       <p class="small">Cliquez sur un bouton pour trouver les recettes associées au même champ.</p>
-      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=soupe" title="Filtrer les recettes : Soupe">Soupe</a></span></p>
-      <p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
-      <p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=casserole" title="Filtrer les recettes : Casserole">Casserole</a></span></p>
-    </section>
-
+<p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=soupe" title="Filtrer les recettes : Soupe">Soupe</a></span></p>
+<p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
+<p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=casserole" title="Filtrer les recettes : Casserole">Casserole</a></span></p>
+<p><strong>Repères alimentaires :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a> <a class="badge filter-link" href="../recherche.html?repere=vegetarien" title="Filtrer les recettes : Végétarien">Végétarien</a> <a class="badge filter-link" href="../recherche.html?repere=vegan_possible" title="Filtrer les recettes : Vegan possible">Vegan possible</a> <a class="badge filter-link" href="../recherche.html?repere=sans_gluten_possible" title="Filtrer les recettes : Sans gluten possible">Sans gluten possible</a> <a class="badge filter-link" href="../recherche.html?repere=sans_lactose_possible" title="Filtrer les recettes : Sans lactose possible">Sans lactose possible</a></span></p></section>
 
     <section class="recipe-section">
       <h2>📱 QR code</h2>
-      <div class="qr-row">
-        <img src="../qrcodes/recettes/20000101-003.png" alt="QR code de la recette Soupe de légumes simple">
-        <div>
-          <p>QR code vers la fiche en ligne.</p>
-          <p class="small">https://recettesducoeur.github.io/recettes/20000101-003.html</p>
-        </div>
-      </div>
+      <div class="qr-row"><img src="../qrcodes/recettes/20000101-003.png" alt="QR code de la recette Soupe de légumes simple"><div><p>QR code vers la fiche en ligne.</p><p class="small">https://recettesducoeur.github.io/recettes/20000101-003.html</p></div></div>
     </section>
 
     <section class="recipe-section no-print recipe-actions">

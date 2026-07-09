@@ -9,12 +9,12 @@
   <script defer src="../assets/js/layout.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/proportions.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
 </head>
 <body>
   <div data-site-header></div>
   <main id="contenu" class="recipe-sheet">
     <p class="small">ID recette : <strong>00000000-000</strong></p>
-
     <div class="recipe-hero">
       <div>
         <span class="kicker">🥘 <a class="filter-value" href="../recherche.html?categorie=template" title="Voir les recettes associées : Template">Template</a></span>
@@ -23,7 +23,7 @@
         <p>Cette fiche est un modèle technique. Elle sert de base pour créer une nouvelle recette complète.</p>
         <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=template" title="Filtrer les recettes : Template">Template</a><a class="badge filter-link" href="../recherche.html?tag=dev" title="Filtrer les recettes : Dev">Dev</a></div>
       </div>
-      <img class="recipe-image" src="../images/recettes/00000000-000.webp" alt="Illustration : Template vierge de recette">
+      <img class="recipe-image" src="../images/recettes/00000000-000.webp" alt="Illustration type photo maison : Template vierge de recette">
     </div>
 
     <section class="recipe-meta">
@@ -35,12 +35,15 @@
       <div class="meta-box">⭐<br><a class="filter-value" href="../recherche.html?difficulte=facile" title="Voir les recettes associées : Facile">Facile</a></div>
     </section>
 
+    
+    
+
     <section class="portion-tool no-print">
       <h2>⚖️ Adapter les quantités</h2>
       <label for="portions-input">Nombre de portions souhaitées</label>
       <input id="portions-input" type="number" min="1" max="20" step="1" value="4">
       <p id="ratio-info" class="small"></p>
-      <p class="small">Le calcul adapte les quantités proportionnellement.</p>
+      <p class="small">Le calcul adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base.</p>
     </section>
 
     <section class="recipe-section">
@@ -57,16 +60,21 @@
       <ol><li>Étape 1 à compléter.</li><li>Étape 2 à compléter.</li><li>Étape 3 à compléter.</li></ol>
     </section>
 
-    <section class="recipe-section">
-      <h2>💡 Astuce anti-gaspi</h2>
-      <p>Astuce anti-gaspi à compléter.</p>
-    </section>
+    <section class="recipe-section"><h2>💡 Astuce anti-gaspi</h2><p>Astuce anti-gaspi à compléter.</p></section>
 
     <section class="recipe-section">
       <h2>🔁 Variantes possibles</h2>
       <p>Variantes possibles à compléter.</p>
-      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Template+vierge+de+recette" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Template+vierge+de+recette+recette+variantes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      
+      <div class="source-list-inline no-print">
+        <h3>🔗 Sources d’inspiration</h3>
+        <p class="small">Liens utilisés pour comparer les techniques, les variantes et les temps de préparation. La fiche reste reformulée et adaptée au projet.</p>
+        <ul class="source-list"><li><a href="https://www.google.com/search?q=Template+vierge+de+recette+recette+variantes" target="_blank" rel="noopener">Recherche web utilisée : Template vierge de recette recette variantes</a></li></ul>
+      </div>
     </section>
+
+    
 
     <section class="recipe-section">
       <h2>⚠️ Allergènes et conservation</h2>
@@ -76,23 +84,14 @@
       <p class="small">Vérifiez toujours les étiquettes des produits utilisés.</p>
     </section>
 
-    
     <section class="recipe-section recipe-linked-filters no-print">
       <h2>🔎 Filtres associés</h2>
       <p class="small">Cliquez sur un bouton pour trouver les recettes associées au même champ.</p>
-      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=modele" title="Filtrer les recettes : Modele">Modele</a></span></p>
-    </section>
-
+<p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=modele" title="Filtrer les recettes : Modele">Modele</a></span></p></section>
 
     <section class="recipe-section">
       <h2>📱 QR code</h2>
-      <div class="qr-row">
-        <img src="../qrcodes/recettes/00000000-000.png" alt="QR code de la recette Template vierge de recette">
-        <div>
-          <p>QR code vers la fiche en ligne.</p>
-          <p class="small">https://recettesducoeur.github.io/recettes/00000000-000.html</p>
-        </div>
-      </div>
+      <div class="qr-row"><img src="../qrcodes/recettes/00000000-000.png" alt="QR code de la recette Template vierge de recette"><div><p>QR code vers la fiche en ligne.</p><p class="small">https://recettesducoeur.github.io/recettes/00000000-000.html</p></div></div>
     </section>
 
     <section class="recipe-section no-print recipe-actions">

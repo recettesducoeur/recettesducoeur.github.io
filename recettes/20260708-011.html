@@ -9,21 +9,21 @@
   <script defer src="../assets/js/layout.js"></script>
   <script defer src="../assets/js/app.js"></script>
   <script defer src="../assets/js/proportions.js"></script>
+  <script defer src="../assets/js/table-tools-dev.js"></script>
 </head>
 <body>
   <div data-site-header></div>
   <main id="contenu" class="recipe-sheet">
     <p class="small">ID recette : <strong>20260708-011</strong></p>
-
     <div class="recipe-hero">
       <div>
         <span class="kicker">🥘 <a class="filter-value" href="../recherche.html?categorie=plat" title="Voir les recettes associées : Plat">Plat</a></span>
         <h1>Tian de courgettes</h1>
-        <p class="lead">Une recette simple et accessible : tian de courgettes.</p>
-        <p>Le tian est un plat de légumes au four. Il demande surtout de couper les légumes et de les disposer dans un plat. La cuisson fait le reste.</p>
+        <p class="lead">Un tian de courgettes fondant et parfumé, à préparer avec des courgettes de saison, un peu de tomate et des herbes.</p>
+        <p>La réussite tient à une cuisson suffisamment longue pour concentrer les légumes sans les brûler. Des tranches fines et régulières donnent un plat plus fondant et plus joli.</p>
         <div class="badges"><a class="badge filter-link" href="../recherche.html?tag=simple" title="Filtrer les recettes : Simple">Simple</a><a class="badge filter-link" href="../recherche.html?tag=economique" title="Filtrer les recettes : Économique">Économique</a><a class="badge filter-link" href="../recherche.html?tag=legumes" title="Filtrer les recettes : Legumes">Legumes</a><a class="badge filter-link" href="../recherche.html?tag=four" title="Filtrer les recettes : Four">Four</a><a class="badge filter-link" href="../recherche.html?tag=anti_gaspi" title="Filtrer les recettes : Anti-gaspi">Anti-gaspi</a></div>
       </div>
-      <img class="recipe-image" src="../images/recettes/20260708-011.webp" alt="Illustration : Tian de courgettes">
+      <img class="recipe-image" src="../images/recettes/20260708-011.webp" alt="Illustration type photo maison : Tian de courgettes">
     </div>
 
     <section class="recipe-meta">
@@ -35,39 +35,90 @@
       <div class="meta-box">⭐<br><a class="filter-value" href="../recherche.html?difficulte=facile" title="Voir les recettes associées : Facile">Facile</a></div>
     </section>
 
+    
+    <section class="recipe-section food-markers-section">
+      <h2>🧭 Repères alimentaires</h2>
+      <div class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a><a class="badge filter-link" href="../recherche.html?repere=vegetarien" title="Filtrer les recettes : Végétarien">Végétarien</a><a class="badge filter-link" href="../recherche.html?repere=vegan_possible" title="Filtrer les recettes : Vegan possible">Vegan possible</a><a class="badge filter-link" href="../recherche.html?repere=sans_gluten_possible" title="Filtrer les recettes : Sans gluten possible">Sans gluten possible</a><a class="badge filter-link" href="../recherche.html?repere=sans_lactose_possible" title="Filtrer les recettes : Sans lactose possible">Sans lactose possible</a></div>
+      <p class="small">Repères indicatifs à vérifier selon les marques, les remplacements d’ingrédients et les produits réellement utilisés.</p>
+    </section>
+    
+    <section class="recipe-section cooking-details">
+      <h2>🔥 Cuisson indicative</h2>
+      <p>Four : 180 à 200 °C pendant 40 à 60 min, jusqu’à obtenir des légumes fondants et légèrement confits.</p>
+      <p><strong>Repère four :</strong> 180 à 200 °C — 40 à 60 min.</p>
+      <p class="small">Ces valeurs sont indicatives : ajuster selon le four, l’épaisseur du plat et la coloration souhaitée.</p>
+    </section>
+
     <section class="portion-tool no-print">
       <h2>⚖️ Adapter les quantités</h2>
       <label for="portions-input">Nombre de portions souhaitées</label>
       <input id="portions-input" type="number" min="1" max="20" step="1" value="4">
       <p id="ratio-info" class="small"></p>
-      <p class="small">Le calcul adapte les quantités proportionnellement.</p>
+      <p class="small">Le calcul adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base.</p>
     </section>
 
     <section class="recipe-section">
       <h2>🧺 Ingrédients avec quantités</h2>
       <div class="ingredients-grid">
-        <div class="soft-box"><h3>Principaux</h3><ul><li><span class="qty" data-base-qty="800" data-unit="g">800 g</span> — courgettes</li></ul></div>
-        <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="500" data-unit="g">500 g</span> — tomates</li>
-<li><span class="qty" data-base-qty="2" data-unit="pièces">2 pièces</span> — oignons</li></ul></div>
+        <div class="soft-box"><h3>Principaux</h3><ul><li><span class="qty" data-base-qty="800" data-unit="g">800 g</span> — courgettes</li>
+<li><span class="qty" data-base-qty="500" data-unit="g">500 g</span> — tomates</li></ul></div>
+        <div class="soft-box"><h3>Secondaires</h3><ul><li><span class="qty" data-base-qty="2" data-unit="pièces">2 pièces</span> — oignons</li>
+<li><span class="qty" data-base-qty="1" data-unit="gousse">1 gousse</span> — ail</li>
+<li><span class="qty" data-base-qty="2" data-unit="c. à soupe">2 c. à soupe</span> — huile d’olive ou huile neutre</li></ul></div>
         <div class="soft-box"><h3>Optionnels</h3><ul><li><span class="qty" data-base-qty="1" data-unit="c. à soupe">1 c. à soupe</span> — herbes de Provence</li>
-<li><span class="qty" data-base-qty="80" data-unit="g">80 g</span> — fromage râpé</li></ul></div>
+<li><span class="qty" data-base-qty="80" data-unit="g">80 g</span> — fromage râpé</li>
+<li><span class="qty" data-base-qty="80" data-unit="g">80 g</span> — riz cru au fond du plat</li></ul></div>
       </div>
     </section>
 
     <section class="recipe-section">
       <h2>👩‍🍳 Préparation détaillée</h2>
-      <ol><li>Laver les courgettes et les tomates.</li><li>Couper les courgettes, les tomates et les oignons en rondelles fines.</li><li>Disposer les rondelles dans un plat en alternant courgette, tomate et oignon.</li><li>Ajouter les herbes, un peu de sel et, si disponible, un filet d’huile.</li><li>Cuire au four à 180 °C pendant environ 35 minutes.</li><li>Ajouter le fromage râpé en fin de cuisson si souhaité.</li></ol>
+      <ol><li>Préchauffer le four à 180-200 °C. Laver les courgettes et les tomates, puis les couper en fines rondelles.</li><li>Huiler légèrement un plat à gratin. Répartir l’oignon émincé ou l’ail au fond si disponible.</li><li>Ranger les rondelles de courgette et de tomate en les alternant.</li><li>Saler, poivrer, ajouter herbes de Provence ou basilic, puis arroser d’un filet d’huile.</li><li>Cuire 40 à 60 minutes, jusqu’à ce que les légumes soient fondants et légèrement confits.</li></ol>
     </section>
 
-    <section class="recipe-section">
-      <h2>💡 Astuce anti-gaspi</h2>
-      <p>Utiliser les restes compatibles pour éviter le gaspillage.</p>
-    </section>
+    <section class="recipe-section"><h2>💡 Astuce anti-gaspi</h2><p>Si les courgettes rendent beaucoup d’eau, prolonger la cuisson quelques minutes à découvert. Les restes sont très bons froids ou dans une omelette.</p></section>
 
     <section class="recipe-section">
       <h2>🔁 Variantes possibles</h2>
-      <p>Adapter avec les produits disponibles : légumes, conserves, fromage ou féculents.</p>
-      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Tian+de+courgettes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      <p>Ajouter riz au fond du plat, fromage râpé, chapelure, aubergine, pomme de terre ou un reste de sauce tomate. Pour un plat complet, ajouter pois chiches ou thon émietté.</p>
+      <p class="google-variants no-print"><a class="button ghost" href="https://www.google.com/search?q=Tian+de+courgettes+recette+variantes" target="_blank" rel="noopener">🔎 Rechercher cette recette sur Google</a></p>
+      
+      <div class="source-list-inline no-print">
+        <h3>🔗 Sources d’inspiration</h3>
+        <p class="small">Liens utilisés pour comparer les techniques, les variantes et les temps de préparation. La fiche reste reformulée et adaptée au projet.</p>
+        <ul class="source-list"><li><a href="https://www.marmiton.org/recettes/recette_tian-de-courgettes-et-de-tomates_17041.aspx" target="_blank" rel="noopener">Marmiton - Tian de courgettes et de tomates</a></li><li><a href="https://www.marmiton.org/recettes/recette_tian-provencal_36194.aspx" target="_blank" rel="noopener">Marmiton - Tian provençal</a></li><li><a href="https://www.google.com/search?q=Tian+de+courgettes+recette+variantes" target="_blank" rel="noopener">Recherche web utilisée : Tian de courgettes recette variantes</a></li></ul>
+      </div>
+    </section>
+
+    
+    <section class="recipe-section nutrition-section">
+      <h2>📊 Valeurs nutritionnelles estimées</h2>
+      <p class="notice info-note"><strong>Estimation indicative.</strong> Les valeurs ci-dessous sont calculées à partir d’ingrédients génériques et des quantités de base. Elles ne remplacent pas les étiquettes des produits, ni un avis médical ou diététique. <a href="../aide.html#valeurs-nutritionnelles">Voir l’explication complète</a>.</p>
+      <div class="nutrition-layout">
+        <div class="nutri-score-card nutri-grade-A">
+          <span class="small">Nutri-Score estimé</span>
+          <strong>A</strong>
+          <p class="small">Non officiel</p>
+        </div>
+        <div class="table-scroll nutrition-table-wrap">
+          <table class="data-table nutrition-table">
+            <thead>
+              <tr><th>Valeur</th><th>Par portion</th><th>Pour 100 g</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Énergie</td><td>1235 kJ / 295.2 kcal</td><td>289 kJ / 69.1 kcal</td></tr>
+              <tr><td>Protéines</td><td>10.8 g</td><td>2.5 g</td></tr>
+              <tr><td>Glucides</td><td>31.2 g</td><td>7.3 g</td></tr>
+              <tr><td>dont sucres</td><td>10.5 g</td><td>2.4 g</td></tr>
+              <tr><td>Lipides</td><td>14.5 g</td><td>3.4 g</td></tr>
+              <tr><td>dont acides gras saturés</td><td>5.1 g</td><td>1.2 g</td></tr>
+              <tr><td>Fibres</td><td>5.2 g</td><td>1.2 g</td></tr>
+              <tr><td>Sel</td><td>0.4 g</td><td>0.1 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="small">Portion estimée : 428 g. Score simplifié : -6. Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel.</p>
     </section>
 
     <section class="recipe-section">
@@ -78,26 +129,18 @@
       <p class="small">Vérifiez toujours les étiquettes des produits utilisés.</p>
     </section>
 
-    
     <section class="recipe-section recipe-linked-filters no-print">
       <h2>🔎 Filtres associés</h2>
       <p class="small">Cliquez sur un bouton pour trouver les recettes associées au même champ.</p>
-      <p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=tian" title="Filtrer les recettes : Tian">Tian</a></span></p>
-      <p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
-      <p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=four" title="Filtrer les recettes : Four">Four</a></span></p>
-      <p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=lait" title="Filtrer les recettes : Lait">Lait</a></span></p>
-    </section>
-
+<p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous_categorie=tian" title="Filtrer les recettes : Tian">Tian</a></span></p>
+<p><strong>Moment du repas :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?moment=dejeuner" title="Filtrer les recettes : Dejeuner">Dejeuner</a> <a class="badge filter-link" href="../recherche.html?moment=diner" title="Filtrer les recettes : Diner">Diner</a></span></p>
+<p><strong>Équipement :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?equipement=four" title="Filtrer les recettes : Four">Four</a></span></p>
+<p><strong>Allergènes :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?allergene=lait" title="Filtrer les recettes : Lait">Lait</a></span></p>
+<p><strong>Repères alimentaires :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?repere=sans_porc" title="Filtrer les recettes : Sans porc">Sans porc</a> <a class="badge filter-link" href="../recherche.html?repere=vegetarien" title="Filtrer les recettes : Végétarien">Végétarien</a> <a class="badge filter-link" href="../recherche.html?repere=vegan_possible" title="Filtrer les recettes : Vegan possible">Vegan possible</a> <a class="badge filter-link" href="../recherche.html?repere=sans_gluten_possible" title="Filtrer les recettes : Sans gluten possible">Sans gluten possible</a> <a class="badge filter-link" href="../recherche.html?repere=sans_lactose_possible" title="Filtrer les recettes : Sans lactose possible">Sans lactose possible</a></span></p></section>
 
     <section class="recipe-section">
       <h2>📱 QR code</h2>
-      <div class="qr-row">
-        <img src="../qrcodes/recettes/20260708-011.png" alt="QR code de la recette Tian de courgettes">
-        <div>
-          <p>QR code vers la fiche en ligne.</p>
-          <p class="small">https://recettesducoeur.github.io/recettes/20260708-011.html</p>
-        </div>
-      </div>
+      <div class="qr-row"><img src="../qrcodes/recettes/20260708-011.png" alt="QR code de la recette Tian de courgettes"><div><p>QR code vers la fiche en ligne.</p><p class="small">https://recettesducoeur.github.io/recettes/20260708-011.html</p></div></div>
     </section>
 
     <section class="recipe-section no-print recipe-actions">
