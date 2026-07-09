@@ -1,0 +1,60 @@
+{
+  "version": "V25",
+  "date": "2026-07-08T23:57:37",
+  "ameliorations": [
+    "Affichage des recettes harmonisé sur toutes les grilles du site.",
+    "Smartphone : 1 colonne.",
+    "Tablette : 2 colonnes.",
+    "PC courant : 3 à 4 colonnes.",
+    "Très grand écran : 6 colonnes.",
+    "Écran très large : 8 colonnes maximum.",
+    "Catalogue recettes.html aligné sur cette logique globale.",
+    "La page recherche conserve son plafond spécifique de 3 colonnes, conforme à la limite globale."
+  ],
+  "breakpoints": {
+    "<620px": "1 colonne",
+    ">=620px": "2 colonnes",
+    ">=900px": "3 colonnes",
+    ">=1200px": "4 colonnes",
+    ">=1700px": "6 colonnes",
+    ">=2300px": "8 colonnes maximum"
+  },
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {}
+  },
+  "specific_checks": {
+    "global_recipe_grid_v25": true,
+    "max_8_rule": true,
+    "catalog_grid_v25": true,
+    "search_still_limited": true
+  }
+}

@@ -1389,3 +1389,107 @@ code{
     grid-template-columns:1fr;
   }
 }
+
+/* V25 — grilles recettes : 8 colonnes maximum sur grands écrans */
+/*
+  Objectif :
+  - 1 colonne smartphone
+  - 2 colonnes tablette
+  - 3 à 4 colonnes PC courant
+  - 6 colonnes très grand écran
+  - 8 colonnes maximum écran très large
+  Ces règles s'appliquent aux grilles de recettes du site.
+*/
+
+.recipe-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1rem;
+}
+
+@media(min-width:620px){
+  .recipe-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(min-width:900px){
+  .recipe-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
+@media(min-width:1200px){
+  .recipe-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+  }
+}
+
+@media(min-width:1700px){
+  .recipe-grid{
+    grid-template-columns:repeat(6,minmax(0,1fr));
+  }
+}
+
+@media(min-width:2300px){
+  .recipe-grid{
+    grid-template-columns:repeat(8,minmax(0,1fr));
+  }
+}
+
+/* Le catalogue suit aussi la logique globale. */
+.catalog-page .catalog-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1rem;
+}
+
+@media(min-width:620px){
+  .catalog-page .catalog-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(min-width:900px){
+  .catalog-page .catalog-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
+@media(min-width:1200px){
+  .catalog-page .catalog-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+  }
+}
+
+@media(min-width:1700px){
+  .catalog-page .catalog-grid{
+    grid-template-columns:repeat(6,minmax(0,1fr));
+  }
+}
+
+@media(min-width:2300px){
+  .catalog-page .catalog-grid{
+    grid-template-columns:repeat(8,minmax(0,1fr));
+  }
+}
+
+/* Neutralisation de l'ancien mode liste du catalogue sur PC. */
+@media(min-width:1024px){
+  .catalog-page .recipe-card{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .catalog-page .recipe-card > img{
+    width:100%;
+    max-width:100%;
+    height:clamp(130px,12vw,220px);
+    min-height:0;
+    object-fit:cover;
+    border-radius:22px 22px 0 0;
+  }
+}
+
+/* La recherche conserve son plafond spécifique de 3 colonnes,
+   ce qui reste conforme à la limite globale de 8 colonnes. */
