@@ -1,0 +1,38 @@
+{
+  "version": "V18",
+  "objectif": "Réparer le déploiement root GitHub Pages",
+  "url_cible": "https://recettesducoeur.github.io/",
+  "cause_probable": "Les assets CSS/JS/images/data ne sont pas à la racine du dépôt ou l’archive a été uploadée avec un dossier parent.",
+  "zip_structure": "Archive sans dossier parent : les fichiers sont directement à la racine du ZIP.",
+  "checks": {
+    "required_paths_missing": [],
+    "recipes_count": 13,
+    "qrcodes_regenerated": 14
+  },
+  "fichiers_ajoutes": [
+    "diagnostic-deploiement.html",
+    "REPARATION_DEPLOIEMENT_ROOT.md",
+    "data/audit_v18_reparation_deploiement_root.json"
+  ],
+  "fichiers_critiques_attendus": [
+    "index.html",
+    "recette-semaine.html",
+    "recherche.html",
+    "recettes.html",
+    "404.html",
+    "assets/css/style.css",
+    "assets/js/app.js",
+    "assets/js/search.js",
+    "assets/js/recette-semaine.js",
+    "assets/js/proportions.js",
+    "assets/logos/logo-principal.png",
+    "data/recettes.json",
+    "data/selection_semaine.json",
+    "recettes/images/20000101-001.webp",
+    "qrcodes/site.png",
+    "recettes/20000101-001.html",
+    "dev/index.html",
+    ".nojekyll",
+    "robots.txt"
+  ]
+}

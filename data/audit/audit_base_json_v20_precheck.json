@@ -1,0 +1,39 @@
+{
+  "date_controle": "2026-07-08T20:48:15",
+  "total_recettes_json": 13,
+  "recettes_visibles": 12,
+  "recettes_invisibles": 1,
+  "ids": [
+    "20000101-001",
+    "20000101-002",
+    "20000101-003",
+    "20000101-004",
+    "20000101-005",
+    "20000101-006",
+    "20000101-007",
+    "20000101-008",
+    "20000101-009",
+    "20000101-010",
+    "20260708-011",
+    "20260708-012",
+    "00000000-000"
+  ],
+  "doublons_id": [],
+  "champs_obligatoires_manquants": {},
+  "fichiers_manquants": {},
+  "valeurs_reference": {
+    "fichier_present": true,
+    "sans_cuisson_present": true,
+    "fruits_a_coque_present": true,
+    "crustaces_present": true
+  },
+  "coherence_pdf": {
+    "pdf_generes": 13,
+    "champ_pdf_present_dans_json_pour_toutes": false,
+    "recommandation": "Ajouter un champ pdf dans data/recettes.json pour documenter le lien PDF."
+  },
+  "coherence_url_racine": {
+    "ancienne_url_trouvee": [],
+    "ancienne_url_absente": true
+  }
+}

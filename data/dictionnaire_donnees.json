@@ -39,19 +39,19 @@
     "champ": "image",
     "type": "string",
     "description": "Chemin vers l’image recette",
-    "format_valeurs": "images/recettes/{id}.webp",
-    "exemple_court": "images/recettes/20260708-011.webp",
+    "format_valeurs": "recettes/images/{id}.webp",
+    "exemple_court": "recettes/images/20260708-011.webp",
     "obligatoire": "Oui",
-    "valeurs_possibles_exemples": "Format : images/recettes/{id}.webp."
+    "valeurs_possibles_exemples": "Format : recettes/images/{id}.webp."
   },
   {
     "champ": "qrcode",
     "type": "string",
     "description": "Chemin vers le QR code recette",
-    "format_valeurs": "qrcodes/recettes/{id}.png",
-    "exemple_court": "qrcodes/recettes/20260708-011.png",
+    "format_valeurs": "recettes/qrcodes/{id}.png",
+    "exemple_court": "recettes/qrcodes/20260708-011.png",
     "obligatoire": "Oui",
-    "valeurs_possibles_exemples": "Format : qrcodes/recettes/{id}.png."
+    "valeurs_possibles_exemples": "Format : recettes/qrcodes/{id}.png."
   },
   {
     "champ": "resume",
@@ -397,8 +397,8 @@
     "champ": "pdf",
     "type": "string",
     "description": "Chemin relatif vers le PDF statique de la fiche recette.",
-    "format_valeurs": "pdf/recettes/AAAAMMJJ-XXX.pdf",
-    "exemple_court": "pdf/recettes/20260708-011.pdf",
+    "format_valeurs": "recettes/pdf/AAAAMMJJ-XXX.pdf",
+    "exemple_court": "recettes/pdf/20260708-011.pdf",
     "obligatoire": "oui",
     "valeurs_possibles_exemples": "Un fichier PDF doit exister pour chaque recette, avec les quantités de base."
   }

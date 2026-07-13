@@ -1,0 +1,18 @@
+{
+  "version": "V14",
+  "fonctionnalite": "Note chaleureuse de contribution",
+  "texte_retenu": "Ce projet est ouvert à toutes les bonnes volontés. Que vous souhaitiez proposer une recette, corriger une fiche, partager une astuce, suggérer une variante ou simplement aider à améliorer le site, votre contribution est la bienvenue. Les Recettes du Cœur est une initiative participative, bénévole et indépendante, non affiliée aux Restos du Cœur ni à une banque alimentaire.",
+  "pages_modifiees": [
+    "index.html",
+    "presentation-projet.html",
+    "contact.html",
+    "assets/css/style.css",
+    "README.md",
+    "data/audit_v14_note_chaleureuse.json"
+  ],
+  "objectifs": [
+    "Rendre le message d'accueil aux contributeurs plus chaleureux",
+    "Rappeler que toutes les bonnes volontés sont les bienvenues",
+    "Conserver la mention d'indépendance et de non-affiliation"
+  ]
+}

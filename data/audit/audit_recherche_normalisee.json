@@ -1,0 +1,27 @@
+{
+  "version": "V9 recherche normalisée + URL racine",
+  "url_base": "https://recettesducoeur.github.io/",
+  "ancien_url_remplace": "https://recettesducoeur.github.io/",
+  "normalisation_recherche": {
+    "casse": "ignorée",
+    "accents": "ignorés",
+    "apostrophes": "normalisées",
+    "ponctuation": "normalisée",
+    "singulier_pluriel": "géré par variantes de tokens",
+    "exemples": [
+      "pates = pâtes = pate",
+      "tomate = tomates",
+      "courgette = courgettes",
+      "oeuf = œuf = oeufs = œufs",
+      "creme = crème"
+    ]
+  },
+  "fichiers_modifies": [
+    "assets/js/app.js",
+    "assets/js/search.js",
+    "assets/js/dev-base.js",
+    "qrcodes/site.png",
+    "recettes/qrcodes/*.png",
+    "README.md et fichiers contenant l'ancienne URL"
+  ]
+}

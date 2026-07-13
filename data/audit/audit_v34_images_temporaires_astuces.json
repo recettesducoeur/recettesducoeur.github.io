@@ -1,0 +1,12 @@
+{
+  "version": "V34",
+  "date": "2026-07-10",
+  "source": "V33",
+  "images_cartes_presentes": 10,
+  "images_resume_presentes": 10,
+  "qrcodes_astuces_webp": 10,
+  "images_temporaires": true,
+  "references_manquantes": [],
+  "aucune_reference_manquante": true,
+  "parcours_conseille_present": true
+}

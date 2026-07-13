@@ -1,0 +1,261 @@
+{
+  "version": "V31",
+  "date": "2026-07-09T09:26:14",
+  "summary": {
+    "display_image_refs_total": 156,
+    "display_webp_refs": 155,
+    "display_png_refs": 1,
+    "png_display_refs": [
+      [
+        "assets/js/import-texte-dev.js",
+        "recettes/qrcodes/${id}.png"
+      ]
+    ],
+    "image_file_stats": {
+      "png": {
+        "count": 37,
+        "bytes": 16750259,
+        "mb": 15.97
+      },
+      "webp": {
+        "count": 34,
+        "bytes": 1873284,
+        "mb": 1.79
+      }
+    },
+    "largest_images": [
+      {
+        "file": "assets/images/site/astuces-anti-gaspi-hero.png",
+        "kb": 1997.7,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/images/site/suggerer-recette-ensemble.png",
+        "kb": 1417.4,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/images/site/404-recette-echappee-du-four.png",
+        "kb": 1405.5,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/images/site/recette-default.png",
+        "kb": 1251.8,
+        "ext": ".png"
+      },
+      {
+        "file": "astuces/images/astuce-default.png",
+        "kb": 1160.8,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/images/site/suggerer-recette-boite-a-idees.png",
+        "kb": 1157.3,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-002.png",
+        "kb": 587.7,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-006.png",
+        "kb": 579.0,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-003.png",
+        "kb": 569.1,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/logos/favicon.png",
+        "kb": 565.6,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/logos/logo-transparent.png",
+        "kb": 555.7,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-004.png",
+        "kb": 519.9,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20260708-012.png",
+        "kb": 519.4,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-005.png",
+        "kb": 516.6,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-009.png",
+        "kb": 515.7,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-008.png",
+        "kb": 514.0,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-007.png",
+        "kb": 512.1,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20000101-010.png",
+        "kb": 510.2,
+        "ext": ".png"
+      },
+      {
+        "file": "assets/logos/logo-blanc-fond-noir.png",
+        "kb": 437.4,
+        "ext": ".png"
+      },
+      {
+        "file": "recettes/images/20260708-011.png",
+        "kb": 433.3,
+        "ext": ".png"
+      }
+    ],
+    "page_weight_report": [
+      {
+        "page": "index.html",
+        "html_kb": 5.4,
+        "referenced_files": [
+          "assets/css/style.css",
+          "assets/js/app.js",
+          "assets/js/layout.js",
+          "assets/logos/logo-principal.webp",
+          "recettes/images/20000101-001.webp",
+          "recettes/images/20000101-002.webp",
+          "recettes/images/20000101-003.webp",
+          "qrcodes/site.webp"
+        ],
+        "referenced_assets_kb": 376.4,
+        "rough_initial_kb": 381.8
+      },
+      {
+        "page": "recettes.html",
+        "html_kb": 11.9,
+        "referenced_files": [
+          "assets/css/style.css",
+          "assets/js/app.js",
+          "assets/js/layout.js",
+          "recettes/images/20000101-001.webp",
+          "recettes/images/20000101-002.webp",
+          "recettes/images/20000101-003.webp",
+          "recettes/images/20000101-004.webp",
+          "recettes/images/20000101-005.webp",
+          "recettes/images/20000101-006.webp",
+          "recettes/images/20000101-007.webp",
+          "recettes/images/20000101-008.webp",
+          "recettes/images/20000101-009.webp",
+          "recettes/images/20000101-010.webp",
+          "recettes/images/20260708-011.webp",
+          "recettes/images/20260708-012.webp"
+        ],
+        "referenced_assets_kb": 1108.8,
+        "rough_initial_kb": 1120.7
+      },
+      {
+        "page": "recherche.html",
+        "html_kb": 5.4,
+        "referenced_files": [
+          "assets/css/style.css",
+          "assets/js/app.js",
+          "assets/js/layout.js",
+          "assets/js/search.js"
+        ],
+        "referenced_assets_kb": 73.3,
+        "rough_initial_kb": 78.7
+      },
+      {
+        "page": "recette-semaine.html",
+        "html_kb": 4.5,
+        "referenced_files": [
+          "assets/css/style.css",
+          "assets/js/app.js",
+          "assets/js/layout.js",
+          "assets/js/recette-semaine.js",
+          "recettes/images/20000101-001.webp",
+          "recettes/images/20000101-002.webp",
+          "recettes/images/20000101-003.webp"
+        ],
+        "referenced_assets_kb": 320.3,
+        "rough_initial_kb": 324.8
+      },
+      {
+        "page": "aide.html",
+        "html_kb": 10.1,
+        "referenced_files": [
+          "assets/css/style.css",
+          "assets/js/app.js",
+          "assets/js/layout.js",
+          "assets/js/table-tools-dev.js"
+        ],
+        "referenced_assets_kb": 66.3,
+        "rough_initial_kb": 76.4
+      },
+      {
+        "page": "astuces-anti-gaspi.html",
+        "html_kb": 8.8,
+        "referenced_files": [
+          "assets/css/style.css",
+          "astuces/images/astuce-default.webp",
+          "assets/images/site/astuces-anti-gaspi-hero.webp",
+          "assets/js/app.js",
+          "assets/js/layout.js"
+        ],
+        "referenced_assets_kb": 293.1,
+        "rough_initial_kb": 301.9
+      },
+      {
+        "page": "astuces/Astuce001.html",
+        "html_kb": 4.9,
+        "referenced_files": [
+          "assets/css/style.css",
+          "astuces/images/astuce-default.webp",
+          "assets/js/app.js",
+          "assets/js/layout.js"
+        ],
+        "referenced_assets_kb": 144.6,
+        "rough_initial_kb": 149.5
+      },
+      {
+        "page": "recettes/20000101-001.html",
+        "html_kb": 17.3,
+        "referenced_files": [
+          "assets/css/style.css",
+          "assets/js/app.js",
+          "assets/js/layout.js",
+          "assets/js/proportions.js",
+          "assets/js/table-tools-dev.js",
+          "recettes/images/20000101-001.webp",
+          "recettes/qrcodes/20000101-001.webp"
+        ],
+        "referenced_assets_kb": 149.2,
+        "rough_initial_kb": 166.5
+      }
+    ],
+    "recommendations": [
+      "Continuer à utiliser WebP pour les images visibles.",
+      "Conserver les PNG QR codes et logos originaux comme sources/compatibilité, mais afficher les versions WebP sur les pages.",
+      "Conserver le lazy-loading sur les cartes et images secondaires.",
+      "Ne pas charger les PDF automatiquement : ils restent uniquement au clic.",
+      "Quand le site dépassera plusieurs dizaines de recettes, envisager une pagination/lazy loading plus stricte ou un index de recherche précompilé.",
+      "Minifier CSS/JS seulement en version de production avancée ; pour l’instant la lisibilité et la maintenance sont prioritaires."
+    ],
+    "display_img_tags_total": 73,
+    "display_img_webp": 73,
+    "display_img_png": 0,
+    "display_img_png_refs": []
+  }
+}

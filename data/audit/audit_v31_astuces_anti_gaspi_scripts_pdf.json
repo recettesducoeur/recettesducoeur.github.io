@@ -1,0 +1,141 @@
+{
+  "version": "V31",
+  "date": "2026-07-09T09:28:18",
+  "ameliorations": [
+    "Création de la page publique astuces-anti-gaspi.html.",
+    "Création du sous-répertoire astuces/ avec Astuce000 template et Astuce001 à Astuce010.",
+    "Création de data/astuces.json.",
+    "Intégration des images validées : hero astuces, image défaut astuce, image défaut recette.",
+    "Ajout des liens Astuces dans la navigation et le footer.",
+    "Ajout du lien dev vers le template Astuce000 et la page publique Astuces.",
+    "Vérification des rubriques de fiches recettes HTML.",
+    "PDF recettes compactés sur une page, avec filtres associés et sans Sources d’inspiration.",
+    "Pied de page PDF conservé avec Fiche en ligne uniquement.",
+    "Optimisation des images affichées : références <img> en WebP.",
+    "Création de versions WebP pour logo et QR codes affichés.",
+    "Commentaires de maintenance ajoutés aux scripts principaux.",
+    "Vérification node --check des scripts JS.",
+    "Vérification de recherche : accents, ingrédients, repères, allergènes, cuisson.",
+    "Création de RAPPORT_PERFORMANCE_V31.md et data/rapport_performance_v31.json."
+  ],
+  "counts": {
+    "visible_recipes": 12,
+    "astuces_total": 11,
+    "visible_astuces": 10,
+    "display_img_tags_total": 73,
+    "display_img_webp": 73,
+    "display_img_png": 0
+  },
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "comment_checks": {
+    "assets/js/layout.js": true,
+    "assets/js/app.js": true,
+    "assets/js/search.js": true,
+    "assets/js/proportions.js": true,
+    "assets/js/recette-semaine.js": true,
+    "assets/js/table-tools-dev.js": true
+  },
+  "search_tests": {
+    "pates": [
+      "20000101-001",
+      "20000101-009"
+    ],
+    "pâtes": [
+      "20000101-001",
+      "20000101-009"
+    ],
+    "thon": [
+      "20000101-001",
+      "20000101-004",
+      "20000101-007",
+      "20000101-009"
+    ],
+    "courgette": [
+      "20260708-011"
+    ],
+    "repere:sans_porc": [
+      "20000101-001",
+      "20000101-002",
+      "20000101-003",
+      "20000101-004",
+      "20000101-005",
+      "20000101-006",
+      "20000101-007",
+      "20000101-008",
+      "20000101-009",
+      "20000101-010",
+      "20260708-011",
+      "20260708-012"
+    ],
+    "allergene:gluten": [
+      "20000101-001",
+      "20000101-007",
+      "20000101-009",
+      "20000101-010"
+    ],
+    "cuisson:four": [
+      "20000101-001",
+      "20000101-007",
+      "20000101-010",
+      "20260708-011"
+    ]
+  },
+  "search_expectations": {
+    "pates": true,
+    "pâtes": true,
+    "pates_equals_pâtes": true,
+    "thon": true,
+    "courgette": true,
+    "repere:sans_porc": true,
+    "allergene:gluten": true,
+    "cuisson:four": true
+  },
+  "pdf_page_counts": {
+    "20000101-001": 1,
+    "20000101-002": 1,
+    "20000101-003": 1,
+    "20000101-004": 1,
+    "20000101-005": 1,
+    "20000101-006": 1,
+    "20000101-007": 1,
+    "20000101-008": 1,
+    "20000101-009": 1,
+    "20000101-010": 1,
+    "20260708-011": 1,
+    "20260708-012": 1
+  },
+  "pdf_sources_present": [],
+  "pdf_footer_bad": [],
+  "pdf_filter_missing": [],
+  "required_missing": [],
+  "missing_files": {},
+  "recipe_rubric_missing": {},
+  "png_img_refs": [],
+  "old_url_hits": [],
+  "dead_placeholder_hits": []
+}

@@ -1,0 +1,27 @@
+{
+  "version": "V10",
+  "ameliorations": [
+    "Recette de la semaine : calcul de la semaine ISO en cours par script",
+    "Recette de la semaine : filtrage automatique sur la semaine courante",
+    "Recette de la semaine : affichage mensuel par listes déroulantes année/mois",
+    "Recherche : onglet renommé 'Nom recette'",
+    "Recherche ingrédient : simplification des libellés vers l'ingrédient principal",
+    "Recherche tags : sélection multiple par cases à cocher",
+    "Positionnement éditorial : cuisine simple, solidaire et anti-gaspi",
+    "Mention renforcée : site participatif indépendant, non affilié aux Restos du Cœur ni à une banque alimentaire"
+  ],
+  "fichiers_modifies": [
+    "assets/js/app.js",
+    "assets/js/search.js",
+    "assets/js/recette-semaine.js",
+    "assets/css/style.css",
+    "recherche.html",
+    "recette-semaine.html",
+    "index.html",
+    "presentation-projet.html",
+    "aide.html",
+    "contact.html",
+    "README.md"
+  ],
+  "url_cible": "https://recettesducoeur.github.io/"
+}

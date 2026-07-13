@@ -1,0 +1,24 @@
+{
+  "version": "V13",
+  "fonctionnalite": "Index technique /dev/",
+  "dev_index": "dev/index.html",
+  "pages_referencees": [
+    "base-recettes-dev.html",
+    "dictionnaire-donnees-dev.html",
+    "import-texte-dev.html",
+    "responsive-audit-dev.html"
+  ],
+  "mesures_non_public": [
+    "Le dossier /dev/ n'est pas relié dans la navigation principale publique.",
+    "La page /dev/index.html contient meta robots noindex,nofollow.",
+    "Un fichier robots.txt demande de ne pas indexer /dev/ et les pages *-dev.html.",
+    "Limitation : GitHub Pages reste un hébergement statique public ; cela ne constitue pas un contrôle d'accès."
+  ],
+  "fichiers_modifies": [
+    "dev/index.html",
+    "assets/css/style.css",
+    "robots.txt",
+    "README.md",
+    "data/audit_v13_index_dev.json"
+  ]
+}

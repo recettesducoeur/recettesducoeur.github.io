@@ -1,0 +1,25 @@
+{
+  "version": "V15",
+  "ameliorations": [
+    "Sur écran PC large, la largeur d'affichage passe à 100 % au-dessus de 1200 px.",
+    "Les conteneurs principaux, fiches recettes et tableaux utilisent toute la largeur disponible sur desktop.",
+    "Les tableaux dev conservent le scroll horizontal sur petit écran, mais prennent 100 % de largeur sur grand écran.",
+    "Le calculateur de proportions met maintenant à jour les quantités juste avant impression/export PDF.",
+    "Le nombre de portions sélectionné apparaît dans la fiche imprimée.",
+    "Ajout d'un résumé imprimable des quantités sélectionnées.",
+    "Mise en page impression/PDF optimisée pour A4 : image réduite, ingrédients en colonnes, sections plus compactes."
+  ],
+  "seuil_largeur_desktop_px": 1200,
+  "fichiers_modifies": [
+    "assets/css/style.css",
+    "assets/js/proportions.js",
+    "recettes/*.html",
+    "README.md",
+    "data/audit_v15_largeur_print_quantites.json"
+  ],
+  "recettes_nettoyees_onclick_print": 13,
+  "notes": [
+    "L'impression reste celle du navigateur : l'utilisateur choisit Imprimer ou Enregistrer en PDF.",
+    "Le script force la mise à jour DOM avant window.print() et sur l'événement beforeprint."
+  ]
+}

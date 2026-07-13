@@ -1,0 +1,56 @@
+{
+  "version": "V23",
+  "date": "2026-07-08T22:16:10",
+  "ameliorations": [
+    "Page recettes.html : images limitées à environ 1/4 de la largeur d’écran sur PC.",
+    "Page recettes.html : pagination dynamique à 20 recettes maximum par page.",
+    "Correction des liens Suggérer une recette vers suggerer-recette.html.",
+    "Footer centralisé mis à jour : Cuisine simple, solidaire et anti-gaspi. Site participatif indépendant.",
+    "Fiches recettes : les 4 boutons d’action ont la même largeur, la même hauteur et la même police.",
+    "Tableaux dev : colonnes redimensionnables à la souris.",
+    "Tableaux dev : première ligne et première colonne sticky."
+  ],
+  "node_checks": {
+    "assets/js/layout.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/search.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/recette-semaine.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/proportions.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "assets/js/table-tools-dev.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "json": {
+    "total_recipes": 13,
+    "visible_recipes": 12,
+    "duplicates": [],
+    "missing_files": {},
+    "old_url_hits": [],
+    "dead_suggest_hits": []
+  },
+  "specific_checks": {
+    "recettes_html_catalog_page": true,
+    "pagination_js": true,
+    "footer_text_layout": true,
+    "suggest_link_layout": true,
+    "equal_buttons_css": true,
+    "resizable_tables_js": true,
+    "sticky_tables_css": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": "V20",
+  "controle": "Base JSON remise à jour après ajout des PDF statiques.",
+  "total_recettes_json": 13,
+  "recettes_visibles": 12,
+  "recettes_invisibles": 1,
+  "ids": [
+    "20000101-001",
+    "20000101-002",
+    "20000101-003",
+    "20000101-004",
+    "20000101-005",
+    "20000101-006",
+    "20000101-007",
+    "20000101-008",
+    "20000101-009",
+    "20000101-010",
+    "20260708-011",
+    "20260708-012",
+    "00000000-000"
+  ],
+  "doublons_id": [],
+  "champs_obligatoires_manquants": {},
+  "fichiers_manquants": {},
+  "valeurs_reference_ok": {
+    "sans_cuisson": true,
+    "fruits_a_coque": true,
+    "crustaces": true
+  },
+  "ancienne_url_lesrecettesducoeur_absente": true,
+  "champ_pdf_present_dans_json_pour_toutes": true,
+  "ancienne_url_trouvee_dans": []
+}

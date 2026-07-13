@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "id": "20000101-001",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-002",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-003",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-004",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-005",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-006",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-007",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-008",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-009",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20000101-010",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20260708-011",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20260708-012",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    },
+    {
+      "id": "20260709-013",
+      "html_exists": true,
+      "grade_present": true,
+      "score_line_present": true
+    }
+  ],
+  "all_ok": true
+}

@@ -1,0 +1,58 @@
+{
+  "version": "V12",
+  "fonctionnalite": "Extension des boutons/liens filtrables à tous les champs utiles",
+  "champs_cliquables": [
+    "categorie",
+    "sous_categorie",
+    "temperature_service",
+    "type_cuisson",
+    "budget",
+    "difficulte",
+    "moment_repas",
+    "equipement",
+    "regimes",
+    "allergenes",
+    "tags"
+  ],
+  "url_examples": [
+    "recherche.html?categorie=plat",
+    "recherche.html?cuisson=four",
+    "recherche.html?budget=economique",
+    "recherche.html?difficulte=facile",
+    "recherche.html?equipement=four",
+    "recherche.html?tag=anti_gaspi",
+    "recherche.html?tag=simple&tag=economique"
+  ],
+  "comportement": [
+    "La page recherche lit les paramètres d'URL",
+    "Elle active l'onglet Tags si seul un tag est envoyé",
+    "Elle active l'onglet Filtres rapides pour les autres champs",
+    "Les filtres URL sont appliqués automatiquement",
+    "Les filtres rapides permettent de filtrer par champs structurés"
+  ],
+  "fiches_recettes_mises_a_jour": [
+    "recettes/00000000-000.html",
+    "recettes/20000101-001.html",
+    "recettes/20000101-002.html",
+    "recettes/20000101-003.html",
+    "recettes/20000101-004.html",
+    "recettes/20000101-005.html",
+    "recettes/20000101-006.html",
+    "recettes/20000101-007.html",
+    "recettes/20000101-008.html",
+    "recettes/20000101-009.html",
+    "recettes/20000101-010.html",
+    "recettes/20260708-011.html",
+    "recettes/20260708-012.html"
+  ],
+  "fichiers_modifies": [
+    "recettes/*.html",
+    "recherche.html",
+    "assets/js/search.js",
+    "assets/js/app.js",
+    "assets/css/style.css",
+    "aide.html",
+    "README.md",
+    "data/audit_v12_filtres_champs_cliquables.json"
+  ]
+}

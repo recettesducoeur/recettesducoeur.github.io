@@ -4,8 +4,8 @@
     "titre": "Gratin de pâtes au thon",
     "slug": "gratin-de-pates-au-thon",
     "url": "recettes/20000101-001.html",
-    "image": "images/recettes/20000101-001.webp",
-    "qrcode": "qrcodes/recettes/20000101-001.png",
+    "image": "recettes/images/20000101-001.webp",
+    "qrcode": "recettes/qrcodes/20000101-001.webp",
     "resume": "Un gratin familial de pâtes au thon, crémeux et légèrement gratiné, pensé pour utiliser une boîte de thon, un reste de pâtes ou un fond de sauce tomate.",
     "categorie": "plat",
     "sous_categorie": "gratin",
@@ -140,7 +140,7 @@
       ]
     },
     "explication": "Cette version mise sur des pâtes cuites al dente, une base tomate ou crème bien assaisonnée et un passage au four juste assez long pour gratiner sans dessécher. C’est une recette économique, pratique et très adaptable.",
-    "pdf": "pdf/recettes/20000101-001.pdf",
+    "pdf": "recettes/pdf/20000101-001.pdf",
     "sources_inspiration": [
       {
         "titre": "Marmiton - Gratin de pâtes au thon, sauce tomates",
@@ -185,9 +185,26 @@
       "energie_kj_pour_100g": 844,
       "fruits_legumes_legumineuses_estime_pct": 29,
       "nutri_score_estime": {
-        "grade": "B",
-        "score_simplifie": 2,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "grade": "C",
+        "score": 3,
+        "points_defavorables": {
+          "energie": 2,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 1
+        },
+        "total_points_defavorables": 7,
+        "points_favorables": {
+          "proteines": 4,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 29.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": [
         "poivre"
@@ -209,15 +226,95 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "pates-alimentaires",
+          "nom": "pâtes",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "thon",
+          "nom": "thon égoutté",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "sauce-tomate-ou-tomates-concassees",
+          "nom": "sauce tomate ou tomates concassées",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "lait",
+          "nom": "lait",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage râpé",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "lait-ou-creme",
+          "nom": "lait ou crème",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "oignon",
+          "nom": "oignon",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "chapelure",
+          "nom": "chapelure",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "herbes",
+          "nom": "herbes",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "chapelure-ou-pain-rassis-mixe",
+          "nom": "chapelure ou pain rassis mixé",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "herbes-de-provence",
+          "nom": "herbes de Provence",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "poivre",
+          "nom": "poivre",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-002",
     "titre": "Riz au lait à la banane",
     "slug": "riz-au-lait-a-la-banane",
     "url": "recettes/20000101-002.html",
-    "image": "images/recettes/20000101-002.webp",
-    "qrcode": "qrcodes/recettes/20000101-002.png",
+    "image": "recettes/images/20000101-002.webp",
+    "qrcode": "recettes/qrcodes/20000101-002.webp",
     "resume": "Un riz au lait doux et anti-gaspi, enrichi avec de la banane bien mûre pour sucrer naturellement et obtenir une texture plus onctueuse.",
     "categorie": "dessert",
     "sous_categorie": "dessert lacté",
@@ -337,7 +434,7 @@
       ]
     },
     "explication": "La banane mûre apporte du parfum, de la douceur et permet de réduire le sucre ajouté. La cuisson lente du riz dans le lait donne un dessert simple, nourrissant et facile à préparer à l’avance.",
-    "pdf": "pdf/recettes/20000101-002.pdf",
+    "pdf": "recettes/pdf/20000101-002.pdf",
     "sources_inspiration": [
       {
         "titre": "CuisineAZ - Riz au lait crémeux : la recette inratable",
@@ -381,8 +478,25 @@
       "fruits_legumes_legumineuses_estime_pct": 19,
       "nutri_score_estime": {
         "grade": "C",
-        "score_simplifie": 3,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": 3,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 2,
+          "acides_gras_satures": 1,
+          "sel": 0
+        },
+        "total_points_defavorables": 4,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 19.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": [
         "cannelle",
@@ -407,15 +521,77 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "riz-rond-ou-riz-classique",
+          "nom": "riz rond ou riz classique",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "lait",
+          "nom": "lait",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "banane",
+          "nom": "banane mûre",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "bananes-tres",
+          "nom": "bananes très mûres",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "sucre",
+          "nom": "sucre",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "sel",
+          "nom": "sel",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "cannelle",
+          "nom": "cannelle",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "vanille",
+          "nom": "vanille",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "chocolat",
+          "nom": "chocolat râpé",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-003",
     "titre": "Soupe de légumes simple",
     "slug": "soupe-de-legumes-simple",
     "url": "recettes/20000101-003.html",
-    "image": "images/recettes/20000101-003.webp",
-    "qrcode": "qrcodes/recettes/20000101-003.png",
+    "image": "recettes/images/20000101-003.webp",
+    "qrcode": "recettes/qrcodes/20000101-003.webp",
     "resume": "Une soupe de légumes simple, économique et modulable, idéale pour utiliser des légumes fatigués ou des restes de bac à légumes.",
     "categorie": "plat",
     "sous_categorie": "soupe",
@@ -539,7 +715,7 @@
       ]
     },
     "explication": "La recette repose sur une cuisson douce des légumes coupés régulièrement, puis un mixage plus ou moins fin selon la texture voulue. Elle peut être enrichie avec des légumineuses, du riz ou du pain pour devenir un repas complet.",
-    "pdf": "pdf/recettes/20000101-003.pdf",
+    "pdf": "recettes/pdf/20000101-003.pdf",
     "sources_inspiration": [
       {
         "titre": "Marmiton - Soupe de légumes",
@@ -583,8 +759,25 @@
       "fruits_legumes_legumineuses_estime_pct": 54,
       "nutri_score_estime": {
         "grade": "A",
-        "score_simplifie": -1,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": -1,
+        "points_defavorables": {
+          "energie": 0,
+          "sucres": 0,
+          "acides_gras_satures": 0,
+          "sel": 0
+        },
+        "total_points_defavorables": 0,
+        "points_favorables": {
+          "proteines": 0,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 54.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": []
     },
@@ -606,15 +799,83 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "legumes-varies",
+          "nom": "légumes variés",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "pommes-de-terre",
+          "nom": "pommes de terre",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "carottes-ou-poireaux",
+          "nom": "carottes ou poireaux",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "oignon",
+          "nom": "oignon",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "eau",
+          "nom": "eau",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "eau-ou-bouillon",
+          "nom": "eau ou bouillon",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "huile",
+          "nom": "huile",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "creme",
+          "nom": "crème",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage râpé",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "pain-rassis-pour-croutons",
+          "nom": "pain rassis pour croûtons",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-004",
     "titre": "Salade de riz au thon",
     "slug": "salade-de-riz-au-thon",
     "url": "recettes/20000101-004.html",
-    "image": "images/recettes/20000101-004.webp",
-    "qrcode": "qrcodes/recettes/20000101-004.png",
+    "image": "recettes/images/20000101-004.webp",
+    "qrcode": "recettes/qrcodes/20000101-004.webp",
     "resume": "Une salade de riz au thon complète, fraîche et pratique, parfaite pour un repas froid, un pique-nique ou pour utiliser un reste de riz.",
     "categorie": "plat",
     "sous_categorie": "salade",
@@ -743,7 +1004,7 @@
       ]
     },
     "explication": "Le riz doit être refroidi avant l’assemblage pour garder une salade nette. Le thon apporte les protéines, les légumes ajoutent du croquant et l’assaisonnement se dose au dernier moment.",
-    "pdf": "pdf/recettes/20000101-004.pdf",
+    "pdf": "recettes/pdf/20000101-004.pdf",
     "sources_inspiration": [
       {
         "titre": "Marmiton - Salade de riz au thon",
@@ -787,8 +1048,25 @@
       "fruits_legumes_legumineuses_estime_pct": 44,
       "nutri_score_estime": {
         "grade": "A",
-        "score_simplifie": -4,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": -2,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 0,
+          "sel": 1
+        },
+        "total_points_defavorables": 2,
+        "points_favorables": {
+          "proteines": 3,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 44.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": []
     },
@@ -808,15 +1086,83 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "riz",
+          "nom": "riz",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "thon",
+          "nom": "thon égoutté",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "tomates",
+          "nom": "tomates",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "mais",
+          "nom": "maïs égoutté",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "tomates",
+          "nom": "tomates",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "vinaigrette-ou-mayonnaise",
+          "nom": "vinaigrette ou mayonnaise",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "concombre-ou-legume-croquant",
+          "nom": "concombre ou légume croquant",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "oeufs-durs",
+          "nom": "œufs durs",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "cornichons",
+          "nom": "cornichons",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "herbes-fraiches",
+          "nom": "herbes fraîches",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-005",
     "titre": "Poêlée de pommes de terre",
     "slug": "poelee-de-pommes-de-terre",
     "url": "recettes/20000101-005.html",
-    "image": "images/recettes/20000101-005.webp",
-    "qrcode": "qrcodes/recettes/20000101-005.png",
+    "image": "recettes/images/20000101-005.webp",
+    "qrcode": "recettes/qrcodes/20000101-005.webp",
     "resume": "Une poêlée de pommes de terre dorées, simple et rassasiante, à servir seule avec une salade ou en accompagnement.",
     "categorie": "plat",
     "sous_categorie": "poelee",
@@ -930,7 +1276,7 @@
       ]
     },
     "explication": "Pour une bonne texture, les pommes de terre doivent être bien séchées et saisies dans une poêle chaude avant de cuire plus doucement. L’ail, le persil ou l’oignon peuvent être ajoutés selon les réserves.",
-    "pdf": "pdf/recettes/20000101-005.pdf",
+    "pdf": "recettes/pdf/20000101-005.pdf",
     "sources_inspiration": [
       {
         "titre": "Marmiton - Pommes de terre sautées à l’ail et au persil",
@@ -974,8 +1320,25 @@
       "fruits_legumes_legumineuses_estime_pct": 83,
       "nutri_score_estime": {
         "grade": "A",
-        "score_simplifie": -5,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": -4,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 1,
+          "sel": 0
+        },
+        "total_points_defavorables": 2,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 5
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 83.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": [
         "lardons ou restes de viande"
@@ -999,15 +1362,83 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "pommes-de-terre",
+          "nom": "pommes de terre",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "huile",
+          "nom": "huile",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "oignon",
+          "nom": "oignon",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "huile",
+          "nom": "huile",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "ail",
+          "nom": "ail",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "sel-et-poivre",
+          "nom": "sel et poivre",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "herbes",
+          "nom": "herbes",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "oeufs",
+          "nom": "œufs",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "lardons-ou-restes-de-viande",
+          "nom": "lardons ou restes de viande",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-006",
     "titre": "Compote pomme-banane",
     "slug": "compote-pomme-banane",
     "url": "recettes/20000101-006.html",
-    "image": "images/recettes/20000101-006.webp",
-    "qrcode": "qrcodes/recettes/20000101-006.png",
+    "image": "recettes/images/20000101-006.webp",
+    "qrcode": "recettes/qrcodes/20000101-006.webp",
     "resume": "Une compote pomme-banane douce, rapide et anti-gaspi, idéale pour utiliser des fruits mûrs ou un peu abîmés.",
     "categorie": "dessert",
     "sous_categorie": "compote",
@@ -1118,7 +1549,7 @@
       ]
     },
     "explication": "La banane apporte une texture fondante et sucre naturellement la compote. Les pommes assurent l’équilibre et la tenue. Le mixage est facultatif selon l’âge des convives et la texture souhaitée.",
-    "pdf": "pdf/recettes/20000101-006.pdf",
+    "pdf": "recettes/pdf/20000101-006.pdf",
     "sources_inspiration": [
       {
         "titre": "CuisineAZ - Compote pomme banane",
@@ -1162,8 +1593,25 @@
       "fruits_legumes_legumineuses_estime_pct": 86,
       "nutri_score_estime": {
         "grade": "A",
-        "score_simplifie": -5,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": -2,
+        "points_defavorables": {
+          "energie": 0,
+          "sucres": 3,
+          "acides_gras_satures": 0,
+          "sel": 0
+        },
+        "total_points_defavorables": 3,
+        "points_favorables": {
+          "proteines": 0,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 5
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 86.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": [
         "cannelle",
@@ -1188,15 +1636,71 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "pommes",
+          "nom": "pommes",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "bananes",
+          "nom": "bananes mûres",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "eau",
+          "nom": "eau",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "jus-de-citron",
+          "nom": "jus de citron",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "cannelle",
+          "nom": "cannelle",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "sucre",
+          "nom": "sucre",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "sucre-ou-miel",
+          "nom": "sucre ou miel",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "vanille",
+          "nom": "vanille",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-007",
     "titre": "Tartines chaudes fromage-tomate",
     "slug": "tartines-chaudes-fromage-tomate",
     "url": "recettes/20000101-007.html",
-    "image": "images/recettes/20000101-007.webp",
-    "qrcode": "qrcodes/recettes/20000101-007.png",
+    "image": "recettes/images/20000101-007.webp",
+    "qrcode": "recettes/qrcodes/20000101-007.webp",
     "resume": "Des tartines chaudes fromage-tomate, rapides et économiques, parfaites pour utiliser du pain rassis ou des restes de fromage.",
     "categorie": "plat",
     "sous_categorie": "tartine",
@@ -1321,7 +1825,7 @@
       ]
     },
     "explication": "Le passage au four rend le pain croustillant et fait fondre le fromage. Les tomates apportent du jus : il faut donc éviter d’en mettre trop ou choisir une base de pain assez épaisse.",
-    "pdf": "pdf/recettes/20000101-007.pdf",
+    "pdf": "recettes/pdf/20000101-007.pdf",
     "sources_inspiration": [
       {
         "titre": "Migusto - Tartines chaudes aux tomates",
@@ -1371,8 +1875,25 @@
       "fruits_legumes_legumineuses_estime_pct": 39,
       "nutri_score_estime": {
         "grade": "C",
-        "score_simplifie": 3,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": 5,
+        "points_defavorables": {
+          "energie": 2,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 3
+        },
+        "total_points_defavorables": 9,
+        "points_favorables": {
+          "proteines": 4,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 39.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": [
         "olives"
@@ -1395,15 +1916,83 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "pain",
+          "nom": "pain",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "tomates",
+          "nom": "tomates",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "huile-d-olive-ou-huile-neutre",
+          "nom": "huile d’olive ou huile neutre",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "ail",
+          "nom": "ail",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "sel-et-poivre",
+          "nom": "sel et poivre",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "herbes",
+          "nom": "herbes",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "huile",
+          "nom": "huile",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "thon-ou-jambon",
+          "nom": "thon ou jambon",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "olives",
+          "nom": "olives",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-008",
     "titre": "Omelette aux légumes",
     "slug": "omelette-aux-legumes",
     "url": "recettes/20000101-008.html",
-    "image": "images/recettes/20000101-008.webp",
-    "qrcode": "qrcodes/recettes/20000101-008.png",
+    "image": "recettes/images/20000101-008.webp",
+    "qrcode": "recettes/qrcodes/20000101-008.webp",
     "resume": "Une omelette aux légumes souple et colorée, idéale pour transformer quelques légumes restants en repas complet.",
     "categorie": "plat",
     "sous_categorie": "omelette",
@@ -1525,7 +2114,7 @@
       ]
     },
     "explication": "Les légumes doivent être précuits avant d’ajouter les œufs, afin d’éviter une omelette aqueuse. La cuisson douce permet de garder une texture moelleuse.",
-    "pdf": "pdf/recettes/20000101-008.pdf",
+    "pdf": "recettes/pdf/20000101-008.pdf",
     "sources_inspiration": [
       {
         "titre": "Les fruits et légumes frais - Omelette aux légumes",
@@ -1568,9 +2157,26 @@
       "energie_kj_pour_100g": 522,
       "fruits_legumes_legumineuses_estime_pct": 57,
       "nutri_score_estime": {
-        "grade": "B",
-        "score_simplifie": 0,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "grade": "C",
+        "score": 3,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 1
+        },
+        "total_points_defavorables": 6,
+        "points_favorables": {
+          "proteines": 2,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 57.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": []
     },
@@ -1591,15 +2197,71 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "oeufs",
+          "nom": "œufs",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "legumes-cuits-ou-crus",
+          "nom": "légumes cuits ou crus",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "huile-ou-beurre",
+          "nom": "huile ou beurre",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "lait-ou-creme",
+          "nom": "lait ou crème",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "sel-et-poivre",
+          "nom": "sel et poivre",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "fromage",
+          "nom": "fromage",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "herbes",
+          "nom": "herbes",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "pommes-de-terre-cuites",
+          "nom": "pommes de terre cuites",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-009",
     "titre": "Pâtes sauce tomate enrichie",
     "slug": "pates-sauce-tomate-enrichie",
     "url": "recettes/20000101-009.html",
-    "image": "images/recettes/20000101-009.webp",
-    "qrcode": "qrcodes/recettes/20000101-009.png",
+    "image": "recettes/images/20000101-009.webp",
+    "qrcode": "recettes/qrcodes/20000101-009.webp",
     "resume": "Des pâtes à la sauce tomate enrichie, simples et nourrissantes, avec une sauce plus savoureuse grâce à l’oignon, l’ail et aux légumes disponibles.",
     "categorie": "plat",
     "sous_categorie": "pates",
@@ -1725,7 +2387,7 @@
       ]
     },
     "explication": "La sauce gagne en goût si l’on fait revenir les aromates avant d’ajouter la tomate. Un peu d’eau de cuisson des pâtes aide à lier la sauce sans ajouter de crème.",
-    "pdf": "pdf/recettes/20000101-009.pdf",
+    "pdf": "recettes/pdf/20000101-009.pdf",
     "sources_inspiration": [
       {
         "titre": "Marmiton - Spaghetti sauce tomate à l’ancienne",
@@ -1769,8 +2431,25 @@
       "fruits_legumes_legumineuses_estime_pct": 56,
       "nutri_score_estime": {
         "grade": "A",
-        "score_simplifie": -4,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": -1,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 1,
+          "sel": 1
+        },
+        "total_points_defavorables": 3,
+        "points_favorables": {
+          "proteines": 3,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 56.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": []
     },
@@ -1792,15 +2471,77 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "pates-alimentaires",
+          "nom": "pâtes",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "tomates-concassees-ou-sauce-tomate",
+          "nom": "tomates concassées ou sauce tomate",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "oignon",
+          "nom": "oignon",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "ail",
+          "nom": "ail",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "huile",
+          "nom": "huile",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "thon",
+          "nom": "thon",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "herbes",
+          "nom": "herbes",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "legumes-rapes-ou-restes-de-legumes",
+          "nom": "légumes râpés ou restes de légumes",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20000101-010",
     "titre": "Gâteau simple du placard",
     "slug": "gateau-simple-du-placard",
     "url": "recettes/20000101-010.html",
-    "image": "images/recettes/20000101-010.webp",
-    "qrcode": "qrcodes/recettes/20000101-010.png",
+    "image": "recettes/images/20000101-010.webp",
+    "qrcode": "recettes/qrcodes/20000101-010.webp",
     "resume": "Un gâteau simple du placard, moelleux et personnalisable, préparé avec les ingrédients de base : farine, sucre, œufs, matière grasse et lait ou eau.",
     "categorie": "dessert",
     "sous_categorie": "gateau",
@@ -1928,7 +2669,7 @@
       ]
     },
     "explication": "Cette base volontairement simple sert de support aux restes du placard : chocolat, fruits mûrs, confiture, épices ou cacao. Le but est d’obtenir un gâteau fiable sans ingrédients rares.",
-    "pdf": "pdf/recettes/20000101-010.pdf",
+    "pdf": "recettes/pdf/20000101-010.pdf",
     "sources_inspiration": [
       {
         "titre": "750g - Gâteau au chocolat super facile du fond du placard",
@@ -1973,9 +2714,26 @@
       "energie_kj_pour_100g": 1201,
       "fruits_legumes_legumineuses_estime_pct": 18,
       "nutri_score_estime": {
-        "grade": "C",
-        "score_simplifie": 10,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "grade": "D",
+        "score": 16,
+        "points_defavorables": {
+          "energie": 3,
+          "sucres": 5,
+          "acides_gras_satures": 7,
+          "sel": 1
+        },
+        "total_points_defavorables": 16,
+        "points_favorables": {
+          "proteines": 2,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": false,
+        "pourcentage_fruits_legumes_legumineuses_estime": 18.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": [
         "cannelle ou vanille"
@@ -1998,15 +2756,77 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "farine",
+          "nom": "farine",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "sucre",
+          "nom": "sucre",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "oeufs",
+          "nom": "œufs",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "lait",
+          "nom": "lait",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "beurre-fondu-ou-huile",
+          "nom": "beurre fondu ou huile",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "levure-chimique",
+          "nom": "levure chimique",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "chocolat",
+          "nom": "chocolat",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "fruits",
+          "nom": "fruits",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "cannelle-ou-vanille",
+          "nom": "cannelle ou vanille",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20260708-011",
     "titre": "Tian de courgettes",
     "slug": "tian-de-courgettes",
     "url": "recettes/20260708-011.html",
-    "image": "images/recettes/20260708-011.webp",
-    "qrcode": "qrcodes/recettes/20260708-011.png",
+    "image": "recettes/images/20260708-011.webp",
+    "qrcode": "recettes/qrcodes/20260708-011.webp",
     "resume": "Un tian de courgettes fondant et parfumé, à préparer avec des courgettes de saison, un peu de tomate et des herbes.",
     "categorie": "plat",
     "sous_categorie": "tian",
@@ -2129,7 +2949,7 @@
       ]
     },
     "explication": "La réussite tient à une cuisson suffisamment longue pour concentrer les légumes sans les brûler. Des tranches fines et régulières donnent un plat plus fondant et plus joli.",
-    "pdf": "pdf/recettes/20260708-011.pdf",
+    "pdf": "recettes/pdf/20260708-011.pdf",
     "sources_inspiration": [
       {
         "titre": "Marmiton - Tian de courgettes et de tomates",
@@ -2175,8 +2995,25 @@
       "fruits_legumes_legumineuses_estime_pct": 88,
       "nutri_score_estime": {
         "grade": "A",
-        "score_simplifie": -6,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "score": -5,
+        "points_defavorables": {
+          "energie": 0,
+          "sucres": 0,
+          "acides_gras_satures": 1,
+          "sel": 0
+        },
+        "total_points_defavorables": 1,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 5
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 88.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": []
     },
@@ -2198,16 +3035,78 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "courgettes",
+          "nom": "courgettes",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "tomates",
+          "nom": "tomates",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "tomates",
+          "nom": "tomates",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "oignons",
+          "nom": "oignons",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "ail",
+          "nom": "ail",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "huile-d-olive-ou-huile-neutre",
+          "nom": "huile d’olive ou huile neutre",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "herbes-de-provence",
+          "nom": "herbes de Provence",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage râpé",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "riz-cru-au-fond-du-plat",
+          "nom": "riz cru au fond du plat",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "20260708-012",
     "titre": "Chou-fleur et quinoa à la crème",
     "slug": "chou-fleur-et-quinoa-a-la-creme",
     "url": "recettes/20260708-012.html",
-    "image": "images/recettes/20260708-012.webp",
-    "qrcode": "qrcodes/recettes/20260708-012.png",
-    "resume": "Un plat complet chou-fleur, quinoa et crème, doux et nourrissant, qui associe légumes, céréale et sauce crémeuse.",
+    "image": "recettes/images/20260708-012.webp",
+    "qrcode": "recettes/qrcodes/20260708-012.webp",
+    "resume": "Un plat complet, crémeux et réconfortant qui associe le chou-fleur, le quinoa et une sauce onctueuse.",
     "categorie": "plat",
     "sous_categorie": "plat cremeux",
     "moment_repas": [
@@ -2273,14 +3172,14 @@
     "date_creation": "2026-07-08",
     "date_modification": "2026-07-09",
     "etapes": [
-      "Rincer le quinoa. Le cuire dans deux fois son volume d’eau salée jusqu’à absorption, puis l’égoutter si besoin.",
+      "Rincer soigneusement le quinoa. Le cuire dans deux fois son volume d’eau légèrement salée jusqu’à absorption complète, puis l’égoutter si nécessaire. Pour une méthode façon pilaf, faire revenir légèrement le quinoa avec un filet d’huile, ajouter l’eau chaude progressivement et remuer régulièrement. Le quinoa est cuit lorsque le petit germe blanc se détache de chaque grain.",
       "Détailler le chou-fleur en petits bouquets et les cuire à l’eau ou à la vapeur 8 à 10 minutes, jusqu’à ce qu’ils soient tendres mais encore fermes.",
-      "Faire revenir l’ail ou l’oignon dans une poêle avec un peu d’huile. Ajouter le chou-fleur et le quinoa.",
-      "Verser la crème, poivrer et ajouter un peu de fromage ou d’herbes si disponible.",
-      "Laisser chauffer 3 à 5 minutes à feu doux. Servir tel quel ou gratiner quelques minutes au four."
+      "Faire revenir l’ail ou l’oignon dans une poêle avec un filet d’huile. Ajouter ensuite le chou-fleur précuit et le quinoa.",
+      "Incorporer la crème, poivrer et ajouter éventuellement le fromage râpé ou les herbes aromatiques.",
+      "Mélanger délicatement pendant 3 à 5 minutes à feu doux. Servir immédiatement ou faire gratiner quelques minutes au four."
     ],
-    "astuce": "Les restes de chou-fleur cuit sont parfaits. Si le plat semble trop épais, détendre avec un peu d’eau de cuisson ou de lait.",
-    "variantes": "Ajouter comté, chapelure, persil, curry, œuf dur, pois chiches, poulet, restes de légumes ou crème végétale. Pour une version gratinée, passer 10 minutes au four avec fromage et chapelure.",
+    "astuce": "Les feuilles tendres du chou-fleur peuvent être émincées et ajoutées à la préparation ou à une soupe. Les restes du plat se réchauffent très bien le lendemain avec un peu de lait ou de crème.",
+    "variantes": "Ajouter comté, chapelure, persil, curry doux, paprika fumé, muscade, brocoli, épinards, petits pois, pois chiches, dés de jambon, lardons, saumon fumé, parmesan, emmental ou mozzarella. Pour une version gratinée, passer 10 minutes au four avec fromage et chapelure.",
     "ingredients_detail": {
       "principaux": [
         {
@@ -2329,8 +3228,8 @@
         }
       ]
     },
-    "explication": "Le chou-fleur doit être précuit pour rester fondant, tandis que le quinoa apporte de la tenue. La crème lie l’ensemble et peut être remplacée par une crème végétale.",
-    "pdf": "pdf/recettes/20260708-012.pdf",
+    "explication": "Le chou-fleur est précuit afin de rester tendre tout en conservant sa tenue. Le quinoa apporte une texture légèrement croquante et la crème lie harmonieusement l’ensemble. Une crème végétale peut être utilisée pour une version sans lactose.",
+    "pdf": "recettes/pdf/20260708-012.pdf",
     "sources_inspiration": [
       {
         "titre": "Julie Andrieu - Croustillants de quinoa au chou-fleur et au comté",
@@ -2379,9 +3278,26 @@
       "energie_kj_pour_100g": 475,
       "fruits_legumes_legumineuses_estime_pct": 45,
       "nutri_score_estime": {
-        "grade": "A",
-        "score_simplifie": -1,
-        "disclaimer": "Indicateur estimé non officiel. Il ne correspond pas à un calcul réglementaire ni à un Nutri-Score officiel."
+        "grade": "B",
+        "score": 2,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 3,
+          "sel": 0
+        },
+        "total_points_defavorables": 4,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 45.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
       },
       "ingredients_generiques_non_reconnus": []
     },
@@ -2402,15 +3318,71 @@
       "sans_sesame_possible",
       "sans_sulfites_possible",
       "sans_lupin_possible"
-    ]
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "chou-fleur",
+          "nom": "chou-fleur",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "quinoa",
+          "nom": "quinoa",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "creme",
+          "nom": "crème",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "ail-ou-oignon",
+          "nom": "ail ou oignon",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "eau-ou-bouillon",
+          "nom": "eau ou bouillon",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "fromage",
+          "nom": "fromage",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "epices-douces",
+          "nom": "épices douces",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "chapelure",
+          "nom": "chapelure",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   },
   {
     "id": "00000000-000",
     "titre": "Template vierge de recette",
     "slug": "template-vierge-recette",
     "url": "recettes/00000000-000.html",
-    "image": "images/recettes/00000000-000.webp",
-    "qrcode": "qrcodes/recettes/00000000-000.png",
+    "image": "assets/images/site/recette-default.webp",
+    "qrcode": "recettes/qrcodes/00000000-000.webp",
     "resume": "Modèle vierge à copier pour créer une nouvelle fiche recette.",
     "explication": "Cette fiche est un modèle technique. Elle sert de base pour créer une nouvelle recette complète.",
     "categorie": "template",
@@ -2472,7 +3444,7 @@
     "recette_semaine_candidate": false,
     "visible": false,
     "date_creation": "0000-00-00",
-    "date_modification": "0000-00-00",
+    "date_modification": "2026-07-09",
     "etapes": [
       "Étape 1 à compléter.",
       "Étape 2 à compléter.",
@@ -2507,6 +3479,354 @@
         "lupin"
       ]
     },
-    "pdf": "pdf/recettes/00000000-000.pdf"
+    "pdf": "recettes/pdf/00000000-000.pdf",
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "ingredient-principal-a-completer",
+          "nom": "Ingrédient principal à compléter",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "ingredient-secondaire-a-completer",
+          "nom": "Ingrédient secondaire à compléter",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "ingredient-optionnel-a-completer",
+          "nom": "Ingrédient optionnel à compléter",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "id": "20260709-013",
+    "titre": "Tarte salée à la courgette",
+    "slug": "tarte-salee-courgette",
+    "url": "recettes/20260709-013.html",
+    "image": "recettes/images/20260709-013.webp",
+    "qrcode": "recettes/qrcodes/20260709-013.webp",
+    "pdf": "recettes/pdf/20260709-013.pdf",
+    "resume": "Une tarte salée maison, fondante et dorée, préparée avec des courgettes, une pâte brisée salée et un appareil crémeux aux œufs.",
+    "categorie": "plat",
+    "sous_categorie": "tarte_salee",
+    "moment_repas": [
+      "dejeuner",
+      "diner"
+    ],
+    "temperature_service": "chaud",
+    "type_cuisson": [
+      "four",
+      "poele"
+    ],
+    "equipement": [
+      "four",
+      "poele"
+    ],
+    "temps_preparation_min": 20,
+    "temps_cuisson_min": 35,
+    "temps_total_min": 55,
+    "personnes": 4,
+    "difficulte": "facile",
+    "budget": "economique",
+    "ingredients": {
+      "principaux": [
+        "pâte brisée salée",
+        "courgettes"
+      ],
+      "secondaires": [
+        "œufs",
+        "crème",
+        "oignon",
+        "fromage râpé"
+      ],
+      "optionnels": [
+        "moutarde",
+        "huile d’olive",
+        "herbes de Provence",
+        "muscade"
+      ],
+      "recherche": [
+        "tarte",
+        "courgette",
+        "courgettes",
+        "pâte brisée",
+        "pate brisee",
+        "œufs",
+        "oeufs",
+        "crème",
+        "fromage",
+        "quiche",
+        "tarte salée"
+      ]
+    },
+    "tags": [
+      "simple",
+      "economique",
+      "anti_gaspi",
+      "chaud",
+      "vegetarien",
+      "tarte"
+    ],
+    "regimes": [
+      "vegetarien"
+    ],
+    "allergenes": [
+      "gluten",
+      "lait",
+      "oeuf"
+    ],
+    "conservation": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer 8 à 10 minutes au four à 160 °C, ou à déguster froid.",
+    "niveau_urgence_produits": [
+      "produits_frais_a_utiliser"
+    ],
+    "anti_gaspi": true,
+    "recette_semaine_candidate": true,
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-09",
+    "etapes": [
+      "Préchauffer le four à 180 °C. Étaler la pâte brisée salée dans un moule à tarte, piquer le fond avec une fourchette et réserver au frais.",
+      "Laver les courgettes, retirer les extrémités puis les couper en fines rondelles ou en petits dés. Émincer l’oignon.",
+      "Faire revenir l’oignon et les courgettes 8 à 10 minutes dans une poêle avec un filet d’huile d’olive. Les légumes doivent commencer à s’attendrir et perdre une partie de leur eau.",
+      "Dans un saladier, battre les œufs avec la crème. Ajouter le fromage râpé, les herbes, le poivre et une pincée de sel. Ajouter éventuellement un peu de muscade.",
+      "Répartir les courgettes précuites sur le fond de tarte. Verser l’appareil œufs-crème par-dessus et lisser légèrement.",
+      "Enfourner 30 à 35 minutes, jusqu’à ce que la tarte soit prise, dorée et légèrement gratinée. Laisser tiédir 5 minutes avant de couper."
+    ],
+    "astuce": "Cette tarte est idéale pour utiliser des courgettes un peu fatiguées. Si elles rendent beaucoup d’eau, les précuire plus longtemps et les égoutter avant de garnir la pâte. Les restes se mangent froids le lendemain ou se réchauffent doucement au four.",
+    "variantes": "Ajouter des tomates, remplacer une partie des courgettes par des aubergines, intégrer des poireaux fondus, du jambon, des lardons, du thon, du saumon fumé ou des restes de poulet. Pour une version plus fromagère, ajouter chèvre, feta, comté ou parmesan. Il suffit souvent de regarder ce qui reste dans le frigo.",
+    "ingredients_detail": {
+      "principaux": [
+        {
+          "nom": "pâte brisée salée",
+          "quantite": 1,
+          "unite": "pièce"
+        },
+        {
+          "nom": "courgettes",
+          "quantite": 650,
+          "unite": "g"
+        }
+      ],
+      "secondaires": [
+        {
+          "nom": "œufs",
+          "quantite": 3,
+          "unite": "pièces"
+        },
+        {
+          "nom": "crème liquide ou semi-épaisse",
+          "quantite": 200,
+          "unite": "ml"
+        },
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce"
+        },
+        {
+          "nom": "fromage râpé",
+          "quantite": 90,
+          "unite": "g"
+        }
+      ],
+      "optionnels": [
+        {
+          "nom": "moutarde",
+          "quantite": 1,
+          "unite": "c. à café"
+        },
+        {
+          "nom": "huile d’olive",
+          "quantite": 1,
+          "unite": "c. à soupe"
+        },
+        {
+          "nom": "herbes de Provence",
+          "quantite": 1,
+          "unite": "pincée"
+        },
+        {
+          "nom": "sel, poivre ou muscade",
+          "quantite": 1,
+          "unite": "pincée"
+        }
+      ]
+    },
+    "explication": "Les courgettes sont précuites pour éviter de détremper la pâte et pour concentrer leur goût. La base œufs-crème donne une garniture fondante et facile à adapter.",
+    "sources_inspiration": [
+      {
+        "titre": "Marmiton - Tarte aux courgettes miam-mioum",
+        "url": "https://www.marmiton.org/recettes/recette_tarte-aux-courgettes-miam-mioum_22886.aspx"
+      },
+      {
+        "titre": "CuisineAZ - Tarte à la courgette facile",
+        "url": "https://www.cuisineaz.com/recettes/tarte-a-la-courgette-facile-121814.aspx"
+      },
+      {
+        "titre": "Herta - Quiche aux courgettes",
+        "url": "https://www.herta.fr/recettes/quiche-aux-courgettes"
+      },
+      {
+        "titre": "Saveurs - Quiche fondante à la courgette et au parmesan",
+        "url": "https://www.saveurs-magazine.fr/recettes/quiche-fondante-a-la-courgette-et-au-parmesan/"
+      }
+    ],
+    "recherche_web_url": "https://www.google.com/search?q=Tarte+sal%C3%A9e+%C3%A0+la+courgette",
+    "cuisson_four_temperature_c": 180,
+    "cuisson_four_temps_min": "30 à 35",
+    "cuisson_indicative": "Four : 180 °C pendant 30 à 35 min.",
+    "image_style": "photo réaliste maison validée",
+    "nutrition_estimee": {
+      "disclaimer": "Estimation non officielle calculée à partir d’ingrédients génériques et des quantités de base. Valeurs données à titre indicatif.",
+      "source_methode": "Base interne simplifiée inspirée du type de données disponibles dans Ciqual/Anses ; résultat non opposable.",
+      "poids_total_estime_g": 1180,
+      "poids_portion_estime_g": 295,
+      "par_portion": {
+        "kcal": 508,
+        "proteines": 17,
+        "glucides": 40,
+        "sucres": 5,
+        "lipides": 32,
+        "satures": 14,
+        "fibres": 4.5,
+        "sel": 1.1
+      },
+      "pour_100g": {
+        "kcal": 172,
+        "proteines": 5.8,
+        "glucides": 13.5,
+        "sucres": 1.7,
+        "lipides": 10.8,
+        "satures": 4.7,
+        "fibres": 1.5,
+        "sel": 0.4
+      },
+      "energie_kj_par_portion": 2125,
+      "energie_kj_pour_100g": 720,
+      "fruits_legumes_legumineuses_estime_pct": 55,
+      "nutri_score_estime": {
+        "grade": "C",
+        "score": 4,
+        "points_defavorables": {
+          "energie": 2,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 1
+        },
+        "total_points_defavorables": 7,
+        "points_favorables": {
+          "proteines": 2,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 55.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      },
+      "ingredients_generiques_non_reconnus": []
+    },
+    "reperes_alimentaires": [
+      "sans_porc",
+      "vegetarien",
+      "contient_gluten",
+      "contient_lait",
+      "contient_oeuf",
+      "sans_poisson_possible",
+      "sans_crustaces_possible",
+      "sans_fruits_a_coque_possible"
+    ],
+    "ingredient_refs": {
+      "principaux": [
+        {
+          "id": "pate-brisee",
+          "nom": "pâte brisée salée",
+          "obligatoire": true,
+          "poids": 4
+        },
+        {
+          "id": "courgettes",
+          "nom": "courgettes",
+          "obligatoire": true,
+          "poids": 4
+        }
+      ],
+      "secondaires": [
+        {
+          "id": "oeufs",
+          "nom": "œufs",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "creme",
+          "nom": "crème",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "oignon",
+          "nom": "oignon",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "fromage",
+          "nom": "fromage râpé",
+          "obligatoire": false,
+          "poids": 2
+        },
+        {
+          "id": "creme-liquide-ou-semi-epaisse",
+          "nom": "crème liquide ou semi-épaisse",
+          "obligatoire": false,
+          "poids": 2
+        }
+      ],
+      "optionnels": [
+        {
+          "id": "moutarde",
+          "nom": "moutarde",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "huile-d-olive",
+          "nom": "huile d’olive",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "herbes-de-provence",
+          "nom": "herbes de Provence",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "muscade",
+          "nom": "muscade",
+          "obligatoire": false,
+          "poids": 0.5
+        },
+        {
+          "id": "sel-poivre-ou-muscade",
+          "nom": "sel, poivre ou muscade",
+          "obligatoire": false,
+          "poids": 0.5
+        }
+      ]
+    }
   }
 ]

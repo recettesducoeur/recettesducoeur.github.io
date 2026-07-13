@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "description": "Référentiel central des ingrédients. Les identifiants sont stables et distincts des libellés affichés.",
+  "ingredients": [
+    {
+      "id": "ail",
+      "nom": "ail",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "ail-ou-oignon",
+      "nom": "ail ou oignon",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "banane",
+      "nom": "banane mûre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "bananes",
+      "nom": "bananes mûres",
+      "synonymes": [
+        "banane"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "bananes-tres",
+      "nom": "bananes très mûres",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "beurre-fondu-ou-huile",
+      "nom": "beurre fondu ou huile",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "cannelle",
+      "nom": "cannelle",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "cannelle-ou-vanille",
+      "nom": "cannelle ou vanille",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "carottes-ou-poireaux",
+      "nom": "carottes ou poireaux",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "chapelure",
+      "nom": "chapelure",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "chapelure-ou-pain-rassis-mixe",
+      "nom": "chapelure ou pain rassis mixé",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "chocolat",
+      "nom": "chocolat râpé",
+      "synonymes": [
+        "chocolat"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "chou-fleur",
+      "nom": "chou-fleur",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "concombre-ou-legume-croquant",
+      "nom": "concombre ou légume croquant",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "cornichons",
+      "nom": "cornichons",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "courgettes",
+      "nom": "courgettes",
+      "synonymes": [
+        "courgette"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "creme",
+      "nom": "crème",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "creme-liquide-ou-semi-epaisse",
+      "nom": "crème liquide ou semi-épaisse",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "eau",
+      "nom": "eau",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "eau-ou-bouillon",
+      "nom": "eau ou bouillon",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "epices-douces",
+      "nom": "épices douces",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "farine",
+      "nom": "farine",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "fromage",
+      "nom": "fromage râpé",
+      "synonymes": [
+        "fromage"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "fruits",
+      "nom": "fruits",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "herbes",
+      "nom": "herbes",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "herbes-de-provence",
+      "nom": "herbes de Provence",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "herbes-fraiches",
+      "nom": "herbes fraîches",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "huile",
+      "nom": "huile",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "huile-d-olive",
+      "nom": "huile d’olive",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "huile-d-olive-ou-huile-neutre",
+      "nom": "huile d’olive ou huile neutre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "huile-ou-beurre",
+      "nom": "huile ou beurre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "ingredient-optionnel-a-completer",
+      "nom": "Ingrédient optionnel à compléter",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "ingredient-principal-a-completer",
+      "nom": "Ingrédient principal à compléter",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "ingredient-secondaire-a-completer",
+      "nom": "Ingrédient secondaire à compléter",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "jus-de-citron",
+      "nom": "jus de citron",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "lait",
+      "nom": "lait",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "lait-ou-creme",
+      "nom": "lait ou crème",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "lardons-ou-restes-de-viande",
+      "nom": "lardons ou restes de viande",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "legumes-cuits-ou-crus",
+      "nom": "légumes cuits ou crus",
+      "synonymes": [
+        "légumes",
+        "legumes"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "legumes-rapes-ou-restes-de-legumes",
+      "nom": "légumes râpés ou restes de légumes",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "legumes-varies",
+      "nom": "légumes variés",
+      "synonymes": [
+        "légumes",
+        "legumes"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "levure-chimique",
+      "nom": "levure chimique",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "mais",
+      "nom": "maïs égoutté",
+      "synonymes": [
+        "mais",
+        "maïs"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "moutarde",
+      "nom": "moutarde",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "muscade",
+      "nom": "muscade",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "oeufs",
+      "nom": "œufs",
+      "synonymes": [
+        "oeuf",
+        "ufs"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "oeufs-durs",
+      "nom": "œufs durs",
+      "synonymes": [
+        "oeuf",
+        "œufs",
+        "oeufs",
+        "ufs"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "oignon",
+      "nom": "oignon",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "oignons",
+      "nom": "oignons",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "olives",
+      "nom": "olives",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pain",
+      "nom": "pain",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pain-rassis-pour-croutons",
+      "nom": "pain rassis pour croûtons",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pate-brisee",
+      "nom": "Pâte brisée",
+      "synonymes": [
+        "pâte brisée salée"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pates-alimentaires",
+      "nom": "Pâtes alimentaires",
+      "synonymes": [
+        "pâtes",
+        "pates"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "poivre",
+      "nom": "poivre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pommes",
+      "nom": "pommes",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pommes-de-terre",
+      "nom": "pommes de terre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "pommes-de-terre-cuites",
+      "nom": "pommes de terre cuites",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "quinoa",
+      "nom": "quinoa",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "riz",
+      "nom": "riz",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "riz-cru-au-fond-du-plat",
+      "nom": "riz cru au fond du plat",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "riz-rond-ou-riz-classique",
+      "nom": "riz rond ou riz classique",
+      "synonymes": [
+        "riz"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "sauce-tomate-ou-tomates-concassees",
+      "nom": "sauce tomate ou tomates concassées",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "sel",
+      "nom": "sel",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "sel-et-poivre",
+      "nom": "sel et poivre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "sel-poivre-ou-muscade",
+      "nom": "sel, poivre ou muscade",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "sucre",
+      "nom": "sucre",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "sucre-ou-miel",
+      "nom": "sucre ou miel",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "thon",
+      "nom": "thon égoutté",
+      "synonymes": [
+        "thon",
+        "thon en boite"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "thon-ou-jambon",
+      "nom": "thon ou jambon",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "tomates",
+      "nom": "tomates",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "tomates-concassees-ou-sauce-tomate",
+      "nom": "tomates concassées ou sauce tomate",
+      "synonymes": [
+        "tomates"
+      ],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "vanille",
+      "nom": "vanille",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    },
+    {
+      "id": "vinaigrette-ou-mayonnaise",
+      "nom": "vinaigrette ou mayonnaise",
+      "synonymes": [],
+      "categorie": "a_classer",
+      "actif": true
+    }
+  ]
+}

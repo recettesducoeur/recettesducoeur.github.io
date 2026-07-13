@@ -1,0 +1,37 @@
+{
+  "version": "V11",
+  "fonctionnalite": "Tags cliquables dans les fiches recettes et cartes",
+  "comportement": [
+    "Les tags dans les fiches recettes deviennent des liens",
+    "Un clic ouvre recherche.html?tag=<tag>",
+    "La page Recherche active automatiquement l'onglet Tags",
+    "Le tag transmis par URL est coché automatiquement",
+    "Les résultats sont filtrés sur ce tag",
+    "Le mécanisme accepte aussi plusieurs tags via ?tag=a&tag=b ou ?tags=a,b"
+  ],
+  "fiches_recettes_mises_a_jour": [
+    "recettes/00000000-000.html",
+    "recettes/20000101-001.html",
+    "recettes/20000101-002.html",
+    "recettes/20000101-003.html",
+    "recettes/20000101-004.html",
+    "recettes/20000101-005.html",
+    "recettes/20000101-006.html",
+    "recettes/20000101-007.html",
+    "recettes/20000101-008.html",
+    "recettes/20000101-009.html",
+    "recettes/20000101-010.html",
+    "recettes/20260708-011.html",
+    "recettes/20260708-012.html"
+  ],
+  "fichiers_modifies": [
+    "recettes/*.html",
+    "assets/js/app.js",
+    "assets/js/search.js",
+    "assets/css/style.css",
+    "recherche.html",
+    "aide.html",
+    "README.md",
+    "data/audit_v11_tags_cliquables.json"
+  ]
+}

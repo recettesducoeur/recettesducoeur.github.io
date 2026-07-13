@@ -1,0 +1,398 @@
+{
+  "version": "37.3.0",
+  "generated_at": "2026-07-13T03:02:32",
+  "algorithm": "Nutri-Score actualisé aliments solides — France 16 mars 2025",
+  "official_logo_used": false,
+  "recipes": [
+    {
+      "id": "20000101-001",
+      "titre": "Gratin de pâtes au thon",
+      "ancien_grade": "B",
+      "ancien_score": 2,
+      "nouveau_grade": "C",
+      "nouveau_score": 3,
+      "detail": {
+        "grade": "C",
+        "score": 3,
+        "points_defavorables": {
+          "energie": 2,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 1
+        },
+        "total_points_defavorables": 7,
+        "points_favorables": {
+          "proteines": 4,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 29.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-002",
+      "titre": "Riz au lait à la banane",
+      "ancien_grade": "C",
+      "ancien_score": 3,
+      "nouveau_grade": "C",
+      "nouveau_score": 3,
+      "detail": {
+        "grade": "C",
+        "score": 3,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 2,
+          "acides_gras_satures": 1,
+          "sel": 0
+        },
+        "total_points_defavorables": 4,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 19.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-003",
+      "titre": "Soupe de légumes simple",
+      "ancien_grade": "A",
+      "ancien_score": -1,
+      "nouveau_grade": "A",
+      "nouveau_score": -1,
+      "detail": {
+        "grade": "A",
+        "score": -1,
+        "points_defavorables": {
+          "energie": 0,
+          "sucres": 0,
+          "acides_gras_satures": 0,
+          "sel": 0
+        },
+        "total_points_defavorables": 0,
+        "points_favorables": {
+          "proteines": 0,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 54.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-004",
+      "titre": "Salade de riz au thon",
+      "ancien_grade": "A",
+      "ancien_score": -4,
+      "nouveau_grade": "A",
+      "nouveau_score": -2,
+      "detail": {
+        "grade": "A",
+        "score": -2,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 0,
+          "sel": 1
+        },
+        "total_points_defavorables": 2,
+        "points_favorables": {
+          "proteines": 3,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 44.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-005",
+      "titre": "Poêlée de pommes de terre",
+      "ancien_grade": "A",
+      "ancien_score": -5,
+      "nouveau_grade": "A",
+      "nouveau_score": -4,
+      "detail": {
+        "grade": "A",
+        "score": -4,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 1,
+          "sel": 0
+        },
+        "total_points_defavorables": 2,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 5
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 83.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-006",
+      "titre": "Compote pomme-banane",
+      "ancien_grade": "A",
+      "ancien_score": -5,
+      "nouveau_grade": "A",
+      "nouveau_score": -2,
+      "detail": {
+        "grade": "A",
+        "score": -2,
+        "points_defavorables": {
+          "energie": 0,
+          "sucres": 3,
+          "acides_gras_satures": 0,
+          "sel": 0
+        },
+        "total_points_defavorables": 3,
+        "points_favorables": {
+          "proteines": 0,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 5
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 86.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-007",
+      "titre": "Tartines chaudes fromage-tomate",
+      "ancien_grade": "C",
+      "ancien_score": 3,
+      "nouveau_grade": "C",
+      "nouveau_score": 5,
+      "detail": {
+        "grade": "C",
+        "score": 5,
+        "points_defavorables": {
+          "energie": 2,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 3
+        },
+        "total_points_defavorables": 9,
+        "points_favorables": {
+          "proteines": 4,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 39.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-008",
+      "titre": "Omelette aux légumes",
+      "ancien_grade": "B",
+      "ancien_score": 0,
+      "nouveau_grade": "C",
+      "nouveau_score": 3,
+      "detail": {
+        "grade": "C",
+        "score": 3,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 1
+        },
+        "total_points_defavorables": 6,
+        "points_favorables": {
+          "proteines": 2,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 57.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-009",
+      "titre": "Pâtes sauce tomate enrichie",
+      "ancien_grade": "A",
+      "ancien_score": -4,
+      "nouveau_grade": "A",
+      "nouveau_score": -1,
+      "detail": {
+        "grade": "A",
+        "score": -1,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 1,
+          "sel": 1
+        },
+        "total_points_defavorables": 3,
+        "points_favorables": {
+          "proteines": 3,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 56.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20000101-010",
+      "titre": "Gâteau simple du placard",
+      "ancien_grade": "C",
+      "ancien_score": 10,
+      "nouveau_grade": "D",
+      "nouveau_score": 16,
+      "detail": {
+        "grade": "D",
+        "score": 16,
+        "points_defavorables": {
+          "energie": 3,
+          "sucres": 5,
+          "acides_gras_satures": 7,
+          "sel": 1
+        },
+        "total_points_defavorables": 16,
+        "points_favorables": {
+          "proteines": 2,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 0
+        },
+        "proteines_comptees": false,
+        "pourcentage_fruits_legumes_legumineuses_estime": 18.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20260708-011",
+      "titre": "Tian de courgettes",
+      "ancien_grade": "A",
+      "ancien_score": -6,
+      "nouveau_grade": "A",
+      "nouveau_score": -5,
+      "detail": {
+        "grade": "A",
+        "score": -5,
+        "points_defavorables": {
+          "energie": 0,
+          "sucres": 0,
+          "acides_gras_satures": 1,
+          "sel": 0
+        },
+        "total_points_defavorables": 1,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 5
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 88.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20260708-012",
+      "titre": "Chou-fleur et quinoa à la crème",
+      "ancien_grade": "A",
+      "ancien_score": -1,
+      "nouveau_grade": "B",
+      "nouveau_score": 2,
+      "detail": {
+        "grade": "B",
+        "score": 2,
+        "points_defavorables": {
+          "energie": 1,
+          "sucres": 0,
+          "acides_gras_satures": 3,
+          "sel": 0
+        },
+        "total_points_defavorables": 4,
+        "points_favorables": {
+          "proteines": 1,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 45.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    },
+    {
+      "id": "20260709-013",
+      "titre": "Tarte salée à la courgette",
+      "ancien_grade": "C",
+      "ancien_score": 8,
+      "nouveau_grade": "C",
+      "nouveau_score": 4,
+      "detail": {
+        "grade": "C",
+        "score": 4,
+        "points_defavorables": {
+          "energie": 2,
+          "sucres": 0,
+          "acides_gras_satures": 4,
+          "sel": 1
+        },
+        "total_points_defavorables": 7,
+        "points_favorables": {
+          "proteines": 2,
+          "fibres": 0,
+          "fruits_legumes_legumineuses": 1
+        },
+        "proteines_comptees": true,
+        "pourcentage_fruits_legumes_legumineuses_estime": 55.0,
+        "categorie_algorithme": "aliments_generaux",
+        "algorithme": "Nutri-Score actualisé — aliments solides, applicable en France depuis le 16 mars 2025",
+        "statut": "estimation_non_officielle",
+        "disclaimer": "Estimation non officielle appliquée à une recette maison. Le calcul utilise les valeurs estimées pour 100 g et une proportion estimée de fruits, légumes et légumineuses ; il ne constitue pas un Nutri-Score réglementaire."
+      }
+    }
+  ]
+}

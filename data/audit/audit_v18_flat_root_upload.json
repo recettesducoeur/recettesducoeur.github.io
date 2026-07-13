@@ -1,0 +1,27 @@
+{
+  "version": "V18",
+  "objectif": "ZIP plat pour upload direct à la racine du dépôt recettesducoeur.github.io",
+  "cause_probable_du_bug_publie": [
+    "Le HTML est publié, mais les assets CSS/JS/images ne sont pas disponibles à l'emplacement attendu.",
+    "Symptômes : page sans mise en forme, logo cassé, scripts non exécutés, recette de la semaine bloquée sur le calcul."
+  ],
+  "structure_attendue_racine": [
+    "index.html",
+    "404.html",
+    "assets/",
+    "data/",
+    "dev/",
+    "images/",
+    "qrcodes/",
+    "recettes/",
+    "robots.txt",
+    ".nojekyll"
+  ],
+  "tests_url": [
+    "https://recettesducoeur.github.io/assets/css/style.css",
+    "https://recettesducoeur.github.io/assets/js/app.js",
+    "https://recettesducoeur.github.io/data/recettes.json",
+    "https://recettesducoeur.github.io/assets/logos/logo-principal.png"
+  ],
+  "note": "Ce ZIP est volontairement plat : index.html est directement à la racine de l'archive."
+}

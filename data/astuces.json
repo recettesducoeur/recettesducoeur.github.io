@@ -1,0 +1,484 @@
+[
+  {
+    "id": "Astuce000",
+    "titre": "Template astuce anti-gaspi",
+    "categorie": "Template",
+    "resume": "Modèle de fiche pratique à dupliquer pour créer une nouvelle astuce anti-gaspi.",
+    "url": "astuces/Astuce000.html",
+    "image": "astuces/images/astuce-default.webp",
+    "niveau_prudence": "modèle",
+    "visible": false,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-09",
+    "intro": "Cette fiche sert de référence technique et éditoriale. Dupliquez-la, puis remplacez le contenu.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Présenter ici l’astuce en quelques lignes simples."
+      },
+      {
+        "titre": "Comment faire",
+        "contenu": "Décrire les gestes concrets, sans jargon inutile."
+      },
+      {
+        "titre": "À éviter",
+        "contenu": "Indiquer les limites de sécurité, les pièges ou les situations où il faut jeter."
+      }
+    ],
+    "sources_officielles": []
+  },
+  {
+    "id": "Astuce001",
+    "titre": "DLC, DDM, DLUO : comprendre les dates sans paniquer",
+    "categorie": "Dates et sécurité alimentaire",
+    "resume": "DLC = sécurité. DDM = qualité. DLUO = ancien nom. Le frigo ne négocie pas avec tout, mais il ne faut pas jeter par réflexe.",
+    "url": "astuces/Astuce001.html",
+    "image": "astuces/images/cartes/Astuce001.webp",
+    "niveau_prudence": "important",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Les dates sur les emballages sont utiles, mais elles ne disent pas toutes la même chose. Comprendre la différence aide à réduire le gaspillage sans jouer avec la sécurité alimentaire.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "DLC : à respecter. DDM : à vérifier. DLUO : ancien nom de la DDM. Avant de jeter un produit sec avec une DDM dépassée, on vérifie l’emballage, l’aspect, l’odeur et le goût avec prudence."
+      },
+      {
+        "titre": "DLC = Date Limite de Consommation",
+        "contenu": "Elle apparaît sous la forme « À consommer jusqu’au… ». Elle concerne des aliments très périssables. Après la DLC, on ne consomme pas : ici, pas de bras de fer avec le yaourt ou le poisson."
+      },
+      {
+        "titre": "DDM = Date de Durabilité Minimale",
+        "contenu": "Elle apparaît sous la forme « À consommer de préférence avant… ». Après cette date, le produit peut avoir perdu du goût ou de la texture, mais il n’est pas automatiquement dangereux si l’emballage est intact."
+      },
+      {
+        "titre": "DLUO = ancien nom",
+        "contenu": "La DLUO a été remplacée par la DDM. Si quelqu’un parle encore de DLUO, il n’est pas forcément perdu : il utilise simplement l’ancien vocabulaire."
+      },
+      {
+        "titre": "Réflexe anti-gaspi",
+        "contenu": "Pour les produits à DDM : vérifier l’emballage, l’aspect, l’odeur, puis goûter une très petite quantité si tout semble normal. Pour les produits à DLC dépassée : on jette."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "DGCCRF — Date limite de consommation et date de durabilité minimale",
+        "url": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/date-limite-de-consommation-et-date-de-durabilite-minimale-ce-que-vous-devez-savoir"
+      },
+      {
+        "titre": "Ministère de l’Agriculture — DLC, DDM, quelle différence ?",
+        "url": "https://agriculture.gouv.fr/comment-conserver-les-aliments-dlc-ddm-quelle-difference"
+      },
+      {
+        "titre": "Ministère de la Transition écologique — Gaspillage alimentaire",
+        "url": "https://www.ecologie.gouv.fr/politiques-publiques/gaspillage-alimentaire"
+      },
+      {
+        "titre": "EUR-Lex — Règlement UE n°1169/2011",
+        "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX%3A32011R1169"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce001.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce001.webp",
+    "parcours_ordre": 2,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce002",
+    "titre": "Bien ranger son frigo",
+    "categorie": "Conservation",
+    "resume": "Un frigo rangé, c’est moins de pertes, moins d’odeurs suspectes, et moins de découvertes archéologiques derrière les yaourts.",
+    "url": "astuces/Astuce002.html",
+    "image": "astuces/images/cartes/Astuce002.webp",
+    "niveau_prudence": "important",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Le froid ralentit la multiplication des microbes, mais il ne fait pas de miracles. Ranger correctement aide à mieux conserver et à voir ce qu’il faut utiliser rapidement.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "La zone la plus froide doit rester autour de 0 à 4 °C. On sépare cru et cuit, on couvre les restes, on met devant ce qui doit être mangé vite."
+      },
+      {
+        "titre": "Méthode simple",
+        "contenu": "Placez les produits fragiles dans la zone la plus froide, les restes dans des boîtes fermées, les produits entamés bien visibles, et les légumes dans le bac adapté."
+      },
+      {
+        "titre": "Le réflexe FIFO",
+        "contenu": "Premier entré, premier sorti. Les nouveaux produits vont derrière, les anciens devant. Le frigo devient presque organisé. Presque."
+      },
+      {
+        "titre": "À éviter",
+        "contenu": "Ne laissez pas un plat cuit traîner trop longtemps à température ambiante. Ne rangez pas des aliments crus au-dessus d’aliments prêts à manger."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Anses — Hygiène des aliments dans le réfrigérateur",
+        "url": "https://www.anses.fr/fr/content/comment-garantir-lhygiene-des-aliments-dans-son-refrigerateur"
+      },
+      {
+        "titre": "Anses — Dix gestes simples d’hygiène en cuisine",
+        "url": "https://www.anses.fr/fr/content/conseils-dhygiene-dans-la-cuisine-dix-gestes-simples-pour-prevenir-les-risques"
+      },
+      {
+        "titre": "OMS — Five keys to safer food",
+        "url": "https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce002.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce002.webp",
+    "parcours_ordre": 3,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce003",
+    "titre": "Congeler intelligemment",
+    "categorie": "Conservation",
+    "resume": "Le congélateur est un allié anti-gaspi, pas une machine à voyager dans le temps. On étiquette, on date, on portionne.",
+    "url": "astuces/Astuce003.html",
+    "image": "astuces/images/cartes/Astuce003.webp",
+    "niveau_prudence": "important",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Congeler permet de sauver des restes et d’éviter les pertes. Mais il faut respecter quelques règles simples pour ne pas transformer une bonne idée en pari risqué.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Refroidir, portionner, étiqueter, dater. Et surtout : ne pas recongeler un produit décongelé sans cuisson adaptée."
+      },
+      {
+        "titre": "Portionner",
+        "contenu": "Congeler en petites portions évite de décongeler un bloc de soupe prévu pour douze quand on voulait juste un bol."
+      },
+      {
+        "titre": "Étiqueter",
+        "contenu": "Nom + date. Le sachet anonyme givré du fond du congélateur n’est pas un mystère gastronomique, c’est un futur oubli."
+      },
+      {
+        "titre": "Décongeler prudemment",
+        "contenu": "Privilégiez le réfrigérateur. Évitez la décongélation longue à température ambiante, surtout pour les produits fragiles."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Ministère de l’Agriculture — Bonnes pratiques de la congélation",
+        "url": "https://agriculture.gouv.fr/les-bonnes-pratiques-de-la-congelation"
+      },
+      {
+        "titre": "Ministère de l’Agriculture — Chaîne du froid",
+        "url": "https://agriculture.gouv.fr/securite-sanitaire-des-aliments-tout-sur-la-chaine-du-froid"
+      },
+      {
+        "titre": "Anses — Chaîne du froid",
+        "url": "https://www.anses.fr/fr/content/comment-bien-conserver-ses-aliments-et-ne-pas-interrompre-la-chaine-du-froid"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce003.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce003.webp",
+    "parcours_ordre": 4,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce004",
+    "titre": "Sauver les fruits trop mûrs",
+    "categorie": "Fruits et desserts",
+    "resume": "Une banane très mûre n’est pas foutue : elle est prête pour la compote, le gâteau, le smoothie ou le riz au lait.",
+    "url": "astuces/Astuce004.html",
+    "image": "astuces/images/cartes/Astuce004.webp",
+    "niveau_prudence": "modéré",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Les fruits trop mûrs peuvent devenir des desserts rapides. On retire les parties abîmées, puis on transforme avant que la situation ne parte en compost improvisé.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Bananes mûres : gâteau, compote, smoothie. Pommes fatiguées : compote ou cuisson. Fruits rouges mous : coulis ou congélation."
+      },
+      {
+        "titre": "À faire vite",
+        "contenu": "Coupez, triez, retirez les zones abîmées, puis cuisinez. Les fruits mûrs apportent souvent du sucre naturellement."
+      },
+      {
+        "titre": "Idées utiles",
+        "contenu": "Compote pomme-banane, gâteau banane-chocolat, smoothie, crumble, coulis, fruits poêlés."
+      },
+      {
+        "titre": "À éviter",
+        "contenu": "Ne gardez pas un fruit moisi au contact des autres. Le panier à fruits n’est pas une colocation sans conséquences."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Anses — Conseils d’hygiène en cuisine",
+        "url": "https://www.anses.fr/fr/content/conseils-dhygiene-dans-la-cuisine-dix-gestes-simples-pour-prevenir-les-risques"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce004.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce004.webp",
+    "parcours_ordre": 5,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce005",
+    "titre": "Sauver les légumes fatigués",
+    "categorie": "Légumes",
+    "resume": "Un légume un peu mou peut encore finir en soupe, poêlée ou gratin. Il demande juste une seconde chance et un couteau bienveillant.",
+    "url": "astuces/Astuce005.html",
+    "image": "astuces/images/cartes/Astuce005.webp",
+    "niveau_prudence": "modéré",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Les légumes légèrement flétris restent souvent utilisables après tri. On enlève ce qui est abîmé, on lave, on cuit, et le vide-frigo devient presque une stratégie.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Mou mais sain : soupe, poêlée, gratin. Moisi, gluant ou mauvaise odeur : on ne joue pas au héros."
+      },
+      {
+        "titre": "Méthode",
+        "contenu": "Triez, lavez, coupez les parties abîmées, puis privilégiez une cuisson : soupe, purée, sauce ou gratin."
+      },
+      {
+        "titre": "Idées utiles",
+        "contenu": "Soupe vide-frigo, légumes rôtis, omelette aux légumes, sauce tomate enrichie, tian."
+      },
+      {
+        "titre": "À éviter",
+        "contenu": "Ne masquez pas une odeur suspecte avec des épices. Même le curry a ses limites."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Anses — Conseils d’hygiène en cuisine",
+        "url": "https://www.anses.fr/fr/content/conseils-dhygiene-dans-la-cuisine-dix-gestes-simples-pour-prevenir-les-risques"
+      },
+      {
+        "titre": "OMS — Five keys to safer food",
+        "url": "https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce005.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce005.webp",
+    "parcours_ordre": 6,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce006",
+    "titre": "Pain rassis : pas fini, juste en reconversion",
+    "categorie": "Pain et placard",
+    "resume": "Le pain rassis peut devenir croûtons, chapelure, pain perdu ou base de gratin. Il n’est pas vieux, il change de carrière.",
+    "url": "astuces/Astuce006.html",
+    "image": "astuces/images/cartes/Astuce006.webp",
+    "niveau_prudence": "faible",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Le pain sec est l’un des meilleurs candidats anti-gaspi. Tant qu’il n’est pas moisi, il peut servir dans beaucoup de recettes.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Pain sec : chapelure, croûtons, pain perdu, tartines, épaississant de soupe. Pain moisi : poubelle."
+      },
+      {
+        "titre": "Chapelure maison",
+        "contenu": "Mixer ou râper le pain bien sec. Conserver dans un bocal propre et sec."
+      },
+      {
+        "titre": "Croûtons",
+        "contenu": "Couper en dés, ajouter un peu d’huile et d’herbes, puis passer à la poêle ou au four."
+      },
+      {
+        "titre": "Astuce express",
+        "contenu": "Une tranche grillée peut devenir tartine chaude, bruschetta du placard ou base de fromage fondu."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Ministère de la Transition écologique — Gaspillage alimentaire",
+        "url": "https://www.ecologie.gouv.fr/politiques-publiques/gaspillage-alimentaire"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce006.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce006.webp",
+    "parcours_ordre": 7,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce007",
+    "titre": "Restes de riz, pâtes et pommes de terre",
+    "categorie": "Restes cuits",
+    "resume": "Ces restes sont des bases parfaites : salade, poêlée, gratin, omelette. Le lendemain peut très bien avoir du goût.",
+    "url": "astuces/Astuce007.html",
+    "image": "astuces/images/cartes/Astuce007.webp",
+    "niveau_prudence": "important",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Les féculents cuits se réutilisent facilement, mais ils doivent être refroidis et conservés correctement.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Refroidir rapidement, mettre au frais, consommer vite. Transformer en salade, poêlée, gratin ou omelette."
+      },
+      {
+        "titre": "Idées rapides",
+        "contenu": "Riz : salade ou poêlée. Pâtes : gratin ou sauce enrichie. Pommes de terre : poêlée ou omelette."
+      },
+      {
+        "titre": "Sécurité",
+        "contenu": "Ne laissez pas les restes longtemps à température ambiante. Au frigo, utilisez une boîte fermée et consommez rapidement."
+      },
+      {
+        "titre": "Astuce",
+        "contenu": "Un reste un peu sec aime la sauce : tomate, crème, bouillon ou un filet d’huile suffisent souvent."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Anses — Conseils d’hygiène en cuisine",
+        "url": "https://www.anses.fr/fr/content/conseils-dhygiene-dans-la-cuisine-dix-gestes-simples-pour-prevenir-les-risques"
+      },
+      {
+        "titre": "OMS — Five keys to safer food",
+        "url": "https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce007.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce007.webp",
+    "parcours_ordre": 8,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce008",
+    "titre": "Soupe vide-frigo",
+    "categorie": "Recettes anti-gaspi",
+    "resume": "Quelques légumes, de l’eau, un peu d’assaisonnement : la soupe vide-frigo sauve les fins de bac à légumes avec dignité.",
+    "url": "astuces/Astuce008.html",
+    "image": "astuces/images/cartes/Astuce008.webp",
+    "niveau_prudence": "modéré",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "La soupe est la solution douce pour légumes fatigués. Elle accepte beaucoup de choses, sauf les mauvaises odeurs et les aliments douteux.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Légumes triés + eau + cuisson + mixage. Ajouter pomme de terre, lentilles ou pain pour épaissir."
+      },
+      {
+        "titre": "Base simple",
+        "contenu": "Faire revenir un oignon, ajouter les légumes coupés, couvrir d’eau, cuire jusqu’à tendreté, mixer."
+      },
+      {
+        "titre": "Pour épaissir",
+        "contenu": "Ajouter pomme de terre, riz, lentilles corail, pain rassis ou haricots blancs."
+      },
+      {
+        "titre": "Pour servir",
+        "contenu": "Croûtons, fromage, herbes, filet d’huile, restes de pâtes. La soupe aime les petits bonus."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Ministère de la Transition écologique — Gaspillage alimentaire",
+        "url": "https://www.ecologie.gouv.fr/politiques-publiques/gaspillage-alimentaire"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce008.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce008.webp",
+    "parcours_ordre": 9,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce009",
+    "titre": "Gratin de restes",
+    "categorie": "Recettes anti-gaspi",
+    "resume": "Un reste de pâtes, de légumes ou de pommes de terre peut devenir un gratin. Le four fait souvent office de médiateur familial.",
+    "url": "astuces/Astuce009.html",
+    "image": "astuces/images/cartes/Astuce009.webp",
+    "niveau_prudence": "modéré",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Le gratin permet de lier des restes avec un peu de sauce et de fromage ou chapelure. C’est simple, efficace, et souvent meilleur que prévu.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Restes cuits + sauce + dessus gratiné = repas. Surveiller la conservation des restes avant utilisation."
+      },
+      {
+        "titre": "Base",
+        "contenu": "Mettre les restes dans un plat, ajouter sauce tomate, crème, lait ou bouillon, couvrir de fromage ou chapelure, puis gratiner."
+      },
+      {
+        "titre": "Température indicative",
+        "contenu": "En général : 180 à 200 °C, 15 à 25 minutes selon la quantité et l’épaisseur."
+      },
+      {
+        "titre": "Bonus anti-gaspi",
+        "contenu": "Le pain rassis mixé remplace très bien la chapelure. Le fond de fromage devient une croûte honorable."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Anses — Conseils d’hygiène en cuisine",
+        "url": "https://www.anses.fr/fr/content/conseils-dhygiene-dans-la-cuisine-dix-gestes-simples-pour-prevenir-les-risques"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce009.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce009.webp",
+    "parcours_ordre": 10,
+    "image_temporaire": true
+  },
+  {
+    "id": "Astuce010",
+    "titre": "Les bons réflexes avant de jeter",
+    "categorie": "Réflexes anti-gaspi",
+    "resume": "Avant la poubelle : identifier, vérifier, sentir, trier, transformer. Mais si ça sent la défaite, on ne force pas.",
+    "url": "astuces/Astuce010.html",
+    "image": "astuces/images/cartes/Astuce010.webp",
+    "niveau_prudence": "important",
+    "visible": true,
+    "date_creation": "2026-07-09",
+    "date_modification": "2026-07-10",
+    "intro": "Réduire le gaspillage ne veut pas dire tout sauver à tout prix. Il faut distinguer ce qui est encore transformable de ce qui doit être jeté.",
+    "sections": [
+      {
+        "titre": "Résumé en 30 secondes",
+        "contenu": "Regarder la date, l’emballage, l’aspect, l’odeur. Puis décider : cuisiner, congeler, composter si possible, ou jeter si doute sérieux."
+      },
+      {
+        "titre": "La question utile",
+        "contenu": "Est-ce que le produit est dangereux, ou seulement moins joli ? Une carotte tordue se cuisine. Un produit à odeur suspecte ne se négocie pas."
+      },
+      {
+        "titre": "Organiser",
+        "contenu": "Prévoir un bac “à manger vite” dans le frigo. Les aliments prioritaires arrêtent ainsi de jouer à cache-cache."
+      },
+      {
+        "titre": "Partager",
+        "contenu": "Si vous avez trop, donnez ou cuisinez en grande quantité. L’anti-gaspi aime la solidarité."
+      }
+    ],
+    "sources_officielles": [
+      {
+        "titre": "Ministère de la Transition écologique — Gaspillage alimentaire",
+        "url": "https://www.ecologie.gouv.fr/politiques-publiques/gaspillage-alimentaire"
+      },
+      {
+        "titre": "OMS — Five keys to safer food",
+        "url": "https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food"
+      }
+    ],
+    "qrcode": "astuces/qrcodes/Astuce010.webp",
+    "image_resume": "astuces/images/resume-30-secondes/Astuce010.webp",
+    "parcours_ordre": 1,
+    "image_temporaire": true
+  }
+]

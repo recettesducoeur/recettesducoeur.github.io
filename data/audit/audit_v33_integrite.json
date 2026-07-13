@@ -1,0 +1,27 @@
+{
+  "version": "V33",
+  "date": "2026-07-10T13:00:08",
+  "js_checks": {
+    "assets/js/anchor-nav.js": true,
+    "assets/js/app.js": true,
+    "assets/js/dev-base.js": true,
+    "assets/js/import-texte-dev.js": true,
+    "assets/js/layout.js": true,
+    "assets/js/proportions.js": true,
+    "assets/js/recette-semaine.js": true,
+    "assets/js/search.js": true,
+    "assets/js/table-tools-dev.js": true,
+    "assets/js/tips-search.js": true
+  },
+  "broken_links": [],
+  "broken_anchors": [],
+  "missing_assets": [],
+  "sensitive_tips_without_official_sources": [],
+  "performance": {
+    "css_bytes": 42278,
+    "js_bytes": 69656,
+    "webp_bytes": 4461842,
+    "html_bytes": 288934
+  },
+  "critical_ok": true
+}
