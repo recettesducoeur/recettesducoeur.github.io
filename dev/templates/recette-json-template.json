@@ -1,0 +1,105 @@
+{
+  "id": "00000000-000",
+  "titre": "Template vierge de recette",
+  "slug": "template-vierge-recette",
+  "url": "recettes/00000000-000.html",
+  "image": "assets/images/site/recette-default.webp",
+  "qrcode": "recettes/qrcodes/00000000-000.webp",
+  "resume": "Modèle vierge à copier pour créer une nouvelle fiche recette.",
+  "explication": "Cette fiche est un modèle technique. Elle sert de base pour créer une nouvelle recette complète.",
+  "categorie": "template",
+  "sous_categorie": "modele",
+  "moment_repas": [],
+  "temperature_service": "indifferent",
+  "type_cuisson": [],
+  "equipement": [],
+  "temps_preparation_min": 0,
+  "temps_cuisson_min": 0,
+  "temps_total_min": 0,
+  "personnes": 4,
+  "difficulte": "facile",
+  "budget": "economique",
+  "ingredients": {
+    "principaux": [],
+    "secondaires": [],
+    "optionnels": [],
+    "recherche": [
+      "template",
+      "modele",
+      "modèle",
+      "recette vierge"
+    ]
+  },
+  "ingredients_detail": {
+    "principaux": [
+      {
+        "nom": "Ingrédient principal à compléter",
+        "quantite": 0,
+        "unite": "g"
+      }
+    ],
+    "secondaires": [
+      {
+        "nom": "Ingrédient secondaire à compléter",
+        "quantite": 0,
+        "unite": "g"
+      }
+    ],
+    "optionnels": [
+      {
+        "nom": "Ingrédient optionnel à compléter",
+        "quantite": 0,
+        "unite": "g"
+      }
+    ]
+  },
+  "tags": [
+    "template",
+    "dev"
+  ],
+  "regimes": [],
+  "allergenes": [],
+  "conservation": "À compléter.",
+  "rechauffage": "À compléter.",
+  "niveau_urgence_produits": [],
+  "anti_gaspi": false,
+  "recette_semaine_candidate": false,
+  "visible": false,
+  "date_creation": "0000-00-00",
+  "date_modification": "2026-07-09",
+  "etapes": [
+    "Étape 1 à compléter.",
+    "Étape 2 à compléter.",
+    "Étape 3 à compléter."
+  ],
+  "astuce": "Astuce anti-gaspi à compléter.",
+  "variantes": "Variantes possibles à compléter.",
+  "valeurs_reference": {
+    "type_cuisson": [
+      "four",
+      "casserole",
+      "poele",
+      "vapeur",
+      "micro_ondes",
+      "sans_cuisson"
+    ],
+    "allergenes": [
+      "gluten",
+      "lait",
+      "oeuf",
+      "œuf",
+      "arachides",
+      "soja",
+      "fruits_a_coque",
+      "crustaces",
+      "poisson",
+      "mollusques",
+      "celeri",
+      "moutarde",
+      "sesame",
+      "sulfites",
+      "lupin"
+    ]
+  },
+  "pdf": "recettes/pdf/00000000-000.pdf"
+}

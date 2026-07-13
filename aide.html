@@ -7,10 +7,13 @@
   <meta name="description" content="Aide pour utiliser Les Recettes du Cœur : recherche, impression, cuisine, partage, suggestion, nutrition estimée et repères alimentaires.">
   <link rel="icon" href="assets/logos/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/recipes.css">
+  <link rel="stylesheet" href="assets/css/print.css" media="print">
   <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/anchor-nav.js"></script>
   <script defer src="assets/js/app.js"></script>
   <script defer src="assets/js/table-tools-dev.js"></script>
-</head>
+<script defer src="assets/js/print-page.js"></script></head>
 <body>
   <div data-site-header></div>
   <main id="contenu" class="container help-page">
@@ -19,9 +22,18 @@
       <span class="kicker">❓ Mode d’emploi</span>
       <h1>Aide et fonctionnement</h1>
       <p class="lead">Le site est pensé comme une cuisine bien rangée : on cherche, on adapte, on imprime, on cuisine, puis on partage les bonnes idées. Sans panique, sans jargon, et avec un peu moins de vaisselle si possible.</p>
+      <nav class="help-anchor-nav no-print" aria-label="Navigation rapide de l’aide">
+        <a class="button ghost" href="#recherche">🔎 Rechercher</a>
+        <a class="button ghost" href="#cuisiner">👩‍🍳 Cuisiner</a>
+        <a class="button ghost" href="#imprimer">🖨️ Imprimer</a>
+        <a class="button ghost" href="#partager-suggerer">🤝 Partager</a>
+        <a class="button ghost" href="#reperes-alimentaires">🧭 Repères</a>
+        <a class="button ghost" href="#valeurs-nutritionnelles">📊 Nutrition</a>
+        <a class="button ghost" href="astuces-anti-gaspi.html">🧺 Astuces anti-gaspi</a>
+      </nav>
     </section>
 
-    <section class="page-card" id="recherche">
+    <section class="page-card" id="recherche" data-anchor-label="🔎 Rechercher une recette">
       <h2>🔎 Rechercher une recette</h2>
       <p>La recherche ignore les majuscules, les accents et les pluriels simples. Vous pouvez donc écrire <strong>pates</strong>, <strong>pâtes</strong>, <strong>courgette</strong> ou <strong>courgettes</strong> : le site fait le rapprochement.</p>
 
@@ -48,7 +60,7 @@
       <p>Dans les fiches recettes, plusieurs champs sont cliquables : catégorie, sous-catégorie, cuisson, température, budget, difficulté, moment du repas, équipement, régimes, allergènes, tags et repères alimentaires.</p>
     </section>
 
-    <section class="page-card" id="cuisiner">
+    <section class="page-card" id="cuisiner" data-anchor-label="👩‍🍳 Cuisiner avec une fiche">
       <h2>👩‍🍳 Cuisiner avec une fiche</h2>
       <p>Chaque fiche contient les ingrédients, les étapes, une astuce anti-gaspi, des variantes, une cuisson indicative et des repères alimentaires.</p>
       <div class="notice warm-note">
@@ -58,14 +70,14 @@
       <p>Le calculateur de portions adapte les quantités proportionnellement. Les valeurs nutritionnelles restent calculées sur les quantités de base de la fiche.</p>
     </section>
 
-    <section class="page-card" id="imprimer">
+    <section class="page-card" id="imprimer" data-anchor-label="🖨️ Imprimer ou télécharger">
       <h2>🖨️ Imprimer ou télécharger</h2>
       <p>Sur ordinateur, vous pouvez imprimer la fiche. Sur mobile et tablette, le téléchargement PDF reste disponible. C’est pratique pour cuisiner sans poser le téléphone dans la farine.</p>
       <h3>QR codes</h3>
       <p>Chaque recette dispose d’un QR code pour ouvrir directement la fiche en ligne. Le site possède aussi un QR code général sur l’accueil, la page contact et la page de suggestion.</p>
     </section>
 
-    <section class="page-card" id="partager-suggerer">
+    <section class="page-card" id="partager-suggerer" data-anchor-label="🤝 Partager et suggérer">
       <h2>🤝 Partager et suggérer</h2>
       <p>Une bonne recette simple mérite de circuler. Vous pouvez partager une fiche, utiliser son QR code ou proposer une idée depuis la page dédiée.</p>
       <div class="help-grid">
@@ -80,7 +92,7 @@
       </div>
     </section>
 
-    <section class="page-card" id="reperes-alimentaires">
+    <section class="page-card" id="reperes-alimentaires" data-anchor-label="🧭 Repères alimentaires et allergènes">
       <h2>🧭 Repères alimentaires et allergènes</h2>
       <p>Les repères alimentaires indiquent des informations pratiques comme : <strong>Sans porc</strong>, <strong>Végétarien</strong>, <strong>Vegan possible</strong>, <strong>Contient lait</strong>, <strong>Sans gluten possible</strong>, etc.</p>
       <div class="notice allergen-markers-note">
@@ -90,7 +102,7 @@
       <p>Vérifiez toujours les étiquettes, les marques utilisées, les contaminations croisées possibles et les remplacements d’ingrédients.</p>
     </section>
 
-    <section class="page-card" id="valeurs-nutritionnelles">
+    <section class="page-card" id="valeurs-nutritionnelles" data-anchor-label="📊 Valeurs nutritionnelles estimées et Nutri-Score estimé">
       <h2>📊 Valeurs nutritionnelles estimées et Nutri-Score estimé</h2>
       <p>Les fiches peuvent afficher une rubrique <strong>Valeurs nutritionnelles estimées</strong>. Ces valeurs sont calculées automatiquement à partir des quantités de base et d’ingrédients génériques. Elles sont données à titre indicatif.</p>
 
@@ -122,7 +134,13 @@
       <p class="small">Pour ce site, les calculs sont volontairement prudents et simplifiés. Ils servent à donner un ordre de grandeur pour des recettes maison, pas à produire une déclaration nutritionnelle officielle.</p>
     </section>
 
-  </main>
+  
+    <section class="page-card" id="astuces-anti-gaspi-aide" data-anchor-label="🧺 Astuces anti-gaspi">
+      <h2>🧺 Astuces anti-gaspi</h2>
+      <p>La page <a href="astuces-anti-gaspi.html">Astuces anti-gaspi</a> rassemble des fiches pratiques : dates DLC/DDM, frigo, congélation, fruits mûrs, légumes fatigués, pain rassis et restes à transformer.</p>
+      <p class="small">Objectif : moins jeter, mieux cuisiner, et garder le frigo sous contrôle avant qu’il ne réclame un inventaire notarié.</p>
+    </section>
+  <section class="page-card" id="fonctionnement-v37"><h2>🧩 Fonctionnement des fiches V37</h2><ul><li>Le bouton <strong>Imprimer la fiche affichée</strong> conserve les portions et quantités visibles à l’écran.</li><li>Le PDF téléchargeable correspond à la recette de référence.</li><li>Le QR code ouvre la fiche en ligne.</li><li>La section <strong>Sources d’inspiration</strong> contient une recherche Google générique puis les sources particulières disponibles.</li><li>Les ingrédients optionnels et variantes sont exclus des calculs nutritionnels.</li><li>Les valeurs nutritionnelles et le Nutri-Score sont des estimations indicatives et non officielles.</li></ul></section></main>
   <div data-site-footer></div>
 </body>
 </html>

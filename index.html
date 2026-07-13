@@ -7,7 +7,10 @@
   <meta name="description" content="Cuisine simple, solidaire et anti-gaspi : fiches recettes visuelles et imprimables à partir de produits courants.">
   <link rel="icon" href="assets/logos/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/recipes.css">
+  <link rel="stylesheet" href="assets/css/print.css" media="print">
   <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/anchor-nav.js"></script>
   <script defer src="assets/js/app.js"></script>
 </head>
 <body>
@@ -30,7 +33,7 @@
         </div>
       </div>
       <div class="hero-card home-logo-card">
-        <img src="assets/logos/logo-principal.png" alt="Logo Les Recettes du Cœur">
+        <img src="assets/logos/logo-principal.webp" alt="Logo Les Recettes du Cœur">
       </div>
     </section>
 
@@ -41,65 +44,26 @@
         <p>Scannez ce QR code pour ouvrir directement <strong>Les Recettes du Cœur</strong>.</p>
         <p class="small">https://recettesducoeur.github.io/</p>
       </div>
-      <img src="qrcodes/site.png" alt="QR code vers la page d’accueil Les Recettes du Cœur">
+      <img src="qrcodes/site.webp" alt="QR code vers la page d’accueil Les Recettes du Cœur">
     </section>
 
 
-    <section class="page-card">
+    <section class="page-card" data-anchor-label="⭐ Recette de la semaine">
       <h2>⭐ Recette de la semaine</h2>
       <p>Découvrez une sélection adaptée à la semaine en cours.</p>
       <a class="button" href="recette-semaine.html">Voir la sélection</a>
     </section>
 
-    <section>
-      <h2>Quelques recettes</h2>
+    <section data-anchor-label="Quelques recettes">
+      <h2>Les 10 dernières recettes</h2>
       <div data-json-error></div>
       <div id="recettes-accueil" class="recipe-grid">
 
-    <article class="recipe-card">
-      <img src="images/recettes/20000101-001.webp" alt="Illustration : Gratin de pâtes au thon" loading="lazy">
-      <div class="recipe-card-content">
-        <h3>Gratin de pâtes au thon</h3>
-        <p>Une recette simple et accessible : gratin de pâtes au thon.</p>
-        <div class="meta">
-          <span>⏱️ 30 min</span>
-          <span>👥 4</span>
-          <span>🔥 Four, Casserole</span>
-        </div>
-        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=familial">Familial</a></div>
-        <a class="button" href="recettes/20000101-001.html">Voir la recette</a>
-      </div>
-    </article>
+    
 
-    <article class="recipe-card">
-      <img src="images/recettes/20000101-002.webp" alt="Illustration : Riz au lait à la banane" loading="lazy">
-      <div class="recipe-card-content">
-        <h3>Riz au lait à la banane</h3>
-        <p>Une recette simple et accessible : riz au lait à la banane.</p>
-        <div class="meta">
-          <span>⏱️ 30 min</span>
-          <span>👥 4</span>
-          <span>🔥 Casserole</span>
-        </div>
-        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=dessert">Dessert</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=enfants">Enfants</a></div>
-        <a class="button" href="recettes/20000101-002.html">Voir la recette</a>
-      </div>
-    </article>
+    
 
-    <article class="recipe-card">
-      <img src="images/recettes/20000101-003.webp" alt="Illustration : Soupe de légumes simple" loading="lazy">
-      <div class="recipe-card-content">
-        <h3>Soupe de légumes simple</h3>
-        <p>Une recette simple et accessible : soupe de légumes simple.</p>
-        <div class="meta">
-          <span>⏱️ 45 min</span>
-          <span>👥 4</span>
-          <span>🔥 Casserole</span>
-        </div>
-        <div class="badges"><a class="badge filter-link" href="recherche.html?tag=simple">Simple</a><a class="badge filter-link" href="recherche.html?tag=economique">Économique</a><a class="badge filter-link" href="recherche.html?tag=anti_gaspi">Anti-gaspi</a><a class="badge filter-link" href="recherche.html?tag=legumes">Legumes</a></div>
-        <a class="button" href="recettes/20000101-003.html">Voir la recette</a>
-      </div>
-    </article>
+    
       </div>
     </section>
   </main>

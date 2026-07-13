@@ -1,8 +1,49 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Dev — Les Recettes du Cœur</title><link rel="icon" href="../assets/logos/favicon.ico"><link rel="stylesheet" href="../assets/css/style.css"><script defer src="../assets/js/layout.js"></script><script defer src="../assets/js/app.js"></script><script defer src="../assets/js/table-tools-dev.js"></script></head><body><div data-site-header></div><main id="contenu" class="container dev-page"><section class="page-card"><span class="kicker">🛠️ Développement</span><h1>Index technique</h1><p class="lead">Pages internes de contrôle, diagnostic, import et maintenance du site.</p><div class="notice">Ces pages sont regroupées dans <code>/dev/</code> pour séparer clairement le public et les outils de maintenance.</div></section><section class="recipe-grid"><article class="page-card dev-panel"><h2>Diagnostic déploiement</h2><p>Contrôle de chargement des fichiers essentiels.</p><a class="button" href="diagnostic-deploiement.html">Ouvrir</a></article>
-<article class="page-card dev-panel"><h2>Base recettes</h2><p>Vue technique de la base de recettes.</p><a class="button" href="base-recettes-dev.html">Ouvrir</a></article>
-<article class="page-card dev-panel"><h2>Dictionnaire de données</h2><p>Champs, valeurs de référence et cohérence des données.</p><a class="button" href="dictionnaire-donnees-dev.html">Ouvrir</a></article>
-<article class="page-card dev-panel"><h2>Import texte</h2><p>Outil de préparation/import manuel de contenu.</p><a class="button" href="import-texte-dev.html">Ouvrir</a></article>
-<article class="page-card dev-panel"><h2>Audit responsive</h2><p>Contrôle visuel et technique du responsive.</p><a class="button" href="responsive-audit-dev.html">Ouvrir</a></article>
-<article class="page-card dev-panel"><h2>Template recette</h2><p>Fiche modèle invisible utilisée comme référence.</p><a class="button" href="../recettes/00000000-000.html">Ouvrir</a></article>
-<article class="page-card dev-panel"><h2>Accueil public</h2><p>Retour au site public.</p><a class="button" href="../index.html">Ouvrir</a></article></section></main><div data-site-footer></div></body></html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dev — Les Recettes du Cœur</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/recipes.css">
+  <link rel="stylesheet" href="../assets/css/print.css" media="print">
+</head>
+<body>
+  <main class="container">
+    <section class="page-card">
+      <h1>🛠️ Espace développement</h1>
+      <p class="lead">Pages et documents utiles pour maintenir le site.</p>
+
+      <h2>📚 Briefs</h2>
+      <ul>
+        <li><a href="documentation/03_Charte_Editoriale.md">Créer une fiche recette complète</a> — voir aussi <a href="documentation/08_Photographies.md">photographies</a> et <a href="documentation/09_Guide_Technique.md">procédure technique</a></li>
+        <li><a href="documentation/08_Photographies.md">Images photo-réalistes des recettes</a></li>
+        <li><a href="documentation/07_Illustrations_IA.md">Visuels illustrés du site</a> — voir aussi <a href="documentation/06_Mascottes.md">mascottes</a></li>
+      </ul>
+
+      <h2>📄 Templates</h2>
+      <ul>
+        <li><a href="templates/recette-template.html">Template fiche recette</a></li>
+        <li><a href="templates/astuce-template.html">Template fiche astuce</a></li>
+        <li><a href="templates/recette-json-template.json">Template JSON recette</a></li>
+      </ul>
+
+      <h2>🧰 Outils</h2>
+      <ul>
+        <li><a href="outils/base-recettes-dev.html">Base recettes dev</a></li>
+        <li><a href="outils/dictionnaire-donnees-dev.html">Dictionnaire données dev</a></li>
+        <li><a href="outils/import-texte-dev.html">Import texte dev</a></li>
+        <li><a href="outils/responsive-audit-dev.html">Audit responsive dev</a></li>
+      </ul>
+
+      <h2>📊 Audits</h2>
+      <ul>
+        <li><a href="../data/audit/audit_v32_integrite.json">Audit intégrité V32</a></li>
+        <li><a href="../data/audit/audit_v32_pdf_generation.json">Audit PDF V32</a></li>
+      </ul>
+
+      <p><a class="button ghost" href="../index.html">Retour au site</a></p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audit responsive — dev — Les Recettes du Cœur</title>
+  <link rel="icon" href="../../assets/logos/favicon.ico">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/recipes.css">
+  <link rel="stylesheet" href="../../assets/css/print.css" media="print">
+  <script defer src="../../assets/js/layout.js"></script>
+  <script defer src="../../assets/js/anchor-nav.js"></script>
+  <script defer src="../../assets/js/app.js"></script>
+  <script defer src="../../assets/js/table-tools-dev.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+  <main id="contenu" class="container dev-page dev-page dev-page">
+    <section class="page-card">
+      <span class="kicker">🛠️ Page dev</span>
+      <h1>Audit responsive</h1>
+      <p class="lead">Contrôle statique de la compatibilité PC, tablette et smartphone.</p>
+      <div class="dev-ok">✅ Correctifs responsive V8 appliqués au CSS global.</div>
+      <p class="small">Page volontairement non mise en avant dans le menu principal.</p>
+    </section>
+
+    <section class="table-scroll">
+      <table id="responsive-table" class="data-table">
+        <thead>
+          <tr>
+            <th>Point vérifié</th>
+            <th>Résultat / règle appliquée</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>Viewport mobile</td><td>Présent sur toutes les pages HTML</td></tr>
+<tr><td>Chemins relatifs GitHub Pages</td><td>Aucun chemin absolu / détecté</td></tr>
+<tr><td>Grilles recettes</td><td>3 colonnes desktop, 2 colonnes tablette, 1 colonne smartphone</td></tr>
+<tr><td>Fiches recettes</td><td>Passage en une colonne sur tablette/smartphone</td></tr>
+<tr><td>Métadonnées recette</td><td>5 colonnes desktop, 2 colonnes tablette, 1 colonne smartphone</td></tr>
+<tr><td>Ingrédients</td><td>3 colonnes desktop, 2 colonnes tablette, 1 colonne smartphone</td></tr>
+<tr><td>Menu</td><td>Menu complet desktop, bouton menu mobile sous 900px</td></tr>
+<tr><td>Boutons</td><td>Largeur pleine sur smartphone pour éviter les débordements</td></tr>
+<tr><td>Tableaux dev</td><td>Scroll horizontal/vertical contrôlé dans le conteneur</td></tr>
+<tr><td>404</td><td>Image responsive avec largeur maximale et hauteur limitée</td></tr>
+<tr><td>Impression</td><td>CSS print conservé pour fiches recette</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="page-card" data-anchor-label="Breakpoints utilisés">
+      <h2>Breakpoints utilisés</h2>
+      <ul>
+        <li><strong>Desktop :</strong> au-dessus de 1100px.</li>
+        <li><strong>Tablette / petit écran :</strong> sous 900px.</li>
+        <li><strong>Mobile large :</strong> sous 700px.</li>
+        <li><strong>Smartphone :</strong> sous 520px.</li>
+        <li><strong>Très petit smartphone :</strong> sous 360px.</li>
+      </ul>
+      <p>Les pages dev avec gros tableaux gardent un ascenseur horizontal interne, ce qui est normal : le tableau ne casse pas la page.</p>
+    </section>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const table = document.getElementById("responsive-table");
+      initDataTable(table);
+    });
+  </script>
+  <div data-site-footer></div>
+</body>
+</html>

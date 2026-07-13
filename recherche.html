@@ -7,7 +7,10 @@
   <meta name="description" content="Recherche de recettes simples, solidaires et anti-gaspi.">
   <link rel="icon" href="assets/logos/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/recipes.css">
+  <link rel="stylesheet" href="assets/css/print.css" media="print">
   <script defer src="assets/js/layout.js"></script>
+  <script defer src="assets/js/anchor-nav.js"></script>
   <script defer src="assets/js/app.js"></script>
 </head>
 <body>
@@ -15,27 +18,28 @@
   <main id="contenu" class="container search-page">
     <section class="page-card">
       <h1>🔎 Recherche</h1>
-      <p class="lead">Cherchez par nom de recette, ingrédient, catégorie, cuisson, tags ou filtres rapides. La recherche ignore la casse, les accents et les pluriels simples.</p>
+      <p class="lead">Cherchez par mots-clés, ingrédient, catégorie, cuisson, tags ou filtres rapides. La recherche ignore la casse, les accents et les pluriels simples.</p>
       <p class="small">Les boutons de catégorie, cuisson, budget, difficulté, régimes, allergènes, équipement et tags peuvent aussi être cliqués depuis une fiche recette.</p>
     </section>
 
     <section class="search-panel">
       <div class="tabs">
-        <button class="tab-button" data-tab="nom">🔎 Nom recette</button>
-        <button class="tab-button" data-tab="ingredient">🧺 Ingrédient</button>
+        <button class="tab-button" data-tab="nom">🔎 Mots-clés</button>
+        <button class="tab-button" data-tab="ingredient">🥕 J’ai ces ingrédients</button>
         <button class="tab-button" data-tab="mes-ingredients">✅ J’ai ces ingrédients</button>
-        <button class="tab-button" data-tab="categorie">🍽️ Catégorie</button>
-        <button class="tab-button" data-tab="cuisson">🔥 Cuisson</button>
-        <button class="tab-button" data-tab="tags">🏷️ Tags</button>
-        <button class="tab-button" data-tab="filtres">⚙️ Filtres rapides</button>
+        <button class="tab-button" data-tab="categorie">🍽️ Je cherche</button>
+        <button class="tab-button" data-tab="cuisson">🛠️ Voici mes équipements</button>
+        <button class="tab-button" data-tab="tags">🚫 Je souhaite éviter</button>
+        <button class="tab-button" data-tab="filtres">⚙️ Affiner la recherche</button>
       </div>
 
       <div id="url-filter-notice"></div>
       <div data-json-error></div>
 
       <div data-panel="nom">
-        <label for="search-nom">Nom de recette ou mot-clé</label>
-        <input id="search-nom" type="search" placeholder="Exemple : gratin, soupe, gâteau...">
+        <label for="search-nom">Recherche par mots-clés</label>
+        <input id="search-nom" type="search" placeholder="Exemple : gratin, soupe, rapide, sans lait, four...">
+        <p class="small">Recherche large dans les titres, résumés, ingrédients, catégories, tags, modes de cuisson, équipements, régimes et allergènes.</p>
       </div>
 
       <div data-panel="ingredient" class="hidden">
@@ -75,7 +79,7 @@
       </div>
 
       <div data-panel="filtres" class="hidden">
-        <h2>⚙️ Filtres rapides</h2>
+        <h2>⚙️ Affiner la recherche</h2>
         <p class="small">Ces filtres correspondent aux champs cliquables dans les fiches recettes.</p>
         <div class="form-row">
           <div><label for="filter-categorie">Catégorie</label><select id="filter-categorie"></select></div>
@@ -103,9 +107,11 @@
       </div>
     </section>
 
-    <section>
-      <h2>Résultats</h2>
+    <section data-anchor-label="Résultats">
+      <h2 id="search-results-heading">Résultats</h2>
+      <p id="search-results-count" class="small" aria-live="polite"></p>
       <div id="resultats-recherche" class="recipe-grid"></div>
+      <nav id="search-pagination" class="pagination" aria-label="Pagination des résultats"></nav>
     </section>
   </main>
   <div data-site-footer></div>
