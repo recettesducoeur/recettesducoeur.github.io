@@ -1,0 +1,53 @@
+/* Impression générique — Les Recettes du Cœur */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  body.print-mode > * {
+    display: none !important;
+  }
+
+  body.print-mode > .print-target,
+  body.print-mode .print-target {
+    display: block !important;
+  }
+
+  .no-print,
+  [data-site-header],
+  [data-site-footer],
+  .recipe-actions,
+  .portion-tool {
+    display: none !important;
+  }
+
+  .recipe-sheet,
+  .recipe-section,
+  .page-card,
+  .soft-box {
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  details {
+    display: block !important;
+  }
+
+  details > summary {
+    display: none !important;
+  }
+
+  details > .details-content {
+    display: block !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}

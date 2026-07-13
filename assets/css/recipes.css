@@ -1,0 +1,45 @@
+/* V33 — composants recettes */
+.recipe-bottom-layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(280px,2fr);gap:1rem;align-items:start}.food-markers-notes{display:grid;gap:.35rem;margin-top:.75rem}.food-markers-notes p,.compact-filter-list p{margin:.4rem 0}.compact-nutrition .nutrition-table th,.compact-nutrition .nutrition-table td{padding:.38rem .45rem;font-size:.92rem;line-height:1.2;white-space:nowrap}.compact-nutrition .nutrition-table th:first-child,.compact-nutrition .nutrition-table td:first-child{width:34%}.compact-nutrition .nutrition-table th:nth-child(2),.compact-nutrition .nutrition-table td:nth-child(2){width:34%}.compact-nutrition .nutrition-table th:nth-child(3),.compact-nutrition .nutrition-table td:nth-child(3){width:32%}.badge-allergen,.allergen-badges .badge{background:#ffe8e8;color:#9f1239;border:1px solid #fecaca;box-shadow:0 2px 8px rgba(159,18,57,.08)}.badge-allergen:hover,.badge-allergen:focus,.allergen-badges .badge:hover,.allergen-badges .badge:focus{background:#fecaca;color:#7f1d1d;border-color:#fca5a5}.allergen-warning{margin-top:.25rem;color:#7f1d1d}.hero-critical{content-visibility:auto}@media(max-width:900px){.recipe-bottom-layout{grid-template-columns:1fr}}
+
+/* V37 additions */
+/* Compléments du template recette V37 */
+.sources-section {
+  border-radius: var(--radius, 18px);
+}
+
+.sources-section > summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.15rem;
+  list-style: none;
+}
+
+.sources-section > summary::-webkit-details-marker {
+  display: none;
+}
+
+.sources-section > summary::after {
+  content: "＋";
+  float: right;
+}
+
+.sources-section[open] > summary::after {
+  content: "−";
+}
+
+.details-content {
+  margin-top: 1rem;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.source-list li + li {
+  margin-top: .55rem;
+}
+
+.pdf-note {
+  flex-basis: 100%;
+}

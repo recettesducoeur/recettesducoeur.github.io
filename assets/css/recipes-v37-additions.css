@@ -1,0 +1,41 @@
+/* Compléments du template recette V37 */
+.sources-section {
+  border-radius: var(--radius, 18px);
+}
+
+.sources-section > summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.15rem;
+  list-style: none;
+}
+
+.sources-section > summary::-webkit-details-marker {
+  display: none;
+}
+
+.sources-section > summary::after {
+  content: "＋";
+  float: right;
+}
+
+.sources-section[open] > summary::after {
+  content: "−";
+}
+
+.details-content {
+  margin-top: 1rem;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.source-list li + li {
+  margin-top: .55rem;
+}
+
+.pdf-note {
+  flex-basis: 100%;
+}

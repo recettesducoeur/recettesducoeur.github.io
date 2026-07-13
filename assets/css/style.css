@@ -1684,3 +1684,132 @@ h3:hover .heading-anchor,
   background:#f8fafc;
   border-left:4px solid #64748b;
 }
+
+/* V31 — astuces anti-gaspi, cartes et performance */
+.tips-hero,
+.astuce-hero{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:1.25rem;
+  align-items:center;
+}
+
+.tips-hero img,
+.astuce-hero img{
+  width:100%;
+  max-height:430px;
+  object-fit:contain;
+  border-radius:28px;
+  background:#fff;
+}
+
+.tips-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:1rem;
+}
+
+.tip-card{
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  border-radius:22px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.tip-card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#fff;
+}
+
+.tip-card-content{
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+  gap:.55rem;
+  flex:1;
+}
+
+.tip-card-content .button{
+  margin-top:auto;
+}
+
+.astuce-section{
+  border-left:4px solid var(--green);
+}
+
+.astuce-summary{
+  background:#f0fdf4;
+  border-left:4px solid var(--green);
+}
+
+.sources-details{
+  margin-bottom:1.5rem;
+}
+
+.help-anchor-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+  margin-top:1rem;
+}
+
+.help-anchor-nav a{
+  text-decoration:none;
+}
+
+.performance-note{
+  background:#f8fafc;
+  border-left:4px solid #0ea5e9;
+}
+
+@media(max-width:900px){
+  .tips-hero,
+  .astuce-hero{
+    grid-template-columns:1fr;
+  }
+
+  .tips-hero img,
+  .astuce-hero img{
+    max-height:320px;
+  }
+}
+
+/* V32 - Méta recette compacte et responsive */
+.recipe-meta.recipe-meta-inline{
+  display:grid;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:.65rem;
+  align-items:stretch;
+}
+.recipe-meta.recipe-meta-inline .meta-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.45rem;
+  min-height:auto;
+  padding:.8rem .7rem;
+  white-space:nowrap;
+  line-height:1.15;
+}
+@media (max-width: 900px){
+  .recipe-meta.recipe-meta-inline{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media (max-width: 560px){
+  .recipe-meta.recipe-meta-inline{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .recipe-meta.recipe-meta-inline .meta-box{white-space:normal;}
+}
+/* V32 - Images de cartes recettes cliquables */
+.recipe-card-image-link{display:block;overflow:hidden;border-radius:22px 22px 0 0;}
+.recipe-card-image-link img{transition:transform .18s ease, opacity .18s ease;}
+.recipe-card-image-link:hover img,.recipe-card-image-link:focus img{transform:scale(1.015);opacity:.96;}
+
+/* V33 — variables et navigation */
+:root{--color-danger:#9f1239;--color-danger-bg:#ffe8e8;--color-danger-border:#fecaca;--space-xs:.35rem;--space-sm:.65rem;--space-md:1rem;--space-lg:1.5rem}.anchor-nav{display:flex;flex-wrap:wrap;gap:.55rem;margin:1rem 0 1.25rem}.anchor-nav a{text-decoration:none;white-space:nowrap}.back-to-top{position:fixed;right:1rem;bottom:1rem;z-index:50;display:none}.back-to-top.is-visible{display:inline-flex}html{scroll-behavior:smooth}[id]{scroll-margin-top:7rem}@media(max-width:700px){.anchor-nav{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:.35rem}.anchor-nav a{scroll-snap-align:start}}
+
+/* V34 — Cartes cliquables et illustrations temporaires des astuces */
+.card-image-link{display:block;overflow:hidden;border-radius:22px 22px 0 0}.card-image-link img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .18s ease,opacity .18s ease}.card-image-link:hover img,.card-image-link:focus-visible img{transform:scale(1.02);opacity:.96}.card-image-link:focus-visible,.card-title-link:focus-visible{outline:3px solid var(--blue,#0867a3);outline-offset:3px}.card-title-link{color:inherit;text-decoration:none}.card-title-link:hover{text-decoration:underline}.tip-card{display:flex;flex-direction:column;height:100%}.tip-card-content{display:flex;flex:1;flex-direction:column}.tip-card-content .button{margin-top:auto;align-self:flex-start}.tip-summary-visual{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:.75rem 0 1rem;border-radius:18px;border:1px solid rgba(8,103,163,.14)}.tips-search-status{margin:.55rem 0 1rem;font-weight:700}.qr-row{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:1.25rem;align-items:center}.qr-row img{width:100%;max-width:240px;height:auto}@media(max-width:640px){.qr-row{grid-template-columns:1fr}}
