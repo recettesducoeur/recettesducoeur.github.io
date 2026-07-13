@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ recette.seo.titre }} — Les Recettes du Cœur</title>
+  <meta name="description" content="{{ recette.seo.description }}">
+  <link rel="canonical" href="{{ recette.urls.canonique }}">
+  <link rel="icon" href="../assets/logos/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/recipes.css">
+  <link rel="stylesheet" href="../assets/css/print.css" media="print">
+  <script defer src="../assets/js/layout.js"></script>
+  <script defer src="../assets/js/anchor-nav.js"></script>
+  <script defer src="../assets/js/proportions.js"></script>
+  <script defer src="../assets/js/print-page.js"></script>
+</head>
+<body>
+  <div data-site-header></div>
+
+  <main id="contenu" class="recipe-sheet" data-recipe-id="{{ recette.id }}">
+
+    <section class="recipe-hero page-card">
+      <div class="recipe-hero-content">
+        <h1>{{ recette.contenu.titre }}</h1>
+        <p class="lead">{{ recette.contenu.accroche }}</p>
+        {% if recette.contenu.introduction %}<p>{{ recette.contenu.introduction }}</p>{% endif %}
+
+        <div class="badge-groups recipe-badge-summary">
+          {% if recette.classification.categorie or recette.classification.sous_categorie %}
+          <div class="badge-group badge-group-type">
+            <span class="badge-group-label">🍽️ Type</span>
+            <div class="badges">
+              {% if recette.classification.categorie %}
+              <a class="badge badge-type filter-link" href="../recherche.html?categorie={{ recette.classification.categorie.id }}">{{ recette.classification.categorie.label }}</a>
+              {% endif %}
+              {% if recette.classification.sous_categorie %}
+              <a class="badge badge-type-secondary filter-link" href="../recherche.html?sous-categorie={{ recette.classification.sous_categorie.id }}">{{ recette.classification.sous_categorie.label }}</a>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if recette.regimes %}
+          <div class="badge-group badge-group-regime">
+            <span class="badge-group-label">🥬 Régimes</span>
+            <div class="badges">
+              {% for regime in recette.regimes %}
+              <a class="badge badge-regime filter-link" href="../recherche.html?regime={{ regime.id }}">{{ regime.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if recette.compatibilites %}
+          <div class="badge-group badge-group-compatibility">
+            <span class="badge-group-label">✅ Compatibilités</span>
+            <div class="badges">
+              {% for compatibilite in recette.compatibilites %}
+              <a class="badge badge-compatibility filter-link" href="../recherche.html?compatibilite={{ compatibilite.id }}">{{ compatibilite.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if recette.allergenes %}
+          <div class="badge-group badge-group-allergens">
+            <span class="badge-group-label">⛔ Allergènes présents</span>
+            <div class="badges allergen-badges">
+              {% for allergene in recette.allergenes %}
+              <a class="badge badge-allergen filter-link" href="../recherche.html?exclure={{ allergene.id }}" aria-label="Exclure les recettes contenant : {{ allergene.label }}">{{ allergene.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if recette.classification.caracteristiques %}
+          <div class="badge-group badge-group-features">
+            <span class="badge-group-label">✨ Caractéristiques</span>
+            <div class="badges">
+              {% for caracteristique in recette.classification.caracteristiques %}
+              <a class="badge badge-feature filter-link" href="../recherche.html?caracteristique={{ caracteristique.id }}">{{ caracteristique.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <a class="recipe-image-link" href="images/{{ recette.image.fichier }}" aria-label="Voir l’image de la recette : {{ recette.contenu.titre }}">
+        <img class="recipe-image hero-critical" src="images/{{ recette.image.fichier }}" alt="{{ recette.image.alt }}" decoding="async" fetchpriority="high">
+      </a>
+    </section>
+
+    <section class="recipe-meta recipe-meta-inline" aria-label="Informations principales">
+      <div class="meta-box">👥 <span id="base-portions" data-base-portions="{{ recette.portions.reference }}">{{ recette.portions.reference }}</span> personnes</div>
+      <div class="meta-box">⏱️ {{ recette.temps.total_minutes }} min</div>
+      <div class="meta-box">🌡️ {% for temperature in recette.classification.temperature_service %}{{ temperature.label }}{% if not loop.last %} / {% endif %}{% endfor %}</div>
+      <div class="meta-box">🛠️ {% for equipement in recette.equipements %}{{ equipement.label }}{% if not loop.last %}, {% endif %}{% endfor %}</div>
+      <div class="meta-box">💶 {{ recette.budget.label }}</div>
+      <div class="meta-box">⭐ {{ recette.difficulte.label }}</div>
+    </section>
+
+    <section class="portion-tool no-print" id="quantites" data-anchor-label="⚖️ Quantités">
+      <h2>⚖️ Adapter les quantités</h2>
+      <label for="portions-input">Nombre de personnes souhaité</label>
+      <input id="portions-input" type="number" min="{{ recette.portions.minimum }}" max="{{ recette.portions.maximum }}" step="1" value="{{ recette.portions.reference }}">
+      <p id="ratio-info" class="small"></p>
+    </section>
+
+    <section class="recipe-section" id="ingredients" data-anchor-label="🧺 Ingrédients">
+      <h2>🧺 Ingrédients avec quantités</h2>
+      <div class="ingredients-grid">
+        {% for groupe_id, groupe_label, groupe in [
+          ('principaux', 'Principaux', recette.ingredients.principaux),
+          ('secondaires', 'Secondaires', recette.ingredients.secondaires),
+          ('optionnels', 'Optionnels', recette.ingredients.optionnels)
+        ] %}
+        {% if groupe %}
+        <div class="soft-box ingredient-group ingredient-group-{{ groupe_id }}">
+          <h3>{{ groupe_label }}</h3>
+          <ul>
+            {% for ingredient in groupe %}
+            <li data-ingredient-id="{{ ingredient.id }}">
+              <span class="qty" data-base-qty="{{ ingredient.quantite }}" data-unit="{{ ingredient.unite.id }}">{{ ingredient.quantite_affichee }}</span>
+              — {{ ingredient.libelle }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="recipe-section" id="preparation" data-anchor-label="👩‍🍳 Préparation">
+      <h2>👩‍🍳 Préparation détaillée</h2>
+      <ol class="recipe-steps">
+        {% for etape in recette.preparation.etapes %}<li>{{ etape }}</li>{% endfor %}
+      </ol>
+      {% if recette.preparation.cuisson_indicative.texte %}
+      <aside class="preparation-comment notice notice-warning">
+        <h3>🔥 Cuisson indicative</h3>
+        <p>{{ recette.preparation.cuisson_indicative.texte }}</p>
+      </aside>
+      {% endif %}
+    </section>
+
+    {% if recette.conseils.astuce_anti_gaspi %}
+    <section class="recipe-section" id="astuce" data-anchor-label="💡 Astuce">
+      <h2>💡 Astuce anti-gaspi</h2>
+      <p>{{ recette.conseils.astuce_anti_gaspi }}</p>
+    </section>
+    {% endif %}
+
+    {% if recette.conseils.variantes %}
+    <section class="recipe-section" id="variantes" data-anchor-label="🔁 Variantes">
+      <h2>🔁 Variantes possibles</h2>
+      <p>{{ recette.conseils.variantes }}</p>
+    </section>
+    {% endif %}
+
+    <details class="recipe-section sources-section no-print" id="sources">
+      <summary>📚 Sources d’inspiration</summary>
+      <div class="details-content">
+        <ul class="source-list">
+          <li>
+            <a href="{{ recette.recherche_google.url }}" target="_blank" rel="noopener noreferrer">
+              Recherche Google — {{ recette.contenu.titre }}
+            </a>
+          </li>
+          {% for source in recette.sources %}
+          <li>
+            <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.titre }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </details>
+
+    <section class="recipe-section food-markers-full id="reperes" data-anchor-label="🧭 Repères">
+      <h2>🧭 Repères alimentaires</h2>
+      <p class="small">Ces repères sont indicatifs. Vérifiez les étiquettes, les traces éventuelles et les consignes propres aux produits utilisés.</p>
+
+      {% if recette.regimes %}
+      <div class="food-marker-row"><strong>🥬 Régimes :</strong><span class="badges">{% for regime in recette.regimes %}<a class="badge badge-regime filter-link" href="../recherche.html?regime={{ regime.id }}">{{ regime.label }}</a>{% endfor %}</span></div>
+      {% endif %}
+
+      {% if recette.compatibilites %}
+      <div class="food-marker-row"><strong>✅ Compatibilités :</strong><span class="badges">{% for compatibilite in recette.compatibilites %}<a class="badge badge-compatibility filter-link" href="../recherche.html?compatibilite={{ compatibilite.id }}">{{ compatibilite.label }}</a>{% endfor %}</span></div>
+      {% endif %}
+
+      {% if recette.allergenes %}
+      <div class="food-marker-row"><strong>⛔ Allergènes présents :</strong><span class="badges allergen-badges">{% for allergene in recette.allergenes %}<a class="badge badge-allergen filter-link" href="../recherche.html?exclure={{ allergene.id }}">{{ allergene.label }}</a>{% endfor %}</span></div>
+      <p class="small allergen-warning notice notice-danger">Vérifiez toujours les étiquettes des produits utilisés.</p>
+      {% endif %}
+
+      {% if recette.vigilances %}
+      <div class="food-marker-row"><strong>⚠️ Vigilance :</strong><span class="badges">{% for vigilance in recette.vigilances %}<span class="badge badge-warning">{{ vigilance.label }}</span>{% endfor %}</span></div>
+      {% endif %}
+
+      <div class="food-markers-notes">
+        {% if recette.conservation.texte %}<p><strong>Conservation :</strong> {{ recette.conservation.texte }}</p>{% endif %}
+        {% if recette.conservation.rechauffage %}<p><strong>Réchauffage :</strong> {{ recette.conservation.rechauffage }}</p>{% endif %}
+        {% if recette.conservation.congelation %}<p><strong>Congélation :</strong> {{ recette.conservation.congelation }}</p>{% endif %}
+      </div>
+    </section>
+
+    <section class="recipe-bottom-layout" id="nutrition" data-anchor-label="📊 Nutrition">
+      <section class="recipe-section nutrition-section compact-nutrition">
+        <h2>📊 Valeurs nutritionnelles estimées</h2>
+
+        {% if recette.nutrition.statut == 'complet' %}
+        <p class="notice notice-info">
+          <strong>Estimation indicative et non officielle.</strong>
+          Calculée uniquement à partir des ingrédients principaux et secondaires de la recette de référence.
+          Les ingrédients optionnels et les variantes sont exclus.
+        </p>
+        <div class="nutrition-layout">
+          {% if recette.nutrition.nutri_score %}
+          <div class="nutri-score-card nutri-grade-{{ recette.nutrition.nutri_score }}">
+            <span class="small">Nutri-Score estimé</span>
+            <strong>{{ recette.nutrition.nutri_score }}</strong>
+            <p class="small">Non officiel</p>
+          </div>
+          {% endif %}
+          <div class="table-scroll nutrition-table-wrap">
+            <table class="data-table nutrition-table">
+              <thead><tr><th>Valeur</th><th>Par personne</th><th>Pour 100 g</th></tr></thead>
+              <tbody>
+                {% for ligne in recette.nutrition.lignes %}
+                <tr><td>{{ ligne.label }}</td><td>{{ ligne.par_personne }}</td><td>{{ ligne.pour_100g }}</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {% elif recette.nutrition.statut == 'partiel' %}
+        <p class="notice notice-warning">
+          <strong>Estimation nutritionnelle partielle.</strong>
+          Certains ingrédients génériques, codés comme tels dans la base, sont volontairement exclus du calcul.
+          Les valeurs affichées ne couvrent donc pas l’intégralité de la recette.
+        </p>
+        {% if recette.nutrition.lignes %}
+        <div class="table-scroll nutrition-table-wrap">
+          <table class="data-table nutrition-table">
+            <thead><tr><th>Valeur</th><th>Par personne</th><th>Pour 100 g</th></tr></thead>
+            <tbody>
+              {% for ligne in recette.nutrition.lignes %}
+              <tr><td>{{ ligne.label }}</td><td>{{ ligne.par_personne }}</td><td>{{ ligne.pour_100g }}</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endif %}
+        {% if recette.nutrition.ingredients_exclus %}
+        <p class="small"><strong>Ingrédients génériques exclus :</strong>
+          {{ recette.nutrition.ingredients_exclus | join(', ') }}
+        </p>
+        {% endif %}
+
+        {% else %}
+        <p class="notice notice-warning">
+          Les valeurs nutritionnelles ne sont pas encore disponibles pour cette recette.
+          La fiche reste utilisable ; seule l’estimation nutritionnelle est différée.
+        </p>
+        {% endif %}
+      </section>
+
+      <aside class="recipe-section compact-filter-list no-print">
+        <h2>🔎 Filtres associés</h2>
+        <p><strong>Catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?categorie={{ recette.classification.categorie.id }}">{{ recette.classification.categorie.label }}</a></span></p>
+        {% if recette.classification.sous_categorie %}<p><strong>Sous-catégorie :</strong> <span class="badges"><a class="badge filter-link" href="../recherche.html?sous-categorie={{ recette.classification.sous_categorie.id }}">{{ recette.classification.sous_categorie.label }}</a></span></p>{% endif %}
+        <p><strong>Équipements indispensables :</strong> <span class="badges">{% for equipement in recette.equipements %}<a class="badge badge-equipment filter-link" href="../recherche.html?equipement={{ equipement.id }}">{{ equipement.label }}</a>{% endfor %}</span></p>
+        {% if recette.allergenes %}<p><strong>Allergènes présents :</strong> <span class="badges allergen-badges">{% for allergene in recette.allergenes %}<a class="badge badge-allergen filter-link" href="../recherche.html?exclure={{ allergene.id }}">{{ allergene.label }}</a>{% endfor %}</span></p>{% endif %}
+      </aside>
+    </section>
+
+    <section class="recipe-section" id="qr-code" data-anchor-label="📱 QR code">
+      <h2>📱 QR code de la recette</h2>
+      <div class="qr-row">
+        <img src="../qrcodes/recettes/{{ recette.id }}.webp" alt="QR code de la recette {{ recette.contenu.titre }}" loading="lazy" decoding="async">
+        <div><p>QR code vers la fiche en ligne.</p><p class="small">{{ recette.urls.canonique }}</p></div>
+      </div>
+    </section>
+
+    <section class="recipe-section no-print recipe-actions">
+      <button class="print-button" type="button" data-print-target="#contenu">🖨️ Imprimer la fiche affichée</button>
+      <a class="button pdf-download-button" href="../pdf/recettes/{{ recette.id }}.pdf" download>📄 Télécharger le PDF</a>
+      <a class="button secondary" href="../suggerer-recette.html">💡 Suggérer une recette</a>
+      <a class="button ghost" href="../recettes.html">Retour aux recettes</a>
+      <p class="small pdf-note">Le bouton Imprimer conserve les portions et quantités actuellement affichées. Le PDF téléchargé correspond à la recette de référence.</p>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+</body>
+</html>
