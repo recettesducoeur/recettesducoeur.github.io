@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "id": "20000101-001",
+  "statut": "publie",
+  "seo": {
+    "titre": "Gratin de pâtes au thon",
+    "description": "Un gratin familial de pâtes au thon, crémeux et légèrement gratiné, pensé pour utiliser une boîte de thon, un reste de pâtes ou un fond de sauce tomate.",
+    "mots_cles": [
+      "gratin-de-pates-au-thon",
+      "simple",
+      "economique",
+      "anti-gaspi",
+      "familial",
+      "conserve",
+      "pates",
+      "thon",
+      "lait",
+      "fromage-rape",
+      "chapelure",
+      "nouilles",
+      "spaghetti",
+      "thon-en-boite"
+    ]
+  },
+  "contenu": {
+    "titre": "Gratin de pâtes au thon",
+    "accroche": "Un gratin familial de pâtes au thon, crémeux et légèrement gratiné, pensé pour utiliser une boîte de thon, un reste de pâtes ou un fond de sauce tomate.",
+    "introduction": "Cette version mise sur des pâtes cuites al dente, une base tomate ou crème bien assaisonnée et un passage au four juste assez long pour gratiner sans dessécher. C’est une recette économique, pratique et très adaptable."
+  },
+  "image": {
+    "fichier": "20000101-001.webp",
+    "alt": "Photo maison : Gratin de pâtes au thon",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "gratin",
+      "label": "Gratin"
+    },
+    "caracteristiques": [
+      {
+        "id": "simple",
+        "label": "Simple"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      },
+      {
+        "id": "familial",
+        "label": "Familial"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 20,
+    "repos_minutes": 0,
+    "total_minutes": 30,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "four",
+      "label": "Four"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "pates-seches",
+        "libelle": "pâtes sèches",
+        "quantite": 320,
+        "quantite_affichee": "320 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pates-seches"
+      },
+      {
+        "id": "thon",
+        "libelle": "thon égoutté",
+        "quantite": 280,
+        "quantite_affichee": "280 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "thon"
+      },
+      {
+        "id": "tomates-concassees",
+        "libelle": "tomates concassées",
+        "quantite": 300,
+        "quantite_affichee": "300 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "tomates-concassees"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "lait",
+        "libelle": "lait",
+        "quantite": 250,
+        "quantite_affichee": "250 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "lait"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage râpé",
+        "quantite": 100,
+        "quantite_affichee": "100 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "oignon",
+        "libelle": "oignon",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oignon"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "herbes",
+        "libelle": "herbes de Provence",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes"
+      },
+      {
+        "id": "poivre",
+        "libelle": "poivre",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "poivre"
+      },
+      {
+        "id": "sauce-tomate",
+        "libelle": "sauce tomate",
+        "quantite": 300,
+        "quantite_affichee": "300 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "sauce-tomate"
+      },
+      {
+        "id": "creme",
+        "libelle": "crème",
+        "quantite": 250,
+        "quantite_affichee": "250 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "creme"
+      },
+      {
+        "id": "chapelure",
+        "libelle": "chapelure",
+        "quantite": 30,
+        "quantite_affichee": "30 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "chapelure"
+      },
+      {
+        "id": "pain-rassis",
+        "libelle": "pain rassis mixé",
+        "quantite": 30,
+        "quantite_affichee": "30 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "pain-rassis"
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Préchauffer le four à 200 °C. Cuire les pâtes dans une grande casserole d’eau salée en les gardant al dente, puis les égoutter.",
+      "Pendant la cuisson des pâtes, faire revenir l’oignon émincé dans un peu d’huile. Ajouter la sauce tomate ou la crème, le thon égoutté et émietté, puis poivrer et ajouter des herbes si disponibles.",
+      "Mélanger les pâtes avec la sauce au thon. Ajouter un peu d’eau de cuisson, de lait ou de crème si le mélange paraît trop sec.",
+      "Verser dans un plat à gratin. Répartir le fromage râpé sur le dessus.",
+      "Enfourner 15 à 20 minutes, jusqu’à ce que le dessus soit doré. Laisser reposer 5 minutes avant de servir."
+    ],
+    "cuisson_indicative": {
+      "texte": "Four : 200 °C pendant 15 à 20 min, après précuisson des pâtes à la casserole."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Très bon avec un reste de pâtes déjà cuites : raccourcir le passage au four et ajouter un peu de lait ou de sauce pour éviter que le gratin soit sec.",
+    "variantes": "Ajouter tomates en dés, maïs, petits pois, olives, restes de courgettes ou champignons. Remplacer la tomate par de la crème pour une version plus douce. Ajouter chapelure ou pain rassis mixé sur le dessus pour un gratin plus croustillant."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Gratin de pâtes au thon, sauce tomates",
+      "url": "https://www.marmiton.org/recettes/recette_gratin-de-pates-au-thon-sauce-tomates_35898.aspx"
+    },
+    {
+      "titre": "Marmiton - Gratin de pâtes au thon, mozzarella",
+      "url": "https://www.marmiton.org/recettes/recette_gratin-de-pates-au-thon-mozzarella_63025.aspx"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

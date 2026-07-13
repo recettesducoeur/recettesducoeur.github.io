@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "id": "20000101-006",
+  "statut": "publie",
+  "seo": {
+    "titre": "Compote pomme-banane",
+    "description": "Une compote pomme-banane douce, rapide et anti-gaspi, idéale pour utiliser des fruits mûrs ou un peu abîmés.",
+    "mots_cles": [
+      "compote-pomme-banane",
+      "dessert",
+      "anti-gaspi",
+      "fruits",
+      "simple",
+      "pommes",
+      "banane",
+      "eau",
+      "cannelle"
+    ]
+  },
+  "contenu": {
+    "titre": "Compote pomme-banane",
+    "accroche": "Une compote pomme-banane douce, rapide et anti-gaspi, idéale pour utiliser des fruits mûrs ou un peu abîmés.",
+    "introduction": "La banane apporte une texture fondante et sucre naturellement la compote. Les pommes assurent l’équilibre et la tenue. Le mixage est facultatif selon l’âge des convives et la texture souhaitée."
+  },
+  "image": {
+    "fichier": "20000101-006.webp",
+    "alt": "Photo maison : Compote pomme-banane",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "dessert",
+      "label": "Dessert"
+    },
+    "sous_categorie": {
+      "id": "compote",
+      "label": "Compote"
+    },
+    "caracteristiques": [
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      },
+      {
+        "id": "fruits",
+        "label": "Fruits"
+      },
+      {
+        "id": "simple",
+        "label": "Simple"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "froid",
+        "label": "Froid"
+      },
+      {
+        "id": "tiede",
+        "label": "Tiède"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 15,
+    "repos_minutes": 0,
+    "total_minutes": 25,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "pommes",
+        "libelle": "pommes",
+        "quantite": 600,
+        "quantite_affichee": "600 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pommes"
+      },
+      {
+        "id": "bananes",
+        "libelle": "bananes mûres",
+        "quantite": 2,
+        "quantite_affichee": "2 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "bananes"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "eau",
+        "libelle": "eau",
+        "quantite": 100,
+        "quantite_affichee": "100 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "eau"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "cannelle",
+        "libelle": "cannelle",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "cannelle"
+      },
+      {
+        "id": "vanille",
+        "libelle": "vanille",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "vanille"
+      },
+      {
+        "id": "sucre",
+        "libelle": "sucre",
+        "quantite": 20,
+        "quantite_affichee": "20 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "sucre"
+      },
+      {
+        "id": "miel",
+        "libelle": "miel",
+        "quantite": 20,
+        "quantite_affichee": "20 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "miel"
+      },
+      {
+        "id": "jus-de-citron",
+        "libelle": "jus de citron",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "jus-de-citron",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Éplucher les pommes si nécessaire, retirer le cœur et couper en petits morceaux.",
+      "Éplucher les bananes mûres et les couper en rondelles.",
+      "Mettre les fruits dans une casserole avec un petit fond d’eau, puis couvrir.",
+      "Cuire 15 à 25 minutes à feu doux, jusqu’à ce que les pommes soient tendres.",
+      "Écraser à la fourchette pour une compote rustique ou mixer pour une texture lisse. Laisser tiédir."
+    ],
+    "cuisson_indicative": {
+      "texte": "Casserole : 15 à 20 min à feu doux, avec un petit fond d’eau."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Plus les bananes sont mûres, moins il est nécessaire d’ajouter du sucre. Les pommes légèrement fripées conviennent très bien après avoir retiré les parties abîmées.",
+    "variantes": "Ajouter cannelle, vanille, miel, jus de citron, poire ou quelques raisins secs. Pour un dessert plus gourmand, servir avec riz au lait, fromage blanc ou copeaux de chocolat."
+  },
+  "sources": [
+    {
+      "titre": "CuisineAZ - Compote pomme banane",
+      "url": "https://www.cuisineaz.com/recettes/compote-pomme-banane-121739.aspx"
+    },
+    {
+      "titre": "CuisineAZ - Compote pomme & banane facile",
+      "url": "https://www.cuisineaz.com/recettes/compote-pomme-banane-79692.aspx"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

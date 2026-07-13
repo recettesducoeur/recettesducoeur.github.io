@@ -1,0 +1,51 @@
+{
+  "id": "20000101-010",
+  "titre": "Gâteau simple du placard",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 623.6,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "farine",
+      "groupe": "principaux",
+      "masse_g": 200.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "sucre",
+      "groupe": "principaux",
+      "masse_g": 100.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "oeufs",
+      "groupe": "principaux",
+      "masse_g": 120.0,
+      "conversion": "60 g/pièce"
+    },
+    {
+      "ingredient": "lait",
+      "groupe": "secondaires",
+      "masse_g": 123.6,
+      "conversion": "Densité 1.03"
+    },
+    {
+      "ingredient": "beurre",
+      "groupe": "secondaires",
+      "masse_g": 80.0,
+      "conversion": null
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "levure-chimique",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "sel_g"
+      ]
+    }
+  ]
+}

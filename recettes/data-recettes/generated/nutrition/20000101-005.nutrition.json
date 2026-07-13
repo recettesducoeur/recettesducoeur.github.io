@@ -1,0 +1,41 @@
+{
+  "id": "20000101-005",
+  "titre": "Poêlée de pommes de terre",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 127.0,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "huile",
+      "groupe": "principaux",
+      "masse_g": 27.0,
+      "conversion": "13.5 g/c. à soupe"
+    },
+    {
+      "ingredient": "oignon",
+      "groupe": "secondaires",
+      "masse_g": 100.0,
+      "conversion": "100 g/pièce"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "pommes-de-terre",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

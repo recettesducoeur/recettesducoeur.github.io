@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "id": "20260708-012",
+  "statut": "publie",
+  "seo": {
+    "titre": "Chou-fleur et quinoa à la crème",
+    "description": "Un plat complet, crémeux et réconfortant qui associe le chou-fleur, le quinoa et une sauce onctueuse.",
+    "mots_cles": [
+      "chou-fleur-et-quinoa-a-la-creme",
+      "simple",
+      "economique",
+      "chaud",
+      "vegetarien-possible",
+      "cremeux",
+      "chou-fleur",
+      "quinoa",
+      "creme",
+      "fromage",
+      "epices-douces",
+      "choufleur",
+      "gruyere",
+      "emmental"
+    ]
+  },
+  "contenu": {
+    "titre": "Chou-fleur et quinoa à la crème",
+    "accroche": "Un plat complet, crémeux et réconfortant qui associe le chou-fleur, le quinoa et une sauce onctueuse.",
+    "introduction": "Le chou-fleur est précuit afin de rester tendre tout en conservant sa tenue. Le quinoa apporte une texture légèrement croquante et la crème lie harmonieusement l’ensemble. Une crème végétale peut être utilisée pour une version sans lactose."
+  },
+  "image": {
+    "fichier": "20260708-012.webp",
+    "alt": "Photo maison : Chou-fleur et quinoa à la crème",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "plat-cremeux",
+      "label": "Plat crémeux"
+    },
+    "caracteristiques": [
+      {
+        "id": "simple",
+        "label": "Simple"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 25,
+    "repos_minutes": 0,
+    "total_minutes": 35,
+    "tranche": "30-45"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "chou-fleur",
+        "libelle": "chou-fleur",
+        "quantite": 700,
+        "quantite_affichee": "700 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "chou-fleur"
+      },
+      {
+        "id": "quinoa",
+        "libelle": "quinoa",
+        "quantite": 220,
+        "quantite_affichee": "220 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "quinoa"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "creme",
+        "libelle": "crème",
+        "quantite": 200,
+        "quantite_affichee": "200 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "creme"
+      },
+      {
+        "id": "eau",
+        "libelle": "eau",
+        "quantite": 450,
+        "quantite_affichee": "450 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "eau"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "fromage",
+        "libelle": "fromage",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "epices-douces",
+        "libelle": "épices douces",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "epices-douces"
+      },
+      {
+        "id": "chapelure",
+        "libelle": "chapelure",
+        "quantite": 30,
+        "quantite_affichee": "30 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "chapelure"
+      },
+      {
+        "id": "oignon",
+        "libelle": "oignon",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "oignon"
+      },
+      {
+        "id": "bouillon-legumes",
+        "libelle": "bouillon de légumes",
+        "quantite": 450,
+        "quantite_affichee": "450 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "bouillon-legumes"
+      },
+      {
+        "id": "ail",
+        "libelle": "ail",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "ail",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Rincer soigneusement le quinoa. Le cuire dans deux fois son volume d’eau légèrement salée jusqu’à absorption complète, puis l’égoutter si nécessaire. Pour une méthode façon pilaf, faire revenir légèrement le quinoa avec un filet d’huile, ajouter l’eau chaude progressivement et remuer régulièrement. Le quinoa est cuit lorsque le petit germe blanc se détache de chaque grain.",
+      "Détailler le chou-fleur en petits bouquets et les cuire à l’eau ou à la vapeur 8 à 10 minutes, jusqu’à ce qu’ils soient tendres mais encore fermes.",
+      "Faire revenir l’ail ou l’oignon dans une poêle avec un filet d’huile. Ajouter ensuite le chou-fleur précuit et le quinoa.",
+      "Incorporer la crème, poivrer et ajouter éventuellement le fromage râpé ou les herbes aromatiques.",
+      "Mélanger délicatement pendant 3 à 5 minutes à feu doux. Servir immédiatement ou faire gratiner quelques minutes au four."
+    ],
+    "cuisson_indicative": {
+      "texte": "Casserole/vapeur : 8 à 10 min pour le chou-fleur ; quinoa 12 à 15 min. Option gratin : 200 °C pendant 10 min."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Les feuilles tendres du chou-fleur peuvent être émincées et ajoutées à la préparation ou à une soupe. Les restes du plat se réchauffent très bien le lendemain avec un peu de lait ou de crème.",
+    "variantes": "Ajouter comté, chapelure, persil, curry doux, paprika fumé, muscade, brocoli, épinards, petits pois, pois chiches, dés de jambon, lardons, saumon fumé, parmesan, emmental ou mozzarella. Pour une version gratinée, passer 10 minutes au four avec fromage et chapelure."
+  },
+  "sources": [
+    {
+      "titre": "Julie Andrieu - Croustillants de quinoa au chou-fleur et au comté",
+      "url": "https://www.julieandrieu.com/recettes/croustillants-de-quinoa-au-chou-fleur-et-au-comte"
+    },
+    {
+      "titre": "Les Commis - Chou-fleur et quinoa dans une assiette complète",
+      "url": "https://lescommis.com/recettes/poulet-a-la-creme-acidulee/"
+    },
+    {
+      "titre": "Le Monde - Recette végétarienne au chou-fleur",
+      "url": "https://www.lemonde.fr/les-recettes-du-monde/article/2024/12/17/vert-hiver-trois-recettes-iraniennes-vegetariennes_6452828_5324493.html"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [
+      "vegetarien"
+    ],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": [
+      "Les ingrédients optionnels non végétariens ne sont pas inclus dans la recette de référence."
+    ]
+  }
+}

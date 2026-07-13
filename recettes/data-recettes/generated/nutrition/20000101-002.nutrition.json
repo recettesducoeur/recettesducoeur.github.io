@@ -1,0 +1,67 @@
+{
+  "id": "20000101-002",
+  "titre": "Riz au lait à la banane",
+  "statut": "complet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 1224.0,
+  "totaux": {
+    "energie_kj": 4008.0,
+    "energie_kcal": 947.24,
+    "proteines_g": 34.83,
+    "glucides_g": 167.95,
+    "sucres_g": 117.78,
+    "lipides_g": 14.21,
+    "satures_g": 8.29,
+    "fibres_g": 8.16,
+    "sel_g": 0.79
+  },
+  "par_personne": {
+    "energie_kj": 1002.0,
+    "energie_kcal": 236.81,
+    "proteines_g": 8.71,
+    "glucides_g": 41.99,
+    "sucres_g": 29.44,
+    "lipides_g": 3.55,
+    "satures_g": 2.07,
+    "fibres_g": 2.04,
+    "sel_g": 0.2
+  },
+  "pour_100g": {
+    "energie_kj": 327.45,
+    "energie_kcal": 77.39,
+    "proteines_g": 2.85,
+    "glucides_g": 13.72,
+    "sucres_g": 9.62,
+    "lipides_g": 1.16,
+    "satures_g": 0.68,
+    "fibres_g": 0.67,
+    "sel_g": 0.06
+  },
+  "details": [
+    {
+      "ingredient": "riz-rond",
+      "groupe": "principaux",
+      "masse_g": 120.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "lait",
+      "groupe": "principaux",
+      "masse_g": 824.0,
+      "conversion": "Densité 1.03"
+    },
+    {
+      "ingredient": "banane",
+      "groupe": "principaux",
+      "masse_g": 240.0,
+      "conversion": "120 g/pièce"
+    },
+    {
+      "ingredient": "sucre",
+      "groupe": "secondaires",
+      "masse_g": 40.0,
+      "conversion": null
+    }
+  ],
+  "blocages": []
+}

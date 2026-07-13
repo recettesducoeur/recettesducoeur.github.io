@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "id": "20000101-004",
+  "statut": "publie",
+  "seo": {
+    "titre": "Salade de riz au thon",
+    "description": "Une salade de riz au thon complète, fraîche et pratique, parfaite pour un repas froid, un pique-nique ou pour utiliser un reste de riz.",
+    "mots_cles": [
+      "salade-de-riz-au-thon",
+      "froid",
+      "sans-four",
+      "conserve",
+      "rapide",
+      "riz",
+      "thon",
+      "mais",
+      "tomates",
+      "ufs",
+      "thon-en-boite",
+      "oeuf",
+      "oeufs"
+    ]
+  },
+  "contenu": {
+    "titre": "Salade de riz au thon",
+    "accroche": "Une salade de riz au thon complète, fraîche et pratique, parfaite pour un repas froid, un pique-nique ou pour utiliser un reste de riz.",
+    "introduction": "Le riz doit être refroidi avant l’assemblage pour garder une salade nette. Le thon apporte les protéines, les légumes ajoutent du croquant et l’assaisonnement se dose au dernier moment."
+  },
+  "image": {
+    "fichier": "20000101-004.webp",
+    "alt": "Photo maison : Salade de riz au thon",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "salade",
+      "label": "Salade"
+    },
+    "caracteristiques": [
+      {
+        "id": "rapide",
+        "label": "Rapide"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "froid",
+        "label": "Froid"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 12,
+    "repos_minutes": 0,
+    "total_minutes": 22,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "riz",
+        "libelle": "riz",
+        "quantite": 280,
+        "quantite_affichee": "280 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "riz"
+      },
+      {
+        "id": "thon",
+        "libelle": "thon égoutté",
+        "quantite": 200,
+        "quantite_affichee": "200 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "thon"
+      },
+      {
+        "id": "tomates",
+        "libelle": "tomates",
+        "quantite": 250,
+        "quantite_affichee": "250 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "tomates"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "mais",
+        "libelle": "maïs égoutté",
+        "quantite": 150,
+        "quantite_affichee": "150 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "mais"
+      },
+      {
+        "id": "vinaigrette",
+        "libelle": "vinaigrette",
+        "quantite": 4,
+        "quantite_affichee": "4 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "vinaigrette"
+      },
+      {
+        "id": "concombre",
+        "libelle": "concombre",
+        "quantite": 150,
+        "quantite_affichee": "150 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "concombre"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "oeufs-durs",
+        "libelle": "œufs durs",
+        "quantite": 2,
+        "quantite_affichee": "2 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "oeufs-durs"
+      },
+      {
+        "id": "cornichons",
+        "libelle": "cornichons",
+        "quantite": 50,
+        "quantite_affichee": "50 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "cornichons"
+      },
+      {
+        "id": "herbes-fraiches",
+        "libelle": "herbes fraîches",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes-fraiches"
+      },
+      {
+        "id": "mayonnaise",
+        "libelle": "mayonnaise",
+        "quantite": 4,
+        "quantite_affichee": "4 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "mayonnaise"
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Cuire le riz dans de l’eau salée, puis l’égoutter. Le rincer rapidement à l’eau froide ou l’étaler pour le refroidir.",
+      "Égoutter et émietter le thon. Couper les tomates, le concombre ou les légumes disponibles en petits morceaux.",
+      "Mélanger le riz refroidi, le thon et les légumes dans un grand saladier.",
+      "Préparer une sauce simple avec huile, vinaigre, sel et poivre, ou une petite quantité de mayonnaise.",
+      "Ajouter la sauce au dernier moment, mélanger délicatement et servir frais."
+    ],
+    "cuisson_indicative": {
+      "texte": "Casserole : 10 à 12 min pour le riz, puis refroidissement avant assemblage."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Un reste de riz de la veille fonctionne très bien. Ajouter la sauce juste avant de servir évite que la salade ne devienne pâteuse.",
+    "variantes": "Ajouter œufs durs, maïs, cornichons, olives, haricots rouges, pois chiches, restes de poulet, dés de fromage ou herbes fraîches. Remplacer la mayonnaise par une vinaigrette moutardée."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Salade de riz au thon",
+      "url": "https://www.marmiton.org/recettes/recette_salade-de-riz-au-thon_87373.aspx"
+    },
+    {
+      "titre": "Marmiton - Salades de riz, idées de variantes",
+      "url": "https://www.marmiton.org/recettes/index/categorie/salade-de-riz/"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

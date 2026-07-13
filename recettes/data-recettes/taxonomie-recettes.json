@@ -1,0 +1,676 @@
+{
+  "version": 1,
+  "description": "Taxonomie officielle des recettes V37. Les identifiants sont techniques et les libellés sont destinés à l'affichage.",
+  "regles": {
+    "identifiants": "minuscules sans accent, mots séparés par des tirets",
+    "selection_meme_famille": "OU, sauf régimes et compatibilités qui exigent tous les critères sélectionnés",
+    "selection_familles_differentes": "ET",
+    "equipements": "tous cochés par défaut ; décocher exclut les recettes qui nécessitent l'équipement",
+    "allergenes": "une exclusion sélectionnée élimine toute recette contenant l'allergène"
+  },
+  "interface_recherche": [
+    {
+      "id": "mots-cles",
+      "label": "🔎 Mots-clés",
+      "ordre": 10
+    },
+    {
+      "id": "ingredients",
+      "label": "🥕 Ingrédients",
+      "ordre": 20
+    },
+    {
+      "id": "je-cherche",
+      "label": "🍽️ Je cherche",
+      "ordre": 30
+    },
+    {
+      "id": "equipements",
+      "label": "🛠️ Mes équipements",
+      "ordre": 40
+    },
+    {
+      "id": "affiner",
+      "label": "⚡ Affiner la recherche",
+      "ordre": 50
+    }
+  ],
+  "categories": [
+    {
+      "id": "entree",
+      "label": "Entrée",
+      "ordre": 10
+    },
+    {
+      "id": "plat-principal",
+      "label": "Plat principal",
+      "aliases": [
+        "plat"
+      ],
+      "ordre": 20
+    },
+    {
+      "id": "accompagnement",
+      "label": "Accompagnement",
+      "ordre": 30
+    },
+    {
+      "id": "dessert",
+      "label": "Dessert",
+      "ordre": 40
+    },
+    {
+      "id": "petit-dejeuner",
+      "label": "Petit-déjeuner",
+      "ordre": 50
+    },
+    {
+      "id": "gouter",
+      "label": "Goûter",
+      "ordre": 60
+    },
+    {
+      "id": "aperitif",
+      "label": "Apéritif",
+      "ordre": 70
+    },
+    {
+      "id": "boisson",
+      "label": "Boisson",
+      "ordre": 80
+    },
+    {
+      "id": "sauce",
+      "label": "Sauce",
+      "ordre": 90
+    }
+  ],
+  "sous_categories_par_categorie": {
+    "entree": [
+      {
+        "id": "salade",
+        "label": "Salade"
+      },
+      {
+        "id": "soupe",
+        "label": "Soupe"
+      },
+      {
+        "id": "tartine",
+        "label": "Tartine"
+      },
+      {
+        "id": "terrine",
+        "label": "Terrine"
+      }
+    ],
+    "plat-principal": [
+      {
+        "id": "gratin",
+        "label": "Gratin"
+      },
+      {
+        "id": "pates",
+        "label": "Pâtes"
+      },
+      {
+        "id": "riz",
+        "label": "Riz"
+      },
+      {
+        "id": "poelee",
+        "label": "Poêlée"
+      },
+      {
+        "id": "omelette",
+        "label": "Omelette"
+      },
+      {
+        "id": "soupe",
+        "label": "Soupe"
+      },
+      {
+        "id": "quiche",
+        "label": "Quiche"
+      },
+      {
+        "id": "salade",
+        "label": "Salade"
+      },
+      {
+        "id": "tartine",
+        "label": "Tartine"
+      },
+      {
+        "id": "plat-cremeux",
+        "label": "Plat crémeux"
+      },
+      {
+        "id": "tarte-salee",
+        "label": "Tarte salée"
+      },
+      {
+        "id": "tian",
+        "label": "Tian"
+      }
+    ],
+    "accompagnement": [
+      {
+        "id": "legumes",
+        "label": "Légumes"
+      },
+      {
+        "id": "feculents",
+        "label": "Féculents"
+      },
+      {
+        "id": "salade",
+        "label": "Salade"
+      },
+      {
+        "id": "puree",
+        "label": "Purée"
+      }
+    ],
+    "dessert": [
+      {
+        "id": "compote",
+        "label": "Compote"
+      },
+      {
+        "id": "creme",
+        "label": "Crème"
+      },
+      {
+        "id": "flan",
+        "label": "Flan"
+      },
+      {
+        "id": "gateau",
+        "label": "Gâteau"
+      },
+      {
+        "id": "biscuit",
+        "label": "Biscuit"
+      },
+      {
+        "id": "dessert-lacte",
+        "label": "Dessert lacté"
+      },
+      {
+        "id": "mousse",
+        "label": "Mousse"
+      },
+      {
+        "id": "fruits",
+        "label": "Fruits"
+      }
+    ],
+    "petit-dejeuner": [
+      {
+        "id": "tartine",
+        "label": "Tartine"
+      },
+      {
+        "id": "porridge",
+        "label": "Porridge"
+      },
+      {
+        "id": "boisson",
+        "label": "Boisson"
+      }
+    ],
+    "gouter": [
+      {
+        "id": "gateau",
+        "label": "Gâteau"
+      },
+      {
+        "id": "biscuit",
+        "label": "Biscuit"
+      },
+      {
+        "id": "compote",
+        "label": "Compote"
+      },
+      {
+        "id": "tartine",
+        "label": "Tartine"
+      }
+    ],
+    "aperitif": [
+      {
+        "id": "tartinade",
+        "label": "Tartinade"
+      },
+      {
+        "id": "bouchee",
+        "label": "Bouchée"
+      },
+      {
+        "id": "cake-sale",
+        "label": "Cake salé"
+      }
+    ],
+    "boisson": [
+      {
+        "id": "chaude",
+        "label": "Boisson chaude"
+      },
+      {
+        "id": "froide",
+        "label": "Boisson froide"
+      },
+      {
+        "id": "smoothie",
+        "label": "Smoothie"
+      }
+    ],
+    "sauce": [
+      {
+        "id": "tomate",
+        "label": "Sauce tomate"
+      },
+      {
+        "id": "cremeuse",
+        "label": "Sauce crémeuse"
+      },
+      {
+        "id": "vinaigrette",
+        "label": "Vinaigrette"
+      }
+    ]
+  },
+  "caracteristiques": [
+    {
+      "id": "anti-gaspi",
+      "label": "Anti-gaspi"
+    },
+    {
+      "id": "tres-economique",
+      "label": "Très économique"
+    },
+    {
+      "id": "economique",
+      "label": "Économique"
+    },
+    {
+      "id": "rapide",
+      "label": "Rapide"
+    },
+    {
+      "id": "facile",
+      "label": "Facile"
+    },
+    {
+      "id": "familial",
+      "label": "Familial"
+    },
+    {
+      "id": "enfants",
+      "label": "Enfants"
+    },
+    {
+      "id": "batch-cooking",
+      "label": "Batch cooking"
+    },
+    {
+      "id": "preparable-a-l-avance",
+      "label": "Préparable à l’avance"
+    },
+    {
+      "id": "congelation-possible",
+      "label": "Congélation possible"
+    },
+    {
+      "id": "restes",
+      "label": "Restes"
+    },
+    {
+      "id": "cuisine-du-monde",
+      "label": "Cuisine du monde"
+    },
+    {
+      "id": "cuisine-traditionnelle",
+      "label": "Cuisine traditionnelle"
+    },
+    {
+      "id": "cuisine-legere",
+      "label": "Cuisine légère"
+    },
+    {
+      "id": "simple",
+      "label": "Simple"
+    },
+    {
+      "id": "conserve",
+      "label": "Conserve"
+    },
+    {
+      "id": "fruits",
+      "label": "Fruits"
+    },
+    {
+      "id": "legumes",
+      "label": "Légumes"
+    },
+    {
+      "id": "proteines",
+      "label": "Protéines"
+    },
+    {
+      "id": "pain",
+      "label": "Pain"
+    }
+  ],
+  "equipements_groupes": [
+    {
+      "id": "courants",
+      "label": "🔥 Les plus courants",
+      "ouvert_par_defaut": true,
+      "valeurs": [
+        {
+          "id": "plaques-feux",
+          "label": "Plaques / Feux"
+        },
+        {
+          "id": "casserole",
+          "label": "Casserole"
+        },
+        {
+          "id": "poele",
+          "label": "Poêle"
+        },
+        {
+          "id": "four",
+          "label": "Four"
+        },
+        {
+          "id": "micro-ondes",
+          "label": "Micro-ondes"
+        }
+      ]
+    },
+    {
+      "id": "specialises",
+      "label": "⚙️ Équipements spécialisés",
+      "ouvert_par_defaut": false,
+      "valeurs": [
+        {
+          "id": "robot-mixeur",
+          "label": "Robot / Mixeur"
+        },
+        {
+          "id": "air-fryer",
+          "label": "Air Fryer"
+        },
+        {
+          "id": "cuiseur-vapeur",
+          "label": "Cuiseur vapeur"
+        },
+        {
+          "id": "friteuse",
+          "label": "Friteuse"
+        },
+        {
+          "id": "barbecue-plancha",
+          "label": "Barbecue / Plancha"
+        }
+      ]
+    },
+    {
+      "id": "materiel-specifique",
+      "label": "🥘 Matériel spécifique",
+      "ouvert_par_defaut": false,
+      "valeurs": [
+        {
+          "id": "cocotte",
+          "label": "Cocotte"
+        },
+        {
+          "id": "wok",
+          "label": "Wok"
+        },
+        {
+          "id": "moule-a-patisserie",
+          "label": "Moule à pâtisserie"
+        }
+      ]
+    },
+    {
+      "id": "conservation",
+      "label": "❄️ Conservation",
+      "ouvert_par_defaut": false,
+      "valeurs": [
+        {
+          "id": "refrigerateur",
+          "label": "Réfrigérateur"
+        },
+        {
+          "id": "congelateur",
+          "label": "Congélateur"
+        }
+      ]
+    }
+  ],
+  "allergenes": [
+    {
+      "id": "gluten",
+      "label": "Gluten"
+    },
+    {
+      "id": "lait",
+      "label": "Lait"
+    },
+    {
+      "id": "oeufs",
+      "label": "Œufs",
+      "aliases": [
+        "oeuf"
+      ]
+    },
+    {
+      "id": "poisson",
+      "label": "Poisson"
+    },
+    {
+      "id": "crustaces",
+      "label": "Crustacés"
+    },
+    {
+      "id": "mollusques",
+      "label": "Mollusques"
+    },
+    {
+      "id": "arachides",
+      "label": "Arachides"
+    },
+    {
+      "id": "fruits-a-coque",
+      "label": "Fruits à coque"
+    },
+    {
+      "id": "soja",
+      "label": "Soja"
+    },
+    {
+      "id": "sesame",
+      "label": "Sésame"
+    },
+    {
+      "id": "moutarde",
+      "label": "Moutarde"
+    },
+    {
+      "id": "celeri",
+      "label": "Céleri"
+    },
+    {
+      "id": "lupin",
+      "label": "Lupin"
+    },
+    {
+      "id": "sulfites",
+      "label": "Sulfites"
+    }
+  ],
+  "exclusions_alimentaires": [
+    {
+      "id": "porc",
+      "label": "Porc"
+    },
+    {
+      "id": "alcool",
+      "label": "Alcool"
+    },
+    {
+      "id": "viande",
+      "label": "Viande"
+    },
+    {
+      "id": "produits-animaux",
+      "label": "Produits animaux"
+    }
+  ],
+  "regimes": [
+    {
+      "id": "vegetarien",
+      "label": "Végétarien"
+    },
+    {
+      "id": "vegan",
+      "label": "Vegan",
+      "aliases": [
+        "vegetalien"
+      ]
+    },
+    {
+      "id": "pescetarien",
+      "label": "Pescétarien"
+    },
+    {
+      "id": "sans-gluten",
+      "label": "Sans gluten"
+    },
+    {
+      "id": "sans-lactose",
+      "label": "Sans lactose"
+    },
+    {
+      "id": "halal",
+      "label": "Halal"
+    },
+    {
+      "id": "casher",
+      "label": "Casher"
+    }
+  ],
+  "compatibilites": [
+    {
+      "id": "sans-porc",
+      "label": "Sans porc"
+    },
+    {
+      "id": "sans-alcool",
+      "label": "Sans alcool"
+    },
+    {
+      "id": "sans-viande",
+      "label": "Sans viande"
+    },
+    {
+      "id": "sans-fruits-a-coque",
+      "label": "Sans fruits à coque"
+    },
+    {
+      "id": "sans-crustaces",
+      "label": "Sans crustacés"
+    },
+    {
+      "id": "sans-celeri",
+      "label": "Sans céleri"
+    },
+    {
+      "id": "sans-soja",
+      "label": "Sans soja"
+    }
+  ],
+  "temperatures_service": [
+    {
+      "id": "chaud",
+      "label": "Chaud"
+    },
+    {
+      "id": "tiede",
+      "label": "Tiède"
+    },
+    {
+      "id": "froid",
+      "label": "Froid"
+    },
+    {
+      "id": "glace",
+      "label": "Glacé"
+    }
+  ],
+  "temps_tranches": [
+    {
+      "id": "moins-15",
+      "label": "Moins de 15 min",
+      "min": 0,
+      "max": 14
+    },
+    {
+      "id": "15-30",
+      "label": "15 à 30 min",
+      "min": 15,
+      "max": 30
+    },
+    {
+      "id": "30-45",
+      "label": "30 à 45 min",
+      "min": 31,
+      "max": 45
+    },
+    {
+      "id": "45-60",
+      "label": "45 min à 1 h",
+      "min": 46,
+      "max": 60
+    },
+    {
+      "id": "plus-60",
+      "label": "Plus de 1 h",
+      "min": 61,
+      "max": null
+    }
+  ],
+  "budgets": [
+    {
+      "id": "tres-economique",
+      "label": "Très économique"
+    },
+    {
+      "id": "economique",
+      "label": "Économique"
+    },
+    {
+      "id": "standard",
+      "label": "Standard"
+    }
+  ],
+  "difficultes": [
+    {
+      "id": "facile",
+      "label": "Facile"
+    },
+    {
+      "id": "intermediaire",
+      "label": "Intermédiaire"
+    },
+    {
+      "id": "confirme",
+      "label": "Confirmé"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "20000101-009",
+  "titre": "Pâtes sauce tomate enrichie",
+  "statut": "complet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 833.5,
+  "totaux": {
+    "energie_kj": 5804.75,
+    "energie_kcal": 1374.78,
+    "proteines_g": 51.72,
+    "glucides_g": 237.75,
+    "sucres_g": 19.21,
+    "lipides_g": 20.16,
+    "satures_g": 6.76,
+    "fibres_g": 16.69,
+    "sel_g": 0.4
+  },
+  "par_personne": {
+    "energie_kj": 1451.19,
+    "energie_kcal": 343.7,
+    "proteines_g": 12.93,
+    "glucides_g": 59.44,
+    "sucres_g": 4.8,
+    "lipides_g": 5.04,
+    "satures_g": 1.69,
+    "fibres_g": 4.17,
+    "sel_g": 0.1
+  },
+  "pour_100g": {
+    "energie_kj": 696.43,
+    "energie_kcal": 164.94,
+    "proteines_g": 6.2,
+    "glucides_g": 28.52,
+    "sucres_g": 2.3,
+    "lipides_g": 2.42,
+    "satures_g": 0.81,
+    "fibres_g": 2.0,
+    "sel_g": 0.05
+  },
+  "details": [
+    {
+      "ingredient": "pates-alimentaires",
+      "groupe": "principaux",
+      "masse_g": 320.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "groupe": "principaux",
+      "masse_g": 400.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "oignon",
+      "groupe": "secondaires",
+      "masse_g": 100.0,
+      "conversion": "100 g/pièce"
+    },
+    {
+      "ingredient": "huile",
+      "groupe": "secondaires",
+      "masse_g": 13.5,
+      "conversion": "13.5 g/c. à soupe"
+    }
+  ],
+  "blocages": []
+}

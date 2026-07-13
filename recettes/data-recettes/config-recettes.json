@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "site": {
+    "nom": "Les Recettes du Cœur",
+    "url_base": "https://recettesducoeur.github.io/",
+    "langue": "fr-FR"
+  },
+  "chemins": {
+    "json_recettes": "recettes/json-recettes",
+    "template_recette": "recettes/templates/recette.html",
+    "sortie_html": "recettes/generated-html",
+    "index_recherche": "recettes/data-recettes/generated/recettes-index.json",
+    "meta_calculees": "recettes/data-recettes/generated/meta",
+    "qrcodes_fiches": "qrcodes/recettes",
+    "pdf_recettes": "pdf/recettes"
+  },
+  "affichage": {
+    "recettes_accueil": 10,
+    "recettes_par_page": 24,
+    "astuces_par_page": 20,
+    "ratio_image_carte": "16/9"
+  },
+  "portions": {
+    "minimum": 1,
+    "maximum": 20
+  },
+  "recherche": {
+    "onglets": [
+      "mots-cles",
+      "ingredients",
+      "je-cherche",
+      "equipements",
+      "affiner"
+    ],
+    "separateurs_ingredients": [
+      ",",
+      ";",
+      "\\n"
+    ],
+    "ignorer_ingredients_base": [
+      "eau",
+      "sel",
+      "poivre",
+      "huile"
+    ],
+    "tri_compatibilite_decroissant": true
+  },
+  "generation": {
+    "generer_html": true,
+    "generer_index": true,
+    "generer_qr_fiche": true,
+    "generer_qr_google": false,
+    "generer_pdf": true,
+    "generer_sitemap": false,
+    "generer_rss": false
+  },
+  "nutrition": {
+    "mode_par_defaut": "calcule",
+    "inclure_optionnels": false,
+    "statut_si_incomplet": "a-completer"
+  },
+  "validation": {
+    "bloquer_si_schema_invalide": true,
+    "bloquer_si_taxonomie_invalide": true,
+    "bloquer_si_image_absente": false
+  },
+  "impression": {
+    "module_js": "assets/js/print-page.js",
+    "feuille_css": "assets/css/print.css",
+    "imprimer_etat_affiche": true,
+    "cible_par_defaut": "#contenu"
+  }
+}

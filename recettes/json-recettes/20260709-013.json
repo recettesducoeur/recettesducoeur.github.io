@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "id": "20260709-013",
+  "statut": "publie",
+  "seo": {
+    "titre": "Tarte salée à la courgette",
+    "description": "Une tarte salée maison, fondante et dorée, préparée avec des courgettes, une pâte brisée salée et un appareil crémeux aux œufs.",
+    "mots_cles": [
+      "tarte-salee-a-la-courgette",
+      "simple",
+      "economique",
+      "anti-gaspi",
+      "chaud",
+      "vegetarien",
+      "tarte",
+      "courgette",
+      "courgettes",
+      "pate-brisee",
+      "ufs",
+      "oeufs",
+      "creme",
+      "fromage",
+      "quiche",
+      "tarte-salee"
+    ]
+  },
+  "contenu": {
+    "titre": "Tarte salée à la courgette",
+    "accroche": "Une tarte salée maison, fondante et dorée, préparée avec des courgettes, une pâte brisée salée et un appareil crémeux aux œufs.",
+    "introduction": "Les courgettes sont précuites pour éviter de détremper la pâte et pour concentrer leur goût. La base œufs-crème donne une garniture fondante et facile à adapter."
+  },
+  "image": {
+    "fichier": "20260709-013.webp",
+    "alt": "Photo maison : Tarte salée à la courgette",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "tarte-salee",
+      "label": "Tarte salée"
+    },
+    "caracteristiques": [
+      {
+        "id": "simple",
+        "label": "Simple"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 20,
+    "cuisson_minutes": 35,
+    "repos_minutes": 0,
+    "total_minutes": 55,
+    "tranche": "45-60"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "four",
+      "label": "Four"
+    },
+    {
+      "id": "poele",
+      "label": "Poêle"
+    },
+    {
+      "id": "moule-a-patisserie",
+      "label": "Moule à pâtisserie"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "pate-brisee",
+        "libelle": "pâte brisée salée",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pate-brisee"
+      },
+      {
+        "id": "courgettes",
+        "libelle": "courgettes",
+        "quantite": 650,
+        "quantite_affichee": "650 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "courgettes"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "oeufs",
+        "libelle": "œufs",
+        "quantite": 3,
+        "quantite_affichee": "3 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oeufs"
+      },
+      {
+        "id": "creme",
+        "libelle": "crème",
+        "quantite": 200,
+        "quantite_affichee": "200 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "creme"
+      },
+      {
+        "id": "oignon",
+        "libelle": "oignon",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oignon"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage râpé",
+        "quantite": 90,
+        "quantite_affichee": "90 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "fromage"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "moutarde",
+        "libelle": "moutarde",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "moutarde"
+      },
+      {
+        "id": "huile-dolive",
+        "libelle": "huile d’olive",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "huile-dolive"
+      },
+      {
+        "id": "herbes-de-provence",
+        "libelle": "herbes de Provence",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes-de-provence"
+      },
+      {
+        "id": "muscade",
+        "libelle": "sel, poivre ou muscade",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "muscade"
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Préchauffer le four à 180 °C. Étaler la pâte brisée salée dans un moule à tarte, piquer le fond avec une fourchette et réserver au frais.",
+      "Laver les courgettes, retirer les extrémités puis les couper en fines rondelles ou en petits dés. Émincer l’oignon.",
+      "Faire revenir l’oignon et les courgettes 8 à 10 minutes dans une poêle avec un filet d’huile d’olive. Les légumes doivent commencer à s’attendrir et perdre une partie de leur eau.",
+      "Dans un saladier, battre les œufs avec la crème. Ajouter le fromage râpé, les herbes, le poivre et une pincée de sel. Ajouter éventuellement un peu de muscade.",
+      "Répartir les courgettes précuites sur le fond de tarte. Verser l’appareil œufs-crème par-dessus et lisser légèrement.",
+      "Enfourner 30 à 35 minutes, jusqu’à ce que la tarte soit prise, dorée et légèrement gratinée. Laisser tiédir 5 minutes avant de couper."
+    ],
+    "cuisson_indicative": {
+      "texte": "Four : 180 °C pendant 30 à 35 min."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Cette tarte est idéale pour utiliser des courgettes un peu fatiguées. Si elles rendent beaucoup d’eau, les précuire plus longtemps et les égoutter avant de garnir la pâte. Les restes se mangent froids le lendemain ou se réchauffent doucement au four.",
+    "variantes": "Ajouter des tomates, remplacer une partie des courgettes par des aubergines, intégrer des poireaux fondus, du jambon, des lardons, du thon, du saumon fumé ou des restes de poulet. Pour une version plus fromagère, ajouter chèvre, feta, comté ou parmesan. Il suffit souvent de regarder ce qui reste dans le frigo."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Tarte aux courgettes miam-mioum",
+      "url": "https://www.marmiton.org/recettes/recette_tarte-aux-courgettes-miam-mioum_22886.aspx"
+    },
+    {
+      "titre": "CuisineAZ - Tarte à la courgette facile",
+      "url": "https://www.cuisineaz.com/recettes/tarte-a-la-courgette-facile-121814.aspx"
+    },
+    {
+      "titre": "Herta - Quiche aux courgettes",
+      "url": "https://www.herta.fr/recettes/quiche-aux-courgettes"
+    },
+    {
+      "titre": "Saveurs - Quiche fondante à la courgette et au parmesan",
+      "url": "https://www.saveurs-magazine.fr/recettes/quiche-fondante-a-la-courgette-et-au-parmesan/"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer 8 à 10 minutes au four à 160 °C, ou à déguster froid.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [
+      "vegetarien"
+    ],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": [
+      "Les ingrédients optionnels non végétariens ne sont pas inclus dans la recette de référence."
+    ]
+  }
+}

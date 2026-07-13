@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "id": "20260708-011",
+  "statut": "publie",
+  "seo": {
+    "titre": "Tian de courgettes",
+    "description": "Un tian de courgettes fondant et parfumé, à préparer avec des courgettes de saison, un peu de tomate et des herbes.",
+    "mots_cles": [
+      "tian-de-courgettes",
+      "simple",
+      "economique",
+      "legumes",
+      "four",
+      "anti-gaspi",
+      "courgettes",
+      "tomates",
+      "oignons",
+      "herbes-de-provence",
+      "fromage-rape",
+      "courgette"
+    ]
+  },
+  "contenu": {
+    "titre": "Tian de courgettes",
+    "accroche": "Un tian de courgettes fondant et parfumé, à préparer avec des courgettes de saison, un peu de tomate et des herbes.",
+    "introduction": "La réussite tient à une cuisson suffisamment longue pour concentrer les légumes sans les brûler. Des tranches fines et régulières donnent un plat plus fondant et plus joli."
+  },
+  "image": {
+    "fichier": "20260708-011.webp",
+    "alt": "Photo maison : Tian de courgettes",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "tian",
+      "label": "Tian"
+    },
+    "caracteristiques": [
+      {
+        "id": "simple",
+        "label": "Simple"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "legumes",
+        "label": "Legumes"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 15,
+    "cuisson_minutes": 35,
+    "repos_minutes": 0,
+    "total_minutes": 50,
+    "tranche": "45-60"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "four",
+      "label": "Four"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "courgettes",
+        "libelle": "courgettes",
+        "quantite": 800,
+        "quantite_affichee": "800 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "courgettes"
+      },
+      {
+        "id": "tomates",
+        "libelle": "tomates",
+        "quantite": 500,
+        "quantite_affichee": "500 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "tomates"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "oignons",
+        "libelle": "oignons",
+        "quantite": 2,
+        "quantite_affichee": "2 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oignons"
+      },
+      {
+        "id": "huile-dolive",
+        "libelle": "huile d’olive ou huile neutre",
+        "quantite": 2,
+        "quantite_affichee": "2 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "huile-dolive"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "herbes-de-provence",
+        "libelle": "herbes de Provence",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes-de-provence"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage râpé",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "riz-cru-au-fond-du-plat",
+        "libelle": "riz cru au fond du plat",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "riz-cru-au-fond-du-plat"
+      },
+      {
+        "id": "ail",
+        "libelle": "ail",
+        "quantite": 1,
+        "quantite_affichee": "1 gousse",
+        "unite": {
+          "id": "gousse",
+          "label": "gousse"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "ail",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Préchauffer le four à 180-200 °C. Laver les courgettes et les tomates, puis les couper en fines rondelles.",
+      "Huiler légèrement un plat à gratin. Répartir l’oignon émincé ou l’ail au fond si disponible.",
+      "Ranger les rondelles de courgette et de tomate en les alternant.",
+      "Saler, poivrer, ajouter herbes de Provence ou basilic, puis arroser d’un filet d’huile.",
+      "Cuire 40 à 60 minutes, jusqu’à ce que les légumes soient fondants et légèrement confits."
+    ],
+    "cuisson_indicative": {
+      "texte": "Four : 180 à 200 °C pendant 40 à 60 min, jusqu’à obtenir des légumes fondants et légèrement confits."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Si les courgettes rendent beaucoup d’eau, prolonger la cuisson quelques minutes à découvert. Les restes sont très bons froids ou dans une omelette.",
+    "variantes": "Ajouter riz au fond du plat, fromage râpé, chapelure, aubergine, pomme de terre ou un reste de sauce tomate. Pour un plat complet, ajouter pois chiches ou thon émietté."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Tian de courgettes et de tomates",
+      "url": "https://www.marmiton.org/recettes/recette_tian-de-courgettes-et-de-tomates_17041.aspx"
+    },
+    {
+      "titre": "Marmiton - Tian provençal",
+      "url": "https://www.marmiton.org/recettes/recette_tian-provencal_36194.aspx"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

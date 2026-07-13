@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "id": "20000101-003",
+  "statut": "publie",
+  "seo": {
+    "titre": "Soupe de légumes simple",
+    "description": "Une soupe de légumes simple, économique et modulable, idéale pour utiliser des légumes fatigués ou des restes de bac à légumes.",
+    "mots_cles": [
+      "soupe-de-legumes-simple",
+      "simple",
+      "economique",
+      "anti-gaspi",
+      "legumes",
+      "pommes-de-terre",
+      "oignon",
+      "creme"
+    ]
+  },
+  "contenu": {
+    "titre": "Soupe de légumes simple",
+    "accroche": "Une soupe de légumes simple, économique et modulable, idéale pour utiliser des légumes fatigués ou des restes de bac à légumes.",
+    "introduction": "La recette repose sur une cuisson douce des légumes coupés régulièrement, puis un mixage plus ou moins fin selon la texture voulue. Elle peut être enrichie avec des légumineuses, du riz ou du pain pour devenir un repas complet."
+  },
+  "image": {
+    "fichier": "20000101-003.webp",
+    "alt": "Photo maison : Soupe de légumes simple",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "soupe",
+      "label": "Soupe"
+    },
+    "caracteristiques": [
+      {
+        "id": "simple",
+        "label": "Simple"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      },
+      {
+        "id": "legumes",
+        "label": "Legumes"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 15,
+    "cuisson_minutes": 30,
+    "repos_minutes": 0,
+    "total_minutes": 45,
+    "tranche": "30-45"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "legumes-varies",
+        "libelle": "légumes variés",
+        "quantite": 800,
+        "quantite_affichee": "800 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "legumes-varies"
+      },
+      {
+        "id": "pommes-de-terre",
+        "libelle": "pommes de terre",
+        "quantite": 300,
+        "quantite_affichee": "300 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pommes-de-terre"
+      },
+      {
+        "id": "carotte",
+        "libelle": "carottes",
+        "quantite": 200,
+        "quantite_affichee": "200 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "carotte"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "oignon",
+        "libelle": "oignon",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oignon"
+      },
+      {
+        "id": "eau",
+        "libelle": "eau",
+        "quantite": 1000,
+        "quantite_affichee": "1000 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "eau"
+      },
+      {
+        "id": "huile",
+        "libelle": "huile",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "huile"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "creme",
+        "libelle": "crème",
+        "quantite": 80,
+        "quantite_affichee": "80 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "creme"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage râpé",
+        "quantite": 40,
+        "quantite_affichee": "40 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "pain-rassis-pour-croutons",
+        "libelle": "pain rassis pour croûtons",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "pain-rassis-pour-croutons"
+      },
+      {
+        "id": "poireau",
+        "libelle": "poireaux",
+        "quantite": 200,
+        "quantite_affichee": "200 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "poireau"
+      },
+      {
+        "id": "bouillon-legumes",
+        "libelle": "bouillon de légumes",
+        "quantite": 1000,
+        "quantite_affichee": "1 000 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "bouillon-legumes"
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Éplucher uniquement les légumes qui le nécessitent, laver le reste et couper tout en morceaux de taille proche.",
+      "Faire revenir l’oignon ou le poireau dans un filet d’huile si disponible, pour renforcer le goût.",
+      "Ajouter les légumes, couvrir d’eau à hauteur, saler légèrement et ajouter des herbes ou un cube de bouillon si disponible.",
+      "Laisser cuire 25 à 35 minutes, jusqu’à ce que les légumes soient tendres.",
+      "Mixer plus ou moins finement. Ajuster l’épaisseur avec un peu d’eau, puis rectifier l’assaisonnement."
+    ],
+    "cuisson_indicative": {
+      "texte": "Casserole : 25 à 35 min à frémissement, jusqu’à ce que les légumes soient tendres."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Les fanes propres, verts de poireaux, tiges de persil ou petits restes de légumes peuvent parfumer la soupe. Mixer avec un morceau de pain rassis donne plus de corps.",
+    "variantes": "Ajouter lentilles corail, pois chiches, haricots blancs, riz, petites pâtes ou pomme de terre. Pour une soupe rustique, ne mixer qu’une partie. Pour une soupe repas, servir avec pain grillé, fromage ou œuf dur."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Soupe de légumes",
+      "url": "https://www.marmiton.org/recettes/recette_soupe-de-legumes_222646.aspx"
+    },
+    {
+      "titre": "Le Monde - Soupe de légumes et légumineuses",
+      "url": "https://www.lemonde.fr/les-recettes-du-monde/article/2024/05/17/la-soupe-de-legumes-et-legumineuses-la-recette-de-jacques-caplat_6233808_5324493.html"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

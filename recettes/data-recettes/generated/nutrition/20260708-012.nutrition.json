@@ -1,0 +1,48 @@
+{
+  "id": "20260708-012",
+  "titre": "Chou-fleur et quinoa à la crème",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 900.0,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "chou-fleur",
+      "groupe": "principaux",
+      "masse_g": 700.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "creme",
+      "groupe": "secondaires",
+      "masse_g": 200.0,
+      "conversion": "Densité 1.0"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "quinoa",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "sucres_g"
+      ]
+    },
+    {
+      "ingredient": "eau",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

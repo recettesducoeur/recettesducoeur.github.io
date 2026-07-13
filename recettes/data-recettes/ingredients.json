@@ -1,0 +1,2579 @@
+{
+  "version": 1,
+  "source_de_verite": {
+    "fichier": "Base_Ingredients_V37_avec_CIQUAL(1).xlsx",
+    "onglet": "Ingredients",
+    "date_generation": "2026-07-13T01:03:48"
+  },
+  "source_ciqual": {
+    "organisme": "Anses",
+    "nom": "Table de composition nutritionnelle des aliments Ciqual 2025",
+    "doi": "10.57745/RDMHWY",
+    "url": "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/RDMHWY"
+  },
+  "ingredients": [
+    {
+      "id": "ail",
+      "label": "ail",
+      "categorie": "legumes",
+      "unite_par_defaut": "gousse",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "banane",
+      "label": "bananes très mûres",
+      "categorie": "fruits",
+      "unite_par_defaut": "pieces",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "13005",
+          "aliment": "Banane, chair sans peau, crue",
+          "url": "https://ciqual.anses.fr/#/aliments/13005",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 371.0,
+          "energie_kcal": 87.6,
+          "proteines_g": 1.06,
+          "glucides_g": 19.7,
+          "sucres_g": 15.6,
+          "lipides_g": 0.25,
+          "satures_g": 0.005,
+          "fibres_g": 2.7,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "bananes",
+      "label": "bananes mûres",
+      "categorie": "fruits",
+      "unite_par_defaut": "pieces",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "13005",
+          "aliment": "Banane, chair sans peau, crue",
+          "url": "https://ciqual.anses.fr/#/aliments/13005",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 371.0,
+          "energie_kcal": 87.6,
+          "proteines_g": 1.06,
+          "glucides_g": 19.7,
+          "sucres_g": 15.6,
+          "lipides_g": 0.25,
+          "satures_g": 0.005,
+          "fibres_g": 2.7,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "beurre",
+      "label": "beurre",
+      "categorie": "a-classer",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "16400",
+          "aliment": "Beurre à 80% MG minimum, doux",
+          "url": "https://ciqual.anses.fr/#/aliments/16400",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 3100.0,
+          "energie_kcal": 753.0,
+          "proteines_g": 0.64,
+          "glucides_g": 0.71,
+          "sucres_g": 0.71,
+          "lipides_g": 83.0,
+          "satures_g": 60.0,
+          "fibres_g": 0.0,
+          "sel_g": 0.035
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "bouillon-legumes",
+      "label": "bouillon de légumes",
+      "categorie": "a-classer",
+      "unite_par_defaut": "ml",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "25909",
+          "aliment": "Bouillon de viande et légumes type pot-au-feu, prêt à consommer",
+          "url": "https://ciqual.anses.fr/#/aliments/25909",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 24.1,
+          "energie_kcal": 5.76,
+          "proteines_g": 0.53,
+          "glucides_g": 0.24,
+          "sucres_g": 0.0,
+          "lipides_g": 0.3,
+          "satures_g": 0.13,
+          "fibres_g": 0.0,
+          "sel_g": 0.82
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "cannelle",
+      "label": "cannelle",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "c-a-cafe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11025",
+          "aliment": "Cannelle, poudre",
+          "url": "https://ciqual.anses.fr/#/aliments/11025",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 1010.0,
+          "energie_kcal": 243.0,
+          "proteines_g": 3.99,
+          "glucides_g": 27.5,
+          "sucres_g": 2.17,
+          "lipides_g": 1.24,
+          "satures_g": 0.35,
+          "fibres_g": 53.1,
+          "sel_g": 0.025
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "carotte",
+      "label": "carottes",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20353",
+          "aliment": "Carotte, cuite (aliment moyen)",
+          "url": "https://ciqual.anses.fr/#/aliments/20353",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 138.0,
+          "energie_kcal": 33.0,
+          "proteines_g": 0.37,
+          "glucides_g": 6.24,
+          "sucres_g": 5.67,
+          "lipides_g": 0.2,
+          "satures_g": 0.026,
+          "fibres_g": 3.43,
+          "sel_g": 0.11
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "chapelure",
+      "label": "chapelure",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "7500",
+          "aliment": "Chapelure",
+          "url": "https://ciqual.anses.fr/#/aliments/7500",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 1550.0,
+          "energie_kcal": 365.0,
+          "proteines_g": 9.41,
+          "glucides_g": 74.3,
+          "sucres_g": 4.29,
+          "lipides_g": 1.6,
+          "satures_g": 0.46,
+          "fibres_g": 5.4,
+          "sel_g": 0.72
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "chocolat",
+      "label": "chocolat râpé",
+      "categorie": "produits-sucres",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "31085",
+          "aliment": "Chocolat noir 40% de cacao et plus, à pâtisser, tablette",
+          "url": "https://ciqual.anses.fr/#/aliments/31085",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 2280.0,
+          "energie_kcal": 546.0,
+          "proteines_g": 6.39,
+          "glucides_g": 51.4,
+          "sucres_g": 41.6,
+          "lipides_g": 33.1,
+          "satures_g": 22.0,
+          "fibres_g": 8.76,
+          "sel_g": 0.015
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "chou-fleur",
+      "label": "chou-fleur",
+      "categorie": "legumes",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20016",
+          "aliment": "Chou-fleur, cru",
+          "url": "https://ciqual.anses.fr/#/aliments/20016",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 104.0,
+          "energie_kcal": 24.9,
+          "proteines_g": 1.81,
+          "glucides_g": 2.13,
+          "sucres_g": 1.7,
+          "lipides_g": 0.7,
+          "satures_g": 0.24,
+          "fibres_g": 2.2,
+          "sel_g": 0.015
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "concombre",
+      "label": "concombre",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "cornichons",
+      "label": "cornichons",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11004",
+          "aliment": "Cornichon, au vinaigre",
+          "url": "https://ciqual.anses.fr/#/aliments/11004",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 67.8,
+          "energie_kcal": 16.0,
+          "proteines_g": 1.06,
+          "glucides_g": 0.78,
+          "sucres_g": 0.6,
+          "lipides_g": 0.3,
+          "satures_g": 0.005,
+          "fibres_g": 1.5,
+          "sel_g": 1.72
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "courgettes",
+      "label": "courgettes",
+      "categorie": "legumes",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20020",
+          "aliment": "Courgette, chair et peau, crue",
+          "url": "https://ciqual.anses.fr/#/aliments/20020",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 70.1,
+          "energie_kcal": 16.7,
+          "proteines_g": 1.21,
+          "glucides_g": 1.75,
+          "sucres_g": 1.74,
+          "lipides_g": 0.32,
+          "satures_g": 0.084,
+          "fibres_g": 1.0,
+          "sel_g": 0.02
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "creme",
+      "label": "crème",
+      "categorie": "produits-laitiers",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "lait"
+        ],
+        "origine_animale": "Oui",
+        "vegetarien": "Oui",
+        "vegan": "Non",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "19417",
+          "aliment": "Crème 30% MG, fluide, UHT",
+          "url": "https://ciqual.anses.fr/#/aliments/19417",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1210.0,
+          "energie_kcal": 293.0,
+          "proteines_g": 2.2,
+          "glucides_g": 3.69,
+          "sucres_g": 2.93,
+          "lipides_g": 30.0,
+          "satures_g": 18.6,
+          "fibres_g": 0.0,
+          "sel_g": 0.068
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "eau",
+      "label": "eau ou bouillon",
+      "categorie": "liquides-bouillons",
+      "unite_par_defaut": "ml",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "epices-douces",
+      "label": "épices douces",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "c-a-cafe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "farine",
+      "label": "farine",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9440",
+          "aliment": "Farine de blé tendre ou froment T45 (pour pâtisserie)",
+          "url": "https://ciqual.anses.fr/#/aliments/9440",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1510.0,
+          "energie_kcal": 355.0,
+          "proteines_g": 8.44,
+          "glucides_g": 76.5,
+          "sucres_g": 0.44,
+          "lipides_g": 0.82,
+          "satures_g": 0.13,
+          "fibres_g": 2.5,
+          "sel_g": 0.098
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "fromage",
+      "label": "fromage râpé",
+      "categorie": "produits-laitiers",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "lait"
+        ],
+        "origine_animale": "Oui",
+        "vegetarien": "Oui",
+        "vegan": "Non",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "12118",
+          "aliment": "Emmental ou emmenthal, râpé",
+          "url": "https://ciqual.anses.fr/#/aliments/12118",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1530.0,
+          "energie_kcal": 368.0,
+          "proteines_g": 27.6,
+          "glucides_g": 0.58,
+          "sucres_g": 0.0,
+          "lipides_g": 28.2,
+          "satures_g": 18.1,
+          "fibres_g": 0.042,
+          "sel_g": 0.68
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "fruits",
+      "label": "fruits",
+      "categorie": "fruits",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "Exclure trop generique  doit êtr emist en ingredient i optionel",
+      "statut": "Terminé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "herbes",
+      "label": "herbes de Provence",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "c-a-cafe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "herbes-de-provence",
+      "label": "herbes de Provence",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "herbes-fraiches",
+      "label": "herbes fraîches",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "huile",
+      "label": "huile",
+      "categorie": "matieres-grasses-sauces",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "12118",
+          "aliment": "Emmental ou emmenthal, râpé",
+          "url": "https://ciqual.anses.fr/#/aliments/12118",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1530.0,
+          "energie_kcal": 368.0,
+          "proteines_g": 27.6,
+          "glucides_g": 0.58,
+          "sucres_g": 0.0,
+          "lipides_g": 28.2,
+          "satures_g": 18.1,
+          "fibres_g": 0.042,
+          "sel_g": 0.68
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "huile-dolive",
+      "label": "huile d’olive ou huile neutre",
+      "categorie": "matieres-grasses-sauces",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "17270",
+          "aliment": "Huile d'olive vierge extra",
+          "url": "https://ciqual.anses.fr/#/aliments/17270",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 3700.0,
+          "energie_kcal": 899.0,
+          "proteines_g": 0.25,
+          "glucides_g": 0.0,
+          "sucres_g": 0.0,
+          "lipides_g": 99.9,
+          "satures_g": 15.2,
+          "fibres_g": 0.0,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "jambon",
+      "label": "jambon",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "jus-de-citron",
+      "label": "jus de citron",
+      "categorie": "fruits",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "lait",
+      "label": "lait",
+      "categorie": "produits-laitiers",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "lait"
+        ],
+        "origine_animale": "Oui",
+        "vegetarien": "Oui",
+        "vegan": "Non",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "19033",
+          "aliment": "Lait demi-écrémé (aliment moyen)",
+          "url": "https://ciqual.anses.fr/#/aliments/19033",
+          "confiance": "equivalente"
+        },
+        "par_100g": {
+          "energie_kj": 200.0,
+          "energie_kcal": 47.5,
+          "proteines_g": 3.46,
+          "glucides_g": 4.97,
+          "sucres_g": 4.91,
+          "lipides_g": 1.55,
+          "satures_g": 0.98,
+          "fibres_g": 0.0,
+          "sel_g": 0.087
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "lardons",
+      "label": "lardons",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "28725",
+          "aliment": "Lardon fumé, cuit",
+          "url": "https://ciqual.anses.fr/#/aliments/28725",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1150.0,
+          "energie_kcal": 277.0,
+          "proteines_g": 14.7,
+          "glucides_g": 4.8,
+          "sucres_g": 0.9,
+          "lipides_g": 22.1,
+          "satures_g": 8.25,
+          "fibres_g": 0.0,
+          "sel_g": 2.59
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "legumes-varies",
+      "label": "légumes variés",
+      "categorie": "legumes",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Terminé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "levure-chimique",
+      "label": "levure chimique",
+      "categorie": "aides-culinaires",
+      "unite_par_defaut": "sachet",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11046",
+          "aliment": "Levure chimique ou poudre à lever",
+          "url": "https://ciqual.anses.fr/#/aliments/11046",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 461.0,
+          "energie_kcal": 108.0,
+          "proteines_g": 0.1,
+          "glucides_g": 26.9,
+          "sucres_g": 0.0,
+          "lipides_g": 0.0,
+          "satures_g": 0.0,
+          "fibres_g": 0.2,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "mais",
+      "label": "maïs égoutté",
+      "categorie": "legumes",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20066",
+          "aliment": "Maïs doux, appertisé, égoutté",
+          "url": "https://ciqual.anses.fr/#/aliments/20066",
+          "confiance": "equivalente"
+        },
+        "par_100g": {
+          "energie_kj": 443.0,
+          "energie_kcal": 105.0,
+          "proteines_g": 2.66,
+          "glucides_g": 18.3,
+          "sucres_g": 2.37,
+          "lipides_g": 1.68,
+          "satures_g": 0.26,
+          "fibres_g": 3.1,
+          "sel_g": 0.59
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "mayonnaise",
+      "label": "mayonnaise",
+      "categorie": "a-classer",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "miel",
+      "label": "miel",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "31008",
+          "aliment": "Miel",
+          "url": "https://ciqual.anses.fr/#/aliments/31008",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 1410.0,
+          "energie_kcal": 331.0,
+          "proteines_g": 0.65,
+          "glucides_g": 82.1,
+          "sucres_g": 81.1,
+          "lipides_g": 0.0,
+          "satures_g": 0.0,
+          "fibres_g": 0.0,
+          "sel_g": 0.01
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "moutarde",
+      "label": "moutarde",
+      "categorie": "a-classer",
+      "unite_par_defaut": "c-a-cafe",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "moutarde"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11157",
+          "aliment": "Sauce moutarde, préemballée",
+          "url": "https://ciqual.anses.fr/#/aliments/11157",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 960.0,
+          "energie_kcal": 233.0,
+          "proteines_g": 1.66,
+          "glucides_g": 4.7,
+          "sucres_g": 0.8,
+          "lipides_g": 22.8,
+          "satures_g": null,
+          "fibres_g": 1.2,
+          "sel_g": 2.35
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "muscade",
+      "label": "sel, poivre ou muscade",
+      "categorie": "a-classer",
+      "unite_par_defaut": "pincee",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11048",
+          "aliment": "Noix de muscade",
+          "url": "https://ciqual.anses.fr/#/aliments/11048",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 2090.0,
+          "energie_kcal": 506.0,
+          "proteines_g": 5.84,
+          "glucides_g": 27.4,
+          "sucres_g": 2.99,
+          "lipides_g": 36.3,
+          "satures_g": 25.9,
+          "fibres_g": 20.8,
+          "sel_g": 0.04
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "oeufs",
+      "label": "œufs",
+      "categorie": "a-classer",
+      "unite_par_defaut": "pieces",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "oeufs"
+        ],
+        "origine_animale": "Oui",
+        "vegetarien": "Oui",
+        "vegan": "Non",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "22505",
+          "aliment": "Oeuf au plat, sans matière grasse",
+          "url": "https://ciqual.anses.fr/#/aliments/22505",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 656.0,
+          "energie_kcal": 157.0,
+          "proteines_g": 14.6,
+          "glucides_g": 1.4,
+          "sucres_g": 0.35,
+          "lipides_g": 10.4,
+          "satures_g": 3.25,
+          "fibres_g": 0.0,
+          "sel_g": 0.42
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "oeufs-durs",
+      "label": "œufs durs",
+      "categorie": "a-classer",
+      "unite_par_defaut": "pieces",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "oeufs"
+        ],
+        "origine_animale": "Oui",
+        "vegetarien": "Oui",
+        "vegan": "Non",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "22010",
+          "aliment": "Oeuf dur",
+          "url": "https://ciqual.anses.fr/#/aliments/22010",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 557.0,
+          "energie_kcal": 134.0,
+          "proteines_g": 13.5,
+          "glucides_g": 0.52,
+          "sucres_g": 0.52,
+          "lipides_g": 8.62,
+          "satures_g": 3.22,
+          "fibres_g": 0.0,
+          "sel_g": 0.31
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "oignon",
+      "label": "oignon",
+      "categorie": "legumes",
+      "unite_par_defaut": "piece",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20239",
+          "aliment": "Oignon jaune, cru",
+          "url": "https://ciqual.anses.fr/#/aliments/20239",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 151.0,
+          "energie_kcal": 35.9,
+          "proteines_g": 1.19,
+          "glucides_g": 6.39,
+          "sucres_g": 0.2,
+          "lipides_g": 0.25,
+          "satures_g": 0.005,
+          "fibres_g": 2.6,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "oignons",
+      "label": "oignons",
+      "categorie": "legumes",
+      "unite_par_defaut": "pieces",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20239",
+          "aliment": "Oignon jaune, cru",
+          "url": "https://ciqual.anses.fr/#/aliments/20239",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 151.0,
+          "energie_kcal": 35.9,
+          "proteines_g": 1.19,
+          "glucides_g": 6.39,
+          "sucres_g": 0.2,
+          "lipides_g": 0.25,
+          "satures_g": 0.005,
+          "fibres_g": 2.6,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "olives",
+      "label": "olives",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "13184",
+          "aliment": "Olive (aliment moyen)",
+          "url": "https://ciqual.anses.fr/#/aliments/13184",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 680.0,
+          "energie_kcal": 165.0,
+          "proteines_g": 1.29,
+          "glucides_g": 0.65,
+          "sucres_g": 0.029,
+          "lipides_g": 16.6,
+          "satures_g": 2.29,
+          "fibres_g": 3.83,
+          "sel_g": 2.83
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pain",
+      "label": "pain",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "tranches",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "7000",
+          "aliment": "Pain (aliment moyen)",
+          "url": "https://ciqual.anses.fr/#/aliments/7000",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1170.0,
+          "energie_kcal": 276.0,
+          "proteines_g": 8.18,
+          "glucides_g": 55.0,
+          "sucres_g": 2.38,
+          "lipides_g": 1.36,
+          "satures_g": 0.34,
+          "fibres_g": 3.86,
+          "sel_g": 1.25
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pain-rassis",
+      "label": "pain rassis mixé",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pain-rassis-pour-croutons",
+      "label": "pain rassis pour croûtons",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "7432",
+          "aliment": "Croûton nature, préemballé",
+          "url": "https://ciqual.anses.fr/#/aliments/7432",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1930.0,
+          "energie_kcal": 459.0,
+          "proteines_g": 9.21,
+          "glucides_g": 62.4,
+          "sucres_g": 3.64,
+          "lipides_g": 17.9,
+          "satures_g": 2.66,
+          "fibres_g": 3.72,
+          "sel_g": 1.83
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pate-brisee",
+      "label": "pâte brisée salée",
+      "categorie": "a-classer",
+      "unite_par_defaut": "piece",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "23414",
+          "aliment": "Pâte brisée, pur beurre, préemballée, crue",
+          "url": "https://ciqual.anses.fr/#/aliments/23414",
+          "confiance": "equivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1630.0,
+          "energie_kcal": 390.0,
+          "proteines_g": 5.93,
+          "glucides_g": 45.0,
+          "sucres_g": 2.5,
+          "lipides_g": 20.0,
+          "satures_g": 13.0,
+          "fibres_g": 2.0,
+          "sel_g": 1.69
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pates-alimentaires",
+      "label": "pâtes",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9821",
+          "aliment": "Pâtes sèches, aux oeufs, crues",
+          "url": "https://ciqual.anses.fr/#/aliments/9821",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1610.0,
+          "energie_kcal": 381.0,
+          "proteines_g": 14.0,
+          "glucides_g": 68.0,
+          "sucres_g": 2.19,
+          "lipides_g": 4.72,
+          "satures_g": 1.34,
+          "fibres_g": 3.15,
+          "sel_g": 0.085
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pates-seches",
+      "label": "pâtes sèches",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "gluten"
+        ],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9821",
+          "aliment": "Pâtes sèches, aux oeufs, crues",
+          "url": "https://ciqual.anses.fr/#/aliments/9821",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1610.0,
+          "energie_kcal": 381.0,
+          "proteines_g": 14.0,
+          "glucides_g": 68.0,
+          "sucres_g": 2.19,
+          "lipides_g": 4.72,
+          "satures_g": 1.34,
+          "fibres_g": 3.15,
+          "sel_g": 0.085
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "poireau",
+      "label": "poireaux",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20039",
+          "aliment": "Poireau, cru",
+          "url": "https://ciqual.anses.fr/#/aliments/20039",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 128.0,
+          "energie_kcal": 30.4,
+          "proteines_g": 1.5,
+          "glucides_g": 4.55,
+          "sucres_g": 3.9,
+          "lipides_g": 0.3,
+          "satures_g": 0.04,
+          "fibres_g": 1.8,
+          "sel_g": 0.05
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "poivre",
+      "label": "poivre",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "pincee",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11015",
+          "aliment": "Poivre noir, poudre",
+          "url": "https://ciqual.anses.fr/#/aliments/11015",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1380.0,
+          "energie_kcal": 331.0,
+          "proteines_g": 13.3,
+          "glucides_g": 39.9,
+          "sucres_g": 0.64,
+          "lipides_g": 7.5,
+          "satures_g": 2.9,
+          "fibres_g": 25.3,
+          "sel_g": 0.036
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pommes",
+      "label": "pommes",
+      "categorie": "fruits",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "À traiter",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pommes-de-terre",
+      "label": "pommes de terre",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "À traiter",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "pommes-de-terre-cuites",
+      "label": "pommes de terre cuites",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "À traiter",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "quinoa",
+      "label": "quinoa",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9340",
+          "aliment": "Quinoa, cru",
+          "url": "https://ciqual.anses.fr/#/aliments/9340",
+          "confiance": "exacte"
+        },
+        "par_100g": {
+          "energie_kj": 1510.0,
+          "energie_kcal": 358.0,
+          "proteines_g": 13.2,
+          "glucides_g": 58.1,
+          "sucres_g": null,
+          "lipides_g": 6.07,
+          "satures_g": 0.71,
+          "fibres_g": 7.0,
+          "sel_g": 0.013
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "restes-viande",
+      "label": "restes de viande",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "trop vaste ingredient  optionnnel ",
+      "statut": "Terminé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "riz",
+      "label": "riz",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9104",
+          "aliment": "Riz blanc, cuit, sans sel ajouté",
+          "url": "https://ciqual.anses.fr/#/aliments/9104",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 658.0,
+          "energie_kcal": 155.0,
+          "proteines_g": 3.15,
+          "glucides_g": 33.2,
+          "sucres_g": 0.0,
+          "lipides_g": 0.7,
+          "satures_g": 0.17,
+          "fibres_g": 1.4,
+          "sel_g": 0.045
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "riz-blanc",
+      "label": "riz blanc classique",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9104",
+          "aliment": "Riz blanc, cuit, sans sel ajouté",
+          "url": "https://ciqual.anses.fr/#/aliments/9104",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 658.0,
+          "energie_kcal": 155.0,
+          "proteines_g": 3.15,
+          "glucides_g": 33.2,
+          "sucres_g": 0.0,
+          "lipides_g": 0.7,
+          "satures_g": 0.17,
+          "fibres_g": 1.4,
+          "sel_g": 0.045
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "riz-cru-au-fond-du-plat",
+      "label": "riz cru au fond du plat",
+      "categorie": "feculents-cereales",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9104",
+          "aliment": "Riz blanc, cuit, sans sel ajouté",
+          "url": "https://ciqual.anses.fr/#/aliments/9104",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 658.0,
+          "energie_kcal": 155.0,
+          "proteines_g": 3.15,
+          "glucides_g": 33.2,
+          "sucres_g": 0.0,
+          "lipides_g": 0.7,
+          "satures_g": 0.17,
+          "fibres_g": 1.4,
+          "sel_g": 0.045
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "riz-rond",
+      "label": "riz rond",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "9104",
+          "aliment": "Riz blanc, cuit, sans sel ajouté",
+          "url": "https://ciqual.anses.fr/#/aliments/9104",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 658.0,
+          "energie_kcal": 155.0,
+          "proteines_g": 3.15,
+          "glucides_g": 33.2,
+          "sucres_g": 0.0,
+          "lipides_g": 0.7,
+          "satures_g": 0.17,
+          "fibres_g": 1.4,
+          "sel_g": 0.045
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "sauce-tomate",
+      "label": "sauce tomate",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20170",
+          "aliment": "Tomate, purée, appertisée",
+          "url": "https://ciqual.anses.fr/#/aliments/20170",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 202.0,
+          "energie_kcal": 47.6,
+          "proteines_g": 1.5,
+          "glucides_g": 8.42,
+          "sucres_g": 3.3,
+          "lipides_g": 0.2,
+          "satures_g": 0.052,
+          "fibres_g": 1.6,
+          "sel_g": 0.42
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "sel",
+      "label": "sel",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "pincee",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Terminé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "sucre",
+      "label": "sucre",
+      "categorie": "produits-sucres",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "31016",
+          "aliment": "Sucre blanc",
+          "url": "https://ciqual.anses.fr/#/aliments/31016",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1700.0,
+          "energie_kcal": 399.0,
+          "proteines_g": 0.0,
+          "glucides_g": 99.7,
+          "sucres_g": 99.7,
+          "lipides_g": 0.0,
+          "satures_g": 0.0,
+          "fibres_g": 0.0,
+          "sel_g": 0.0054
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "thon",
+      "label": "thon égoutté",
+      "categorie": "poissons",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [
+          "poisson"
+        ],
+        "origine_animale": "Oui",
+        "vegetarien": "Non",
+        "vegan": "Non",
+        "sans_porc": "À valider",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": null,
+          "aliment": null,
+          "url": null,
+          "confiance": null
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": null
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "tomates",
+      "label": "tomates",
+      "categorie": "legumes",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20276",
+          "aliment": "Tomate ronde, crue",
+          "url": "https://ciqual.anses.fr/#/aliments/20276",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 73.8,
+          "energie_kcal": 17.5,
+          "proteines_g": 0.5,
+          "glucides_g": 3.42,
+          "sucres_g": 3.0,
+          "lipides_g": 0.25,
+          "satures_g": 0.005,
+          "fibres_g": 1.0,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "tomates-concassees",
+      "label": "tomates concassées",
+      "categorie": "a-classer",
+      "unite_par_defaut": "g",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "20276",
+          "aliment": "Tomate ronde, crue",
+          "url": "https://ciqual.anses.fr/#/aliments/20276",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": 73.8,
+          "energie_kcal": 17.5,
+          "proteines_g": 0.5,
+          "glucides_g": 3.42,
+          "sucres_g": 3.0,
+          "lipides_g": 0.25,
+          "satures_g": 0.005,
+          "fibres_g": 1.0,
+          "sel_g": 0.0065
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "vanille",
+      "label": "vanille",
+      "categorie": "assaisonnements",
+      "unite_par_defaut": "c-a-cafe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "Non",
+        "vegetarien": "Oui",
+        "vegan": "Oui",
+        "sans_porc": "Oui",
+        "sans_alcool": "Oui"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11057",
+          "aliment": "Vanille, gousse",
+          "url": "https://ciqual.anses.fr/#/aliments/11057",
+          "confiance": "équivalente"
+        },
+        "par_100g": {
+          "energie_kj": null,
+          "energie_kcal": null,
+          "proteines_g": null,
+          "glucides_g": null,
+          "sucres_g": null,
+          "lipides_g": null,
+          "satures_g": null,
+          "fibres_g": null,
+          "sel_g": 0.0
+        }
+      },
+      "commentaire": "",
+      "statut": "Validé",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    },
+    {
+      "id": "vinaigrette",
+      "label": "vinaigrette",
+      "categorie": "a-classer",
+      "unite_par_defaut": "c-a-soupe",
+      "proprietes_alimentaires": {
+        "allergenes": [],
+        "origine_animale": "À valider",
+        "vegetarien": "À valider",
+        "vegan": "À valider",
+        "sans_porc": "À valider",
+        "sans_alcool": "À valider"
+      },
+      "nutrition": {
+        "source_nutritionnelle": {
+          "type": "ciqual",
+          "base": "CIQUAL",
+          "code": "11110",
+          "aliment": "Sauce vinaigrette (50 à 75% d'huile), préemballée",
+          "url": "https://ciqual.anses.fr/#/aliments/11110",
+          "confiance": "equivalente"
+        },
+        "par_100g": {
+          "energie_kj": 1950.0,
+          "energie_kcal": 475.0,
+          "proteines_g": 0.55,
+          "glucides_g": 2.91,
+          "sucres_g": 2.11,
+          "lipides_g": 51.0,
+          "satures_g": 5.52,
+          "fibres_g": 0.75,
+          "sel_g": 2.2
+        }
+      },
+      "commentaire": "",
+      "statut": "À valider",
+      "date_mise_a_jour": "2026-07-12",
+      "actif": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "20000101-003",
+  "titre": "Soupe de légumes simple",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 313.5,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "carotte",
+      "groupe": "principaux",
+      "masse_g": 200.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "oignon",
+      "groupe": "secondaires",
+      "masse_g": 100.0,
+      "conversion": "100 g/pièce"
+    },
+    {
+      "ingredient": "huile",
+      "groupe": "secondaires",
+      "masse_g": 13.5,
+      "conversion": "13.5 g/c. à soupe"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "legumes-varies",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    },
+    {
+      "ingredient": "pommes-de-terre",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    },
+    {
+      "ingredient": "eau",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

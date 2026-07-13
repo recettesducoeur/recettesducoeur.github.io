@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "id": "20000101-007",
+  "statut": "publie",
+  "seo": {
+    "titre": "Tartines chaudes fromage-tomate",
+    "description": "Des tartines chaudes fromage-tomate, rapides et économiques, parfaites pour utiliser du pain rassis ou des restes de fromage.",
+    "mots_cles": [
+      "tartines-chaudes-fromage-tomate",
+      "rapide",
+      "economique",
+      "anti-gaspi",
+      "pain",
+      "fromage",
+      "tomates",
+      "herbes",
+      "gruyere",
+      "emmental"
+    ]
+  },
+  "contenu": {
+    "titre": "Tartines chaudes fromage-tomate",
+    "accroche": "Des tartines chaudes fromage-tomate, rapides et économiques, parfaites pour utiliser du pain rassis ou des restes de fromage.",
+    "introduction": "Le passage au four rend le pain croustillant et fait fondre le fromage. Les tomates apportent du jus : il faut donc éviter d’en mettre trop ou choisir une base de pain assez épaisse."
+  },
+  "image": {
+    "fichier": "20000101-007.webp",
+    "alt": "Photo maison : Tartines chaudes fromage-tomate",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "tartine",
+      "label": "Tartine"
+    },
+    "caracteristiques": [
+      {
+        "id": "rapide",
+        "label": "Rapide"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      },
+      {
+        "id": "pain",
+        "label": "Pain"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 2,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 5,
+    "cuisson_minutes": 10,
+    "repos_minutes": 0,
+    "total_minutes": 15,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "four",
+      "label": "Four"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "pain",
+        "libelle": "pain",
+        "quantite": 4,
+        "quantite_affichee": "4 tranches",
+        "unite": {
+          "id": "tranches",
+          "label": "tranches"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pain"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage",
+        "quantite": 120,
+        "quantite_affichee": "120 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "tomates",
+        "libelle": "tomates",
+        "quantite": 250,
+        "quantite_affichee": "250 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "tomates"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "huile-dolive",
+        "libelle": "huile d’olive ou huile neutre",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "huile-dolive"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "herbes",
+        "libelle": "herbes",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes"
+      },
+      {
+        "id": "olives",
+        "libelle": "olives",
+        "quantite": 30,
+        "quantite_affichee": "30 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "olives"
+      },
+      {
+        "id": "thon",
+        "libelle": "thon",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "thon"
+      },
+      {
+        "id": "jambon",
+        "libelle": "jambon",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "jambon"
+      },
+      {
+        "id": "ail",
+        "libelle": "ail",
+        "quantite": 1,
+        "quantite_affichee": "1 gousse",
+        "unite": {
+          "id": "gousse",
+          "label": "gousse"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "ail",
+        "impacte_allergenes": true
+      },
+      {
+        "id": "sel",
+        "libelle": "sel",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "sel",
+        "impacte_allergenes": true
+      },
+      {
+        "id": "poivre",
+        "libelle": "poivre",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "poivre",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Préchauffer le four à 200 °C. Disposer les tranches de pain sur une plaque.",
+      "Frotter légèrement le pain avec de l’ail si disponible, puis ajouter un filet d’huile ou une fine couche de fromage frais.",
+      "Couper les tomates en tranches ou en petits morceaux. Les déposer sur le pain sans trop charger.",
+      "Ajouter le fromage, les herbes, le sel et le poivre.",
+      "Enfourner 8 à 12 minutes, jusqu’à ce que le fromage soit fondu et les bords du pain croustillants."
+    ],
+    "cuisson_indicative": {
+      "texte": "Four : 200 °C pendant 8 à 12 min, jusqu’à ce que le fromage soit fondu et le pain croustillant."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Le pain rassis devient très bon une fois grillé. Pour éviter qu’il ramollisse, mettre le fromage sous les tomates ou précuire légèrement les tomates.",
+    "variantes": "Ajouter oignon, jambon, thon, champignons, épinards, légumes grillés, olives, basilic ou piment. Remplacer le fromage râpé par camembert, chèvre, mozzarella ou fromage frais."
+  },
+  "sources": [
+    {
+      "titre": "Migusto - Tartines chaudes aux tomates",
+      "url": "https://migusto.migros.ch/fr/recettes/tartines-chaudes-aux-tomates"
+    },
+    {
+      "titre": "Journal des Femmes - Tartines de tomates rôties",
+      "url": "https://cuisine.journaldesfemmes.fr/recette/3133280-tartines-de-tomates-roties"
+    },
+    {
+      "titre": "750g - Tartine tomate et fromage",
+      "url": "https://www.750g.com/tartine-tomate-et-fromage-r90119.htm"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

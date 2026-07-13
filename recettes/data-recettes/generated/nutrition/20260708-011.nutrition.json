@@ -1,0 +1,67 @@
+{
+  "id": "20260708-011",
+  "titre": "Tian de courgettes",
+  "statut": "complet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 1527.0,
+  "totaux": {
+    "energie_kj": 2230.8,
+    "energie_kcal": 535.63,
+    "proteines_g": 14.63,
+    "glucides_g": 43.88,
+    "sucres_g": 29.32,
+    "lipides_g": 31.28,
+    "satures_g": 4.81,
+    "fibres_g": 18.2,
+    "sel_g": 0.21
+  },
+  "par_personne": {
+    "energie_kj": 557.7,
+    "energie_kcal": 133.91,
+    "proteines_g": 3.66,
+    "glucides_g": 10.97,
+    "sucres_g": 7.33,
+    "lipides_g": 7.82,
+    "satures_g": 1.2,
+    "fibres_g": 4.55,
+    "sel_g": 0.05
+  },
+  "pour_100g": {
+    "energie_kj": 146.09,
+    "energie_kcal": 35.08,
+    "proteines_g": 0.96,
+    "glucides_g": 2.87,
+    "sucres_g": 1.92,
+    "lipides_g": 2.05,
+    "satures_g": 0.32,
+    "fibres_g": 1.19,
+    "sel_g": 0.01
+  },
+  "details": [
+    {
+      "ingredient": "courgettes",
+      "groupe": "principaux",
+      "masse_g": 800.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "tomates",
+      "groupe": "principaux",
+      "masse_g": 500.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "oignons",
+      "groupe": "secondaires",
+      "masse_g": 200.0,
+      "conversion": "100 g/pièce"
+    },
+    {
+      "ingredient": "huile-dolive",
+      "groupe": "secondaires",
+      "masse_g": 27.0,
+      "conversion": "13.5 g/c. à soupe"
+    }
+  ],
+  "blocages": []
+}

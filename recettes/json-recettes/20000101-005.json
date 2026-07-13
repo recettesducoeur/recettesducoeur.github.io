@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "id": "20000101-005",
+  "statut": "publie",
+  "seo": {
+    "titre": "Poêlée de pommes de terre",
+    "description": "Une poêlée de pommes de terre dorées, simple et rassasiante, à servir seule avec une salade ou en accompagnement.",
+    "mots_cles": [
+      "poelee-de-pommes-de-terre",
+      "economique",
+      "sans-four",
+      "chaud",
+      "simple",
+      "pommes-de-terre",
+      "oignon",
+      "herbes"
+    ]
+  },
+  "contenu": {
+    "titre": "Poêlée de pommes de terre",
+    "accroche": "Une poêlée de pommes de terre dorées, simple et rassasiante, à servir seule avec une salade ou en accompagnement.",
+    "introduction": "Pour une bonne texture, les pommes de terre doivent être bien séchées et saisies dans une poêle chaude avant de cuire plus doucement. L’ail, le persil ou l’oignon peuvent être ajoutés selon les réserves."
+  },
+  "image": {
+    "fichier": "20000101-005.webp",
+    "alt": "Photo maison : Poêlée de pommes de terre",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "poelee",
+      "label": "Poêlée"
+    },
+    "caracteristiques": [
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "simple",
+        "label": "Simple"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 25,
+    "repos_minutes": 0,
+    "total_minutes": 35,
+    "tranche": "30-45"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "poele",
+      "label": "Poêle"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "pommes-de-terre",
+        "libelle": "pommes de terre",
+        "quantite": 900,
+        "quantite_affichee": "900 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pommes-de-terre"
+      },
+      {
+        "id": "huile",
+        "libelle": "huile",
+        "quantite": 2,
+        "quantite_affichee": "2 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "huile"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "oignon",
+        "libelle": "oignon",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oignon"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "herbes",
+        "libelle": "herbes",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage",
+        "quantite": 60,
+        "quantite_affichee": "60 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "lardons",
+        "libelle": "lardons",
+        "quantite": 100,
+        "quantite_affichee": "100 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "lardons"
+      },
+      {
+        "id": "restes-viande",
+        "libelle": "restes de viande",
+        "quantite": 100,
+        "quantite_affichee": "100 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "restes-viande"
+      },
+      {
+        "id": "ail",
+        "libelle": "ail",
+        "quantite": 1,
+        "quantite_affichee": "1 gousse",
+        "unite": {
+          "id": "gousse",
+          "label": "gousse"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "ail",
+        "impacte_allergenes": true
+      },
+      {
+        "id": "sel",
+        "libelle": "sel",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "sel",
+        "impacte_allergenes": true
+      },
+      {
+        "id": "poivre",
+        "libelle": "poivre",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "poivre",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Éplucher les pommes de terre si nécessaire, les laver puis les sécher soigneusement. Les couper en dés réguliers.",
+      "Faire chauffer l’huile dans une grande poêle. Ajouter les pommes de terre et les enrober de matière grasse.",
+      "Laisser dorer quelques minutes sans trop remuer, puis mélanger et poursuivre la cuisson.",
+      "Baisser légèrement le feu, couvrir partiellement et cuire 20 à 25 minutes en remuant de temps en temps.",
+      "Ajouter ail, persil, oignon ou herbes en fin de cuisson. Saler et servir chaud."
+    ],
+    "cuisson_indicative": {
+      "texte": "Poêle : 20 à 25 min à feu moyen, en remuant régulièrement."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Bien sécher les pommes de terre avant cuisson aide à obtenir une surface dorée. Les restes se réchauffent très bien à la poêle.",
+    "variantes": "Ajouter oignon, lardons, légumes en dés, paprika, curry, œufs battus en fin de cuisson ou fromage râpé. Pour une version complète, ajouter une boîte de haricots ou un reste de viande."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Pommes de terre sautées à l’ail et au persil",
+      "url": "https://www.marmiton.org/recettes/recette_pommes-de-terre-sautees-a-l-ail-et-au-persil_27838.aspx"
+    },
+    {
+      "titre": "Dussurgey - Sauté de pommes de terre ail persil",
+      "url": "https://www.dussurgey.com/recettes/saute-de-pommes-de-terre-ail-persil/"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

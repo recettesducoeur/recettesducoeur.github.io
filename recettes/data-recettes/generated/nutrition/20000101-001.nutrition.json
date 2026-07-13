@@ -1,0 +1,59 @@
+{
+  "id": "20000101-001",
+  "titre": "Gratin de pâtes au thon",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 1077.5,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "pates-seches",
+      "groupe": "principaux",
+      "masse_g": 320.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "tomates-concassees",
+      "groupe": "principaux",
+      "masse_g": 300.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "lait",
+      "groupe": "secondaires",
+      "masse_g": 257.5,
+      "conversion": "Densité 1.03"
+    },
+    {
+      "ingredient": "fromage",
+      "groupe": "secondaires",
+      "masse_g": 100.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "oignon",
+      "groupe": "secondaires",
+      "masse_g": 100.0,
+      "conversion": "100 g/pièce"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "thon",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

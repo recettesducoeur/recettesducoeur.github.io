@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "id": "20000101-002",
+  "statut": "publie",
+  "seo": {
+    "titre": "Riz au lait à la banane",
+    "description": "Un riz au lait doux et anti-gaspi, enrichi avec de la banane bien mûre pour sucrer naturellement et obtenir une texture plus onctueuse.",
+    "mots_cles": [
+      "riz-au-lait-a-la-banane",
+      "dessert",
+      "economique",
+      "anti-gaspi",
+      "enfants",
+      "riz",
+      "lait",
+      "banane",
+      "sucre",
+      "cannelle"
+    ]
+  },
+  "contenu": {
+    "titre": "Riz au lait à la banane",
+    "accroche": "Un riz au lait doux et anti-gaspi, enrichi avec de la banane bien mûre pour sucrer naturellement et obtenir une texture plus onctueuse.",
+    "introduction": "La banane mûre apporte du parfum, de la douceur et permet de réduire le sucre ajouté. La cuisson lente du riz dans le lait donne un dessert simple, nourrissant et facile à préparer à l’avance."
+  },
+  "image": {
+    "fichier": "20000101-002.webp",
+    "alt": "Photo maison : Riz au lait à la banane",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "dessert",
+      "label": "Dessert"
+    },
+    "sous_categorie": {
+      "id": "dessert-lacte",
+      "label": "Dessert lacté"
+    },
+    "caracteristiques": [
+      {
+        "id": "economique",
+        "label": "Économique"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      },
+      {
+        "id": "enfants",
+        "label": "Enfants"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "froid",
+        "label": "Froid"
+      },
+      {
+        "id": "tiede",
+        "label": "Tiède"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 5,
+    "cuisson_minutes": 25,
+    "repos_minutes": 0,
+    "total_minutes": 30,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "riz-rond",
+        "libelle": "riz rond",
+        "quantite": 120,
+        "quantite_affichee": "120 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "riz-rond"
+      },
+      {
+        "id": "lait",
+        "libelle": "lait",
+        "quantite": 800,
+        "quantite_affichee": "800 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "lait"
+      },
+      {
+        "id": "banane",
+        "libelle": "bananes très mûres",
+        "quantite": 2,
+        "quantite_affichee": "2 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "banane"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "sucre",
+        "libelle": "sucre",
+        "quantite": 40,
+        "quantite_affichee": "40 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "sucre"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "cannelle",
+        "libelle": "cannelle",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "cannelle"
+      },
+      {
+        "id": "vanille",
+        "libelle": "vanille",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "vanille"
+      },
+      {
+        "id": "chocolat",
+        "libelle": "chocolat râpé",
+        "quantite": 30,
+        "quantite_affichee": "30 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "chocolat"
+      },
+      {
+        "id": "riz-blanc",
+        "libelle": "riz blanc classique",
+        "quantite": 120,
+        "quantite_affichee": "120 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "riz-blanc"
+      },
+      {
+        "id": "sel",
+        "libelle": "sel",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "sel",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Rincer rapidement le riz rond. Porter le lait à frémissement dans une casserole avec le sucre, la vanille et une pincée de sel si disponible.",
+      "Ajouter le riz et cuire à feu doux 25 à 30 minutes en remuant régulièrement pour éviter que le fond accroche.",
+      "Écraser une banane bien mûre à la fourchette. L’ajouter en fin de cuisson, puis mélanger encore 2 à 3 minutes.",
+      "Couper la seconde banane en rondelles ou l’écraser selon la texture souhaitée.",
+      "Servir tiède ou froid. Ajouter cannelle, cacao ou miel si disponible."
+    ],
+    "cuisson_indicative": {
+      "texte": "Casserole : feu doux pendant 25 à 30 min, en remuant régulièrement."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Utiliser des bananes très mûres, même tachées : elles remplacent une partie du sucre et donnent plus de goût.",
+    "variantes": "Ajouter chocolat râpé, cannelle, vanille, raisins secs, zeste de citron ou un filet de miel. Pour une texture très crémeuse, utiliser du lait entier ou ajouter une petite cuillère de crème en fin de cuisson."
+  },
+  "sources": [
+    {
+      "titre": "CuisineAZ - Riz au lait crémeux : la recette inratable",
+      "url": "https://www.cuisineaz.com/articles/riz-au-lait-cremeux-la-recette-inratable-16101.aspx"
+    },
+    {
+      "titre": "CuisineAZ - Compote pomme banane, base fruits mûrs",
+      "url": "https://www.cuisineaz.com/recettes/compote-pomme-banane-121739.aspx"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

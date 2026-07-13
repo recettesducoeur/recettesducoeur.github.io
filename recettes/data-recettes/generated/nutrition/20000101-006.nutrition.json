@@ -1,0 +1,50 @@
+{
+  "id": "20000101-006",
+  "titre": "Compote pomme-banane",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 240.0,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "bananes",
+      "groupe": "principaux",
+      "masse_g": 240.0,
+      "conversion": "120 g/pièce"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "pommes",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    },
+    {
+      "ingredient": "eau",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

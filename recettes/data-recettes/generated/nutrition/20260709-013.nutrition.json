@@ -1,0 +1,79 @@
+{
+  "id": "20260709-013",
+  "titre": "Tarte salée à la courgette",
+  "statut": "complet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 1450.0,
+  "totaux": {
+    "energie_kj": 9333.45,
+    "energie_kcal": 2241.25,
+    "proteines_g": 78.21,
+    "glucides_g": 131.69,
+    "sucres_g": 23.75,
+    "lipides_g": 152.43,
+    "satures_g": 89.79,
+    "fibres_g": 13.74,
+    "sel_g": 5.53
+  },
+  "par_personne": {
+    "energie_kj": 2333.36,
+    "energie_kcal": 560.31,
+    "proteines_g": 19.55,
+    "glucides_g": 32.92,
+    "sucres_g": 5.94,
+    "lipides_g": 38.11,
+    "satures_g": 22.45,
+    "fibres_g": 3.43,
+    "sel_g": 1.38
+  },
+  "pour_100g": {
+    "energie_kj": 643.69,
+    "energie_kcal": 154.57,
+    "proteines_g": 5.39,
+    "glucides_g": 9.08,
+    "sucres_g": 1.64,
+    "lipides_g": 10.51,
+    "satures_g": 6.19,
+    "fibres_g": 0.95,
+    "sel_g": 0.38
+  },
+  "details": [
+    {
+      "ingredient": "pate-brisee",
+      "groupe": "principaux",
+      "masse_g": 230.0,
+      "conversion": "230 g/pièce"
+    },
+    {
+      "ingredient": "courgettes",
+      "groupe": "principaux",
+      "masse_g": 650.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "oeufs",
+      "groupe": "secondaires",
+      "masse_g": 180.0,
+      "conversion": "60 g/pièce"
+    },
+    {
+      "ingredient": "creme",
+      "groupe": "secondaires",
+      "masse_g": 200.0,
+      "conversion": "Densité 1.0"
+    },
+    {
+      "ingredient": "oignon",
+      "groupe": "secondaires",
+      "masse_g": 100.0,
+      "conversion": "100 g/pièce"
+    },
+    {
+      "ingredient": "fromage",
+      "groupe": "secondaires",
+      "masse_g": 90.0,
+      "conversion": null
+    }
+  ],
+  "blocages": []
+}

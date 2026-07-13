@@ -1,0 +1,68 @@
+{
+  "id": "20000101-004",
+  "titre": "Salade de riz au thon",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 740.0,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "riz",
+      "groupe": "principaux",
+      "masse_g": 280.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "tomates",
+      "groupe": "principaux",
+      "masse_g": 250.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "mais",
+      "groupe": "secondaires",
+      "masse_g": 150.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "vinaigrette",
+      "groupe": "secondaires",
+      "masse_g": 60.0,
+      "conversion": "15 g/c. à soupe"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "thon",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    },
+    {
+      "ingredient": "concombre",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

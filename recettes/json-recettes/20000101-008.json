@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "id": "20000101-008",
+  "statut": "publie",
+  "seo": {
+    "titre": "Omelette aux légumes",
+    "description": "Une omelette aux légumes souple et colorée, idéale pour transformer quelques légumes restants en repas complet.",
+    "mots_cles": [
+      "omelette-aux-legumes",
+      "rapide",
+      "proteines",
+      "anti-gaspi",
+      "sans-four",
+      "ufs",
+      "legumes",
+      "fromage",
+      "oeuf",
+      "oeufs",
+      "gruyere",
+      "emmental"
+    ]
+  },
+  "contenu": {
+    "titre": "Omelette aux légumes",
+    "accroche": "Une omelette aux légumes souple et colorée, idéale pour transformer quelques légumes restants en repas complet.",
+    "introduction": "Les légumes doivent être précuits avant d’ajouter les œufs, afin d’éviter une omelette aqueuse. La cuisson douce permet de garder une texture moelleuse."
+  },
+  "image": {
+    "fichier": "20000101-008.webp",
+    "alt": "Photo maison : Omelette aux légumes",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "omelette",
+      "label": "Omelette"
+    },
+    "caracteristiques": [
+      {
+        "id": "rapide",
+        "label": "Rapide"
+      },
+      {
+        "id": "proteines",
+        "label": "Protéines"
+      },
+      {
+        "id": "anti-gaspi",
+        "label": "Anti-gaspi"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 2,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 8,
+    "repos_minutes": 0,
+    "total_minutes": 18,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "poele",
+      "label": "Poêle"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "oeufs",
+        "libelle": "œufs",
+        "quantite": 4,
+        "quantite_affichee": "4 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oeufs"
+      },
+      {
+        "id": "legumes-varies",
+        "libelle": "légumes variés",
+        "quantite": 250,
+        "quantite_affichee": "250 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "legumes-varies"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "huile",
+        "libelle": "huile",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "huile"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "fromage",
+        "libelle": "fromage",
+        "quantite": 50,
+        "quantite_affichee": "50 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "herbes",
+        "libelle": "herbes",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "herbes"
+      },
+      {
+        "id": "pommes-de-terre-cuites",
+        "libelle": "pommes de terre cuites",
+        "quantite": 150,
+        "quantite_affichee": "150 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "pommes-de-terre-cuites"
+      },
+      {
+        "id": "beurre",
+        "libelle": "beurre",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "beurre"
+      },
+      {
+        "id": "creme",
+        "libelle": "crème",
+        "quantite": 2,
+        "quantite_affichee": "2 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "creme"
+      },
+      {
+        "id": "lait",
+        "libelle": "lait",
+        "quantite": 2,
+        "quantite_affichee": "2 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "lait",
+        "impacte_allergenes": true
+      },
+      {
+        "id": "sel",
+        "libelle": "sel",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "sel",
+        "impacte_allergenes": true
+      },
+      {
+        "id": "poivre",
+        "libelle": "poivre",
+        "quantite": 1,
+        "quantite_affichee": "1 pincée",
+        "unite": {
+          "id": "pincee",
+          "label": "pincée"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "poivre",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Laver et couper les légumes en petits dés ou fines lamelles.",
+      "Faire revenir l’oignon ou l’échalote dans une poêle avec un peu d’huile, puis ajouter les légumes les plus longs à cuire.",
+      "Cuire les légumes 5 à 10 minutes, jusqu’à ce qu’ils soient tendres et que l’eau de végétation soit évaporée.",
+      "Battre les œufs avec sel, poivre, herbes et éventuellement un peu de lait ou de crème.",
+      "Verser les œufs sur les légumes. Cuire à feu doux jusqu’à ce que l’omelette soit prise mais encore moelleuse."
+    ],
+    "cuisson_indicative": {
+      "texte": "Poêle : 6 à 8 min à feu doux/moyen pour garder l’omelette moelleuse."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Les petits restes de légumes cuits sont parfaits : les réchauffer rapidement avant d’ajouter les œufs.",
+    "variantes": "Ajouter fromage râpé, dés de pommes de terre cuites, champignons, poivrons, courgettes, tomates, herbes fraîches ou une pointe de curry. Servir dans du pain pour un sandwich chaud."
+  },
+  "sources": [
+    {
+      "titre": "Les fruits et légumes frais - Omelette aux légumes",
+      "url": "https://www.lesfruitsetlegumesfrais.com/recettes/omelette-aux-legumes"
+    },
+    {
+      "titre": "Marmiton - Omelette aux légumes légère et parfumée",
+      "url": "https://www.marmiton.org/recettes/recette_omelette-aux-legumes-legere-et-parfumee_31216.aspx"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

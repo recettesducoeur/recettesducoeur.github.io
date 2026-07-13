@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "id": "20000101-009",
+  "statut": "publie",
+  "seo": {
+    "titre": "Pâtes sauce tomate enrichie",
+    "description": "Des pâtes à la sauce tomate enrichie, simples et nourrissantes, avec une sauce plus savoureuse grâce à l’oignon, l’ail et aux légumes disponibles.",
+    "mots_cles": [
+      "pates-sauce-tomate-enrichie",
+      "simple",
+      "economique",
+      "conserve",
+      "chaud",
+      "pates",
+      "tomates",
+      "oignon",
+      "thon",
+      "fromage",
+      "nouilles",
+      "spaghetti",
+      "thon-en-boite",
+      "gruyere",
+      "emmental"
+    ]
+  },
+  "contenu": {
+    "titre": "Pâtes sauce tomate enrichie",
+    "accroche": "Des pâtes à la sauce tomate enrichie, simples et nourrissantes, avec une sauce plus savoureuse grâce à l’oignon, l’ail et aux légumes disponibles.",
+    "introduction": "La sauce gagne en goût si l’on fait revenir les aromates avant d’ajouter la tomate. Un peu d’eau de cuisson des pâtes aide à lier la sauce sans ajouter de crème."
+  },
+  "image": {
+    "fichier": "20000101-009.webp",
+    "alt": "Photo maison : Pâtes sauce tomate enrichie",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "plat-principal",
+      "label": "Plat principal"
+    },
+    "sous_categorie": {
+      "id": "pates",
+      "label": "Pâtes"
+    },
+    "caracteristiques": [
+      {
+        "id": "simple",
+        "label": "Simple"
+      },
+      {
+        "id": "economique",
+        "label": "Économique"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "chaud",
+        "label": "Chaud"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 4,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 5,
+    "cuisson_minutes": 15,
+    "repos_minutes": 0,
+    "total_minutes": 20,
+    "tranche": "15-30"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "plaques-feux",
+      "label": "Plaques / Feux"
+    },
+    {
+      "id": "casserole",
+      "label": "Casserole"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "pates-alimentaires",
+        "libelle": "pâtes",
+        "quantite": 320,
+        "quantite_affichee": "320 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "pates-alimentaires"
+      },
+      {
+        "id": "tomates-concassees",
+        "libelle": "tomates concassées",
+        "quantite": 400,
+        "quantite_affichee": "400 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "tomates-concassees"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "oignon",
+        "libelle": "oignon",
+        "quantite": 1,
+        "quantite_affichee": "1 pièce",
+        "unite": {
+          "id": "piece",
+          "label": "pièce"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oignon"
+      },
+      {
+        "id": "huile",
+        "libelle": "huile",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à soupe",
+        "unite": {
+          "id": "c-a-soupe",
+          "label": "c. à soupe"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "huile"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "thon",
+        "libelle": "thon",
+        "quantite": 140,
+        "quantite_affichee": "140 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "thon"
+      },
+      {
+        "id": "fromage",
+        "libelle": "fromage",
+        "quantite": 60,
+        "quantite_affichee": "60 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "fromage"
+      },
+      {
+        "id": "sauce-tomate",
+        "libelle": "sauce tomate",
+        "quantite": 400,
+        "quantite_affichee": "400 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "sauce-tomate"
+      },
+      {
+        "id": "legumes-varies",
+        "libelle": "légumes variés",
+        "quantite": 200,
+        "quantite_affichee": "200 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "legumes-varies"
+      },
+      {
+        "id": "ail",
+        "libelle": "ail",
+        "quantite": 1,
+        "quantite_affichee": "1 gousse",
+        "unite": {
+          "id": "gousse",
+          "label": "gousse"
+        },
+        "obligatoire": false,
+        "reference_nutritionnelle": "ail",
+        "impacte_allergenes": true
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Faire cuire les pâtes dans une grande casserole d’eau salée en les gardant al dente.",
+      "Pendant ce temps, faire revenir l’oignon dans un filet d’huile. Ajouter l’ail, puis les légumes finement coupés si disponibles.",
+      "Ajouter la tomate, les herbes, le sel et le poivre. Laisser mijoter 10 à 15 minutes pour concentrer les saveurs.",
+      "Égoutter les pâtes en gardant un peu d’eau de cuisson.",
+      "Mélanger les pâtes avec la sauce. Ajouter un peu d’eau de cuisson si nécessaire pour bien enrober."
+    ],
+    "cuisson_indicative": {
+      "texte": "Casserole : 10 à 15 min pour la sauce, plus cuisson des pâtes selon le paquet."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Un reste de légumes cuits peut être mixé dans la sauce tomate pour l’épaissir et enrichir le plat discrètement.",
+    "variantes": "Ajouter thon, lentilles, haricots rouges, pois chiches, fromage râpé, crème, carotte râpée ou restes de viande. Pour une version plus parfumée, ajouter olives, câpres ou basilic."
+  },
+  "sources": [
+    {
+      "titre": "Marmiton - Spaghetti sauce tomate à l’ancienne",
+      "url": "https://www.marmiton.org/recettes/recette_spaghetti-sauce-tomate-a-l-ancienne_337787.aspx"
+    },
+    {
+      "titre": "Marmiton - Pâtes à la sauce tomate crémeuse d’Italie",
+      "url": "https://www.marmiton.org/recettes/recette_pates-a-la-sauce-tomate-cremeuse-d-italie_37105.aspx"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

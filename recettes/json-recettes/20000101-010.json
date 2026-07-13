@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "id": "20000101-010",
+  "statut": "publie",
+  "seo": {
+    "titre": "Gâteau simple du placard",
+    "description": "Un gâteau simple du placard, moelleux et personnalisable, préparé avec les ingrédients de base : farine, sucre, œufs, matière grasse et lait ou eau.",
+    "mots_cles": [
+      "gateau-simple-du-placard",
+      "dessert",
+      "gouter",
+      "economique",
+      "four",
+      "farine",
+      "sucre",
+      "ufs",
+      "lait",
+      "chocolat",
+      "oeuf",
+      "oeufs"
+    ]
+  },
+  "contenu": {
+    "titre": "Gâteau simple du placard",
+    "accroche": "Un gâteau simple du placard, moelleux et personnalisable, préparé avec les ingrédients de base : farine, sucre, œufs, matière grasse et lait ou eau.",
+    "introduction": "Cette base volontairement simple sert de support aux restes du placard : chocolat, fruits mûrs, confiture, épices ou cacao. Le but est d’obtenir un gâteau fiable sans ingrédients rares."
+  },
+  "image": {
+    "fichier": "20000101-010.webp",
+    "alt": "Photo maison : Gâteau simple du placard",
+    "statut": "validated"
+  },
+  "classification": {
+    "categorie": {
+      "id": "dessert",
+      "label": "Dessert"
+    },
+    "sous_categorie": {
+      "id": "gateau",
+      "label": "Gâteau"
+    },
+    "caracteristiques": [
+      {
+        "id": "economique",
+        "label": "Économique"
+      }
+    ],
+    "temperature_service": [
+      {
+        "id": "froid",
+        "label": "Froid"
+      },
+      {
+        "id": "tiede",
+        "label": "Tiède"
+      }
+    ]
+  },
+  "portions": {
+    "reference": 6,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "temps": {
+    "preparation_minutes": 10,
+    "cuisson_minutes": 30,
+    "repos_minutes": 0,
+    "total_minutes": 40,
+    "tranche": "30-45"
+  },
+  "budget": {
+    "id": "economique",
+    "label": "Économique"
+  },
+  "difficulte": {
+    "id": "facile",
+    "label": "Facile"
+  },
+  "equipements": [
+    {
+      "id": "four",
+      "label": "Four"
+    }
+  ],
+  "ingredients": {
+    "principaux": [
+      {
+        "id": "farine",
+        "libelle": "farine",
+        "quantite": 200,
+        "quantite_affichee": "200 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "farine"
+      },
+      {
+        "id": "sucre",
+        "libelle": "sucre",
+        "quantite": 100,
+        "quantite_affichee": "100 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "sucre"
+      },
+      {
+        "id": "oeufs",
+        "libelle": "œufs",
+        "quantite": 2,
+        "quantite_affichee": "2 pièces",
+        "unite": {
+          "id": "pieces",
+          "label": "pièces"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "oeufs"
+      }
+    ],
+    "secondaires": [
+      {
+        "id": "lait",
+        "libelle": "lait",
+        "quantite": 120,
+        "quantite_affichee": "120 ml",
+        "unite": {
+          "id": "ml",
+          "label": "ml"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "lait"
+      },
+      {
+        "id": "beurre",
+        "libelle": "beurre fondu",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "beurre"
+      },
+      {
+        "id": "levure-chimique",
+        "libelle": "levure chimique",
+        "quantite": 1,
+        "quantite_affichee": "1 sachet",
+        "unite": {
+          "id": "sachet",
+          "label": "sachet"
+        },
+        "obligatoire": true,
+        "reference_nutritionnelle": "levure-chimique"
+      }
+    ],
+    "optionnels": [
+      {
+        "id": "chocolat",
+        "libelle": "chocolat",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "chocolat"
+      },
+      {
+        "id": "fruits",
+        "libelle": "fruits",
+        "quantite": 150,
+        "quantite_affichee": "150 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": false,
+        "reference_nutritionnelle": "fruits"
+      },
+      {
+        "id": "huile",
+        "libelle": "huile",
+        "quantite": 80,
+        "quantite_affichee": "80 g",
+        "unite": {
+          "id": "g",
+          "label": "g"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "huile"
+      },
+      {
+        "id": "cannelle",
+        "libelle": "cannelle",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "cannelle"
+      },
+      {
+        "id": "vanille",
+        "libelle": "vanille",
+        "quantite": 1,
+        "quantite_affichee": "1 c. à café",
+        "unite": {
+          "id": "c-a-cafe",
+          "label": "c. à café"
+        },
+        "obligatoire": false,
+        "impacte_allergenes": true,
+        "reference_nutritionnelle": "vanille"
+      }
+    ]
+  },
+  "preparation": {
+    "etapes": [
+      "Préchauffer le four à 180 °C. Beurrer ou huiler un moule.",
+      "Mélanger la farine, le sucre, la levure et une pincée de sel dans un saladier.",
+      "Ajouter les œufs, le lait ou l’eau, puis le beurre fondu ou l’huile. Mélanger juste assez pour obtenir une pâte homogène.",
+      "Ajouter les ingrédients disponibles : chocolat, fruits en morceaux, cacao, cannelle ou confiture.",
+      "Verser dans le moule et cuire 30 à 40 minutes. Vérifier la cuisson avec la pointe d’un couteau."
+    ],
+    "cuisson_indicative": {
+      "texte": "Four : 180 °C pendant 30 à 40 min selon le moule. Vérifier avec la pointe d’un couteau."
+    }
+  },
+  "conseils": {
+    "astuce_anti_gaspi": "Les bananes très mûres, les pommes fatiguées ou les fins de tablette de chocolat peuvent être incorporées à la pâte.",
+    "variantes": "Version cacao, pomme-cannelle, banane-chocolat, confiture marbrée, noix/noisettes, citron, yaourt ou pépites de chocolat. Pour une version sans lait, utiliser de l’eau ou une boisson végétale."
+  },
+  "sources": [
+    {
+      "titre": "750g - Gâteau au chocolat super facile du fond du placard",
+      "url": "https://www.750g.com/gateau-au-chocolat-super-facile-du-fond-du-placard-r96504.htm"
+    },
+    {
+      "titre": "Régilait - Idées recettes du fond de placard",
+      "url": "https://regilait.com/idees-recettes/cuisine-du-placard"
+    }
+  ],
+  "conservation": {
+    "texte": "À conserver 24 h au réfrigérateur dans une boîte fermée.",
+    "rechauffage": "À réchauffer doucement si nécessaire.",
+    "congelation": "À vérifier selon la recette."
+  },
+  "recette_version": 1,
+  "date_creation": "2026-07-12",
+  "date_modification": "2026-07-13",
+  "repères_manuels": {
+    "regimes_forces": [],
+    "regimes_exclus": [],
+    "compatibilites_forcees": [],
+    "compatibilites_exclues": [],
+    "allergenes_forces": [],
+    "allergenes_exclus": [],
+    "vigilances": []
+  }
+}

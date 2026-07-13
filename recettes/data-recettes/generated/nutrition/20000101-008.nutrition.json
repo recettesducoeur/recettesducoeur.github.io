@@ -1,0 +1,41 @@
+{
+  "id": "20000101-008",
+  "titre": "Omelette aux légumes",
+  "statut": "incomplet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 253.5,
+  "totaux": null,
+  "par_personne": null,
+  "pour_100g": null,
+  "details": [
+    {
+      "ingredient": "oeufs",
+      "groupe": "principaux",
+      "masse_g": 240.0,
+      "conversion": "60 g/pièce"
+    },
+    {
+      "ingredient": "huile",
+      "groupe": "secondaires",
+      "masse_g": 13.5,
+      "conversion": "13.5 g/c. à soupe"
+    }
+  ],
+  "blocages": [
+    {
+      "ingredient": "legumes-varies",
+      "raison": "Nutrition incomplète",
+      "champs": [
+        "energie_kj",
+        "energie_kcal",
+        "proteines_g",
+        "glucides_g",
+        "sucres_g",
+        "lipides_g",
+        "satures_g",
+        "fibres_g",
+        "sel_g"
+      ]
+    }
+  ]
+}

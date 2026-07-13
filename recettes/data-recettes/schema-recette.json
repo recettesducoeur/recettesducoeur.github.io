@@ -1,0 +1,554 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recettesducoeur.github.io/recettes/data-recettes/schema-recette.json",
+  "title": "Schéma d'une recette — Les Recettes du Cœur V37",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "statut",
+    "seo",
+    "contenu",
+    "image",
+    "classification",
+    "portions",
+    "temps",
+    "budget",
+    "difficulte",
+    "equipements",
+    "ingredients",
+    "preparation",
+    "conseils",
+    "sources",
+    "conservation",
+    "recette_version",
+    "date_creation",
+    "date_modification"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{8}-[0-9]{3}$"
+    },
+    "statut": {
+      "type": "string",
+      "enum": [
+        "brouillon",
+        "a-relire",
+        "valide",
+        "publie",
+        "archive"
+      ]
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "titre",
+        "description",
+        "mots_cles"
+      ],
+      "properties": {
+        "titre": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80
+        },
+        "description": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 180
+        },
+        "mots_cles": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        }
+      }
+    },
+    "contenu": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "titre",
+        "accroche",
+        "introduction"
+      ],
+      "properties": {
+        "titre": {
+          "type": "string",
+          "minLength": 3
+        },
+        "accroche": {
+          "type": "string",
+          "minLength": 20
+        },
+        "introduction": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fichier",
+        "alt",
+        "statut"
+      ],
+      "properties": {
+        "fichier": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+\\.(webp|png|jpg|jpeg)$"
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 5
+        },
+        "statut": {
+          "type": "string",
+          "enum": [
+            "validated",
+            "temporary",
+            "missing",
+            "archived"
+          ]
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "categorie",
+        "sous_categorie",
+        "caracteristiques",
+        "temperature_service"
+      ],
+      "properties": {
+        "categorie": {
+          "$ref": "#/$defs/taxonItem"
+        },
+        "sous_categorie": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/taxonItem"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "caracteristiques": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/taxonItem"
+          }
+        },
+        "temperature_service": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/taxonItem"
+          }
+        }
+      }
+    },
+    "portions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference",
+        "minimum",
+        "maximum"
+      ],
+      "properties": {
+        "reference": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "minimum": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "maximum": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "temps": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preparation_minutes",
+        "cuisson_minutes",
+        "repos_minutes",
+        "total_minutes",
+        "tranche"
+      ],
+      "properties": {
+        "preparation_minutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cuisson_minutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "repos_minutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_minutes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tranche": {
+          "type": "string",
+          "enum": [
+            "moins-15",
+            "15-30",
+            "30-45",
+            "45-60",
+            "plus-60"
+          ]
+        }
+      }
+    },
+    "budget": {
+      "$ref": "#/$defs/taxonItem"
+    },
+    "difficulte": {
+      "$ref": "#/$defs/taxonItem"
+    },
+    "equipements": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/taxonItem"
+      }
+    },
+    "ingredients": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "principaux",
+        "secondaires",
+        "optionnels"
+      ],
+      "properties": {
+        "principaux": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ingredient"
+          }
+        },
+        "secondaires": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ingredient"
+          }
+        },
+        "optionnels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ingredientOptional"
+          }
+        }
+      }
+    },
+    "preparation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "etapes",
+        "cuisson_indicative"
+      ],
+      "properties": {
+        "etapes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "cuisson_indicative": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "texte"
+          ],
+          "properties": {
+            "texte": {
+              "type": "string",
+              "minLength": 10
+            }
+          }
+        }
+      }
+    },
+    "conseils": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "astuce_anti_gaspi",
+        "variantes"
+      ],
+      "properties": {
+        "astuce_anti_gaspi": {
+          "type": "string",
+          "minLength": 10
+        },
+        "variantes": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "titre",
+          "url"
+        ],
+        "properties": {
+          "titre": {
+            "type": "string",
+            "minLength": 3
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "conservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texte",
+        "rechauffage",
+        "congelation"
+      ],
+      "properties": {
+        "texte": {
+          "type": "string"
+        },
+        "rechauffage": {
+          "type": "string"
+        },
+        "congelation": {
+          "type": "string"
+        }
+      }
+    },
+    "recette_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "date_creation": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_modification": {
+      "type": "string",
+      "format": "date"
+    },
+    "repères_manuels": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "regimes_forces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regimes_exclus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "compatibilites_forcees": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "compatibilites_exclues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allergenes_forces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allergenes_exclus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vigilances": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "taxonItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "unitItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ingredient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "libelle",
+        "quantite",
+        "quantite_affichee",
+        "unite",
+        "obligatoire"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "libelle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quantite": {
+          "type": "number",
+          "minimum": 0
+        },
+        "quantite_affichee": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unite": {
+          "$ref": "#/$defs/unitItem"
+        },
+        "obligatoire": {
+          "type": "boolean",
+          "const": true
+        },
+        "reference_nutritionnelle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "ingredientOptional": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "libelle",
+        "quantite",
+        "quantite_affichee",
+        "unite",
+        "obligatoire",
+        "impacte_allergenes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "libelle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quantite": {
+          "type": "number",
+          "minimum": 0
+        },
+        "quantite_affichee": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unite": {
+          "$ref": "#/$defs/unitItem"
+        },
+        "obligatoire": {
+          "type": "boolean",
+          "const": false
+        },
+        "impacte_allergenes": {
+          "type": "boolean"
+        },
+        "reference_nutritionnelle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

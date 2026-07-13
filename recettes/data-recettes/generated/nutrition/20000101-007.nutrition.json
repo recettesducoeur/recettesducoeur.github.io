@@ -1,0 +1,67 @@
+{
+  "id": "20000101-007",
+  "titre": "Tartines chaudes fromage-tomate",
+  "statut": "complet",
+  "optionnels_exclus": true,
+  "masse_totale_g": 503.5,
+  "totaux": {
+    "energie_kj": 3924.0,
+    "energie_kcal": 937.91,
+    "proteines_g": 44.22,
+    "glucides_g": 75.25,
+    "sucres_g": 10.36,
+    "lipides_g": 49.58,
+    "satures_g": 24.19,
+    "fibres_g": 7.18,
+    "sel_g": 2.33
+  },
+  "par_personne": {
+    "energie_kj": 1962.0,
+    "energie_kcal": 468.96,
+    "proteines_g": 22.11,
+    "glucides_g": 37.62,
+    "sucres_g": 5.18,
+    "lipides_g": 24.79,
+    "satures_g": 12.1,
+    "fibres_g": 3.59,
+    "sel_g": 1.17
+  },
+  "pour_100g": {
+    "energie_kj": 779.34,
+    "energie_kcal": 186.28,
+    "proteines_g": 8.78,
+    "glucides_g": 14.94,
+    "sucres_g": 2.06,
+    "lipides_g": 9.85,
+    "satures_g": 4.8,
+    "fibres_g": 1.43,
+    "sel_g": 0.46
+  },
+  "details": [
+    {
+      "ingredient": "pain",
+      "groupe": "principaux",
+      "masse_g": 120.0,
+      "conversion": "30 g/tranches"
+    },
+    {
+      "ingredient": "fromage",
+      "groupe": "principaux",
+      "masse_g": 120.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "tomates",
+      "groupe": "principaux",
+      "masse_g": 250.0,
+      "conversion": null
+    },
+    {
+      "ingredient": "huile-dolive",
+      "groupe": "secondaires",
+      "masse_g": 13.5,
+      "conversion": "13.5 g/c. à soupe"
+    }
+  ],
+  "blocages": []
+}
